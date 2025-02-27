@@ -14,7 +14,7 @@
 
 
 
-<title>Text Overflow The Old Problem of Game Localization | oad</title>
+<title>Text Overflow - The Old Problem of Game Localization | oad</title>
 
 
 
@@ -150,12 +150,12 @@
         <div class="post-title">
             
             
-                Text Overflow The Old Problem of Game Localization
+                Text Overflow - The Old Problem of Game Localization
             
             
         </div>
         <span class="post-date">
-            27 Feb, 2025
+            19 Sep, 2023
         </span>
     </div>
     <div class="post-img">
@@ -188,38 +188,29 @@
 <p>Compared with directly expanding the text box in UI design in the early stage of the project, giving text character length suggestions and finding the method of the longest character number can improve certain flexibility. Because this method can give more design space to UI and interaction, and at the same time, it can also minimize the risk of exceeding the box of the original Chinese (copywriting planners, system planners, etc. also know this character number suggestion) and localized translation.</p>
 <p>However, there are two points to note here:</p>
 <ol>
-<li><p><strong>The impact of resolution on text length:</strong> Text that has no problems may exceed the box and display incompletely after changing the resolution. Or, some fonts have been adjusted to the smallest font size, even if the adaptive (best fit, can adjust the font size or wrap) is turned on, the font size cannot be further reduced when the resolution is lowered.</p>
-<p>&nbsp;</p>
-</li>
+<li><strong>The impact of resolution on text length:</strong> Text that has no problems may exceed the box and display incompletely after changing the resolution. Or, some fonts have been adjusted to the smallest font size, even if the adaptive (best fit, can adjust the font size or wrap) is turned on, the font size cannot be further reduced when the resolution is lowered.</li>
 </ol>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2F74b8e32c-f86d-4771-850c-7b7fdbe2af97.png/size/"></p>
-<pre><code>Therefore, when the UI team gives suggestions on the length of text characters for text boxes, it is best to consider the various resolutions supported by the game in combination with the different platforms on which the game is launched.
-</code></pre>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2F74b8e32c-f86d-4771-850c-7b7fdbe2af97.png/size/"></p>
+<p>Therefore, when the UI team gives suggestions on the length of text characters for text boxes, it is best to consider the various resolutions supported by the game in combination with the different platforms on which the game is launched.</p>
 <ol start="2">
-<li><p><strong>The impact of fonts:</strong> Even within the same language, different fonts will have a relatively obvious impact on the length of the displayed text. As shown below, the font of the first line of English is Arial, and the font of the second line of English is Times New Roman.</p>
-<p>&nbsp;</p>
-</li>
+<li><strong>The impact of fonts:</strong> Even within the same language, different fonts will have a relatively obvious impact on the length of the displayed text. As shown below, the font of the first line of English is Arial, and the font of the second line of English is Times New Roman.</li>
 </ol>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2Fb5401acf-fb1a-4c76-8179-b6e18ecb82f9.png/size/"></p>
-<pre><code>It can be clearly seen that the length of the same text will be different if it is displayed in different fonts. Therefore, if only a character limit is given, such as 4 characters, the translator uses a different font from the developer when using excel or other translation software, the length of the translation is likely to be different from the standard character length given by the development team.
-
-Let&#39;s give another example: the developer set a maximum of 23 characters for a button in the game, and the font from the developer&#39;s perspective is Times New Roman. The translator set the font to Arial when performing localization in the translation system. The translator translates the text in this button as:
-
-&amp;nbsp; 
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2Fb5401acf-fb1a-4c76-8179-b6e18ecb82f9.png/size/"></p>
+<p>It can be clearly seen that the length of the same text will be different if it is displayed in different fonts. Therefore, if only a character limit is given, such as 4 characters, the translator uses a different font from the developer when using excel or other translation software, the length of the translation is likely to be different from the standard character length given by the development team.</p>
+<p>Let’s give another example: the developer set a maximum of 23 characters for a button in the game, and the font from the developer’s perspective is Times New Roman. The translator set the font to Arial when performing localization in the translation system. The translator translates the text in this button as:</p>
+<pre><code>&amp;nbsp; 
 </code></pre>
 <p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2F390df84a-d821-4ebf-b9fa-892c4ce0d6f1.jpg/size/"></p>
-<pre><code>It can be seen that although the translator&#39;s translation is exactly 23 characters, it still exceeds the box by one letter.
-
-Even if the upstream and downstream departments unify the font, simply giving a character limit is still not necessarily the most recommended solution. Because different translators have different translation habits and commonly used words, the same sentence will have multiple translations. For example:
-
-Buy this with gold
-
-With gold unlock it
-
-It can be seen that the number of characters in both translations is 18, but the following sentence exceeds the box by one letter compared to the above sentence. This problem will be more obvious in longer compound sentences.
-
-Therefore, the UI team can give character length suggestions based on &quot;m, n&quot;. For example, the length of a button is &quot;mmmmmmn&quot;. At this time, no matter what font or expression the translator uses, they only need to compare the length with &quot;mmmmmmn&quot; to determine whether there is a risk of exceeding the box.
-</code></pre>
+<p>It can be seen that although the translator’s translation is exactly 23 characters, it still exceeds the box by one letter.</p>
+<p>Even if the upstream and downstream departments unify the font, simply giving a character limit is still not necessarily the most recommended solution. Because different translators have different translation habits and commonly used words, the same sentence will have multiple translations. For example:</p>
+<blockquote>
+<p><em>Buy this with gold</em></p>
+</blockquote>
+<blockquote>
+<p><em>With gold unlock it</em></p>
+</blockquote>
+<p>It can be seen that the number of characters in both translations is 18, but the following sentence exceeds the box by one letter compared to the above sentence. This problem will be more obvious in longer compound sentences.</p>
+<p>Therefore, the UI team can give character length suggestions based on “m, n”. For example, the length of a button is “mmmmmmn”. At this time, no matter what font or expression the translator uses, they only need to compare the length with “mmmmmmn” to determine whether there is a risk of exceeding the box.</p>
 <h3 id="Localization-Translation-Stage"><a href="#Localization-Translation-Stage" class="headerlink" title="Localization Translation Stage"></a>Localization Translation Stage</h3><p>In addition to the early operation of reducing the risk of text exceeding the box during the development and design stage of the game, the translation during the localization process is also an important stage to ensure that the game interface finally presented to overseas players does not exceed the box.</p>
 <p>• First of all, translators need to have enough understanding of the game content to be able to identify the possible location of the text during the translation stage and appropriately streamline the translation.</p>
 <p>For example, “Unlock in time-limited event”, a new translator may translate it as “You can unlock this item by the time-limited event”; and a translator who knows the game well enough can immediately judge that this sentence is likely to appear in a certain prop, the unlocking method interface (button) of a certain item, usually a small text box, so it can be directly translated as “Unlock by time-limited event”.</p>
@@ -246,7 +237,7 @@ Therefore, the UI team can give character length suggestions based on &quot;m, n
            
                 <div class="icon arrow-left"></div>
                 <div class="post-link">
-                    <a href="/2025/02/27/netease-ux-articles/news_20230703_28584_1096586/">Prev</a>
+                    <a href="/2023/09/22/netease-ux-articles/news_20231008_28584_1113540/">Prev</a>
                 </div>
             
         </div>
@@ -254,7 +245,7 @@ Therefore, the UI team can give character length suggestions based on &quot;m, n
             
                 <div class="icon arrow-right"></div>
                 <div class="post-link">
-                  <a href="/2025/02/27/netease-ux-articles/news_20240717_28584_1167718/">Next</a>  
+                  <a href="/2023/09/11/netease-ux-articles/news_20230911_28584_1109269/">Next</a>  
                 </div>  
             
         </div>
