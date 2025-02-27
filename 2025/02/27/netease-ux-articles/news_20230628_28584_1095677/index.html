@@ -193,63 +193,63 @@
 <h2 id="2-Allow-Diversity-Tolerate-Errors-and-Exceptions"><a href="#2-Allow-Diversity-Tolerate-Errors-and-Exceptions" class="headerlink" title="2. Allow Diversity, Tolerate Errors and Exceptions"></a>2. Allow Diversity, Tolerate Errors and Exceptions</h2><p>When designing a game system, we cannot only allow players to enter the format that the machine can recognize, but also consider the diversity of users, accept and adapt to more flexible and diverse input and operations, and design corresponding processing methods.</p>
 <h3 id="Allow-Players-to-Perform-Arbitrary-Operations"><a href="#Allow-Players-to-Perform-Arbitrary-Operations" class="headerlink" title="Allow Players to Perform Arbitrary Operations"></a>Allow Players to Perform Arbitrary Operations</h3><p>We may have had this experience. Sometimes, when we enter incorrect text or ambiguous content in the search box, the software can still give the desired search results, as if it has “figured out” our thoughts. In this process, the program does not limit input when facing the user. Even if the content is wrong or invalid, it will not crash or report an error. Instead, it will process the input content autonomously after receiving the input, showing a high degree of tolerance. We don’t need to delve into the program implementation behind this, we just need to know that this is in line with Postel’s Law.</p>
 <p>The nickname box in <em>Elden Ring</em> also handles the input of spaces in a similar way. Players can enter spaces at will without any error prompts. But when the confirm button is pressed, the program will automatically process the content, delete the spaces at the beginning and end, and the extra spaces in the middle, so that the nickname becomes a format that conforms to the rules. </p>
-<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230628/246be872-95b7-4eb5-bb6e-9edbf587b7aa.gif"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230628%2F246be872-95b7-4eb5-bb6e-9edbf587b7aa.gif/size/"></p>
 <blockquote>
 <p><em>《Elden Ring》 Character Nickname Input Self-Processing</em></p>
 </blockquote>
 <h3 id="Input-Method-Adaptation"><a href="#Input-Method-Adaptation" class="headerlink" title="Input Method Adaptation"></a>Input Method Adaptation</h3><p>Games have a variety of input methods. Taking computer games as an example, the input methods can be a controller or keyboard and mouse. Many games can recognize these different input methods and give corresponding responses, so that they can tolerate and meet the different operating needs of players.</p>
 <p>For example, <em>Naraka: Bladepoint</em> has adaptively processed the input method: when no controller is connected, it will default that the player is using keyboard and mouse operations, and the interface will also display keyboard and mouse prompts; when the player connects a controller, the game will automatically recognize and switch the operation mode to controller operation, and the interface prompts will also become controller icons accordingly. </p>
-<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230628/b18e459e-cfbc-4710-abe1-a200a4631fd2.gif"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230628%2Fb18e459e-cfbc-4710-abe1-a200a4631fd2.gif/size/"></p>
 <blockquote>
 <p><em>《Naraka: Bladepoint》 Input Method Adaptation</em></p>
 </blockquote>
 <h3 id="Output-Method-Adaptation"><a href="#Output-Method-Adaptation" class="headerlink" title="Output Method Adaptation"></a>Output Method Adaptation</h3><p>Game products are usually not limited to running on one platform or one system. We need to adapt to screen resolutions, device types, and operating systems to reduce the impact of different device conditions on interface effects and operating experience. Taking <em>Revelation M</em> as an example, in addition to running on various mobile phones, it can also be played through an emulator. When we drag the interface to change to any size, we can see that the interface layout and component positions are automatically adjusted, and the interface can always maintain a reasonable and clear presentation effect. </p>
-<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230628/1d8d254c-23d5-4d86-bb20-fa53ce77663d.gif"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230628%2F1d8d254c-23d5-4d86-bb20-fa53ce77663d.gif/size/"></p>
 <blockquote>
 <p><em>《Revelation M》 Interface Adaptation</em></p>
 </blockquote>
 <h3 id="Exception-Handling"><a href="#Exception-Handling" class="headerlink" title="Exception Handling"></a>Exception Handling</h3><p>Various abnormal situations such as network delay and disconnection may occur during the game running process, which is difficult to avoid. Therefore, it is also necessary to consider in advance and design the processing method when developing the game, which can prevent problems such as process loss and data damage caused by abnormal situations. Disconnect protection and reconnection, automatic saving and other functions are common exception handling methods:</p>
 <p>If the controller is disconnected during the game process of <em>Dead Cells</em>, a “Controller Disconnected” prompt will pop up and the game will be automatically paused to avoid the character being out of control and affecting the game process. If the controller is reconnected, the prompt will disappear and the game will automatically resume. </p>
-<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230628/c50ec2e4-4500-4946-ab69-d43376e31f24.gif"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230628%2Fc50ec2e4-4500-4946-ab69-d43376e31f24.gif/size/"></p>
 <blockquote>
 <p><em>《Dead Cells》 Controller Disconnection and Reconnection Handling</em></p>
 </blockquote>
 <p>In <em>Hogwarts Legacy</em>, players can manually save the game, and the system also automatically saves frequently (there will be an icon prompt on the interface when saving). If you encounter a special situation during the game and don’t have time to save manually, don’t worry, you can find these automatic saves in the loading game interface, which largely avoids the loss of game progress&#x2F;archive damage. </p>
-<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230628/78a0c6ff-1281-485e-aa37-e96a88dfefac.gif"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230628%2F78a0c6ff-1281-485e-aa37-e96a88dfefac.gif/size/"></p>
 <blockquote>
 <p><em>《Hogwarts Legacy》 Auto Save</em></p>
 </blockquote>
 <h2 id="3-Define-Actionable-Boundaries"><a href="#3-Define-Actionable-Boundaries" class="headerlink" title="3. Define Actionable Boundaries"></a>3. Define Actionable Boundaries</h2><p>Although we can use the game’s own inclusive design to accept various behaviors of players as much as possible, sometimes we still don’t want various strange operations to occur. This requires setting some boundaries to properly guide players and reduce the possibility of incorrect input.</p>
 <h3 id="Clear-Definition-Instructions"><a href="#Clear-Definition-Instructions" class="headerlink" title="Clear Definition Instructions"></a>Clear Definition Instructions</h3><p>We can tell players the boundaries of operation by directly writing down the rules, so that players can autonomously filter out some wrong input situations. This method is more common in the interface for entering nicknames. The rules for nicknames are often more complicated, involving character type restrictions, character length restrictions, space processing, etc., and various input situations may occur. Different games also have different requirements for nicknames. Appropriately marking some rules will make it more convenient for players to enter content that meets the requirements.</p>
 <h3 id="Limited-Options"><a href="#Limited-Options" class="headerlink" title="Limited Options"></a>Limited Options</h3><p>We can limit the operation by reducing the freedom of input components and filtering out some options outside the boundary. For example, in the trading house of <em>Revelation M</em>, the value of “Purchase Quantity” requires players to enter pure numbers. When clicking on a number to enter, the system will force the numeric keyboard to pop up, avoiding the situation where players enter other characters. </p>
-<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230628/54565df2-e80b-4c2f-acfd-25aa9cbbdcf9.gif"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230628%2F54565df2-e80b-4c2f-acfd-25aa9cbbdcf9.gif/size/"></p>
 <blockquote>
 <p><em>《Revelation M》 Numeric Keyboard</em></p>
 </blockquote>
 <h3 id="Condition-Constraints"><a href="#Condition-Constraints" class="headerlink" title="Condition Constraints"></a>Condition Constraints</h3><p>Condition constraints are a commonly used design method in Metroidvania-like games. There are often some places on the map that cannot be reached in the early stage, and you need to obtain a certain ability or some props to explore. Through the gradual unlocking of various conditions, players can be guided to play according to the design expectations, enjoy the fun of constantly discovering new content, and also make the growth of the character and the rhythm of the game reach a relatively stable state.</p>
 <p>At the exit of the novice map of <em>Hollow Knight</em>, this design is made. A bug is arranged to block the way. Players need to learn spell skills to pass, prompting them to return to explore other paths and improve their character abilities. It also prevents players from accidentally breaking into the late-game map in the early stage. </p>
-<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230628/13c93885-15dd-4cfb-a3f5-a5709267774d.gif"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230628%2F13c93885-15dd-4cfb-a3f5-a5709267774d.gif/size/"></p>
 <blockquote>
 <p><em>《Hollow Knight》 Using Character Abilities to Restrict Map Exploration</em></p>
 </blockquote>
 <h2 id="4-Operation-Feedback-and-Correction"><a href="#4-Operation-Feedback-and-Correction" class="headerlink" title="4. Operation Feedback and Correction"></a>4. Operation Feedback and Correction</h2><p>Defining boundaries can only prompt players what kind of operation is appropriate to a certain extent, but players can still perform some operations outside the boundary. Therefore, when players take incorrect or risky operations, they can also give some feedback or remedial measures to help players correct their operations autonomously.</p>
 <h3 id="Information-Prompts"><a href="#Information-Prompts" class="headerlink" title="Information Prompts"></a>Information Prompts</h3><p>Information prompts are a commonly used feedback method. By giving prompts and guidance after players perform interactive operations, players’ operations are further corrected. The timeliness of information feedback is very important, and it needs to be pointed out immediately when an operation occurs. <em>Hades</em> has strict requirements on the steps of operation. For example, you must collect rewards before entering the next level. If you press the button to interact with the door without completing it, the interface will display “Collect Rewards!” information feedback, and at the same time, there will be a light spot sliding to the reward item to prompt and guide the player. </p>
-<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230628/f387f36e-234a-4615-9b5e-c3ea4fe34b02.gif"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230628%2Ff387f36e-234a-4615-9b5e-c3ea4fe34b02.gif/size/"></p>
 <blockquote>
 <p><em>《Hades》 Operation Feedback and Prompts</em></p>
 </blockquote>
 <h3 id="Secondary-Confirmation"><a href="#Secondary-Confirmation" class="headerlink" title="Secondary Confirmation"></a>Secondary Confirmation</h3><p>Secondary confirmation is very common in games. It generally appears after some important operation steps, prompting players to the possible results of this operation, so that players can make a more cautious judgment of their operations, and prevent possible misoperation situations. For example, when clicking exit during the <em>Devil May Cry 5</em> level, a secondary confirmation interface will pop up to ask, telling the player that if they exit at this time, they will continue from the last checkpoint when they restart, so that the player can confirm whether to return to the main menu. </p>
-<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230628/976cd07c-9177-43a3-be3d-825a32fc1a2b.jpg"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230628%2F976cd07c-9177-43a3-be3d-825a32fc1a2b.jpg/size/"></p>
 <blockquote>
 <p><em>《Devil May Cry 5》 Secondary Confirmation Interface When Exiting the Level</em></p>
 </blockquote>
 <h3 id="Revocable-Operations"><a href="#Revocable-Operations" class="headerlink" title="Revocable Operations"></a>Revocable Operations</h3><p>Although there is no “regret medicine” in the real world, the game world is imaginative, and anything can happen. Therefore, some games are very considerate to provide players with revocable operations, so that players can have the opportunity to make up for their mistakes after discovering them. For example, the store in <em>Revelation Online</em> has a repurchase function. After an item is sold, it will not disappear immediately, but will enter the repurchase list. If you accidentally sell the wrong thing, you can buy it back. </p>
-<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230628/1bfe3517-db48-4a47-a82c-d194b5b3f059.png"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230628%2F1bfe3517-db48-4a47-a82c-d194b5b3f059.png/size/"></p>
 <blockquote>
 <p><em>《Revelation Online》 Store’s Repurchase Function</em></p>
 </blockquote>
 <p><em>Dark Souls 3</em> also has this design. If the player accidentally hits a friendly NPC and forms a hostile relationship, they can pray at the Statue of Velka in the game to restore the relationship with the NPC. </p>
-<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230628/f6255efb-d672-4088-99e2-a1c90026e5a7.gif"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230628%2Ff6255efb-d672-4088-99e2-a1c90026e5a7.gif/size/"></p>
 <blockquote>
 <p><em>Fig 1. Example.</em></p>
 </blockquote>
@@ -268,7 +268,7 @@
            
                 <div class="icon arrow-left"></div>
                 <div class="post-link">
-                    <a href="/2025/02/27/netease-ux-articles/news_20230419_28584_1083864/">Prev</a>
+                    <a href="/2025/02/27/netease-ux-articles/news_20230215_28584_1073279/">Prev</a>
                 </div>
             
         </div>
