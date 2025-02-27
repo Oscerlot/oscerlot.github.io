@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>How to Read Minds Through the Eyes Using Eye Tracking in Game Research | oad</title>
+
+
+
+    <link rel="icon" href="/project/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/project/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/project/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/project/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/project/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/User-Research/">
+                            User Research
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Game-User-Research/">
+                            Game User Research
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Eye-Tracking/">
+                            Eye Tracking
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Gaze-Point/">
+                            Gaze Point
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Attention/">
+                            Attention
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Visual-Attention/">
+                            Visual Attention
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Heat-Map/">
+                            Heat Map
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Gaze-Plot/">
+                            Gaze Plot
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Time-to-First-Fixation/">
+                            Time to First Fixation
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Fixation-Duration/">
+                            Fixation Duration
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                How to Read Minds Through the Eyes Using Eye Tracking in Game Research
+            
+            
+        </div>
+        <span class="post-date">
+            31 Aug, 2022
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20221128/28584_1055096.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>In user research, researchers often encounter this situation: a player, after experiencing a process, cannot answer any questions during the follow-up interview: Was there this feature? Did I perform this operation? Why did I do this at that time? Whenever this happens, researchers feel a tinge of helplessness, wishing they could read minds at this moment.</p>
+<p>Once players forget details, making it impossible to describe their behavior, the problems observed by the user researcher may not be solved. Fortunately, eye-tracking testing, as an objective measurement method, can measure players’ pure experience responses, supplement players’ physiological response data, and combine with traditional subjective research, which can, to a certain extent, avoid some biases caused by players’ subjective feedback. So, from the perspective of user research practice, how can visual attention data be applied to product design and user experience research?</p>
+<h2 id="1-Principles-and-Characteristics-of-Eye-Movement"><a href="#1-Principles-and-Characteristics-of-Eye-Movement" class="headerlink" title="1. Principles and Characteristics of Eye Movement"></a>1. Principles and Characteristics of Eye Movement</h2><h3 id="Player-Attention-Distribution-Can-Be-Derived-from-Gaze-Point-Movement-Data"><a href="#Player-Attention-Distribution-Can-Be-Derived-from-Gaze-Point-Movement-Data" class="headerlink" title="Player Attention Distribution Can Be Derived from Gaze Point Movement Data"></a>Player Attention Distribution Can Be Derived from Gaze Point Movement Data</h3><p>Eye Movement is the process of the eyeball discovering, fixating, and tracking visual stimuli through movement. Eye tracking, which sounds very sophisticated, from observing the player’s eyes to reading the player’s mind, can actually be understood in two steps:</p>
+<p>First, the prompt is right in front of you, where exactly are they looking? In other words, how do we measure the player’s eye movements?</p>
+<p>The answer is Gaze Point. Modern eye-tracking instruments can calculate the movement of the eyeball through infrared light reflection, and we can see in real time where the player’s gaze point is and what they are looking at. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20221128/4ec35219-213f-4253-9c28-66dad0d2c908.png"></p>
+<hr>
+<p><em>Schematic Diagram of Eye Movement Gaze Point</em></p>
+<hr>
+<p>Second, they clearly saw the prompt, where is their attention actually?</p>
+<p>In fact, the player’s eye movements and their attention distribution are closely related. By observing eye movement trajectories and behaviors, we can还原(huányuán - restore, reconstruct) the reasons why players did not operate in time, such as more urgent incentives (monsters rushing towards them, pickups not far away).</p>
+<p>Simply put, eye tracking is to display the test subject’s gaze point on the screen in real time, and present this performance in the form of data afterwards; researchers or products can intuitively understand what information the test subject looked at, what they didn’t look at, how long they looked at a certain piece of information, etc. It can be used as direct evidence for interface and prompt optimization.</p>
+<h3 id="Eye-Movement-Research-Can-Supplement-Objective-Behavioral-Data"><a href="#Eye-Movement-Research-Can-Supplement-Objective-Behavioral-Data" class="headerlink" title="Eye Movement Research Can Supplement Objective Behavioral Data"></a>Eye Movement Research Can Supplement Objective Behavioral Data</h3><p>At first glance, eye movement seems to be able to obtain a lot of detailed data, but what are its advantages or differences compared with commonly used research methods? As a kind of behavioral data measured by technology, eye movement can solve the following problems:</p>
+<ul>
+<li><strong>The reading cost of measurement results is too high:</strong> Eye movement data can be intuitively presented with a heat map, which greatly reduces the reading cost of the original data, and even people who have not been exposed to eye movement can easily read it;</li>
+<li><strong>Players subjectively speculate on behavioral details:</strong> Through eye movement data, the situation where players recall and explain specific details is avoided, preventing players from hypothesizing details afterwards;</li>
+<li><strong>The experimenter needs to frequently interrupt the process:</strong> Using other methods, the experimenter may need to frequently interrupt the player to ask for details of the experience, while eye movement can ensure that the player is tested without interference, especially suitable for scenarios that emphasize immersion.</li>
+</ul>
+<p>The limitations of eye movement are also very obvious - in essence, eye movement obtains behavioral data and cannot provide explanatory information about the cause of player behavior. In order to understand the complete link of players’ “behavior-eye movement-motivation-cause”, it is often necessary to add post-test follow-up, ask players’ subjective attitudes and experience, and supplement with demographic characteristics and related experience, in order to obtain relatively complete research insights.</p>
+<h2 id="2-Commonly-Used-Eye-Movement-Indicators-in-Practical-Applications"><a href="#2-Commonly-Used-Eye-Movement-Indicators-in-Practical-Applications" class="headerlink" title="2. Commonly Used Eye Movement Indicators in Practical Applications"></a>2. Commonly Used Eye Movement Indicators in Practical Applications</h2><p>As mentioned above, the data obtained by eye movement methods has a very high granularity and is very comprehensive, and various types of analysis can be realized according to the needs of researchers. In user research practice, there are three types of data that are frequently used (taking Tobii Pro Lab analysis software as an example):</p>
+<h3 id="Eye-Movement-Video-High-Analysis-Efficiency-Can-Discover-More-Than-80-of-Problems"><a href="#Eye-Movement-Video-High-Analysis-Efficiency-Can-Discover-More-Than-80-of-Problems" class="headerlink" title="Eye Movement Video: High Analysis Efficiency, Can Discover More Than 80% of Problems"></a>Eye Movement Video: High Analysis Efficiency, Can Discover More Than 80% of Problems</h3><p>Eye movement video is a screen recording of the player’s experience process + the player’s real-time eye movement gaze point data. Through the software, researchers can clearly see the landing point of each gaze of the player. By watching the video, researchers can restore the changes in the player’s attention at any time during the test, which is the simplest and most efficient way of eye movement indicators. In specific use, researchers can see: where the player looked, where they didn’t look, what content they were more concerned about, and the order of attention.</p>
+<p>As shown in the figure below, when a player was experiencing the <em>Naraka: Bladepoint</em> novice tutorial, because of personal operation, they did not see the AR prompt text, resulting in not using the “Sprint” button for a long time. The eye movement video allows the experimenter to intuitively identify that the player did not operate as expected here, and focus on the impact caused by this in the subsequent game process. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20221128/5b6ab7a3-9576-478e-8a46-be80c6b4fc92.gif"></p>
+<hr>
+<p><em>Eye Movement and Video Playback Can Be Synchronized in Real Time in Tobii Pro Lab</em></p>
+<hr>
+<h3 id="Heat-Map-and-Gaze-Plot-Visualize-the-Problems-in-the-Video-and-Facilitate-Comparison"><a href="#Heat-Map-and-Gaze-Plot-Visualize-the-Problems-in-the-Video-and-Facilitate-Comparison" class="headerlink" title="Heat Map and Gaze Plot: Visualize the Problems in the Video and Facilitate Comparison"></a>Heat Map and Gaze Plot: Visualize the Problems in the Video and Facilitate Comparison</h3><p>Heat Map and Gaze Plot are both visualization methods that reflect the player’s gaze situation within a certain period of time, and they are also relatively intuitive to use. The longer (more times) the player gazes, the more it is displayed as red on the heat map, emphasizing the overall situation and relative density of attention. The gaze plot can show the order and trajectory of all the player’s gaze points. This indicator is mainly used for the verification of existing interface design, and the usage scenario is usually to study relatively static area combinations. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20221128/89cb4b90-696d-4a86-8f58-938e32de8945.png"></p>
+<hr>
+<p><em>Merchant Tutorial - Heat Map</em></p>
+<p>–. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20221128/de59a240-7ca2-4c53-9b5f-7005b1f1050a.png"></p>
+<hr>
+<p><em>Merchant Tutorial - Eye Movement Gaze Plot</em></p>
+<hr>
+<p>For example, in the picture above, when observing the player’s understanding of the merchant tutorial, it can be seen from the heat map that the player pays extra attention to the merchant sign on the map (the red highlighted area in the picture above), and from the trajectory map, it can be seen that the player looks at the text and video对照(duìzhào - in comparison) (the numbers of the gaze points in the figure below).</p>
+<h3 id="Quantitative-Indicators-Time-to-First-Fixation-and-Fixation-Duration-are-Most-Commonly-Used"><a href="#Quantitative-Indicators-Time-to-First-Fixation-and-Fixation-Duration-are-Most-Commonly-Used" class="headerlink" title="Quantitative Indicators - Time to First Fixation and Fixation Duration are Most Commonly Used"></a>Quantitative Indicators - Time to First Fixation and Fixation Duration are Most Commonly Used</h3><p>Quantitative indicators can be exported through software, and the obtainable indicator data is divided into Fixation, Visit, Saccade and other series of data. These indicators are often used for quantitative user behavior research. If necessary, the most commonly used and easy-to-use ones are the following two:</p>
+<ul>
+<li><strong>Fixation Duration:</strong> That is, the duration of the player’s gaze within a certain period of time. It is generally understood as the player’s degree of interest. The longer the fixation duration, the more interested the player is in the corresponding position.</li>
+<li><strong>Time to First Fixation:</strong> That is, the time when the first fixation occurs. It can be seen whether the player pays attention to the content in the first place and the time spent. According to the time to first fixation, we can analyze the cause of the player’s time consumption, the distribution of stimulation points, etc., so as to adjust the prompt position, intensity and other related UI design elements.</li>
+</ul>
+<p>The above three types of indicators have their own focus and can complement each other. The recommended analysis method is: first watch the eye movement video to find possible problems; then use heat maps and gaze plots to visually compare specific problems; if necessary, in-depth analysis can be carried out through quantitative data.</p>
+<h2 id="3-How-to-Interpret-Commonly-Used-Eye-Movement-Indicators-in-Practical-Applications"><a href="#3-How-to-Interpret-Commonly-Used-Eye-Movement-Indicators-in-Practical-Applications" class="headerlink" title="3. How to Interpret Commonly Used Eye Movement Indicators in Practical Applications"></a>3. How to Interpret Commonly Used Eye Movement Indicators in Practical Applications</h2><h3 id="Direct-Analysis-Through-Eye-Movement-Video"><a href="#Direct-Analysis-Through-Eye-Movement-Video" class="headerlink" title="Direct Analysis Through Eye Movement Video"></a>Direct Analysis Through Eye Movement Video</h3><p>As mentioned above, eye movement video is the most intuitive and efficient indicator. Combining player behavior, eye movement, and interface information can reveal problems.</p>
+<p>The following is a player experiencing the novice tutorial of <em>Naraka: Bladepoint</em> on console. After defeating the enemy, the player does not know what to do, walks around randomly for a period of time, suddenly releases the Y skill once, and then enters the next stage. Through eye movement, we can find that in this stage, the player only sees the prompt requirement in the upper left corner of the screen at the end, resulting in not achieving the task goal and getting stuck. From this, we can judge that this player did not find the task prompt in the first place as expected, and the researcher may need to further verify the existing UI design for repeated testing. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20221128/296aaf65-fe5c-4710-bd4a-06ae322b2ffd.gif"></p>
+<hr>
+<p><em>《Naraka: Bladepoint》 Excerpt of a Player’s Y Skill Experience Eye Movement Video</em></p>
+<hr>
+<h3 id="Comparative-Analysis-Through-Different-Players"><a href="#Comparative-Analysis-Through-Different-Players" class="headerlink" title="Comparative Analysis Through Different Players"></a>Comparative Analysis Through Different Players</h3><p>Through comparison, we can also use certain player attributes as variables to see the characteristics of a certain type of player group and the problems they may encounter.</p>
+<p>For example, in the eye-tracking test of the mobile game <em>Meteor Butterfly Sword</em>, experienced players are familiar with the game UI and task flow, so their eye movement trajectory can be used as a reference for players in use. Comparing it with the eye movement of new players, we can find the difference in attention between novices and experienced players. </p>
+<p>&nbsp;<br>![](<a target="_blank" rel="noopener" href="https://nie.res.netease.com/r/pic/20221128/1131f69d-d43b-45da-9c91-5de27e41fec4.png">https://nie.res.netease.com/r/pic/20221128/1131f69d-d43b-45da-9c91-5de27e41fec4.png</a>. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20221128/67e64aba-1652-42d8-bcc3-3fd10616ac5c.png"></p>
+<hr>
+<p><em>《Meteor Butterfly Sword》 Mobile Game Novice&#x2F;Experienced Player Battle Level Three-Star Task Eye Movement Heat Map and Table</em></p>
+<hr>
+<p>It can be seen from the eye movement data (the numbers in the figure below indicate the number of fixations (time to first fixation)) that experienced players will pay attention to the requirements of the three-star task from the beginning, while novices do not pay attention to it throughout the process; experienced players pay attention to it, indicating that this is a relatively important goal when clearing the level, while new players do not see it, indicating that the information is not conspicuous enough when used for the first time. By comparing the focus of new and experienced players, it is helpful for the product to adjust the problems in terms of player onboarding.</p>
+<h3 id="Comparative-Analysis-Through-Different-Materials"><a href="#Comparative-Analysis-Through-Different-Materials" class="headerlink" title="Comparative Analysis Through Different Materials"></a>Comparative Analysis Through Different Materials</h3><p>We can also discover the similarities and differences in player behavior through the comparative analysis of different materials. This method can be used for the comparison of similar processes.</p>
+<p>Taking the video teaching in the <em>Naraka: Bladepoint</em> novice tutorial as an example, players will experience the “Merchant” and “Whirlwind” tutorials (both of which are in the form of text + dynamic video). A certain player showed that he carefully watched the previous video, but did not pay attention to the latter video at all, but the final result was the same - the player’s actual operation was very smooth. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20221128/3dbafbc2-ae68-4b3d-8473-1244358a8acd.png"></p>
+<hr>
+<p><em>Gaze Plot - Merchant Tutorial (Left) and Whirlwind Tutorial (Right)</em></p>
+<hr>
+<p>Why does this happen? Through the player’s attention to the content of the page, we found that in the Whirlwind tutorial, there is a description of the display content of the small map, and the player does not need to watch the video to know the approximate style of the icon; while in the Merchant tutorial, the text description does not prompt the icon style, which leads to the above eye movement behavior. </p>
+<p>&nbsp;<br>![](<a target="_blank" rel="noopener" href="https://nie.res.netease.com/r/pic/20221128/dc3817c1-e657-496c-aeee-abee839dd166.png">https://nie.res.netease.com/r/pic/20221128/dc3817c1-e657-496c-aeee-abee839dd166.png</a>. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20221128/2612aebe-9ad1-4d89-9922-8c767a478da0.png"></p>
+<hr>
+<p><em>Text Description in the Tutorial - Merchant Tutorial (Top) and Whirlwind Tutorial (Bottom)</em></p>
+<hr>
+<h2 id="4-Conclusion"><a href="#4-Conclusion" class="headerlink" title="4. Conclusion"></a>4. Conclusion</h2><p>Eye movement is behavioral data, which can complement traditional interviews. Through eye movement videos, visualizations, etc., researchers can accurately and meticulously identify and analyze problems. Eye tracking can not only be used directly for analysis, but also can be combined with experimental design for targeted exploration.</p>
+<p>From a practical point of view, eye tracking, like other user experience research methods, requires a clear research plan, reasonable and measurable assumptions for the problems to be explored, and targeted player interviews after the test, in order to draw convincing conclusions and form inspiring insights. In user research work, any technical means are only auxiliary. Understanding the player’s motivation, needs, and cognitive process, experiencing and understanding with empathy, is the so-called “mind reading”.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/project/2022/09/05/netease-ux-articles/news_20220916_28584_1042734/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/project/2022/08/27/netease-ux-articles/news_20221128_28584_1055084/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

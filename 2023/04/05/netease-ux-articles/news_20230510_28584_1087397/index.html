@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>The Interactive Art of Loading in Games | oad</title>
+
+
+
+    <link rel="icon" href="/project/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/project/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/project/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/project/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/project/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Interaction-Design/">
+                            Interaction Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Game-Loading/">
+                            Game Loading
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Loading-Animation/">
+                            Loading Animation
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Progress-Bar/">
+                            Progress Bar
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Splash-Page/">
+                            Splash Page
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Loading-Design/">
+                            Loading Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Visual-Feedback/">
+                            Visual Feedback
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Immediate-Feedback/">
+                            Immediate Feedback
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Perceptible-Loading/">
+                            Perceptible Loading
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Imperceptible-Loading/">
+                            Imperceptible Loading
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                The Interactive Art of Loading in Games
+            
+            
+        </div>
+        <span class="post-date">
+            5 Apr, 2023
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20230510/28584_1087397.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>Game loading design has undergone iterations and innovations along with the development of the game industry. It can even be cleverly designed in combination with game style and story, bringing players a better sense of immersion and a more interesting gaming experience. This article will introduce the development path of game loading, focus on the design methods of game loading, and analyze the design art of game loading from the two aspects of strong perception and weak perception of game loading.</p>
+<h2 id="1-The-Path-of-Development-From-Appearance-to-Elimination"><a href="#1-The-Path-of-Development-From-Appearance-to-Elimination" class="headerlink" title="1. The Path of Development: From Appearance to Elimination"></a>1. The Path of Development: From Appearance to Elimination</h2><h3 id="The-Original-Meaning-“Reducing-Anxiety”"><a href="#The-Original-Meaning-“Reducing-Anxiety”" class="headerlink" title="The Original Meaning - “Reducing Anxiety”"></a>The Original Meaning - “Reducing Anxiety”</h3><p>Looking back on the time when playing Famicom games, you will find that you don’t seem to have any memory of the game loading screen. This is because the game capacity at that time was small, the storage medium was a cartridge, and the reading speed was fast. The game could basically run without loading.</p>
+<p>In the 1980s, the storage medium for games became magnetic tape. The popular game equipment was a home computer equipped with an 8-bit microprocessor and 64k of memory. The computer read data according to the rotation of the magnetic tape. The loading time of more than ten minutes would inevitably lead to misunderstanding and anxiety about “computer crashed?” if only a black screen was displayed to the player. So the text loading prompt appeared, but this simple transition from static to dynamic form could only barely pass the boring time of loading. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230510/0360da6b-d251-43ec-8b94-ce4fb50083ac.gif"></p>
+<p>Compared with the monotonous text prompts, many games chose to use original paintings as loading screens to help players pass the time. For the art resources that were suppressed by program restrictions at that time, this was a rare opportunity for “high-definition” display. Although the loading time was extended by 10% due to the call of art materials, this also became a rare opportunity for players to see “high-definition” pictures, so it was very popular. </p>
+<h2 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230510/cd8931bf-1683-438c-8832-3ee073ac1316.png"></h2><p><em>Game Screen (left) and Loading Screen (right)</em></p>
+<hr>
+<p>By the end of the 1980s, progress bars had already begun to be used in games. Although the first game to design a progress bar is no longer testable, this design that can intuitively reduce the player’s waiting anxiety is still not outdated.</p>
+<h3 id="Pioneering-Design-“Game-in-Game”"><a href="#Pioneering-Design-“Game-in-Game”" class="headerlink" title="Pioneering Design - “Game in Game”"></a>Pioneering Design - “Game in Game”</h3><p>With the upgrade of software and hardware, the game reading speed is faster. In Namco’s <em>Ridge Racer</em> in 1993, the game changed the previous loading form and placed the playable mini-game <em>Galaxian</em> in it, making the 30-second loading time pass abnormally fast, and the response in the player community was very good. </p>
+<h2 id="nbsp-1"><a href="#nbsp-1" class="headerlink" title="&nbsp;"></a>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230510/0eb88cdd-42e5-40dd-beea-ee425a7b852d.png"></h2><p><em>Loading game “Galaxian” in “Ridge Racer”</em></p>
+<hr>
+<p>Although Namco applied for a patent for the mini-game in the loading process - “auxiliary game”, which created a shackle for its creation, the mini-game in this patent and the main game are two separate games. Later generations cleverly avoided this point and loaded part of the main game code to make it a mini-game. Part of the main game content was migrated and designed into an interactive game loading, which achieved the design of “game in game” and also made the way of game loading enter a more distinctive new stage.</p>
+<h3 id="Unremitting-Pursuit-“Eliminate”-Loading"><a href="#Unremitting-Pursuit-“Eliminate”-Loading" class="headerlink" title="Unremitting Pursuit - “Eliminate” Loading"></a>Unremitting Pursuit - “Eliminate” Loading</h3><p>Whether it is a static prompt, a dynamic picture, or an interactive mini-game, these are just to distract the player’s attention. However, the player knows that it is loading, and the game experience is inevitably affected. “Elimination” is the optimal solution that does not affect the game experience and concentration, and this is also the unremitting pursuit of many game loading designs.</p>
+<p>In 2005, <em>Tony Hawk’s American Wasteland</em> directly used the no-loading screen as a selling point of the game, and players could experience the thrill of seamless exploration. It connects the game map through passages. When players enter the enclosed space of the passage, the map is loaded, allowing players to complete the loading unknowingly while experiencing the game. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230510/0737e675-bc3b-419e-b097-326794ca977f.png"></p>
+<h2 id="2-A-Thousand-Producers-Have-a-Thousand-Loading-Design-Methods"><a href="#2-A-Thousand-Producers-Have-a-Thousand-Loading-Design-Methods" class="headerlink" title="2. A Thousand Producers Have a Thousand Loading Design Methods"></a>2. A Thousand Producers Have a Thousand Loading Design Methods</h2><p>The player experience in the game will inevitably be affected by memory reading, network speed, and response speed. Players often cannot get the feedback they want immediately after operating, and always have to wait for a while.</p>
+<p>The Doherty Threshold theory points out that when the user’s command is executed by the system and the answer is returned within 400 milliseconds, it can keep them focused, improve productivity, and improve the negative experience of waiting. Extending the Doherty Threshold theory to the application of game loading design methods, it can be found that giving players timely feedback during game loading and the perceptibility of the waiting feedback process can maintain the player’s concentration and provide a good game experience.</p>
+<p>The strong perception of game loading emphasizes the visualization of the feedback loading process and clarifies the waiting progress. The weak perception of the game loading process emphasizes the timeliness of feedback, so that players are unconsciously in the process of waiting.</p>
+<h3 id="Game-Loading-Design-with-Strong-Perception"><a href="#Game-Loading-Design-with-Strong-Perception" class="headerlink" title="Game Loading Design with Strong Perception"></a>Game Loading Design with Strong Perception</h3><p>In the game loading design that players can clearly perceive, regardless of its accuracy, the visual form can well reduce their waiting anxiety. The flexible use of loading animations, progress bars, splash pages, and art resources are commonly used design methods.</p>
+<p>● <strong>Progress Bar</strong></p>
+<p>Animation is a good way to attract players visually, and the progress bar is the best form of waiting time visualization. The progress bar can be designed in combination with elements that reflect acceleration, connection, etc. in the game, and with meaningful animation effects, it can give more vitality to the functional loading form. For example, in <em>Onmyoji</em>, the loading progress bar is displayed by the Shikigami Usagi, who has the attribute of accelerating assistance, riding a magic frog and jumping forward, which is interesting and vivid and has the meaning of the game world view. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230510/fb69fcf5-e551-49d8-a58b-d0b6ed4fc062.gif"></p>
+<p>● <strong>Splash Page</strong></p>
+<p>The splash page can not only bring a unique transition effect, but also has a fascinating guiding effect. Common forms include opening doors, closing fans, turning pages, notes, and so on. In <em>Red Dead Redemption</em>, the splash screen and fading animation are combined with black and white photos of the scenery, which directly brings people’s thoughts into the western world of the twentieth century. </p>
+<h2 id="nbsp-2"><a href="#nbsp-2" class="headerlink" title="&nbsp;"></a>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230510/950eb662-ca7b-43cd-aca7-ca7e44ec5867.gif"></h2><h2 id="Loading-display-of-“Red-Dead-Redemption”"><a href="#Loading-display-of-“Red-Dead-Redemption”" class="headerlink" title="Loading display of “Red Dead Redemption”"></a><em>Loading display of “Red Dead Redemption”</em></h2><p>● <strong>Art Resources</strong></p>
+<p>Art resources are also the most commonly used content for showing off skills in game loading, which can increase players’ perceived value of the game style and establish their trust in the game. For example, the exquisite original paintings allow players to appreciate the exquisite production of game art, and also bring players a relaxed and pleasant waiting experience; the display of game models during loading, and even some free interactions, can bring players a unique experience different from the rhythm of the game. </p>
+<h2 id="nbsp-3"><a href="#nbsp-3" class="headerlink" title="&nbsp;"></a>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230510/62dd7e53-537b-4ebd-a42a-8ce2d49df667.png"></h2><h2 id="Loading-display-of-“The-Elder-Scrolls-V”"><a href="#Loading-display-of-“The-Elder-Scrolls-V”" class="headerlink" title="Loading display of “The Elder Scrolls V”"></a><em>Loading display of “The Elder Scrolls V”</em></h2><p>The loading form of excellent art resources can also help the connection of the game plot. For example, the loading screen of <em>The Witcher 3</em> is a plot introduction, which helps players recall the main line and also brings a movie-level look and feel. </p>
+<h2 id="nbsp-4"><a href="#nbsp-4" class="headerlink" title="&nbsp;"></a>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230510/f6973e83-3dfd-4592-939e-2009b6f58d86.gif"></h2><h2 id="Loading-display-of-“The-Witcher-3”"><a href="#Loading-display-of-“The-Witcher-3”" class="headerlink" title="Loading display of “The Witcher 3”"></a><em>Loading display of “The Witcher 3”</em></h2><h3 id="Game-Loading-Design-with-Weak-Perception"><a href="#Game-Loading-Design-with-Weak-Perception" class="headerlink" title="Game Loading Design with Weak Perception"></a>Game Loading Design with Weak Perception</h3><p>The goal of weakly perceived loading design is to allow players to spend the game loading time unknowingly, by cleverly using “blinders” to naturally turn the loading screen into a part of the game.</p>
+<p>● <strong>Passage</strong></p>
+<p>In the game’s elevators, cable cars, or winding aisles, the player’s forward speed will be limited, thus giving the game ample loading time. The design of the passage is widely used in the game loading design of weak perception. For example, there are always many elevators in Hidetaka Miyazaki’s games, and the game completes the loading of switching scene resources while the player is riding the elevator. In Souls-like games, two large scenes are usually connected by a narrow cave or an empty dungeon, hiding the loading process outside the narrow space. In <em>God of War III</em>, players control the characters to fly in the tunnel to avoid falling rocks, perfectly combining the passage with interactive loading. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230510/cfc9521f-9f2d-446b-aaa0-7a8f8fa4bffb.gif"></p>
+<p>● <strong>Slow Walking</strong></p>
+<p>Slow walking is a loading form that is more difficult for players to detect. The slowed footsteps before entering the plot, and even when the game is preloading subsequent resources, in order to prevent the player from walking too fast, there will be settings such as swamps, narrow gaps that can only be passed slowly, or deliberately tripping the character, etc. to delay time for loading. These are the means used by the production team to use actions and terrain to make the game loading and game content more naturally connected. </p>
+<h2 id="nbsp-5"><a href="#nbsp-5" class="headerlink" title="&nbsp;"></a>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230510/a7d081ee-cd11-4685-8a0b-94d0c8bf0ba9.gif"></h2><h2 id="Slow-walking-loading-of-“God-of-War-4”"><a href="#Slow-walking-loading-of-“God-of-War-4”" class="headerlink" title="Slow walking loading of “God of War 4”"></a><em>Slow walking loading of “God of War 4”</em></h2><p>● <strong>Camera Movement</strong></p>
+<p>In fact, it is not difficult to perfectly hide the loading process in the game. The game only needs to limit the player’s perspective through the camera to easily hide the loading process from view. As early as the PS1 era, there were applications of using the camera to cover up loading, such as in <em>Spyro the Dragon</em>, as Spyro flies, the game perspective changes from the ground to the sky, hiding the loading process of ground resources. In <em>Hellblade: Senua’s Sacrifice</em>, the close-up shot is used to express the heroine’s inner activities and follow her perspective to complete the scene switching. </p>
+<h2 id="nbsp-6"><a href="#nbsp-6" class="headerlink" title="&nbsp;"></a>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230510/41434d85-67ce-483b-9c50-8aba735c4208.gif"></h2><h2 id="Close-up-loading-in-“Hellblade-Senua’s-Sacrifice”"><a href="#Close-up-loading-in-“Hellblade-Senua’s-Sacrifice”" class="headerlink" title="Close-up loading in “Hellblade: Senua’s Sacrifice”"></a><em>Close-up loading in “Hellblade: Senua’s Sacrifice”</em></h2><h2 id="3-Summary"><a href="#3-Summary" class="headerlink" title="3. Summary"></a>3. Summary</h2><p>Today, the design of game loading is not limited to specific routines or blindly hiding. Instead, it is constantly exploring the perfect integration of game loading with game content and worldview. More and more games are carefully designed between maps, and even no trace of loading can be seen.</p>
+<p>Due to the technical development of memory reading speed, the current game loading process cannot be truly eliminated. While technology is sprinting forward to accelerate loading, the content design of game loading has become an art. It can be cleverly designed in combination with the game style and story narration, which can not only help the game improve the worldview, but also optimize the user experience, increase retention, and bring players a better sense of immersion and a more interesting gaming experience.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/project/2023/04/06/netease-ux-articles/news_20230424_28584_1084777/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/project/2023/04/03/netease-ux-articles/news_20230510_28584_1087383/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Following Intuition Mobile Game Gesture Design to Create Invisible Interactions | oad</title>
+
+
+
+    <link rel="icon" href="/project/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/project/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/project/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/project/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/project/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Interaction-Design/">
+                            Interaction Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Mobile-Games/">
+                            Mobile Games
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Gestures/">
+                            Gestures
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Intuition/">
+                            Intuition
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Feedback/">
+                            Feedback
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Responsiveness/">
+                            Responsiveness
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Android/">
+                            Android
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/iOS/">
+                            iOS
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Material-Design/">
+                            Material Design
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Following Intuition Mobile Game Gesture Design to Create Invisible Interactions
+            
+            
+        </div>
+        <span class="post-date">
+            27 Feb, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20230710/28584_1097837.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>Most mobile game interactions rely on the UI interface. However, there are some operations that do not rely on the UI, which are pure gesture interactions, namely, moving, zooming, and rotating. In the presence of UI, the player’s behavior path is generally: “See UI control - Generate operation expectation based on the control - Make corresponding operation - Verify through feedback”. However, in the absence of UI cues, players directly generate expectations, and all operations are performed based on the player’s experience and intuition.</p>
+<p>Therefore, we can summarize the indicators for evaluating gesture interaction into 3 points:</p>
+<ul>
+<li><strong>Intuitive:</strong> The gesture operations that players try to perform by intuition can help them achieve their goals, and use the most concise operation flow.</li>
+<li><strong>Predictable:</strong> The operation result is controllable and in line with expectations.</li>
+<li><strong>Feedback:</strong> Feedback prompts after the operation are used to prompt the player whether the operation is correct or whether the operation is in place.</li>
+</ul>
+<p>This article will introduce these 3 evaluation indicators and elaborate on them with practical development experience and specific application examples.</p>
+<h2 id="1-Intuitive-Design-in-Games"><a href="#1-Intuitive-Design-in-Games" class="headerlink" title="1. Intuitive Design in Games"></a>1. Intuitive Design in Games</h2><p>The habitual gestures for mobile game players are actually very simple, nothing more than single-finger dragging and double-finger zooming. But in the actual development process, we found that there is still much to learn.</p>
+<h3 id="If-a-Goal-Can-Be-Achieved-in-One-Step-Do-Not-Divide-it-into-Two-Steps"><a href="#If-a-Goal-Can-Be-Achieved-in-One-Step-Do-Not-Divide-it-into-Two-Steps" class="headerlink" title="If a Goal Can Be Achieved in One Step, Do Not Divide it into Two Steps"></a>If a Goal Can Be Achieved in One Step, Do Not Divide it into Two Steps</h3><p>Zooming and dragging correspond to two different operations. But by comparing some common apps, we can find that if the player can drag while zooming, or even rotate, it will be much smoother than zooming first and then dragging, and it is more in line with the player’s expectations. The Android Material Design specification also mentions this. The first figure below shows the scenario where double fingers only support zoom operations. It can be seen that the finger touch points do not match the screen, giving a feeling of lag. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/e2fb89d4-c1cc-4027-a943-58a4e857aeef.gif"></p>
+<hr>
+<p><em>Material Design - Demonstrates a Situation Where Multiple Gesture Operations Cannot Be Supported Simultaneously</em></p>
+<hr>
+<p>In the map zoom process of the mobile game <em>Knives Out</em>, we can see that players can determine the axis they want to zoom through two fingers, which can help players confirm the position they want to zoom in one step. However, because they cannot drag while zooming, they cannot drag the position to the visual center, so there is still a slight lag. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/a71c0362-da07-49d5-89fc-1b4204c44c03.gif"></p>
+<hr>
+<p><em>《Knives Out》 In-Game Map</em></p>
+<hr>
+<p>The reason for this feeling is that when players zoom in on the map to view, they usually have a clear target point. At this time, if the player is required to first zoom based on the center of the screen and then drag, this clear target point will deviate from the player’s visual center, or even go off-screen.</p>
+<p>However, in map software, players can use two fingers to complete dragging and moving operations at the same time. Therefore, we can see that if you want to zoom out and push away the “Shidai Elevated Road” in the picture, you only need to perform one operation. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/c5771e6d-d9cc-485e-b34d-17d3744c72c4.gif"></p>
+<hr>
+<p><em>Map Software - Zooming and Dragging Can Be Done Simultaneously</em></p>
+<hr>
+<p>In the game <em>Super Animal Royale</em>, players can drag while zooming, making the operation much more intuitive. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/fcfee910-0c9a-4cfd-9388-5ba542c9cb43.gif"></p>
+<hr>
+<p><em>《Super Animal Royale》 In-Game Map</em></p>
+<hr>
+<p>The Material Design specification also mentions this. In the figure below, the user can simultaneously perform dragging and rotating operations during the two-finger dragging process. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/47235fa3-f50b-4960-adf3-174c54ebd5a4.gif"></p>
+<hr>
+<p><em>Material Design - Two Fingers Can Simultaneously Zoom, Drag, and Rotate</em></p>
+<hr>
+<p>The map system of the iOS photo album function implements this principle. Players can simultaneously complete dragging, zooming, and rotating in one two-finger operation. The operation process is very smooth. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/4c955de9-a288-42d8-9f39-0390106c4fe2.gif"></p>
+<hr>
+<p><em>iOS Photo Album - Map</em></p>
+<hr>
+<h3 id="When-Operations-Conflict-Prioritize-the-Interaction-that-Players-are-More-Accustomed-to-and-Use-More-Frequently"><a href="#When-Operations-Conflict-Prioritize-the-Interaction-that-Players-are-More-Accustomed-to-and-Use-More-Frequently" class="headerlink" title="When Operations Conflict, Prioritize the Interaction that Players are More Accustomed to and Use More Frequently"></a>When Operations Conflict, Prioritize the Interaction that Players are More Accustomed to and Use More Frequently</h3><p>Especially in some mobile drawing software, we need to perform single-finger smearing operations on the screen, but the dragging operation that players are most accustomed to is also single-finger. How should we choose when these two operations conflict?</p>
+<p>Analyzing the drawing behavior, in this scenario, the most frequently used operation by players is single-finger smearing, while dragging the canvas is only an auxiliary means to better smear, and dragging can be performed simultaneously with two-finger zooming. Therefore, in this case, we can consider letting the single-finger dragging function give way to smearing, and dragging is realized through the offset of two fingers. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/d087fa83-79af-4b3f-a9b2-9c27c344718a.gif"></p>
+<hr>
+<p><em>A Certain Drawing Software</em></p>
+<hr>
+<h2 id="2-Predictable-Operation-Results"><a href="#2-Predictable-Operation-Results" class="headerlink" title="2. Predictable Operation Results"></a>2. Predictable Operation Results</h2><p>As mentioned earlier, players have psychological expectations when performing gesture operations. This expectation is not only a mapping relationship such as two fingers corresponding to zooming and one finger corresponding to dragging, but also means that players need to be able to accurately and efficiently complete their goals during the operation process. Generally speaking, the sensitivity of the response greatly affects this point. High sensitivity will be relatively more efficient; low sensitivity will be more precise. How do we balance this?</p>
+<h3 id="Sensitivity-Adjustment-There-are-Demands-for-Both-“Follow-Hand”-and-“Not-Follow-Hand”"><a href="#Sensitivity-Adjustment-There-are-Demands-for-Both-“Follow-Hand”-and-“Not-Follow-Hand”" class="headerlink" title="Sensitivity Adjustment: There are Demands for Both “Follow-Hand” and “Not Follow-Hand”"></a>Sensitivity Adjustment: There are Demands for Both “Follow-Hand” and “Not Follow-Hand”</h3><p>Here, “follow-hand” means that when the player starts a gesture operation, the position where the finger touches the operation object is the same as the position when the operation ends. On the map, it means: when starting to zoom in on the map, the thumb is at point A and the index finger is at point B, and the same is true after zooming in on the map.</p>
+<p>Material Design mentions that “follow-hand” interaction is the most intuitive interaction. Comparing the following two figures, the first one is obviously much more comfortable than the second one. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/2db87960-d1ad-4c4e-bdd6-3df7e9a0d5ed.gif"></p>
+<hr>
+<p><em>Material Design - Follow-Hand Dragging</em></p>
+<p>–. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/1a49437b-3aac-4359-8193-75b5f257cd0c.gif"></p>
+<hr>
+<p><em>Material Design - Non-Follow-Hand Dragging</em></p>
+<hr>
+<p>We can also see this difference in the operation of common sliding lists.</p>
+<p>When dragging slowly, the sliding list is “follow-hand”, which is convenient for users to locate the position they want. When the user swipes quickly, the list is usually swiped quickly, allowing the user to efficiently operate the long list in a short time.</p>
+<p>In the first figure below, it is the case of slow dragging, and the movement of the list is “follow-hand”. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/8906328c-ce9a-4d17-b1cf-84fc454293ae.gif"></p>
+<hr>
+<p><em>Douban - Movie List - Slow Dragging</em></p>
+<hr>
+<p>The second one is a quick swipe, especially in this horizontal layout, the content that can be displayed on one screen is limited, and swiping allows users to quickly move the list. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/18041567-4124-40b4-b156-653ff1fe9aab.gif"></p>
+<hr>
+<p><em>Douban - Movie List - Swiping</em></p>
+<hr>
+<p>This sliding operation is very common, for example, in the BP list of <em>Knives Out</em>, “follow-hand” dragging allows players to perform back-and-forth dragging operations. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/854f50c2-eb45-4e79-8ea2-cd7f1c1bffa3.gif"></p>
+<hr>
+<p><em>《Knives Out》 BP</em></p>
+<hr>
+<p>There is also an application of a special scenario: the sensitivity is very low, and the movement of the content on the interface will be very slow, behaving as if it is resisting the user’s operation. Usually, this situation will make people feel laggy, but there are also very practical application scenarios:</p>
+<p>For example, many applications can enter a new interface or trigger a refresh page after pulling down a certain distance on the home page. This stickiness during dragging can remind the user that there will be different changes on the interface, which is equivalent to a double confirmation, helping the user not to perform unnecessary misoperations. The trigger page on the home page of the shopping app is such an example, the further you slide down, the slower it becomes. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/ebccab47-efce-446b-9646-917fba623538.gif"></p>
+<hr>
+<p><em>Shopping App - Pull Down to Access the Second Floor, Sticky Feel</em></p>
+<hr>
+<p>Summarizing the above, we can get the following rule:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Sensitivity</th>
+<th align="left">Follow-Hand</th>
+<th align="left">Application Scenario</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Low</td>
+<td align="left">Yes</td>
+<td align="left">Used when requiring precise control, such as precise positioning of elements on a map.</td>
+</tr>
+<tr>
+<td align="left">Medium</td>
+<td align="left">Yes&#x2F;No</td>
+<td align="left">Common scenario, such as sliding lists. Slow dragging is follow-hand for precise positioning, while fast swiping is not follow-hand for quick browsing.</td>
+</tr>
+<tr>
+<td align="left">High</td>
+<td align="left">No</td>
+<td align="left">Used for quick operations without precise positioning, such as quickly switching between multiple pages. Also, for cases with low sensitivity acting as drag resistance for secondary confirmation.</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><em>Actual development requires constant real-device testing for various gesture sensitivities. For example, single-finger rotation may have subtle differences in feel between games, requiring adjustments based on specific needs, often increasing sensitivity.</em></td>
+</tr>
+</tbody></table>
+<p>For example, in single-finger rotation operations, we found slight feel differences. Sensitivity needs to be adjusted for the demand, and that often means higher sensitivity. The below picture’s rotation would be reasonably fast, even with only a half screen distance. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/c0f43163-21ae-4ad7-b99a-2327b5eabefb.gif"></p>
+<hr>
+<p><em>《Harry Potter: Magic Awakened》</em></p>
+<hr>
+<h2 id="3-Give-Players-Timely-Feedback"><a href="#3-Give-Players-Timely-Feedback" class="headerlink" title="3. Give Players Timely Feedback"></a>3. Give Players Timely Feedback</h2><p>Giving players feedback during gesture operations can clearly inform the player of the operation status.</p>
+<p>Here, I would like to focus on vibration feedback. As a form of expression outside the interface, vibration feedback can not only remind the player of the operation status, but also enhance the sense of immersion. For example, on the Chrome home page, you can trigger 3 functions by swiping down, and you can switch functions by dragging left and right during the sliding process. How do you let the player know that they have dragged in place and can let go? In addition to the water drop-like animation performance on the interface, Chrome also adds a slight vibration prompt to inform the player of this. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/d32573b9-4cee-444d-b330-f8fc1d6ef91e.gif"></p>
+<hr>
+<p><em>Chrome Browser Home Page Pulls Down to Switch Between 3 Functions</em></p>
+<hr>
+<p>iPhone has a powerful Taptic Engine, which can define a variety of vibration intensities to meet different usage scenarios. For example, in the game <em>Sky: Children of the Light</em>, players will trigger a weak vibration when clicking on interactive objects, and if the flight energy is insufficient, it will trigger a stronger vibration prompt together with the UI animation. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/241d5335-b00d-4bd5-a9c8-755a9cf122aa.gif"></p>
+<hr>
+<p><em>《Sky: Children of the Light》</em></p>
+<hr>
+<p>There is also such vibration feedback in Rayark’s ARPG mobile game <em>Implosion</em>. When the player’s armor is damaged, the mobile phone emits two-stage vibrations, together with screen shaking and special effects for strong prompts. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/c27e3039-9617-4602-a848-88460b6a3e56.gif"></p>
+<hr>
+<p><em>《Implosion》</em></p>
+<hr>
+<p>After the armor is broken, the loss of health is changed to a lighter one-stage vibration, and the screen shaking is also weakened. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230710/0acd61ae-2692-4fa7-9a5c-4946a21bafc1.gif"></p>
+<p>Unfortunately, many mobile phones do not have such a powerful vibration intensity customization function, and the vibrations are relatively simple, so they are not very suitable for diversified application scenarios, and it is also difficult to provide players with a deeper sense of immersion in touch. Vibration feedback cannot yet be used as a universal form of feedback, and we rarely see its large-scale use in mobile games.</p>
+<h2 id="4-Conclusion"><a href="#4-Conclusion" class="headerlink" title="4. Conclusion"></a>4. Conclusion</h2><p>The important thing about gesture interaction design is to follow the player’s inner thoughts and give the player feedback on whether the operation is successful or not, giving the player a “sense of certainty” in the absence of a UI interface. A slight deviation between gesture design and intuition will cause a strange feel, so it is not enough to just talk about it on paper. It is necessary to constantly compare and adjust on real devices during the development process to achieve the smoothest gesture interaction.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/project/2025/02/27/netease-ux-articles/news_20230628_28584_1095677/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/project/2025/02/27/netease-ux-articles/news_20231030_28584_1117531/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

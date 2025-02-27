@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Text Overflow The Old Problem of Game Localization | oad</title>
+
+
+
+    <link rel="icon" href="/project/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/project/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/project/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/project/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/project/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Game-User-Experience/">
+                            Game User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Game-Localization/">
+                            Game Localization
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/UI-Design/">
+                            UI Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Text-Overflow/">
+                            Text Overflow
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Game-Text-Length/">
+                            Game Text Length
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Translation-Length-Comparison/">
+                            Translation Length Comparison
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Multi-language-Adaptation/">
+                            Multi-language Adaptation
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Text Overflow The Old Problem of Game Localization
+            
+            
+        </div>
+        <span class="post-date">
+            27 Feb, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20231008/28584_1113543.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>Localization translation and interface adaptation are indispensable parts of the process of launching a game overseas. However, some troublesome problems are often encountered in this process. One of the most common problems is that many foreign language expressions are much longer in characters than the corresponding Chinese, causing the translated text to exceed the originally designed UI, icon, or text box, resulting in incomplete display.</p>
+<p>This situation hinders players’ understanding, and at the same time greatly reduces the sense of quality of the game in the minds of overseas players, which has a negative impact on retention and reputation. Localization translators always hope to accurately reproduce the meaning of the original language and maintain the original flavor as much as possible, achieving faithfulness, expressiveness, and elegance, but they often feel helpless because of the length of foreign language expressions.</p>
+<h2 id="1-Length-Comparison-of-Different-Languages"><a href="#1-Length-Comparison-of-Different-Languages" class="headerlink" title="1. Length Comparison of Different Languages"></a>1. Length Comparison of Different Languages</h2><p>Languages of different countries have their own unique writing norms, and the same is true in the localization of games. When performing localization translation, it is necessary to comprehensively consider the fields involved to ensure the accuracy of the translation and the integrity of the semantics.</p>
+<p>However, different languages have a general ratio of words when translated. For example, the ratio of English translated into Chinese is 1:1.6, while the ratio of Japanese and Korean translated into Chinese is about 1:1. In contrast, the text of some minor European languages is much longer. The ratio of German and French translated into Chinese is 1:1.8, and the ratio of Russian, Spanish, Italian, Portuguese, and Arabic translated into Chinese is as high as 1:2. The higher the word count ratio, the easier it is to cause the problem of translated text exceeding the box during the localization process. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231008/b430dff5-5c1c-479e-b84f-33700c328842.png"></p>
+<p>Taking <em>Naraka: Bladepoint</em>, which is handled by the localization team under NetEase Leihuo UX, as an example, we analyzed the number of characters in the foreign language text and the number of characters in the Chinese text of the game, and obtained the risk of text exceeding the box in different languages in the game, as shown in the figure below. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231008/147aa651-7f19-40a7-87b1-1c2058316515.png"></p>
+<p>It can be seen that the risk of text exceeding the box in all 11 languages in the figure is greater than 50%. Japanese and Korean have about 60% probability of seeing the text window, while European minor languages are almost “completely wiped out”, becoming the hardest hit areas for exceeding the box, with a probability close to 80%. Therefore, it can be said that how to face and solve the problem of text exceeding the box during game localization is a “long-standing” problem faced by every language.</p>
+<h2 id="2-How-to-Reduce-the-Risk-of-Exceeding-the-Box"><a href="#2-How-to-Reduce-the-Risk-of-Exceeding-the-Box" class="headerlink" title="2. How to Reduce the Risk of Exceeding the Box?"></a>2. How to Reduce the Risk of Exceeding the Box?</h2><p>Although exceeding the box is a major problem that often occurs in the localization process of games, after years of exploration and experience accumulation, and in-depth exploration with technical team members, we can still find some potential methods to minimize the risk of exceeding the box of localized text in various languages, and even avoid this problem from the source as much as possible, so as to ensure the basic understanding and game experience of players in different countries and regions.</p>
+<h3 id="Game-Development-Stage"><a href="#Game-Development-Stage" class="headerlink" title="Game Development Stage"></a>Game Development Stage</h3><p>• <strong>Prepare for multiple languages when designing text boxes in the UI</strong></p>
+<p>If the game is intended to be released overseas at the beginning of its development, the UI team can comprehensively consider it in conjunction with the localization team at the beginning of the design. On the premise of ensuring interface design and interaction effects, the original text box can be appropriately expanded according to the length ratio of multiple languages to increase the text tolerance threshold of different languages.</p>
+<p>• <strong>Design scrolling effects for text boxes</strong></p>
+<p>Some Chinese expressions are very concise, using multiple compound sentences in just a few sentences, or having a strong classical Chinese nature (such as poems, ancient Chinese styles, etc.). Therefore, during the translation process, the number of characters in foreign languages may be 2-3 times longer than that of Chinese. In this case, when localizing game text, it is difficult for translators to significantly reduce the translation while retaining the original meaning. If the text box in the game is limited by the interface width and cannot be further expanded, you can consider making the text scroll to avoid the problem of exceeding the box.</p>
+<p>There are many benefits to this approach. Scrolling text can theoretically play text of any length and has strong inclusiveness; at the same time, there is no need to adjust the font and font size of the text, and the length of the text box does not need to be expanded to the maximum extent that the interface can bear; players can generally obtain and understand the information that the game wants to provide from the scrolling text.</p>
+<p>Of course, considering the current mainstream games at home and abroad, the design of scrolling text generally appears in the game in task names, equipment introductions, etc., and is not suitable for the problem of exceeding the box in all positions and content forms. Some of the reasons include that scrolling some text technically and programmatically will lead to reduced game performance and increased overhead, and when the text that requires context understanding is too long, it is easier to increase understanding barriers and reduce the reading experience.</p>
+<p>• <strong>Give character length suggestions</strong></p>
+<p>Compared with directly expanding the text box in UI design in the early stage of the project, giving text character length suggestions and finding the method of the longest character number can improve certain flexibility. Because this method can give more design space to UI and interaction, and at the same time, it can also minimize the risk of exceeding the box of the original Chinese (copywriting planners, system planners, etc. also know this character number suggestion) and localized translation.</p>
+<p>However, there are two points to note here:</p>
+<ol>
+<li><p><strong>The impact of resolution on text length:</strong> Text that has no problems may exceed the box and display incompletely after changing the resolution. Or, some fonts have been adjusted to the smallest font size, even if the adaptive (best fit, can adjust the font size or wrap) is turned on, the font size cannot be further reduced when the resolution is lowered.</p>
+<p>&nbsp;</p>
+</li>
+</ol>
+<p><img src="https://nie.res.netease.com/r/pic/20231008/74b8e32c-f86d-4771-850c-7b7fdbe2af97.png"></p>
+<pre><code>Therefore, when the UI team gives suggestions on the length of text characters for text boxes, it is best to consider the various resolutions supported by the game in combination with the different platforms on which the game is launched.
+</code></pre>
+<ol start="2">
+<li><p><strong>The impact of fonts:</strong> Even within the same language, different fonts will have a relatively obvious impact on the length of the displayed text. As shown below, the font of the first line of English is Arial, and the font of the second line of English is Times New Roman.</p>
+<p>&nbsp;</p>
+</li>
+</ol>
+<p><img src="https://nie.res.netease.com/r/pic/20231008/b5401acf-fb1a-4c76-8179-b6e18ecb82f9.png"></p>
+<pre><code>It can be clearly seen that the length of the same text will be different if it is displayed in different fonts. Therefore, if only a character limit is given, such as 4 characters, the translator uses a different font from the developer when using excel or other translation software, the length of the translation is likely to be different from the standard character length given by the development team.
+
+Let&#39;s give another example: the developer set a maximum of 23 characters for a button in the game, and the font from the developer&#39;s perspective is Times New Roman. The translator set the font to Arial when performing localization in the translation system. The translator translates the text in this button as:
+
+&amp;nbsp; 
+</code></pre>
+<p><img src="https://nie.res.netease.com/r/pic/20231008/390df84a-d821-4ebf-b9fa-892c4ce0d6f1.jpg"></p>
+<pre><code>It can be seen that although the translator&#39;s translation is exactly 23 characters, it still exceeds the box by one letter.
+
+Even if the upstream and downstream departments unify the font, simply giving a character limit is still not necessarily the most recommended solution. Because different translators have different translation habits and commonly used words, the same sentence will have multiple translations. For example:
+
+Buy this with gold
+
+With gold unlock it
+
+It can be seen that the number of characters in both translations is 18, but the following sentence exceeds the box by one letter compared to the above sentence. This problem will be more obvious in longer compound sentences.
+
+Therefore, the UI team can give character length suggestions based on &quot;m, n&quot;. For example, the length of a button is &quot;mmmmmmn&quot;. At this time, no matter what font or expression the translator uses, they only need to compare the length with &quot;mmmmmmn&quot; to determine whether there is a risk of exceeding the box.
+</code></pre>
+<h3 id="Localization-Translation-Stage"><a href="#Localization-Translation-Stage" class="headerlink" title="Localization Translation Stage"></a>Localization Translation Stage</h3><p>In addition to the early operation of reducing the risk of text exceeding the box during the development and design stage of the game, the translation during the localization process is also an important stage to ensure that the game interface finally presented to overseas players does not exceed the box.</p>
+<p>• First of all, translators need to have enough understanding of the game content to be able to identify the possible location of the text during the translation stage and appropriately streamline the translation.</p>
+<p>For example, “Unlock in time-limited event”, a new translator may translate it as “You can unlock this item by the time-limited event”; and a translator who knows the game well enough can immediately judge that this sentence is likely to appear in a certain prop, the unlocking method interface (button) of a certain item, usually a small text box, so it can be directly translated as “Unlock by time-limited event”.</p>
+<p>• Use abbreviations instead of full spelling</p>
+<p>This method is common in secondary interfaces or later in the game (players have a prior understanding of the full spelling), and can also reduce the risk of text exceeding the box with high efficiency. Common abbreviations include: damage-DMG; attack-ATK; experience-EXP, etc.</p>
+<p>• Split sentences and reduce the use of conjunctions and prepositions during the localization process.</p>
+<p>For example, the translation of the following sentence: 奧义状态下再造成100点伤害提升至第3级.</p>
+<p>Dealing 100 damage by Hero’s Ultimate state and then raising to level 3.</p>
+<p>Upgrade to Lv.3: Deal 100 more damage by Hero’s Ultimate</p>
+<p>This translation divides the original complex expression into two sentences, avoiding the use of lengthy and difficult-to-understand compound sentences, which not only simplifies the translation, but also reduces the reading cost of players.</p>
+<h2 id="3-Summary"><a href="#3-Summary" class="headerlink" title="3. Summary"></a>3. Summary</h2><p>The problem of exceeding the box during the game localization translation process may be common in games on different platforms. We also found that this is a common problem in various languages, which not only affects the playability of the game and player reputation, but may also further hinder the retention of the game. Based on the experience of previous projects, we propose some solutions, aiming to avoid the problem of text exceeding the box as much as possible during the development and localization process of the game.</p>
+<p>First of all, we recommend that the localization issues be considered jointly by various functions at the game development stage, including UI, GUI, localization, planning, programming, etc. This means that the design of the game must take into account the differences between different languages and cultures from the beginning to ensure the playability and consistency of the game in different languages. Secondly, during the translation process, we recommend using professional translation software and tools to help identify and correct the problem of exceeding the box to ensure the accuracy and quality of the translation and improve the player experience.</p>
+<p>In short, the problem of exceeding the box is one of the challenges that must be faced in game localization. By taking appropriate measures during the development and translation process of the game, these problems can be avoided to the greatest extent, and a better game experience can be provided for players around the world.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/project/2025/02/27/netease-ux-articles/news_20230703_28584_1096586/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/project/2025/02/27/netease-ux-articles/news_20240717_28584_1167718/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

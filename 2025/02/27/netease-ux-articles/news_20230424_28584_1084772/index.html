@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>ChatGPT Evaluation Is It a Good Translation Tool | oad</title>
+
+
+
+    <link rel="icon" href="/project/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/project/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/project/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/project/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/project/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Game-Localization/">
+                            Game Localization
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/AIGC/">
+                            AIGC
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/ChatGPT/">
+                            ChatGPT
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Translation-Quality-Evaluation/">
+                            Translation Quality Evaluation
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Machine-Translation/">
+                            Machine Translation
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/BLEU/">
+                            BLEU
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                ChatGPT Evaluation Is It a Good Translation Tool
+            
+            
+        </div>
+        <span class="post-date">
+            27 Feb, 2025
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20230424/28584_1084772.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>In recent years, artificial intelligence technology has made continuous progress, and its application scenarios have continued to expand and deepen. AIGC, or AI-generated content, has broken through the public’s cognitive and imaginative boundaries of AI technology. With its outstanding capabilities in content creation such as voice, text, images, videos, and others, it may pose a huge challenge to a large number of practitioners in various industries, such as artists, engineers, and designers, and the era of change it triggers is obvious.</p>
+<p>ChatGPT (Chat Generative Pre-trained Transformer) is a natural language processing tool driven by artificial intelligence technology, a specific application and product of AIGC. It can understand and learn human language to conduct conversations, interact based on the context of the chat, really chat and communicate like humans, and even complete tasks such as writing emails, video scripts, copywriting, translation, code, and writing papers.</p>
+<p>For the gaming industry, possible application scenarios of AIGC include: AI drawing, AI dubbing, copywriting planning, faster collection of materials and information, operations can use templates for writing, and programmers can use it to write and debug computer programs.</p>
+<p>So, for localization services, can ChatGPT’s translation function be implemented in practical application scenarios? This article will select <em>Naraka: Bladepoint</em> translated text of different styles, use the translation results of human translators as the standard, and use BLEU scoring and manual evaluation to compare the translation results of Deepl and ChatGPT, two machine translation tools, in order to obtain a preliminary conclusion.</p>
+<h2 id="1-Test-Preparation"><a href="#1-Test-Preparation" class="headerlink" title="1. Test Preparation"></a>1. Test Preparation</h2><p>First, we made a series of preparations before the test, and determined the selection of tools, data, standards, and other dimensions.</p>
+<ul>
+<li><p><strong>ChatGPT version:</strong> 3.5</p>
+</li>
+<li><p><strong>Evaluation data:</strong> 4 sets of representative texts were selected from the <em>Naraka: Bladepoint</em> translation library as evaluation data</p>
+</li>
+<li><p><strong>Machine translation tool:</strong> Deepl</p>
+<p>The reason for choosing Deepl is that it performs relatively more accurately in terms of translation quality, especially in the translation of words and phrases. Relatively speaking, Google Translate is suitable for general translation tasks, such as daily expressions, simple business communication, etc., but the translation quality is relatively average. Deepl is suitable for more professional translation tasks, such as translating technical documents, academic papers, etc., or occasions that require higher translation quality.</p>
+</li>
+<li><p><strong>Test languages:</strong> Chinese, English, Spanish</p>
+</li>
+<li><p><strong>Evaluation standard:</strong> BLEU score</p>
+<p>BLEU (Bilingual Evaluation Understudy) is used to evaluate the correspondence between machine translation and professional human translation. The core idea is that the closer the machine translation is to professional human translation, the better the quality. BLEU is the oldest, most commonly used, and most classic indicator in the field of machine translation. Most machine translation papers even use only this one indicator as the evaluation standard of the system, and its importance is obvious.</p>
+<p>Although BLEU scoring is a widely used automatic evaluation method, it also has some shortcomings: it cannot consider semantic and contextual information, it is sensitive to the number of standard reference texts, it can only be based on n-gram matching, and it cannot handle rare words. Therefore, it needs to be combined with other evaluation methods for comprehensive evaluation to accurately assess translation quality.</p>
+</li>
+</ul>
+<h2 id="2-Test-Method"><a href="#2-Test-Method" class="headerlink" title="2. Test Method"></a>2. Test Method</h2><p>This article selects four different types of existing translations of <em>Naraka: Bladepoint</em>, including skill descriptions, background stories, action descriptions, and literary classical style. In order to compare the translation effects of Deepl and ChatGPT, we use them to perform “Chinese-English”, “Chinese-Spanish”, and “English-Spanish” operations respectively. At the same time, we use the translation results of human translators as the standard and use BLEU to score the above translations. By comparing the BLEU scores of various translations, we can evaluate the performance of Deepl and ChatGPT in terms of translation quality and provide a basis for subsequent analysis.</p>
+<h2 id="3-Test-Results-and-Analysis"><a href="#3-Test-Results-and-Analysis" class="headerlink" title="3. Test Results and Analysis"></a>3. Test Results and Analysis</h2><h3 id="Machine-Evaluation"><a href="#Machine-Evaluation" class="headerlink" title="Machine Evaluation"></a>Machine Evaluation</h3><p>First, we use the BLEU score to initially compare the performance of Deepl and ChatGPT.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Source Text</th>
+<th align="left">Target Text</th>
+<th align="left">Deepl</th>
+<th align="left">ChatGPT</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Chinese</td>
+<td align="left">English</td>
+<td align="left">46.8</td>
+<td align="left">28.5</td>
+</tr>
+<tr>
+<td align="left">Chinese</td>
+<td align="left">English</td>
+<td align="left">13.5</td>
+<td align="left">9.7</td>
+</tr>
+<tr>
+<td align="left">Chinese</td>
+<td align="left">English</td>
+<td align="left">27.2</td>
+<td align="left">30.7</td>
+</tr>
+<tr>
+<td align="left">Chinese</td>
+<td align="left">English</td>
+<td align="left">20.2</td>
+<td align="left">19.3</td>
+</tr>
+<tr>
+<td align="left">Chinese</td>
+<td align="left">Spanish</td>
+<td align="left">23.0</td>
+<td align="left">27.0</td>
+</tr>
+<tr>
+<td align="left">Chinese</td>
+<td align="left">Spanish</td>
+<td align="left">19.6</td>
+<td align="left">17.9</td>
+</tr>
+<tr>
+<td align="left">Chinese</td>
+<td align="left">Spanish</td>
+<td align="left">23.3</td>
+<td align="left">19.8</td>
+</tr>
+<tr>
+<td align="left">Chinese</td>
+<td align="left">Spanish</td>
+<td align="left">23.6</td>
+<td align="left">19.4</td>
+</tr>
+<tr>
+<td align="left">English</td>
+<td align="left">Spanish</td>
+<td align="left">38.4</td>
+<td align="left">41.4</td>
+</tr>
+<tr>
+<td align="left">English</td>
+<td align="left">Spanish</td>
+<td align="left">38.6</td>
+<td align="left">38.4</td>
+</tr>
+<tr>
+<td align="left">English</td>
+<td align="left">Spanish</td>
+<td align="left">29.0</td>
+<td align="left">27.9</td>
+</tr>
+<tr>
+<td align="left">English</td>
+<td align="left">Spanish</td>
+<td align="left">34.0</td>
+<td align="left">28.1</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p><strong>Similarity to Human Translation</strong></p>
+<p>In terms of absolute score, the BLEU score can indicate the quality of machine translation. The higher the score, the higher the degree of matching between the machine translation result and the reference translation, and the better the quality of the machine translation. Generally speaking, a score higher than 40 can be considered a good machine translation result. In our evaluation results, only one score of Deepl and ChatGPT each exceeded 40. This shows that at this stage, the similarity between machine translation results and human translation results is low, and the practical effect is not good.</p>
+<p>In terms of relative score, among the 12 BLEU scores, only 5 scores of ChatGPT are higher than Deepl, which shows that the similarity between ChatGPT translation and human translation is lower than that of Deepl.</p>
+<p>In order to verify the reliability of this result, we checked the test results of other scholars. The BLEU evaluation results for 50 sentences showed that the average scores of Deepl and ChatGPT for Chinese-English translation were lower than 40, and the similarity between ChatGPT translation and human translation was lower than that of Deepl.</p>
+</li>
+<li><p><strong>English to Spanish is Better Than Chinese to Spanish</strong></p>
+<p>From a vertical perspective, whether it is Deepl or ChatGPT, the scores of English-Spanish are higher than those of Chinese-Spanish. There are two main reasons for this:</p>
+<ol>
+<li>Because of the size of the corpus, the translations of Deepl and ChatGPT are based on their respective Internet corpora, and it is obvious that the corpus of English-Spanish is richer than that of Chinese-Spanish. It is estimated that the number of English-Spanish corpora currently used for machine translation has reached millions to tens of millions; while the number of corpora translated from Chinese to Spanish is only tens of thousands to hundreds of thousands.</li>
+<li>Because of language similarity, Chinese and Spanish have low similarity. Chinese belongs to the Sino-Tibetan language family, and Spanish belongs to the Romance language family, with great differences in grammar and vocabulary; although English belongs to the Germanic language family and Spanish belongs to the Romance language family, both belong to the Indo-European language family, and there are many similarities in grammar and vocabulary; at the same time, compared with Asian culture, the cultural background differences between English and Spanish, which are both in the Western world, are small.</li>
+</ol>
+</li>
+</ul>
+<h3 id="Human-Analysis"><a href="#Human-Analysis" class="headerlink" title="Human Analysis"></a>Human Analysis</h3><ul>
+<li><p><strong>Grammar</strong></p>
+<p>With a huge Internet corpus and clever grammar rule settings, the grammar of machine translation is almost always compliant. When translating long sentences, machine translation can skillfully use various adverbs and clauses to completely express the original text, presenting a good translation result.</p>
+<p>However, there are some subtle deficiencies when subjective judgment is required. For example, in the English-Spanish translation of hero skills, English omits the subject of the whole paragraph when translating hero skills. When human translators deal with it, considering that it describes hero skills, they use the hero as the subject, while Deepl uses the player as the subject, and ChatGPT directly processes it into a sentence without a subject. In contrast, human translators are better when subjective judgment is required.</p>
+</li>
+<li><p><strong>Wording</strong></p>
+<p>The performance of machine translation in terms of wording is average. For simple action descriptions and storytelling, machine translation can do the job. However, once it encounters words that need to be deeply understood, such as game terminology, idioms, cultural backgrounds, and mythological allusions, machine translation will face huge challenges and often fail to translate accurately, and may even make serious mistakes. This is because these words have complex meanings and cultural backgrounds, and need to be understood in conjunction with context and context, and machine translation is currently difficult to achieve complete human understanding.</p>
+<ul>
+<li><p><strong>Game terminology</strong></p>
+<p>“单双排” (dān shuāng pái) is a basic game term used to describe the mode in which players participate in the game. Human translators correctly translated it as “Solo and Duos”.</p>
+<p>However, the machine translation performance was poor, and they were all processed as “single and double rows” (Deepl) and “single and double formations” (ChatGPT). This shows that there are still defects in machine translation in identifying and understanding game terminology.</p>
+</li>
+<li><p><strong>Idioms and sayings</strong></p>
+<p>“老当益壮” (lǎo dāng yì zhuàng) means that one is old, but his physical strength and spirit are stronger. The human translator did not translate it literally, but adopted the method of free translation, “move with the energy of a man half your age”.</p>
+<p>Deepl’s processing is very direct, “old and strong”, simple and crude; ChatGPT is relatively smarter, “is aging like wine”, which means “get better over time”. Although it has been interpreted, it is not completely consistent with the meaning of praising physical strength and spirit. Moreover, it is not appropriate to use it in the context of “Shen Miao praising grandpa for being old and strong”.</p>
+</li>
+<li><p><strong>Mythological allusions</strong></p>
+<p>“鱼化龙” (yú huà lóng) is an ancient Chinese legend that tells the story of an ordinary carp that finally succeeded in becoming a dragon through continuous efforts. Chinese players understand this word with almost no cultural barriers, but Western players basically do not have this cultural background. Therefore, in order to better convey the connotation of the allusion, the human translator translated it on the basis of a simple explanation, “Like the ancient fish of legend, growing legs and rising to become dragons”.</p>
+<p>However, the machine translation simply translated it according to the literal meaning, “transform from a fish to a dragon” (Deepl), “rise like a dragon from a fish” (ChatGPT).</p>
+</li>
+<li><p><strong>Cultural background</strong></p>
+<p>“神机营” (shén jī yíng) was one of the three major battalions of the capital’s forbidden army in the Ming Dynasty. It was a special force in the Ming Dynasty army that specialized in managing firearms. Therefore, when the human translator dealt with it, it was translated as “Firearms Division”.</p>
+<p>Deepl translated it as “Divine Machine Camp”, and ChatGPT translated it as “Divine Machine Corps”. I wonder what foreign players think when they see the magical machine.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Literariness</strong></p>
+<p>When describing Ning Hongye’s bundled Pear Garden White Element, the planner quoted the Yue opera “The Legend of the White Snake” lyrics: “冲出峨嵋万重山，踏破云层往人间” (chōng chū é méi wàn chóng shān, tà pò yún céng wǎng rén jiān). It is Bai Suzhen’s monologue after she transformed into a human and walked out of Mount Emei. The main meaning of this lyric is that the white snake breaks through the barriers of the many peaks of Emei, treads through the clouds, and comes to the human world from the sky. This expresses that the white snake does not hesitate to venture out of the mountain to stay with Xu Xian, overcomes many obstacles, transforms into a human form and comes to the human world.</p>
+<p>The translator’s translation is: “Lo, she bursts forth from the myriad peaks of Emei, Clouds treaded underfoot, down from heavens high in the sky.” The wording is gorgeous and poetic. “Lo” is used to express surprise or attention, and is more common in literary works or religious texts. “Bursts forth” is used to describe breaking through, which means breaking through obstacles and breaking through constraints, which is more vivid. “Myriad peaks” expresses the meaning of numerous and countless peaks, which is more gorgeous. “Clouds treaded underfoot” refers to stepping on clouds, which has a magical and romantic mood. “Down from heavens high in the sky” expresses the mysterious feeling of falling from the sky and being high above, which is more poetic.</p>
+<p>Deepl’s translation is “Break out of Emei’s ten thousand mountains and step through the clouds to earth.” ChatGPT’s translation is “Breaking through the Emei Mountains, stepping through the clouds towards the mortal realm.” Although they can express the meaning of the original text, they use relatively straightforward expressions, lacking beauty and mysticism. Among them, “Break out of” and “Breaking through” are directly translated as “冲出” (chōng chū), lacking the details and beauty of the action; “万重山” (wàn chóng shān) is literally translated as “ten thousand mountains” by Deepl, while ChatGPT ignores the adjective “万重” (wàn chóng), thus losing the description of the towering mountains in the original text; “to earth” and “towards the mortal realm” Although it expresses the meaning of “往人间” (wǎng rén jiān), it lacks a certain sense of mysticism, making it impossible for readers to feel the emotions in the original text.</p>
+</li>
+</ul>
+<h2 id="4-Conclusion"><a href="#4-Conclusion" class="headerlink" title="4. Conclusion"></a>4. Conclusion</h2><p>It will take time for machine translation to dominate.</p>
+<p>At this stage, machine translations represented by Deepl and ChatGPT perform well in terms of grammar, but perform poorly when it comes to understanding game terminology, idioms, cultural backgrounds, and mythological allusions, or when literary interpretation is required.</p>
+<p>Overall, the machine translation results are quite different from the human translation results. In practice, translators need to make major adjustments to the machine translation results to meet the requirements; the ideal working mode at present is still human-based and machine-assisted.</p>
+<p>Using cooking as an analogy, the current level of machine translation is equivalent to preparing and matching some raw materials, waiting for the chef to cook, to make delicious dishes. The chef’s level has a greater impact on the final result.</p>
+<p>Compared with machine translation tools such as Deepl, ChatGPT, as a model that can be continuously iterated and learned, may reach the level of fast food in the future, which can be eaten by simply heating, and has almost no requirements for human cooking skills. But as for how it tastes, it still needs time to test. But it is foreseeable that ChatGPT has a promising future!</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/project/2025/02/27/netease-ux-articles/news_20240717_28584_1167718/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/project/2025/02/27/hello-world/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

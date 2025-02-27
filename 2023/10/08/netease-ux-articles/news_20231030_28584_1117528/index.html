@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Layered and Engaging Visual Hierarchy Design in 3D Lobbies | oad</title>
+
+
+
+    <link rel="icon" href="/project/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/project/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/project/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/project/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/project/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Immersion/">
+                            Immersion
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Game-User-Experience/">
+                            Game User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Interaction-Design/">
+                            Interaction Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Information-Presentation/">
+                            Information Presentation
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Visual-Hierarchy/">
+                            Visual Hierarchy
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/3D-Lobbies/">
+                            3D Lobbies
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Worldview-Integration/">
+                            Worldview Integration
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Layered and Engaging Visual Hierarchy Design in 3D Lobbies
+            
+            
+        </div>
+        <span class="post-date">
+            8 Oct, 2023
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20231030/28584_1117528.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>The game lobby serves as a transportation hub in the game, mainly responsible for guiding players to different sub-functions and sub-systems (such as tasks, activities, social interactions, etc.) other than the core gameplay. In addition to the above tasks, it also includes displaying other information (such as various prompts), carrying some of the players’ social needs, and other additional functions. Therefore, the current display-type lobby format can no longer meet the needs of players in the lobby. The 3D interactive lobby format came into being. Players can familiarize themselves with and understand the game’s worldview, basic operations, and many other functions in the game in advance in this lobby space.</p>
+<p>However, the visual hierarchy in a three-dimensional space is more complex than in a two-dimensional space. So, as game designers, how can we do a good job in the visual hierarchy design of information in the 3D lobby, provide players with a lobby experience that combines immersion and practicality, and achieve the “engaging” design effect? This article will start with the classification of game lobbies, and then introduce from the inside out from three aspects: “reasonable display of information according to priority”, “reasonable display or hiding of information”, and “visual packaging combined with worldview”.</p>
+<h2 id="1-Classification-of-Game-Lobbies"><a href="#1-Classification-of-Game-Lobbies" class="headerlink" title="1. Classification of Game Lobbies"></a>1. Classification of Game Lobbies</h2><p>Currently, the more common game lobby design directions can be roughly divided into two types: display type and exploration type, and each type can be further subdivided into 2D and 3D according to the dimensions of the space. The fundamental difference between display and exploration types is whether the character controlled by the player can move freely in the scene. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/900f5d07-cad1-4d29-ae2c-d2370b506519.png"></p>
+<ul>
+<li><strong>2D-Display Type:</strong> A more general lobby type, commonly found in various mobile games. The design of the visual hierarchy of the interface also adopts a straightforward approach. The main purpose is to display functional entrances as much as possible in a limited space, and to facilitate players to enter various functions;</li>
+<li><strong>3D-Display Type:</strong> Mainly displays character and scene models. The character models and scenes in this type of lobby choose the 3D form, which can show more model details, but the characters cannot be moved by the player in the space;</li>
+<li><strong>2D-Exploration Type:</strong> Players can freely move on the horizontal axis, which is more similar to a horizontal scroll. In this type of lobby, more functional entrances are also bound to items in the scene;</li>
+<li><strong>3D-Exploration Type:</strong> Compared with 2D scenes, 3D exploration type lobbies add depth. Players can control characters to walk freely in the space. In addition to binding functions to items in the scene, they can even meet other players in the scene, allowing players to have more physicalized communication.</li>
+</ul>
+<h2 id="2-Underlying-Foundation-Reasonable-Display-of-Information-According-to-Priority"><a href="#2-Underlying-Foundation-Reasonable-Display-of-Information-According-to-Priority" class="headerlink" title="2. Underlying Foundation: Reasonable Display of Information According to Priority"></a>2. Underlying Foundation: Reasonable Display of Information According to Priority</h2><p>The types of information carried in the game lobby are very diverse, including clickable buttons, functional entrance panels, and some instant information, such as messages from strangers and system tips. This information is very important to players, but displaying it without distinguishing priority will reduce the player’s experience and immersion, affecting information acquisition. Therefore, dividing the priority of information is also to more freely reduce the interference of some information and enhance the player’s sense of substitution in the game world.</p>
+<h3 id="Important-Information-is-Always-Displayed-on-Top"><a href="#Important-Information-is-Always-Displayed-on-Top" class="headerlink" title="Important Information is Always Displayed on Top"></a>Important Information is Always Displayed on Top</h3><p>In the space of the 3D lobby, players will be attracted by various elements in the scene, and at the same time, there will be various system information that needs to be queued to inform the user. However, some highest priority information needs to be fed back to the player in time, such as the current status and location. In conventional design, the effect of such information will be enhanced, but doing so may directly conflict with the goal of “immersion”. Therefore, for this part of the information, it is necessary to display it on top in a fixed position in the space to cultivate the player’s habits.</p>
+<p>According to the characteristics of this type of information, in most 3D lobby designs, they will be placed in the four corners of the screen, including 2 reasons:</p>
+<p>(1). Information residing in the corners does not affect players’ exploration and substitution of space;<br>(2). For information in the corner, players can quickly locate it, and the line of sight or interactive tools (mouse) do not need to be specifically searched to move to the information area. This design is also in line with “Fitts’s Law”. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/3f7ef8d0-b136-4ae4-92ca-d7f4df204548.png"></p>
+<hr>
+<p><em>《Star Citizen》: Player information in the 3D lobby is in the lower left corner of the screen</em></p>
+<hr>
+<h3 id="Give-Players-Necessary-Help-Information"><a href="#Give-Players-Necessary-Help-Information" class="headerlink" title="Give Players Necessary Help Information"></a>Give Players Necessary Help Information</h3><p>In the game, the role of the lobby function is more like a product. Therefore, when designing the information hierarchy of the 3D lobby, you can learn from some product interaction concepts, such as Nielsen’s ten usability principles of “Help and documentation”.</p>
+<p>The Help and documentation principle means that it is best if the system allows users to use it without reading the documentation, but help documentation is usually still needed. Any information should be easy to search, focus on the user’s tasks, and list specific steps to inform the user.</p>
+<p>In the 3D lobby space scene, players may be confused about how and where to open some functions. Therefore, some games use the form of resident HUD to help players understand the shortcut keys of some operations. For example, the 3D lobby mode of <em>Naraka: Bladepoint</em> - Penglai Island provides shortcut key prompts for various shortcut operations.</p>
+<p>The information of this nature is to help players better integrate into the operation of the game, so it will also be at the top of the information hierarchy, and the positioning in the plane will also refer to the location of important information, that is, at the edge of the screen and does not affect the player’s experience of the scene. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/874eaa5b-cc7c-4bbe-9075-e895b97e861e.png"></p>
+<hr>
+<p><em>《Naraka: Bladepoint》 Operation prompts on the left and top and the “Start Game” entrance in the lower right corner</em></p>
+<p>–. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/e857e6d8-9528-4d99-9cae-ce666d8ecfa9.png"></p>
+<hr>
+<p><em>《The Division 2》 Map in the upper left corner</em></p>
+<hr>
+<h3 id="Properly-Bury-Information-Clues"><a href="#Properly-Bury-Information-Clues" class="headerlink" title="Properly Bury Information Clues"></a>Properly Bury Information Clues</h3><p>Although the game lobby is a role of a transportation hub, it is actually one of the links in the game. Therefore, in the presentation of information, it is still necessary to maintain a certain degree of fun to stimulate players’ interest in exploring the 3D space. In the process of exploration, it can also increase players’ understanding of the worldview and game background, and discover the small easter eggs buried by the designers. However, when choosing this information, it is necessary to pay attention to that they will not affect the player’s main operations and main process, so as to avoid negative impact on the main process. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/4e88c3f5-728f-45cd-9140-b8b28f10f56f.png"></p>
+<hr>
+<p><em>《Identity V》 The reminder of the operation is combined with the item</em></p>
+<p>–. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/41c38682-1204-445a-abc9-6c994f591151.png"></p>
+<hr>
+<p><em>In 《Fallout 76》, viewing the mailbox needs to be opened in the computer in the room</em></p>
+<hr>
+<h2 id="3-Middle-Layer-Control-Reasonable-“Display”-or-“Hiding”-of-Information"><a href="#3-Middle-Layer-Control-Reasonable-“Display”-or-“Hiding”-of-Information" class="headerlink" title="3. Middle Layer Control: Reasonable “Display” or “Hiding” of Information"></a>3. Middle Layer Control: Reasonable “Display” or “Hiding” of Information</h2><p>Players move constantly in the 3D lobby, which causes their spatial position to change. For example, when a player is attracted to an item or scene, they will move. Therefore, the prompt information in the scene is also constantly moving relative to the character. In addition, as the distance increases, the information in the space will gradually disappear. Therefore, while considering the information hierarchy, it is also necessary to comprehensively consider the player’s wishes and the impact on immersion.</p>
+<h3 id="Give-Players-the-Right-to-Choose"><a href="#Give-Players-the-Right-to-Choose" class="headerlink" title="Give Players the Right to Choose"></a>Give Players the Right to Choose</h3><p>When players are exposed to the new lobby design form of the 3D lobby, they naturally also hope to be able to explore the entire scene and its details. When they can generate the feeling that they have replaced the characters in it, they have largely mastered some basic game operations. At this time, some HUD information in the scene is not suitable for display. If players can choose to display or hide independently, it will be able to greatly enhance the player’s “environmental immersion”. This is also very much in line with the “User control and freedom” principle of the ten usability principles.</p>
+<p>In <em>The Division 2</em>, players can turn off the HUD display in the settings to enhance the immersive experience of the game. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/c902769f-42b6-496d-9483-85faf4c057c8.png"></p>
+<hr>
+<p><em>《The Division 2》 After hiding the HUD</em></p>
+<hr>
+<h3 id="Weaken-the-Visual-Effect-of-Indicative-Information"><a href="#Weaken-the-Visual-Effect-of-Indicative-Information" class="headerlink" title="Weaken the Visual Effect of Indicative Information"></a>Weaken the Visual Effect of Indicative Information</h3><p>In fact, in more and more AAA masterpieces, the presentation of some visual effects will be more and more restrained. The purpose is also to allow players to better invest in the game’s worldview and plot. This purpose coincides with the 3D lobby. The linear design style can better weaken the distraction of UI on players’ attention during the experience. In some designs, it will be used: when the player approaches, it will display and prompt the specific function, and when the player is still a certain distance away, it will only provide instructions to indicate that “there is a function that can be operated in this area”.</p>
+<p>For example, in <em>The Division 2</em>, when the player approaches, the interface will prompt the function of the area and click to open the operation panel. In <em>Star Citizen</em>, the operation of the function is bound to the items in the scene. When the player is far away, only the prompt is seen, and when approaching, the specific function can be opened. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/17ae45a4-5987-4ca6-85cf-ab6660cf78eb.gif"></p>
+<hr>
+<p><em>《The Division 2》 Open new function</em></p>
+<p>–. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/5af3e0e6-978f-4dee-957f-a5fa7d7437e6.png"></p>
+<hr>
+<p><em>《Star Citizen》 Open function after approaching</em></p>
+<hr>
+<p>As for the scale of weakening information and how close the player is to pop up the prompt of the function, it depends on the game designer’s choice of scene and the map size of the 3D lobby. When the picture is at a wide angle, indicative information can be displayed when the player moves continuously for 3 units; when the picture is at close range, too much information will affect the player’s experience. However, these considerations also need to be determined according to the actual situation of the game.</p>
+<h3 id="Strengthen-Target-Information-in-the-3D-Lobby"><a href="#Strengthen-Target-Information-in-the-3D-Lobby" class="headerlink" title="Strengthen Target Information in the 3D Lobby"></a>Strengthen Target Information in the 3D Lobby</h3><p>For the content that players need to decipher and pass in the 3D lobby, these target information can be relatively stronger. For these functions, it is more hoped that players can go to understand, and then promote players’ understanding of the game’s worldview and background. For example, in the decryption information in the lobby of <em>Identity V</em>, the visual intensity will be stronger than the light on the wall, which is also hoped to attract players’ attention in this way, and explore and discover secrets in this castle. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/d61a2143-815b-4629-83c0-bdc22a6a0410.png"></p>
+<hr>
+<p><em>The presentation of sub-functions in 《Identity V》</em></p>
+<hr>
+<p>The “Cloud Top Racing” gameplay in <em>Naraka: Bladepoint</em> Penglai Island is similar. This gameplay aims to enhance the fun experience of players in the lobby scene and exercise operational skills. The designer strengthened the entrance of the game by marking the wooden sign of the “Cloud Top Racing” gameplay, and attracted the attention of players. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/ecdf1354-ff25-4729-aca8-a79a13e39749.png"></p>
+<hr>
+<p><em>Entrance of Cloud Top Racing in 《Naraka: Bladepoint》</em></p>
+<hr>
+<h2 id="4-Top-level-Presentation-Visual-Packaging-Combined-with-Worldview"><a href="#4-Top-level-Presentation-Visual-Packaging-Combined-with-Worldview" class="headerlink" title="4. Top-level Presentation: Visual Packaging Combined with Worldview"></a>4. Top-level Presentation: Visual Packaging Combined with Worldview</h2><p>A very important part of visual hierarchy design is how to make information appear in the player’s field of vision without being obtrusive, which requires better integration with the worldview. The most common example is that science fiction games usually have a helmet or monitor for the player’s character, and some information can be displayed on the player’s screen through the form of HUD, which can also bring a stronger sense of immersion.</p>
+<h3 id="Display-Information-Based-on-Game-Background"><a href="#Display-Information-Based-on-Game-Background" class="headerlink" title="Display Information Based on Game Background"></a>Display Information Based on Game Background</h3><p>As visual animals, humans are easily affected by what their eyes see. When experiencing the game, the first thing we come into contact with is the visual design of the “game lobby”. If this design can be closely integrated with the game’s worldview, it can bring players a better environmental sensory experience.</p>
+<p>And the creation of the environment is not only the work of art designers and scene designers, but as interaction designers, they also need to better integrate information with the scene, and need to distinguish between functional entrances and ordinary embellishment entrances; at the same time, they can allow players to view some important information at any time, avoiding being immersed in the environment and losing curiosity about the core gameplay. For example, in <em>Splatoon 3</em>, designers display the displayed information through graffiti, and make a short stay for the information of other players. </p>
+<p>&nbsp;<br>![](<a target="_blank" rel="noopener" href="https://nie.res.netease.com/r/pic/20231030/c064b948-f66d-4a8a-b6cf-7a0c23af5eab.png">https://nie.res.netease.com/r/pic/20231030/c064b948-f66d-4a8a-b6cf-7a0c23af5eab.png</a>. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/30d1ed57-0446-439d-83c1-25a5915446c0.png"></p>
+<hr>
+<p><em>Graffiti information in 《Splatoon 3》</em></p>
+<hr>
+<h3 id="More-Combination-of-Information-Content-and-Scene"><a href="#More-Combination-of-Information-Content-and-Scene" class="headerlink" title="More Combination of Information Content and Scene"></a>More Combination of Information Content and Scene</h3><p>There will be a lot of items, buildings and other content in the 3D lobby. Designers can consider doing more scenario design in this scene. While ensuring the display of basic information, designers had better leave more space for the display of environment and scenes, and will change the background according to the changes of marketing activities. On this basis, some information can be placed in the scene, such as the name of the place, instructions for secondary operations, and so on. The purpose of doing so is also to help players in the process of exploring the lobby, gradually generate the idea of “I am the character”.</p>
+<p>For example, the entrance to the battle in <em>Splatoon 3</em> is placed in a building, and players can enter the battle mode selection by entering the building; also in this game, the newly launched function “locker”, players can customize their own lockers in a personalized way, and have more communication and interaction with other players. </p>
+<p>&nbsp;<br>![](<a target="_blank" rel="noopener" href="https://nie.res.netease.com/r/pic/20231030/93fdc900-799b-40e2-9d08-bc79e2e50d63.png">https://nie.res.netease.com/r/pic/20231030/93fdc900-799b-40e2-9d08-bc79e2e50d63.png</a>. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20231030/3798030d-046d-4bc8-a428-a0cf2643d530.png"></p>
+<hr>
+<p><em>Game start entrance and locker function in 《Splatoon 3》</em></p>
+<hr>
+<h2 id="5-Conclusion"><a href="#5-Conclusion" class="headerlink" title="5. Conclusion"></a>5. Conclusion</h2><p>Today, the design of 3D lobbies is becoming more and more abundant. Designers have added more new gameplay to the scene and space to ensure that players will not feel bored and uninteresting in the lobby. These innovations and optimizations aim to make players more immersive in the game world while gaining more fun. At the same time, the information in the scene is also becoming more and more, and the information density is also getting higher and higher. Therefore, designers need to carefully and rigorously design the visual hierarchy of information to enhance the player’s sense of substitution, environmental sensory experience and immersion in the game.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/project/2023/12/15/netease-ux-articles/news_20240105_28584_1130221/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/project/2023/09/22/netease-ux-articles/news_20231008_28584_1113540/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>

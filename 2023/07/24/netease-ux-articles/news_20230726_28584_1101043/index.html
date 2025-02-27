@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>The Appearance and Disappearance of Information - Game Tooltip Design | oad</title>
+
+
+
+    <link rel="icon" href="/project/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/project/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/project/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/project/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/project/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Interaction-Design/">
+                            Interaction Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Tooltip/">
+                            Tooltip
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Information-Presentation/">
+                            Information Presentation
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Layout-Design/">
+                            Layout Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Text-Layout/">
+                            Text Layout
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Visual-Hierarchy/">
+                            Visual Hierarchy
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/project/tags/Animation-Effects/">
+                            Animation Effects
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                The Appearance and Disappearance of Information - Game Tooltip Design
+            
+            
+        </div>
+        <span class="post-date">
+            24 Jul, 2023
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20230726/28584_1101043.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>A tooltip is a common graphical user interface element. When a player hovers the mouse over an interface element that needs annotation, a tooltip will appear on the screen to provide supplementary game information.</p>
+<p>Its existence not only helps players understand and identify information content, but also helps players process this information more efficiently, or guides players to perform a series of operations—without tooltips providing non-critical or additional information to users, information omission or overload is likely to occur.</p>
+<h2 id="1-The-Role-of-Tooltips-in-Game-Interaction"><a href="#1-The-Role-of-Tooltips-in-Game-Interaction" class="headerlink" title="1. The Role of Tooltips in Game Interaction"></a>1. The Role of Tooltips in Game Interaction</h2><p>On PC, players use the mouse to interact with various elements in the game on the screen, including the three basic states when interacting with the mouse: normal state, hover state (mouse hover), and active state (mouse click). The tooltip is a very common interaction element in the hover state, used to supplement the relevant information of the element.</p>
+<p>Tooltips are an important form and component of game information prompts, and play a role in improving the efficiency of players reading information, guiding and confirming player operations in game interaction. The following will take PC <em>Naraka: Bladepoint</em> as the main case to introduce the role of tooltips in game interaction.</p>
+<h3 id="Improve-the-Efficiency-of-Players-Reading-Information"><a href="#Improve-the-Efficiency-of-Players-Reading-Information" class="headerlink" title="Improve the Efficiency of Players Reading Information"></a>Improve the Efficiency of Players Reading Information</h3><p>In a game with a more complex mechanism, the information conveyed to users also increases relatively. Therefore, the interactive interface usually uses concise graphics and text as much as possible, so that users can receive an appropriate amount of key information in the game, and more detailed information is presented in the form of tooltips, so as to assist in displaying non-critical information and achieve on-demand and efficient access to information.</p>
+<p>Take the interface of selecting existing Souljades in <em>Naraka: Bladepoint</em> as an example. In the Souljade backpack list, the obtained Souljades are arranged horizontally in the form of “icon + Souljade name”. For experienced players, they can directly use this concise information (background quality color, Souljade shape&#x2F;name) to decide whether to pick up, replace, or discard Souljades, and make the fastest strategic decisions; while novice players can understand what the function of the Souljade is through the tooltip, and the key prompts for related operations, they can also familiarize themselves with the game and extract information and make in-game decisions relatively efficiently. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/58ef1859-ba2d-43c3-8050-291be83af026.png"></p>
+<hr>
+<p><em>《Naraka: Bladepoint》 Souljade Backpack Interface Tooltip</em></p>
+<hr>
+<p>At the same time, because the tooltip is an interactive element of the hover state, it will appear or disappear with the movement of the mouse, rather than being presented in a normal state like key information. Therefore, even if novice players are already familiar with the Souljade mechanism of the game, they will not feel that the information is complex and redundant. In addition, the game also systematically introduces the detailed information of each Souljade in the Souljade interface of the Combat Encyclopedia, which echoes the concise interaction in the game to achieve the unity of game experience playability and information comprehensiveness.</p>
+<h3 id="Guide-and-Confirm-Player-Operations"><a href="#Guide-and-Confirm-Player-Operations" class="headerlink" title="Guide and Confirm Player Operations"></a>Guide and Confirm Player Operations</h3><p>One of the functions of tooltips is to guide user operations, and the embodiment in the game is usually key prompts. The key prompt box highlights the key prompt information of shortcut operations to facilitate players to perform quick operations. The figure below shows the key prompt for indicating the number of Bloodrippers to teammates in <em>Naraka: Bladepoint</em>. This is the most typical and concise form of key prompt box, namely key icon and text description. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/5a249441-e421-462a-aadc-b3acddc8ef31.png"></p>
+<hr>
+<p><em>《Naraka: Bladepoint》 Tooltip Key Prompt</em></p>
+<hr>
+<p>In the weapon backpack of <em>Naraka: Bladepoint</em>, it also includes the enlarged icon of the weapon and the content of the weapon name. This is more abundant than the tooltip on the left, which is convenient for users to make decisions based on the supplementary information provided in the tooltip; compared with various inconvenient-to-remember information of Souljades, the content of the weapon tooltip is concise, omitting more weapon introduction content. This is because players have common sense understanding of weapons in real life. Whether it is a concise or rich form, this is related to the functionality of the interactive interface. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/bb7f5106-12ff-4bf2-8a7d-1f1aea60e668.png"></p>
+<p>It is worth noting that this type of prompt is usually closely related to the element that is currently in the hover state. The equip&#x2F;discard shortcut keys in the figure are applicable to all items in the backpack, but in terms of use, they are related to the area where the mouse is hovering. The tooltip here also enlarges the key content and presents it to the player, so that the player can confirm the weapon to be equipped&#x2F;discarded according to the tooltip, so as to reduce misoperation in game decision-making. Therefore, the tooltip not only provides prompt information for player operations, but also plays a role in information confirmation when players perform related operations.</p>
+<h2 id="2-Tooltip-Design-Principles"><a href="#2-Tooltip-Design-Principles" class="headerlink" title="2. Tooltip Design Principles"></a>2. Tooltip Design Principles</h2><p>The simplest tooltip is often a combination of “function description + shortcut key”, which is characterized by short appearance time, association with marked elements, and short text; in fact, in games, the design of tooltips is very diverse, with different complex forms of graphic and text mixing.</p>
+<p>These different forms of tooltips are born to assist the ever-changing game information presentation. But no matter how the form of the prompt changes, their purpose is to: help users understand, identify and process this information. Google has listed the principles of using tooltips in its developed Material Design, as a guide for using its web design tools. Some of the design principles contained therein also have high reference significance for game interaction design. Therefore, we will combine game cases to analyze the design specifications that need to be paid attention to in the design of tooltips, and their corresponding roles in experience design.</p>
+<h3 id="Overall-Layout-Design"><a href="#Overall-Layout-Design" class="headerlink" title="Overall Layout Design"></a>Overall Layout Design</h3><p>In the overall interface that triggers the tooltip state, the tooltip is generally located at the top level of the overall interface, and can cover any interface element in the short appearance time. In order for players to see the information provided by the tooltip, a reasonable position layout is first required.</p>
+<p>● <strong>Cannot be Truncated</strong></p>
+<p>The most basic principle of tooltip layout is that it cannot be truncated. A truncated tooltip will greatly affect the user’s game experience, and may cause key information to be incompletely displayed. </p>
+<p>&nbsp;<br>![](<a target="_blank" rel="noopener" href="https://nie.res.netease.com/r/pic/2023/r/pic/20230726/ad13f836-3227-4da6-907f-1defd5d4bb89.png0726/ad13f836-3227-4da6-907f-1defd5d4bb89.png">https://nie.res.netease.com/r/pic/2023/r/pic/20230726/ad13f836-3227-4da6-907f-1defd5d4bb89.png0726/ad13f836-3227-4da6-907f-1defd5d4bb89.png</a>. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/ad202cf3-e6fe-4750-a7fd-f5a45a483a5c.png"></p>
+<hr>
+<p><em>《Naraka: Bladepoint》 Item Purchase Tooltip (Note: The picture below is a wrong illustration, not a game screenshot)</em></p>
+<hr>
+<p>● <strong>Relevance of Position and Control</strong></p>
+<p>Because people’s visual habit of reading is from left to right, for tooltips that need to appear on the left and right sides of the corresponding element, they are usually placed on the right side. However, when the space on the right side is not enough to put down the tooltip, or the information in the space on the right side is more important than the left side and cannot be blocked, the tooltip will also be placed on the left side. Because of this, the tooltip areas we can see are often laid out in the middle of the game screen. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/0bd3c453-d10d-4f9f-8132-1c3d492116b1.png"></p>
+<hr>
+<p><em>《Naraka: Bladepoint》 Item Tooltip Schematic (Note: Only one tooltip is triggered each time, this picture is a spliced picture)</em></p>
+<hr>
+<p>In addition, some game tooltips appear at the mouse, or at the center point of the selected control. At this time, the association between the tooltip and the selected information is stronger. For example, in the weapon interface of <em>Destiny 2</em>, the tooltip changes in real time with the position of the cursor. While the player’s line of sight moves with the cursor, the tooltip also moves with it. This is also a design in which the tooltip is strongly associated with the position of the cursor. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/0f909d48-163a-4607-86c2-05a96db13196.gif"></p>
+<hr>
+<p><em>《Destiny 2》 Weapon Interface Tooltip</em></p>
+<hr>
+<p>In <em>Naraka: Bladepoint</em>, the item tooltip appears on both sides of the control in order not to block the icon and other information of the in-game items. Therefore, the position of the tooltip needs to be near the control in the selected state, and the specific position layout needs to be not truncated and not conflict with the game information.</p>
+<p>● <strong>Horizontal&#x2F;Vertical Layout is Related to the Interface</strong></p>
+<p>The rationality of the layout is also related to the interaction elements. Because it is necessary to associate the tooltip with the hover element, the tooltips in the game screen will be close to the element in the absence of special circumstances, and the content will be highlighted through a more obvious background color.</p>
+<p>The specific layout in which orientation of the corresponding element is usually related to other information in the game. For example, the option introduction tooltip in the figure below, as additional information of the vertically arranged list, is drawn out in the horizontal direction. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/383f79e8-8fe7-4de4-8cec-4fd82d351967.png"></p>
+<hr>
+<p><em>《Marvel’s Spider-Man》 Setting Details Tooltip</em></p>
+<hr>
+<p>Similarly, when presenting horizontal information, the prompt content is laid out on the upper and lower sides; and in order to show the matching object of the tooltip information, sometimes there are designs with arrows or connecting lines. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/fe933f09-f5c9-45d0-ad9d-0570d0d5f532.png"></p>
+<hr>
+<p><em>《Yacht Dice》 Guide Tooltip</em></p>
+<hr>
+<p>● <strong>Consistent with the Interface Style</strong></p>
+<p>In the design of the interactive interface, <em>Marvel’s Spider-Man</em> is mainly based on the dark blue technology style interface to simulate the AR picture seen by the Spider-Man character. In the design of the tooltip, it is also unified with the overall style of the game, and some broken line visual decorations are added to the tooltip to enrich the form, but at the same time, it will not let players be distracted by the decoration and ignore the content. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/5a09bdaf-ac8c-4921-8336-0aa31e69e0b8.png"></p>
+<hr>
+<p><em>《Marvel’s Spider-Man》 Setting Details Tooltip</em></p>
+<hr>
+<h3 id="Tooltip-Content-Layout-Design"><a href="#Tooltip-Content-Layout-Design" class="headerlink" title="Tooltip Content Layout Design"></a>Tooltip Content Layout Design</h3><p>● <strong>Text Content is Concise</strong></p>
+<p>When the tooltip is pure text content, the text should be as concise as possible to summarize the content that needs to be supplemented, and not to add unnecessary mental activity to the player. For example, in the map of <em>Naraka: Bladepoint</em>, you can see many icons that can be hovered and interacted with, and the function of this landmark is described in a very simple way. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/4720d505-1e07-44bb-87a9-10bb3adb7006.png"></p>
+<hr>
+<p><em>《Naraka: Bladepoint》 In-game Map Vendor Tooltip (The left picture is the simplified Chinese version, and the right picture is the German version)</em></p>
+<hr>
+<p>In addition, for the consideration of localization adaptation, concise text can also make the tooltip content of each language within an appropriate length. As shown in the figure above, the tooltip is to keep the width of the tooltips of different languages the same, and the height can be adaptively wrapped and changed with the length of the text, which can not only correctly present each language, but also automatically change when the planner configures different texts.</p>
+<p>● <strong>Text Hierarchy Presentation Form</strong></p>
+<p>In the visual text expression, the text in the tooltip is the same as other text parts, and the hierarchy of text information can be reflected by size, thickness, and color. Allow players to read more text in detail and extract the information they need quickly and use it in the game. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/5ce0addc-0ffc-4eef-824e-d6d017ba2471.jpg"></p>
+<hr>
+<p><em>《Naraka: Bladepoint》 Event Rules Tooltip</em></p>
+<hr>
+<p>In the writing of the text, you can use more short sentences and make good use of paragraphs to create a better reading experience for players. In addition, it should be noted that the level of the tooltip basically appears at the top level and cannot be covered by other interface elements.</p>
+<p>● <strong>Graphic and Text Mixing Method: Icon + Text</strong></p>
+<p>Pictures are more intuitive and faster than words in expressing information. Choosing icons that can express the meaning of words can explain the text more vividly and clearly, and make the page not too boring.</p>
+<p>And the image does not need to be localized to be understood by players, so the form of “icon + text” is very suitable for cross-platform global games, which can understand the tooltip content while reading, and associate the text with the image in the brain. In this way, players can quickly associate them together when they see the same icon in different game interfaces, thereby enhancing the game experience. </p>
+<p>&nbsp;<br>![](<a target="_blank" rel="noopener" href="https://nie.res.netease.com/r/pic/20230726/1ef775ed-ba7d-43c8-ba5b-e64d200e188c.png">https://nie.res.netease.com/r/pic/20230726/1ef775ed-ba7d-43c8-ba5b-e64d200e188c.png</a>. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/c3d6891e-e9a2-47f3-82dd-a06e9a268c1d.png"></p>
+<hr>
+<p><em>《Naraka: Bladepoint》 Hero Interface Skill Tooltip and In-game Skill Icon</em></p>
+<hr>
+<h3 id="Design-of-Appearance-and-Disappearance"><a href="#Design-of-Appearance-and-Disappearance" class="headerlink" title="Design of Appearance and Disappearance"></a>Design of Appearance and Disappearance</h3><p>As mentioned earlier, in PC games, hovering and moving the mouse corresponds to the appearance and disappearance of the tooltip; in mobile games, since there is no hover interaction method, the method of clicking&#x2F;long pressing to call up the tooltip is adopted; in console games, the interaction of the handle corresponds to the mouse hover state by moving the cursor to select.</p>
+<p>● <strong>Time Setting for the Appearance and Disappearance of Tooltips</strong></p>
+<p>The trigger condition for the appearance of the tooltip is generally set to 0.3-0.5 seconds of mouse hover. This is to ensure that the user’s intention is to view the menu or the content behind the tooltip, rather than moving the mouse to other content or accidentally touching it. Occasionally, it will be triggered after the mouse&#x2F;cursor is moved to the corresponding control for a long time, as an entrance to the normally closed information prompt.</p>
+<p>The trigger for the disappearance of the tooltip is uniformly after moving the mouse&#x2F;cursor, the control disappears after exceeding 0.5 seconds when it is not selected. Because only when the user clicks or stays outside the target area, or the mouse cursor leaves the target area and exposes the content for more than 0.5 seconds, can it be determined that the player intends to close the tooltip.</p>
+<p>● <strong>Cannot Trigger Multiple Tooltips at the Same Time</strong></p>
+<p>No matter what kind of game device, the appearance and disappearance of the tooltip are temporary, and have a strong match with the single element that the user is interacting with, and there is a basic principle: only a single tooltip can be triggered at the same time. Therefore, in the game, even if the UI elements overlap, the click hot zone of the tooltip still needs to be strictly divided, otherwise multiple tooltips will appear at the same time.</p>
+<p>Only by ensuring that at most one tooltip is triggered, the fragmented information will not appear at the same time, so that players have a stronger willingness to read and a higher degree of understanding of the current information, and this focused presentation is also more helpful for players’ information understanding. </p>
+<p>&nbsp;<br><img src="https://nie.res.netease.com/r/pic/20230726/c15e09ec-a290-46a9-bc67-0aac73add9bf.gif"></p>
+<hr>
+<p><em>《Gwent: The Witcher Card Game》 Tooltip: Only One Tooltip Can Be Triggered at a Time</em></p>
+<hr>
+<p>● <strong>Simplified Animation Effects</strong></p>
+<p>No matter what style, what display, the tooltip content must be clear and recognizable, and you cannot blindly pursue effects, and you cannot put the cart before the horse.</p>
+<p>In the case that the interactive interface itself is relatively complex, the appearance and disappearance of the tooltip only needs a simple gradient transition, and even no animation effect design is needed. The main function of the tooltip is information presentation, and too gorgeous animation effects will increase the visual burden of players and hinder the reading of tooltip information.</p>
+<h2 id="3-Summary"><a href="#3-Summary" class="headerlink" title="3. Summary"></a>3. Summary</h2><p>No matter what form the tooltip appears in, the main function is to present and hide appropriate information to the player in a timely manner. As an important part of the information prompt system, tooltips play a great role in players seeing, understanding, and using game information. Only by designing the most suitable information prompt system for the game can we create the smoothest and most natural experience for players. Therefore, for game designers, from whether to use tooltips, to the selection of tooltip content, form design, etc. are all issues that need to be carefully considered.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/project/2023/07/25/netease-ux-articles/news_20230726_28584_1101047/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/project/2023/07/21/netease-ux-articles/news_20230724_28584_1100416/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
