@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>The Intertwined Relationships of Various Tools in Data Analysis | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Analysis/">
+                            Data Analysis
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/SQL/">
+                            SQL
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Python/">
+                            Python
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Visualization/">
+                            Data Visualization
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Processing/">
+                            Data Processing
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Time-Functions/">
+                            Time Functions
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Regular-Expressions/">
+                            Regular Expressions
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                The Intertwined Relationships of Various Tools in Data Analysis
+            
+            
+        </div>
+        <span class="post-date">
+            6 Nov, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191108%2Fadec85bc-2154-47fb-b846-88643294a9f7.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20191108/28584_847506.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<h2 id="I-SQL"><a href="#I-SQL" class="headerlink" title="I. SQL"></a>I. SQL</h2><p>SQL is probably the most used tool in data analysis. It is easy to learn and widely applicable, making it a favorite among “SQL boys” and “SQL girls.” If there’s an anomaly in a certain metric, an “SQL baby” can handle it. Not only can SQL be used to obtain the change in metric data, but it can also analyze the reasons for the change. All of this relies on SQL. The following uses Hive SQL as an example to discuss the level of SQL proficiency required to meet basic business needs.</p>
+<p><strong>1. Basic Common Syntax is a Must</strong></p>
+<p>What are the basic common syntaxes? For example, various join types in query statements (inner join, left join, right join, full join, etc.), equality and inequality joins (on, where), group by, order by, count, sum, common window functions, etc.; as well as table creation (create table), table deletion statements (delete, drop), etc. These will not be elaborated on here.</p>
+<p><strong>2. Time Functions</strong></p>
+<p><strong>(1) datediff: A function that calculates the interval between two dates</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- Example: Calculate the number of days between two dates</span></span><br><span class="line"><span class="keyword">SELECT</span> DATEDIFF(<span class="string">&#x27;2023-10-27&#x27;</span>, <span class="string">&#x27;2023-10-20&#x27;</span>); <span class="comment">-- Output: 7</span></span><br></pre></td></tr></table></figure>
+<p><strong>(2) from_unixtime() and unix_timestamp(): Conversion between 10-digit timestamps and time formats</strong></p>
+<p><code>from_unixtime()</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- Example: Convert a 10-digit timestamp to a formatted date and time</span></span><br><span class="line"><span class="keyword">SELECT</span> FROM_UNIXTIME(<span class="number">1698388800</span>);  <span class="comment">-- Output: (e.g.,) 2023-10-27 12:00:00</span></span><br></pre></td></tr></table></figure>
+<p><code>unix_timestamp()</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- Example: Convert a formatted date and time to a 10-digit timestamp</span></span><br><span class="line"><span class="keyword">SELECT</span> UNIX_TIMESTAMP(<span class="string">&#x27;2023-10-27 12:00:00&#x27;</span>); <span class="comment">-- Output: 1698388800</span></span><br><span class="line"></span><br><span class="line"><span class="comment">--Example: Convert a date (without time) to a 10-digit timestamp (midnight)</span></span><br><span class="line"><span class="keyword">SELECT</span> UNIX_TIMESTAMP(<span class="string">&#x27;2023-10-27&#x27;</span>);  <span class="comment">-- Output: (e.g., ) 1698345600</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Note: 10-digit timestamps and 13-digit timestamps are different.  The former is in <em>seconds</em>, the latter in <em>milliseconds</em>.</p>
+</blockquote>
+<p><strong>(3) to_date(): Extracts only the year, month, and day</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--Example:</span></span><br><span class="line"><span class="keyword">select</span> to_date(<span class="string">&#x27;2019-11-08 18:08:08&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">Result</span>:</span><br><span class="line"></span><br><span class="line"><span class="number">2019</span><span class="number">-11</span><span class="number">-08</span></span><br></pre></td></tr></table></figure>
+<p><strong>(4) In addition, there are many other time functions, such as date_add, pmod, etc.</strong></p>
+<p><strong>3. Functions for Secondary Processing of Fields</strong></p>
+<p><strong>(1) concat: Connects multiple strings into one string.</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--Example</span></span><br><span class="line"><span class="keyword">SELECT</span> CONCAT(<span class="string">&#x27;Hello&#x27;</span>, <span class="string">&#x27; &#x27;</span>, <span class="string">&#x27;World&#x27;</span>); <span class="comment">--Output: Hello World</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Note: There are also related functions like <code>concat_ws()</code> (concat with separator), <code>group_concat()</code> (concatenates values from multiple rows into one string), etc.</p>
+</blockquote>
+<p><strong>(2) split: Splits a field</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--Example</span></span><br><span class="line"><span class="keyword">select</span> split(<span class="string">&#x27;1#2#3#4&#x27;</span>, <span class="string">&#x27;#&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p>The above splits into a list. Marking the list index can select the corresponding field.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--Example: Access element at index 1</span></span><br><span class="line"><span class="keyword">SELECT</span> SPLIT(<span class="string">&#x27;apple,banana,orange&#x27;</span>, <span class="string">&#x27;,&#x27;</span>)[<span class="number">0</span>]; <span class="comment">-- Output: apple</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Result</span>:</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;1&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>In addition, <code>size</code>, <code>length</code>, and <code>explode</code> are often used in conjunction with <code>split</code>. Among them, <code>explode</code> is commonly used for converting rows to columns after character splitting.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--Example:</span></span><br><span class="line"><span class="keyword">select</span> explode(split(<span class="string">&#x27;1#2#3#4&#x27;</span>, <span class="string">&#x27;#&#x27;</span>));</span><br></pre></td></tr></table></figure>
+<p><strong>4. Regular Expressions</strong></p>
+<p>SQL statements can also be used with regular expressions as query conditions, which is very useful. This part is relatively detailed, so just look it up when you need it.</p>
+<hr>
+<h2 id="II-Python"><a href="#II-Python" class="headerlink" title="II. Python"></a>II. Python</h2><p>Sometimes SQL is not enough to support the entire data analysis process. For example, when you need to compare and analyze samples, Python comes into play.</p>
+<p>You need to master the use of common libraries in Python, such as NumPy, pandas, and SciPy. It is best to familiarize yourself with them by implementing basic statistical methods. In addition, learning to use lists, dictionaries, functions, and classes well will be very helpful for the flexible use of Python in daily life. For example, when the amount of data is very large and you need to iterate through row data, lists or dictionaries are much faster than pandas in processing data.</p>
+<p>Based on different needs and scenarios, the use of Python varies. The following only shows the basic operation flow:</p>
+<p><strong>1. Data Reading and Character Processing</strong></p>
+<p>Flexible use of multiple reading methods</p>
+<p>Method 1:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;data.txt&#x27;</span>, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> f:</span><br><span class="line">        <span class="comment"># Process each line</span></span><br><span class="line">        <span class="built_in">print</span>(line.strip())</span><br></pre></td></tr></table></figure>
+<p>Method 2:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">df = pd.read_csv(<span class="string">&#x27;data.csv&#x27;</span>)  <span class="comment"># Or pd.read_excel, pd.read_table, etc.</span></span><br><span class="line"><span class="built_in">print</span>(df)</span><br><span class="line">Method <span class="number">3</span></span><br><span class="line">python</span><br><span class="line"><span class="comment">#If connecting directly to a database.</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> sqlite3 <span class="comment">#Example, could be a different database driver.</span></span><br><span class="line"></span><br><span class="line">conn = sqlite3.connect(<span class="string">&#x27;mydatabase.db&#x27;</span>)</span><br><span class="line">cursor = conn.cursor()</span><br><span class="line"></span><br><span class="line">cursor.execute(<span class="string">&quot;SELECT * FROM mytable&quot;</span>)</span><br><span class="line">data = cursor.fetchall()</span><br><span class="line"><span class="comment">#OR</span></span><br><span class="line">data = pd.read_sql_query(<span class="string">&quot;SELECT * FROM mytable&quot;</span>, conn)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">conn.close()</span><br><span class="line"></span><br><span class="line">**<span class="number">2.</span> Data Processing (The processing process depends on the situation <span class="keyword">and</span> <span class="keyword">is</span> <span class="keyword">not</span> shown below)**</span><br><span class="line">**<span class="number">3.</span> Result Output**</span><br><span class="line">python</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;output.txt&#x27;</span>, <span class="string">&#x27;w&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">&quot;Results:\n&quot;</span>)</span><br><span class="line">    <span class="comment"># Write results to the file</span></span><br><span class="line">    f.write(<span class="string">&quot;...&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>And using the <code>to_csv</code> function in the pandas library, etc.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment">#Assume &#x27;results&#x27; is a pandas Dataframe.</span></span><br><span class="line">results = pd.DataFrame(&#123;<span class="string">&#x27;col1&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>], <span class="string">&#x27;col2&#x27;</span>: [<span class="number">3</span>, <span class="number">4</span>]&#125;) <span class="comment">#Example</span></span><br><span class="line">results.to_csv(<span class="string">&#x27;output.csv&#x27;</span>, index=<span class="literal">False</span>) <span class="comment">#Avoid writing the index</span></span><br></pre></td></tr></table></figure>
+
+<p>Of course, everyone has their own habits, and good methods are those that are easy to use!</p>
+<hr>
+<h2 id="III-Collaboration-Between-Python-and-SQL"><a href="#III-Collaboration-Between-Python-and-SQL" class="headerlink" title="III. Collaboration Between Python and SQL"></a>III. Collaboration Between Python and SQL</h2><p>Hive’s custom functions support Transform and UDF. UDF is to package and upload Java code. If you don’t want to write Java code, you can use Transform, write a script, and process it through the script.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--Example.</span></span><br><span class="line"><span class="keyword">add</span> file test.py; <span class="comment">-- Add the Python script to the distributed cache.</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">  TRANSFORM (field1, field2, field3)</span><br><span class="line">  <span class="keyword">USING</span> <span class="string">&#x27;python test.py&#x27;</span>  <span class="comment">-- Specifies the Python script to use.  It MUST be executable (chmod +x test.py)</span></span><br><span class="line">  <span class="keyword">AS</span> (field4, field5)  <span class="comment">-- Specifies the output columns and their names.</span></span><br><span class="line"><span class="keyword">FROM</span> mytable;</span><br></pre></td></tr></table></figure>
+<p>Among them, <code>transform(field1, field2, field3)</code> contains the three columns of data that need to be processed, which are the results directly queried by <code>select</code>. The above results are processed through the <code>test.py</code> file, and two columns of data, namely <code>field4</code> and <code>field5</code>, are output. The python script <code>test.py</code> will receive the input data on <code>stdin</code>, process each row, and output the result to <code>stdout</code>.</p>
+<hr>
+<h2 id="IV-Others"><a href="#IV-Others" class="headerlink" title="IV. Others"></a>IV. Others</h2><p><strong>1. Data Visualization: R, Excel</strong></p>
+<p>Most data visualizations can be completed using Excel charting. However, if you want to be more sophisticated and create violin plots, box plots, etc., you need to use R. You can learn about this on your own.</p>
+<p><strong>2. Linux, Bash, Hadoop</strong></p>
+<p>Many data analysis tasks now use big data platforms. If you still have energy after learning the above, you might as well take a look at Linux, Bash, and Hadoop. You don’t need to learn in depth at the beginning, but you can familiarize yourself with the basic operation statements, which will be more handy in future work.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/11/13/netease-ux-articles/news_20191114_28584_848634/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/11/04/netease-ux-articles/news_20191105_28584_846836/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

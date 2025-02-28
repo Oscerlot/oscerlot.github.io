@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Design and Specification of Basic Functional Interaction Motion Effects for Mobile Games | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Interaction-Design/">
+                            Interaction Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Mobile-Games/">
+                            Mobile Games
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Motion-Effects/">
+                            Motion Effects
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Design-Specifications/">
+                            Design Specifications
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Functional-Motion-Effects/">
+                            Functional Motion Effects
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Ease-of-Use/">
+                            Ease of Use
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Design and Specification of Basic Functional Interaction Motion Effects for Mobile Games
+            
+            
+        </div>
+        <span class="post-date">
+            24 May, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190527%2F6c0a4487-e2d1-40de-818e-979810d36e94.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20190527/28584_815436.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a>)</p>
+</blockquote>
+<p>Nowadays, various apps and mobile games are increasingly pursuing an immersive interactive experience, and are no longer satisfied with the design of traditional static interfaces. At the same time, they are paying more and more attention to the design of motion effects in the interface. Many companies currently have their own interaction design specifications, such as Ant Design, etc., which have even packaged interaction and programs together for easy development and use. However, the design specifications for motion effects are relatively lacking. Designers often need to constantly adjust with technical colleagues to achieve the desired motion effect design. In the UX department, interaction prototyping engineers help interaction designers achieve the desired interaction design effects to complete rapid iterative output, making it easier to choose better solutions for in-depth advancement. Here, I will share some experience about the cooperation of interaction motion effect design.</p>
+<p>The main function of motion effect design is to make the scene move through the movement of elements, so as to reduce user fatigue, increase information acquisition, increase the sense of ceremony, and trigger emotions. From a functional perspective, they can be divided into functional motion effects and expressive motion effects.</p>
+<p>Functional motion effects are mainly used to express state changes, prompt users to pay attention, guide user operations, highlight information display, provide user feedback, and connect different information.</p>
+<p>Expressive motion effects are mainly used to create experiences, such as obtaining achievements, specific transition effects, and creating a certain atmosphere. Expressive motion effects are often more complex, closer to animation or video, and generally appear less frequently, mainly in situations such as achieving achievements and obtaining special items. The rendering of the atmosphere is often greater than the embodiment of the function. The following mainly focuses on functional motion effects.</p>
+<p><strong>Functional motion effects often have these characteristics:</strong></p>
+<ol>
+<li><p><strong>Short</strong></p>
+<p>How short? The unit of measurement for functional motion effects is generally milliseconds (ms). The duration of general functional motion effects will be controlled within 1s, and some agile feedback motion effects may only be about 300ms.</p>
+</li>
+<li><p><strong>Concise</strong></p>
+<p>The purpose of functional motion effects is very clear. At the same time, because of the short duration, the motion effects need to be concise, coherent, and without too many effects.</p>
+</li>
+<li><p><strong>Natural</strong></p>
+<p>The motion effect should conform to the physical laws of the real world. It assists users in cognition and understanding of the interface, so it cannot increase the cost of understanding and cognition.</p>
+</li>
+</ol>
+<p>By analogy, in fact, functional motion effects are very similar to elements such as line spacing and font in the interface to a certain extent. We use different font sizes and line spacing to distinguish different information levels, so that users can understand the structure and content of the article faster and easier. Functional motion effects also establish a cognitive connection between users and products through actions, making the operation and use of products more fluent and natural.</p>
+<p>In interaction design, we have strict specifications for font size, line spacing, and alignment to improve the uniformity of the product. Similarly, motion effect design also needs a set of specifications. Imagine that when users click different buttons to open pop-up windows, the duration and motion curve of each motion effect are different. Users will be confused by this difference. When the number of such confusions increases, they will feel that the product is not smooth to use and have negative emotions. Basic functional motion effects often exist in every operation of the user, which will affect the experience of the entire product.</p>
+<p>Based on this consideration, specifying a set of common basic motion effect specifications in the early stage of the product can lay a solid foundation for the product. The design process of motion effect specifications is as follows:</p>
+<p>First, determine the personality of the product. Different games or apps have different personality characteristics. For example, <em>Anipop</em> will be more lively and cheerful, while <em>Identity V</em> will be darker and more terrifying. The corresponding feeling of motion effects is also different. If all the motion effects in a horror game are lively and exaggerated “DUANG DUANG” effects, it will destroy the carefully rendered horror atmosphere of the game, causing detachment and interrupting the user’s experience.</p>
+<p>Secondly, find out the needs. The basic functional motion effect needs of a game are basically the same, such as click feedback, the appearance and closing of pop-up windows, the appearance and closing of tips, page switching, etc. The needs can be extracted by checking the game and reviewing the recordings to reduce errors and omissions. For example, different games will use different list presentation methods. The motion effects of strip lists and modular array lists will be different; and for array lists, sliding left and right to turn pages and sliding up and down to turn pages will also have different motion effects for the appearance of the list. This can better guide players to understand the page turning operation.</p>
+<p>After that, design the requirements. At this stage, the designer cooperates with the interaction prototyping engineer to directly make the final motion effect with engineering software, and output code or engineering files to reduce the inability to fully restore the design expectations during development after only producing design documents and videos. At the same time, it can also greatly reduce the workload and burden of development. In the process of cooperation between designers and prototyping engineers, in order to further improve efficiency, designers can use visualization tools to independently design and iterate motion effects, and then connect with engineers to improve overall work efficiency and reduce the awkward situation of one person directing and one person operating. For example, when designing a motion curve, in order to make the motion effect more natural, the curve of each movement should be a easing curve. These curves can be adjusted by visually adjusting the anchor points (<a target="_blank" rel="noopener" href="https://cubic-bezier.com/">https://cubic-bezier.com/</a>). The code can then be directly exported to the prototype engineer.</p>
+<p>Finally, output the design specification document. Although the engineering file has been output through the prototyping engineer, the design specification document is still necessary in practical application. On the one hand, it can guide designers and engineers to reuse it in the application. On the other hand, the design specification should also be iterated with the advancement of the product. The specification document can be updated in real time to respond to all changes with a constant. The design specification document generally includes several aspects:</p>
+<ul>
+<li><strong>Application scenario of motion effect</strong></li>
+<li><strong>Action decomposition (change value and time)</strong></li>
+<li><strong>Basic code</strong></li>
+<li><strong>Effect display (animation&#x2F;gif&#x2F;video)</strong></li>
+<li><strong>Prototype engineering file</strong></li>
+</ul>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/05/30/netease-ux-articles/news_20190531_28584_816223/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/05/17/netease-ux-articles/news_20190517_28584_813963/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

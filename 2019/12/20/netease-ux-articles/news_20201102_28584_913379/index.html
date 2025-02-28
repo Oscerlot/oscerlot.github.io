@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Python Learning Guide - Iterables, Iterators, and Generators | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Python/">
+                            Python
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Iterable/">
+                            Iterable
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Iterator/">
+                            Iterator
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Generator/">
+                            Generator
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/List-Comprehension/">
+                            List Comprehension
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Generator-Expression/">
+                            Generator Expression
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Python Learning Guide - Iterables, Iterators, and Generators
+            
+            
+        </div>
+        <span class="post-date">
+            20 Dec, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210108%2F29529bd6-ce9d-4b6e-899c-c8933197b9cb.png/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20201102/28584_913379.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>Generators and iterators are unavoidable topics in Python learning, and they are also frequently used in actual coding.</p>
+<p>First, let’s clarify the relationship between several key concepts:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Iterable</th>
+<th align="left">Iterator</th>
+<th align="left">Generator</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"></td>
+<td align="left">Object implementing <code>__iter__</code> and <code>__next__</code></td>
+<td align="left">A special type of iterator</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">Can traverse elements</td>
+<td align="left">Can traverse elements using <code>next()</code> or <code>for</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Implemented using generator functions or expressions</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>Iterable (iterable)</strong></p>
+<p>Objects that can be directly used in a <code>for</code> loop are collectively called iterables (Iterable), or in other words, objects that implement the <code>__iter__</code> method. An iterator must be an iterable.</p>
+<p>You can directly use the <code>isinstance()</code> function to check if an object is iterable.</p>
+<p>Lists, tuples, etc., are all iterables. You can call the <code>__iter__</code> method of the iterable using the <code>iter()</code> function to obtain the corresponding iterator, and then use <code>next()</code> to iterate through it.</p>
+<p><strong>List Comprehension (List Comprehension)</strong></p>
+<p>List comprehension, or list generation, are different terms for the same concept. Essentially, they create a new list directly using <code>[]</code>.</p>
+<p>It’s important to distinguish between generator expressions and list comprehensions:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># List comprehension</span></span><br><span class="line"><span class="built_in">list</span> = [item <span class="keyword">for</span> item <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>)]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>)  <span class="comment"># Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(<span class="built_in">list</span>))  <span class="comment"># Output: TypeError: &#x27;list&#x27; object is not an iterator</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">list</span> = [item <span class="keyword">for</span> item <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>)]</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>)  <span class="comment"># Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span></span><br><span class="line">list1 = <span class="built_in">iter</span>(<span class="built_in">list</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(list1))  <span class="comment"># Output: 0</span></span><br></pre></td></tr></table></figure>
+<p>List comprehensions also leverage Python’s iteration features, using <code>[]</code> to enclose a <code>for</code> clause.  They are primarily used for creating new lists, and are efficient and highly readable.  However, the returned data is entirely stored in memory.</p>
+<p><strong>Relationship between Generators and Iterators:</strong></p>
+<p>An iterator is a broader concept. A generator is a special type of iterator, but the reverse is not true.</p>
+<p>Generators and iterators are similar in that they can both be used to access elements through a <code>for</code> loop and are both iterables.</p>
+<p><strong>Iterator (iterator)</strong></p>
+<p>An iterator is an object that implements both the <code>__iter__</code> and <code>__next__</code> methods, capable of remembering the position of each traversal.</p>
+<p>Iterators can be traversed using the <code>next()</code> method or a general <code>for</code> loop.  Iteration terminates by raising a <code>StopIteration</code> exception, which is also part of the iterator protocol.</p>
+<p>Custom iterator implementation:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyIterator</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="variable language_">self</span>.cnt = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__iter__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">self</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__next__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">``</span><br><span class="line">The method of implementing an iterator <span class="keyword">with</span> a generator will be discussed below.</span><br><span class="line"></span><br><span class="line">**Generator (generator)**</span><br><span class="line"></span><br><span class="line">Generators have many elegant features.  First, let<span class="string">&#x27;s look at the official definition:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt; **generator**</span></span><br><span class="line"><span class="string">&gt;</span></span><br><span class="line"><span class="string">&gt; A function which returns a generator iterator. It looks like a normal function except that it contains yield expressions for producing a series of values usable in a for-loop or that can be retrieved one at a time with the next() function.</span></span><br><span class="line"><span class="string">&gt;</span></span><br><span class="line"><span class="string">&gt; Usually refers to a generator function, but may refer to a generator iterator in some contexts. In cases where the intended meaning isn’t clear, using the full terms avoids ambiguity.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt; **generator iterator**</span></span><br><span class="line"><span class="string">&gt;</span></span><br><span class="line"><span class="string">&gt; An object created by a generator function.</span></span><br><span class="line"><span class="string">&gt;</span></span><br><span class="line"><span class="string">&gt; Each yield temporarily suspends processing, remembering the location execution state (including local variables and pending try-statements). When the generator iterator resumes, it picks up where it left off (in contrast to functions which start fresh on every invocation).</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt; **generator expression**</span></span><br><span class="line"><span class="string">&gt;</span></span><br><span class="line"><span class="string">&gt; An expression that returns an iterator. It looks like a normal expression followed by a for clause defining a loop variable, range, and an optional if clause.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">The official explanation mainly covers three aspects:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">1.  A generator can be a function containing the `yield` keyword, used in a `for` loop to generate a series of elements. It can be iterated through using the `next()` function.</span></span><br><span class="line"><span class="string">2.  A generator can be the iterator object returned by a generator function.</span></span><br><span class="line"><span class="string">3.  A generator can be an expression that returns an iterator, using `()` to enclose a `for` clause, and optionally an `if` clause.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Implementing a generator with a generator function:</span></span><br><span class="line"><span class="string">```python</span></span><br><span class="line"><span class="string"># Generator function, using the yield keyword</span></span><br><span class="line"><span class="string">def generate_squares(N):</span></span><br><span class="line"><span class="string">    for i in range(N):</span></span><br><span class="line"><span class="string">        yield i ** 2</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">for item in generate_squares(5):</span></span><br><span class="line"><span class="string">    print(item,)  # Output is a series of numbers, each on a new line.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Implementing a generator with a generator expression:</span></span><br><span class="line"><span class="string">python</span></span><br><span class="line"><span class="string"># Generator expression</span></span><br><span class="line"><span class="string">g = (item for item in range(10))</span></span><br><span class="line"><span class="string">print(g)  # Output: &lt;generator object &lt;genexpr&gt; at 0x0095BBF0&gt;</span></span><br><span class="line"><span class="string">print(next(g))  # Output: 0</span></span><br><span class="line"><span class="string">print(next(g))  # Output: 1</span></span><br></pre></td></tr></table></figure>
+<p>Generators are characterized by lazy evaluation, calculating only when used, saving memory space. This is why <code>print(g)</code> in the example above doesn’t directly return the values, but instead returns a <code>generator object</code>.</p>
+<p>Generators are single-iterator objects.  They produce only one value at a time, and each value can only be retrieved once.  Attempting to retrieve a value more than once will raise an error.</p>
+<p><strong>Design of Iterables and Iterators:</strong></p>
+<p>Finally, let’s address why we need iterables if iterators alone can fulfill our needs for traversing collection elements. Iterables typically also need to call the <code>__iter__</code> method to return an iterator for element traversal.</p>
+<p>The book “Design Patterns: Elements of Reusable Object-Oriented Software” describes the design of the iterator pattern very well:</p>
+<ol>
+<li>Access the contents of an aggregate object without exposing its internal representation.</li>
+<li>Support multiple traversals of an aggregate object.</li>
+<li>Provide a uniform interface for traversing different aggregate structures.</li>
+</ol>
+<p><strong>Summary</strong></p>
+<p>If an object implements the <code>__iter__</code> method, it is an iterable. If an iterable implements the <code>__next__</code> method, which provides iteration traversal, it is an iterator. Calling the <code>__iter__</code> method returns an instance of the current object’s iterator class.</p>
+<p>Reference Articles:</p>
+<ol>
+<li>Python3 Iterators and Generators:<br><a target="_blank" rel="noopener" href="https://www.runoob.com/python3/python3-iterator-generator.html">https://www.runoob.com/python3/python3-iterator-generator.html</a></li>
+<li>Python Comprehensions and Generators:<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/cuigai7139/article/details/100333806">https://blog.csdn.net/cuigai7139/article/details/100333806</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/51359155">https://zhuanlan.zhihu.com/p/51359155</a></li>
+</ol>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/12/30/netease-ux-articles/news_20201103_28584_913633/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/12/18/netease-ux-articles/news_20201102_28584_913373/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

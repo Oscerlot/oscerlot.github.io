@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>How to Use Vim | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Vim/">
+                            Vim
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Editor/">
+                            Editor
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Command-Line/">
+                            Command Line
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Text-Editing/">
+                            Text Editing
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Efficiency/">
+                            Efficiency
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Shortcuts/">
+                            Shortcuts
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Linux/">
+                            Linux
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Development/">
+                            Development
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                How to Use Vim
+            
+            
+        </div>
+        <span class="post-date">
+            20 Jun, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190625%2F4dcbc38e-cbb9-4e4c-9a89-80cac23b5f8e.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20190625/28584_819620.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<h2 id="Vim-Application-Background"><a href="#Vim-Application-Background" class="headerlink" title="Vim Application Background"></a>Vim Application Background</h2><p>The full name of the Vim editor is Visual interface improved, and the specific interface is shown in the figure below.</p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190625%2Fc28762ec-32ea-48f0-84bc-51b870181a90.jpg/size/" alt="vim editor interface"></p>
+<p>The application scenarios of the Vim editor mainly include:</p>
+<p>(1) Need to deploy the environment and develop code in a Linux environment. Linux often requires the use of the VIM editor for code development;</p>
+<p>Currently, many IDEs support VIM mode, such as PyCharm&#x2F;IntelliJ IDEA and other mainstream IDEs. The advantage of the Vim editor is that it does not require much mouse operation and can support all operations using the keyboard, achieving fast movement, fast input, and effective block operations. The disadvantage of the Vim editor is that it requires memorizing many operation shortcuts and command lines.</p>
+<h2 id="4-Modes-of-Vim-Editor"><a href="#4-Modes-of-Vim-Editor" class="headerlink" title="4 Modes of Vim Editor"></a>4 Modes of Vim Editor</h2><p>The Vim editor has four modes. It is in normal mode by default, including normal mode, insert mode, command-line mode, and visual mode. The conversion relationship between the 4 modes is shown in the figure below.</p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190625%2F38ba847e-448b-4d26-ab7c-99ca78d56d9b.jpg/size/" alt="Conversion relationship of 4 modes of vim editor"></p>
+<p>So how are the 4 modes converted?</p>
+<p>(1) Convert normal mode to insert mode, the specific operations are as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>i</code></td>
+<td align="left">Insert text <em>before</em> the cursor</td>
+</tr>
+<tr>
+<td align="left"><code>I</code></td>
+<td align="left">Insert text at the <em>beginning</em> of the line</td>
+</tr>
+<tr>
+<td align="left"><code>a</code></td>
+<td align="left">Append text <em>after</em> the cursor</td>
+</tr>
+<tr>
+<td align="left"><code>A</code></td>
+<td align="left">Append text at the <em>end</em> of the line</td>
+</tr>
+<tr>
+<td align="left"><code>o</code></td>
+<td align="left">Open a new line <em>below</em> the current line and enter insert mode</td>
+</tr>
+<tr>
+<td align="left"><code>O</code></td>
+<td align="left">Open a new line <em>above</em> the current line and enter insert mode</td>
+</tr>
+<tr>
+<td align="left"><code>ea</code></td>
+<td align="left">Append text at the <em>end of the word</em></td>
+</tr>
+</tbody></table>
+<p>(2) Convert insert mode to normal mode, the specific operations are as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Esc</code></td>
+<td align="left">Switch back to Normal mode from Insert mode.</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-[</code></td>
+<td align="left">An alternative that achieves the same as ESC.</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-C</code></td>
+<td align="left">Same effect</td>
+</tr>
+</tbody></table>
+<p>(3) Convert normal mode to command-line mode, the specific operations are as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>:</code></td>
+<td align="left">Enter command-line mode.  You then type a command and press Enter.</td>
+</tr>
+<tr>
+<td align="left"><code>/</code></td>
+<td align="left">To search forward.</td>
+</tr>
+<tr>
+<td align="left"><code>?</code></td>
+<td align="left">To search backwards.</td>
+</tr>
+</tbody></table>
+<p>(4) Convert command-line mode to normal mode, the specific operations are as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Esc</code></td>
+<td align="left">Return to Normal mode.</td>
+</tr>
+<tr>
+<td align="left"><code>Enter</code></td>
+<td align="left">Execute the command and return to Normal Mode.</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-[</code></td>
+<td align="left">Return to Normal Mode.</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-C</code></td>
+<td align="left">Return to Normal Mode.</td>
+</tr>
+</tbody></table>
+<p>(5) Convert normal mode to visual mode, the specific operations are as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>v</code></td>
+<td align="left">Enter visual mode (characterwise).  You can then move the cursor to select text.</td>
+</tr>
+<tr>
+<td align="left"><code>V</code></td>
+<td align="left">Enter visual line mode (linewise).  Selects entire lines.</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-v</code></td>
+<td align="left">Enter visual block mode (rectangular selection). Very useful for selecting columns of text.</td>
+</tr>
+</tbody></table>
+<p>(6) Convert visual mode to normal mode, the specific operations are as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Esc</code></td>
+<td align="left">Return to normal mode</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-[</code></td>
+<td align="left">Return to Normal Mode.</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-C</code></td>
+<td align="left">Return to Normal Mode.</td>
+</tr>
+</tbody></table>
+<h2 id="Vim-Operation-Cursor-Movement"><a href="#Vim-Operation-Cursor-Movement" class="headerlink" title="Vim Operation: Cursor Movement"></a>Vim Operation: Cursor Movement</h2><p>Vim editor cursor movement is all operated in normal mode.</p>
+<p>(1) Unit level: character as the unit</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>h</code></td>
+<td align="left">Move left one character</td>
+</tr>
+<tr>
+<td align="left"><code>j</code></td>
+<td align="left">Move down one line</td>
+</tr>
+<tr>
+<td align="left"><code>k</code></td>
+<td align="left">Move up one line</td>
+</tr>
+<tr>
+<td align="left"><code>l</code></td>
+<td align="left">Move right one character</td>
+</tr>
+</tbody></table>
+<p>(2) Word level</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>w</code> or <code>W</code></td>
+<td align="left">Move to the beginning of the next word</td>
+</tr>
+<tr>
+<td align="left"><code>e</code> or <code>E</code></td>
+<td align="left">Move to the end of the current word</td>
+</tr>
+<tr>
+<td align="left"><code>b</code> or <code>B</code></td>
+<td align="left">Move to the beginning of the previous word</td>
+</tr>
+</tbody></table>
+<p>(3) Block level</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>gg</code></td>
+<td align="left">Go to the first line of the document</td>
+</tr>
+<tr>
+<td align="left"><code>G</code></td>
+<td align="left">Go to the last line of the document</td>
+</tr>
+<tr>
+<td align="left"><code>0</code></td>
+<td align="left">Go to the beginning of the line (column 1)</td>
+</tr>
+<tr>
+<td align="left"><code>^</code></td>
+<td align="left">Go to the first non-blank character of the line</td>
+</tr>
+<tr>
+<td align="left"><code>$</code></td>
+<td align="left">Go to the end of the line</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-d</code></td>
+<td align="left">Move down half a page</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-u</code></td>
+<td align="left">Move up half a page</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-f</code></td>
+<td align="left">Move down one page</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-b</code></td>
+<td align="left">Move up one page</td>
+</tr>
+<tr>
+<td align="left"><code>:&lt;N&gt;</code> or <code>&lt;N&gt;gg</code></td>
+<td align="left">Jump to line N</td>
+</tr>
+<tr>
+<td align="left"><code>:+&lt;N&gt;</code> or <code>&lt;N&gt;j</code></td>
+<td align="left">Jump down N lines</td>
+</tr>
+<tr>
+<td align="left"><code>:-&lt;N&gt;</code> or <code>&lt;N&gt;k</code></td>
+<td align="left">Jump up N lines</td>
+</tr>
+</tbody></table>
+<p>It should be noted here that: all commands can be preceded by a number N, indicating that the following command is executed N times. For example, if you want to move down 3 lines, in addition to using :+3, you can also use 3j to achieve the same effect. In addition, there are actually two types of commands above: one is executed immediately after typing, such as gg; the other is to enter : first (there will also be a slash &#x2F; first later). This type of command needs to be executed by pressing Enter after input, and the same is true in the following tutorial content.</p>
+<h2 id="Vim-Operation-Open-File-Find-Content"><a href="#Vim-Operation-Open-File-Find-Content" class="headerlink" title="Vim Operation: Open File, Find Content"></a>Vim Operation: Open File, Find Content</h2><p>Vim editor file and content operations are also performed in normal mode.</p>
+<p>(1) Open a file in Vim</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>:e &lt;filename&gt;</code></td>
+<td align="left">Open the file named filename, if the file does not exist, create it</td>
+</tr>
+<tr>
+<td align="left"><code>:Ex</code></td>
+<td align="left">Open the directory tree in Vim, select with the cursor and press Enter to open the corresponding file (Tip: - enter the upper-level directory)</td>
+</tr>
+</tbody></table>
+<p>(2) Find within the document</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>*</code></td>
+<td align="left">Find the next occurrence of the word currently under the cursor.</td>
+</tr>
+<tr>
+<td align="left"><code>#</code></td>
+<td align="left">Find the previous occurrence of the word currently under the cursor.</td>
+</tr>
+<tr>
+<td align="left"><code>/&lt;search&gt;</code></td>
+<td align="left">Search forward for the specified string.</td>
+</tr>
+<tr>
+<td align="left"><code>?&lt;search&gt;</code></td>
+<td align="left">Search backward for the specified string.</td>
+</tr>
+<tr>
+<td align="left"><code>n</code></td>
+<td align="left">Continue searching for the next occurrence.</td>
+</tr>
+<tr>
+<td align="left"><code>N</code></td>
+<td align="left">Continue searching for the previous occurrence.</td>
+</tr>
+</tbody></table>
+<p>Note for the above operations: n and N are directional. If you searched by * before, n will continue to search towards the end of the document, and N will search towards the beginning of the document; conversely, if you searched by #, n will point to the beginning of the document, and N will point to the end of the document.</p>
+<h2 id="Vim-Operation-File-Modification-and-Saving"><a href="#Vim-Operation-File-Modification-and-Saving" class="headerlink" title="Vim Operation: File Modification and Saving"></a>Vim Operation: File Modification and Saving</h2><p>(1) Insert: in insert mode</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>i</code></td>
+<td align="left">Insert before current char</td>
+</tr>
+<tr>
+<td align="left"><code>a</code></td>
+<td align="left">Insert after the current character</td>
+</tr>
+<tr>
+<td align="left"><code>I</code></td>
+<td align="left">Insert at the beginning of the line</td>
+</tr>
+<tr>
+<td align="left"><code>A</code></td>
+<td align="left">Insert at the end of the line</td>
+</tr>
+<tr>
+<td align="left"><code>o</code></td>
+<td align="left">Insert on the next line</td>
+</tr>
+<tr>
+<td align="left"><code>O</code></td>
+<td align="left">Insert on the previous line</td>
+</tr>
+</tbody></table>
+<p>Precautions for file insertion operations: Any of the above commands will make Vim enter insert mode. After entering insert mode, the cursor will change. At this time, the text entered will appear directly in the document. Press the Esc key or Ctrl-[ or Ctrl-C to exit insert mode</p>
+<p>(2) Delete (and save to Vim clipboard): in normal mode</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>x</code></td>
+<td align="left">Delete the current character, equivalent to Delete in insert mode</td>
+</tr>
+<tr>
+<td align="left"><code>X</code></td>
+<td align="left">Delete the previous character, equivalent to Backspace in insert mode</td>
+</tr>
+<tr>
+<td align="left"><code>dd</code></td>
+<td align="left">Delete the current line and save the deleted content to the Vim clipboard</td>
+</tr>
+<tr>
+<td align="left"><code>d&lt;X&gt;</code></td>
+<td align="left">Delete the specified content and save it to the Vim clipboard</td>
+</tr>
+<tr>
+<td align="left"><code>c&lt;X&gt;</code></td>
+<td align="left">Delete the specified content, save it to the Vim clipboard, and enter insert mode</td>
+</tr>
+</tbody></table>
+<p>Supplementary note for delete operation: The <X> part is a description of the operation content. To delete a word, enter dw or de; to copy the content from the current position to the end of the line, enter y$; to delete the next 3 characters and insert, enter c3l, etc.</p>
+<p>(3) Copy: in normal mode</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>yy</code></td>
+<td align="left">Copy the current line to the Vim clipboard</td>
+</tr>
+<tr>
+<td align="left"><code>y&lt;X&gt;</code></td>
+<td align="left">Copy the specified content to the Vim clipboard</td>
+</tr>
+</tbody></table>
+<p>(4) Paste: in normal mode</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>p</code></td>
+<td align="left">Paste after the current position</td>
+</tr>
+<tr>
+<td align="left"><code>P</code></td>
+<td align="left">Paste before the current position</td>
+</tr>
+</tbody></table>
+<p>(5) Replace: in normal mode</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>r&lt;X&gt;</code></td>
+<td align="left">Replace the current character with X</td>
+</tr>
+<tr>
+<td align="left"><code>gu&lt;X&gt;</code></td>
+<td align="left">Convert the specified text to lowercase</td>
+</tr>
+<tr>
+<td align="left"><code>gU&lt;X&gt;</code></td>
+<td align="left">Convert the specified text to uppercase</td>
+</tr>
+</tbody></table>
+<p>In addition to the above replacement operations in normal mode, you can use the commands in command-line mode to replace the content of the document. The specific command format is as follows:</p>
+<p>:[range]s&#x2F;search&#x2F;string&#x2F;[flags] [count]</p>
+<p>Search for the search content according to the pattern regular expression, and replace it with the string replacement content. The description of the options in the specific command is shown in the table below.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Option</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>range</code></td>
+<td align="left">The range of lines.  <code>%</code> means the entire file, same as <code>1,$</code>. <code>.</code> means current line and <code>$</code> the last line.</td>
+</tr>
+<tr>
+<td align="left"><code>search</code></td>
+<td align="left">The text to search for</td>
+</tr>
+<tr>
+<td align="left"><code>string</code></td>
+<td align="left">The text to replace <em>search</em> with.</td>
+</tr>
+<tr>
+<td align="left"><code>flags</code></td>
+<td align="left"><code>g</code> (global) replaces all occurrences. <code>c</code> (confirm) requires confirmation before each replacement.</td>
+</tr>
+<tr>
+<td align="left"><code>count</code></td>
+<td align="left">The number of lines to apply the command to (starting from the end of <code>range</code> or the current line).</td>
+</tr>
+</tbody></table>
+<p>(6) Undo, redo: in normal mode</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>u</code></td>
+<td align="left">Undo</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-r</code></td>
+<td align="left">Redo</td>
+</tr>
+</tbody></table>
+<p>(7) Save the file: in command-line mode</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>:w</code></td>
+<td align="left">Save the current file</td>
+</tr>
+<tr>
+<td align="left"><code>:wa</code></td>
+<td align="left">Save all files</td>
+</tr>
+<tr>
+<td align="left"><code>:wq</code> or <code>ZZ</code></td>
+<td align="left">Save and exit</td>
+</tr>
+<tr>
+<td align="left"><code>:q!</code> or <code>ZQ</code></td>
+<td align="left">Force quit, do not save</td>
+</tr>
+<tr>
+<td align="left"><code>:saveas &lt;newfilename&gt;</code></td>
+<td align="left">Save the file as</td>
+</tr>
+<tr>
+<td align="left"><code>:w &lt;newfilename&gt;</code></td>
+<td align="left">Save a copy of the file as <newfilename> and continue editing the original file</td>
+</tr>
+</tbody></table>
+<h2 id="Vim-Settings-and-Tips"><a href="#Vim-Settings-and-Tips" class="headerlink" title="Vim Settings and Tips"></a>Vim Settings and Tips</h2><p>(1) Vim settings</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>:set number</code></td>
+<td align="left">Show line numbers</td>
+</tr>
+<tr>
+<td align="left"><code>:set relativenumber</code></td>
+<td align="left">Show relative line numbers (this is very important, take your time to appreciate)</td>
+</tr>
+<tr>
+<td align="left"><code>:set hlsearch</code></td>
+<td align="left">Highlight search results</td>
+</tr>
+<tr>
+<td align="left"><code>:set autoindent</code></td>
+<td align="left">Automatic indentation</td>
+</tr>
+<tr>
+<td align="left"><code>:set smartindent</code></td>
+<td align="left">Smart indentation</td>
+</tr>
+<tr>
+<td align="left"><code>:set tabstop=4</code></td>
+<td align="left">Set the width of the tab character to 4</td>
+</tr>
+<tr>
+<td align="left"><code>:set softtabstop=4</code></td>
+<td align="left">Set the indent width to 4 when pressing tab</td>
+</tr>
+<tr>
+<td align="left"><code>:set shiftwidth=4</code></td>
+<td align="left">Set the automatic indentation width to 4</td>
+</tr>
+<tr>
+<td align="left"><code>:set expandtab</code></td>
+<td align="left">Convert tab characters to spaces when indenting</td>
+</tr>
+<tr>
+<td align="left"><code>:filetype on</code></td>
+<td align="left">Enable file type detection</td>
+</tr>
+<tr>
+<td align="left"><code>:syntax on</code></td>
+<td align="left">Enable syntax highlighting</td>
+</tr>
+</tbody></table>
+<p>Supplementary note: The commands are listed here. You can enter them in Vim for setting, but the parameters set in this way are only effective before closing Vim this time. If you exit Vim and open it again, the previous settings will be invalid. To make it permanently effective, you need to modify an automatic configuration file of Vim, generally the file path is &#x2F;home&#x2F;<user>&#x2F;.vimrc (Linux system) or &#x2F;Users&#x2F;<user>&#x2F;.vimrc (MacOS system)</p>
+<p>(2) Repeat the last command: in normal mode</p>
+<p>Vim has a special command: <code>.</code></p>
+<p>(3) Indentation: in normal mode</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>&gt;&gt;</code></td>
+<td align="left">Indent the current line to the right</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;&lt;</code></td>
+<td align="left">Indent the current line to the left</td>
+</tr>
+</tbody></table>
+<p>Try pressing <code>3&gt;&gt;</code>, <code>&lt;&lt;</code>, and <code>&lt;G</code> on this line.</p>
+<p>(4) Automatic formatting: in normal mode</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>==</code></td>
+<td align="left">Automatically format the current line</td>
+</tr>
+<tr>
+<td align="left"><code>gg=G</code></td>
+<td align="left">Automatically format the entire current document</td>
+</tr>
+<tr>
+<td align="left"><code>&lt;N&gt;==</code></td>
+<td align="left">Automatically format N lines starting from the current line</td>
+</tr>
+<tr>
+<td align="left"><code>=&lt;N&gt;j</code></td>
+<td align="left">Automatically format the current line and N lines down</td>
+</tr>
+<tr>
+<td align="left"><code>=&lt;N&gt;k</code></td>
+<td align="left">Automatically format the current line and N lines up</td>
+</tr>
+</tbody></table>
+<p>(5) Split screen: in command-line mode</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>:split</code> (abbr: <code>:sp</code>) or <code>Ctrl-w s</code></td>
+<td align="left">Split horizontally</td>
+</tr>
+<tr>
+<td align="left"><code>:vsplit</code> (abbr: <code>:vs</code>) or <code>Ctrl-w v</code></td>
+<td align="left">Split vertically</td>
+</tr>
+</tbody></table>
+<p>(6) Window jump</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Ctrl-w w</code></td>
+<td align="left">Activate next window</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-w j</code></td>
+<td align="left">Activate window below</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-w k</code></td>
+<td align="left">Activate window above</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-w h</code></td>
+<td align="left">Activate window left</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-w l</code></td>
+<td align="left">Activate window right</td>
+</tr>
+</tbody></table>
+<p>(7) Screen zoom</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Ctrl-w =</code></td>
+<td align="left">Average window size</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-w +</code></td>
+<td align="left">Increase height</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-w -</code></td>
+<td align="left">Decrease height</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-w _</code></td>
+<td align="left">Maximum height</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-w &gt;</code></td>
+<td align="left">Increase width</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-w &lt;</code></td>
+<td align="left">Reduce width</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl-w |</code></td>
+<td align="left">Maximum width</td>
+</tr>
+</tbody></table>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/06/22/netease-ux-articles/news_20190628_28584_820175/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/06/16/netease-ux-articles/news_20190625_28584_819571/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

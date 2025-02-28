@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Introduction to Data Mining and Modeling in Data Analysis | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Analysis/">
+                            Data Analysis
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Mining/">
+                            Data Mining
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Modeling/">
+                            Modeling
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Classification/">
+                            Classification
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Prediction/">
+                            Prediction
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Regression-Analysis/">
+                            Regression Analysis
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Logistic-Regression/">
+                            Logistic Regression
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Feature-Selection/">
+                            Feature Selection
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Introduction to Data Mining and Modeling in Data Analysis
+            
+            
+        </div>
+        <span class="post-date">
+            13 Nov, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191114%2F4ccd8478-cc12-4437-ae77-dc994934b733.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20191114/28584_848634.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>This sharing focuses on data mining and modeling in data analysis:</p>
+<p>After data exploration and data preprocessing, we obtain data that can be directly modeled. According to the mining objectives and data format, we can establish models such as classification and prediction, cluster analysis, association rules, time series patterns, and deviation detection.</p>
+<h2 id="Classification-and-Prediction"><a href="#Classification-and-Prediction" class="headerlink" title="Classification and Prediction"></a>Classification and Prediction</h2><p>Classification and prediction are two main types of prediction problems. Classification mainly predicts class labels (discrete attributes), while prediction mainly establishes continuous value function models to predict the value of the dependent variable corresponding to a given independent variable.</p>
+<h3 id="1-1-Implementation-Process"><a href="#1-1-Implementation-Process" class="headerlink" title="1.1 Implementation Process"></a>1.1 Implementation Process</h3><p>(1) Classification is to construct a classification model, input the attribute values of the sample, and output the corresponding category, mapping each sample to a predefined category.</p>
+<p>The classification model is also established on the existing labeled data set, and the accuracy of the model on the existing samples can be easily calculated, which belongs to supervised learning.</p>
+<p>(2) Prediction refers to establishing a functional model of interdependence between two or more variables, and then making predictions or controls.</p>
+<p>(3) Implementation process</p>
+<p>The first step of classification is the learning step, which establishes a classification model to obtain classification rules through inductive analysis of the training sample set. The second step is the classification step, which first uses a known test sample set to evaluate the accuracy of the classification rules and make predictions.</p>
+<p>The first step of prediction is to establish a functional model of predictive attributes through the training set. The second step is to perform prediction or control after the model has passed the test.</p>
+<h3 id="1-2-Common-Classification-and-Prediction-Algorithms"><a href="#1-2-Common-Classification-and-Prediction-Algorithms" class="headerlink" title="1.2 Common Classification and Prediction Algorithms"></a>1.2 Common Classification and Prediction Algorithms</h3><p>① <strong>Regression analysis:</strong> Regression analysis is the most common statistical method to determine the quantitative relationship between predictive attributes (numerical) and other variables. It includes linear and nonlinear regression, Logistic regression, ridge regression, principal component regression, partial least squares regression, etc.</p>
+<p>② <strong>Decision tree:</strong> Adopts a top-down recursive method, compares attribute values at internal nodes, and branches down from the node according to different attribute values. The leaf node finally obtained is the class of learning division.</p>
+<p>③ <strong>Artificial neural network:</strong> An artificial neural network is an information processing system established by imitating the structure and function of the brain’s neural network. It is a model that represents the relationship between the input and output variables of the neural network.</p>
+<p>④ <strong>Bayesian network:</strong> Bayesian network, also known as belief network, is an extension of the Bayes method and is currently one of the most effective theoretical models in the field of uncertain knowledge representation and reasoning.</p>
+<p>⑤ <strong>Support vector machine:</strong> Support vector machine is an algorithm that converts low-dimensional nonlinear separability into high-dimensional linear separability through a certain nonlinear mapping, and performs linear analysis in high-dimensional space.</p>
+<h3 id="1-3-Regression-Analysis"><a href="#1-3-Regression-Analysis" class="headerlink" title="1.3 Regression Analysis"></a>1.3 Regression Analysis</h3><p>(1) Research scope of regression analysis</p>
+<table>
+<thead>
+<tr>
+<th align="left">Problem Type</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Simple Linear Regression</td>
+<td align="left">Relationship between one independent variable and one dependent variable.</td>
+<td align="left">Predicting sales based on advertising spending.</td>
+</tr>
+<tr>
+<td align="left">Multiple Linear Regression</td>
+<td align="left">Relationship between multiple independent variables and one dependent variable.</td>
+<td align="left">Predicting house prices based on size, location, and number of bedrooms.</td>
+</tr>
+<tr>
+<td align="left">Nonlinear Regression</td>
+<td align="left">Relationship where the dependent variable is not a linear function of the independent variables.</td>
+<td align="left">Predicting population growth based on time.</td>
+</tr>
+<tr>
+<td align="left">Logistic Regression</td>
+<td align="left">Predicting the probability of a binary outcome (0 or 1).</td>
+<td align="left">Predicting whether a customer will click on an ad (yes&#x2F;no).</td>
+</tr>
+</tbody></table>
+<p>(2) Commonly Used Models for Regression Analysis</p>
+<table>
+<thead>
+<tr>
+<th align="left">Model</th>
+<th align="left">Formula</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Linear Regression</td>
+<td align="left"><code>Y = β0 + β1X + ε</code></td>
+<td align="left">Predicts a continuous dependent variable <code>Y</code> based on a single independent variable <code>X</code>.</td>
+</tr>
+<tr>
+<td align="left">Multiple Linear Regression</td>
+<td align="left"><code>Y = β0 + β1X1 + β2X2 + ... + βnXn + ε</code></td>
+<td align="left">Predicts a continuous dependent variable <code>Y</code> based on multiple independent variables <code>X1, X2, ... Xn</code>.</td>
+</tr>
+<tr>
+<td align="left">Logistic Regression</td>
+<td align="left"><code>log(p/(1-p)) = β0 + β1X</code></td>
+<td align="left">Predicts the probability <code>p</code> of a binary outcome (0 or 1) based on a single independent variable <code>X</code>.</td>
+</tr>
+</tbody></table>
+<p>Note: Linear regression models are usually relatively simple regression models, but the independent and dependent variables can have some form of curved relationship, requiring the creation of a nonlinear regression model.</p>
+<p>① <strong>Logistic Regression Analysis Introduction</strong></p>
+<p>Logistic function: In the logistic regression model, the dependent variable has only two values, 0 and 1. The logarithm is taken after taking the event ratio, and the function is obtained:</p>
+<p>  <code>log(p/(1-p)) = β0 + β1X1 + β2X2 +...+ βpXp</code></p>
+<p>② <strong>Modeling Steps:</strong> First, set indicator variables according to the analysis objectives, then collect data and screen features; list the regression equation and estimate the regression coefficients in the model; perform model testing, including accuracy, confusion matrix, ROC curve, and KS value; model application, input the value of the independent variable, you can get the value of the predicted variable, or control the value of the independent variable according to the value of the predicted variable.</p>
+<p>For example: Logistic regression modeling based on the data of a certain bank in reducing loan delinquency rate.</p>
+<p>Use scikit-learn to perform logistic regression analysis on the data. First, perform feature selection. For example, simply use the F-test value to give the F value and P value of each feature, and select the one with a larger F value or a smaller P value. Secondly, there are recursive feature elimination and stability selection. Here, the random logistic regression in the stability selection method is used. First, feature selection, and then use the selected features to establish a logistic regression model and output the average accuracy rate.</p>
+<p>The example code is as follows:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding=utf-8</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression <span class="keyword">as</span> LR</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> RandomizedLogisticRegression <span class="keyword">as</span> RLR</span><br><span class="line"></span><br><span class="line"><span class="comment"># Parameter initialization</span></span><br><span class="line">filename = <span class="string">&#x27;Data and Code/chapter5/demo/data/bankloan.xls&#x27;</span></span><br><span class="line">data = pd.read_excel(filename)</span><br><span class="line">x = data.iloc[:, :<span class="number">8</span>].values  <span class="comment"># Use .as_matrix() for earlier versions of Pandas</span></span><br><span class="line">y = data.iloc[:, <span class="number">8</span>].values  <span class="comment"># Use .as_matrix() for earlier versions of Pandas</span></span><br><span class="line"></span><br><span class="line">rlr = RLR(selection_threshold=<span class="number">0.5</span>)  <span class="comment"># Establish a random logistic regression model to screen variables # Adjust the threshold</span></span><br><span class="line">rlr.fit(x, y)  <span class="comment"># Train the model</span></span><br><span class="line">selected_features = rlr.get_support()  <span class="comment"># Get the index of the selected features</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">u&#x27;The feature names after feature selection by random logistic regression are:&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">u&#x27;,&#x27;</span>.join(data.columns[:-<span class="number">1</span>][selected_features]))  <span class="comment"># Use data.columns[:-1] to remove the last column (target variable)</span></span><br><span class="line"></span><br><span class="line">x = data[data.columns[:-<span class="number">1</span>][selected_features]].values  <span class="comment"># Use .as_matrix() for earlier versions of Pandas</span></span><br><span class="line">lr = LR()  <span class="comment"># Establish a logistic regression model</span></span><br><span class="line">lr.fit(x, y)  <span class="comment"># Train the model with the selected features</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">u&#x27;The model is built successfully.&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">u&#x27;The average accuracy rate is：%s&#x27;</span> % lr.score(x, y))</span><br></pre></td></tr></table></figure>
+<p>After running, the results are as follows:</p>
+<p>Effective features are: salary, address, debt ratio, credit card debt</p>
+<p>From the results, it can be seen that the random logistic regression is used to eliminate variables, and x2, x8, x1, and x5 are eliminated respectively. The final model has four columns left, where the random threshold is 0.25, and this program uses 0.5.</p>
+<p>Logistic regression is essentially a linear model. The model validity test here is essentially a linear test, that is, the selected variables have a strong linear correlation with the result, and the selected ones are not necessarily irrelevant, and may be non-linearly related.</p>
+<p>For the selection of non-linearly related variables, there are decision trees, neural networks, etc., which is another field of knowledge.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/11/29/netease-ux-articles/news_20201023_28584_911762/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/11/06/netease-ux-articles/news_20191108_28584_847506/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

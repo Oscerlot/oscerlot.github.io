@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Mobile Game Social System - Detailed Explanation of Friends Interface Interaction Design | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Interaction-Design/">
+                            Interaction Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Social-System/">
+                            Social System
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Friends-Interface/">
+                            Friends Interface
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Mobile-Games/">
+                            Mobile Games
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/MMO/">
+                            MMO
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Mobile Game Social System - Detailed Explanation of Friends Interface Interaction Design
+            
+            
+        </div>
+        <span class="post-date">
+            17 May, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190517%2Faaf1a38d-cd88-4a67-8a6f-bdae91705836.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20190517/28584_813963.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>The social system has always been an indispensable part of many games. Although it is not directly related to the core gameplay, it is a key system to increase player immersion and improve retention. Especially for MMO products with strong social interaction, the social system plays a key role. For example, our <em>A Chinese Ghost Story</em> mobile game is known for its excellent social design.</p>
+<p>From the perspective of planning, when designing a social system, we usually consider how to meet the needs of players, how to promote the establishment of a player network, how to use the elements in the game to create a social space for players, and so on. As interaction designers, when we are involved in social system design, we need to consider more about how to improve system usability, reduce interruptions, and satisfy the rational layout of all functions.</p>
+<p>Here, we focus on the main operating system in the mobile game social system - the friends interface, and sort out the interaction design elements of the friends interface.</p>
+<hr>
+<h2 id="I-Functional-Block-Breakdown"><a href="#I-Functional-Block-Breakdown" class="headerlink" title="I. Functional Block Breakdown"></a>I. Functional Block Breakdown</h2><p>Divided by functional blocks, friends can be divided into these three parts:</p>
+<ul>
+<li><strong>Existing Friends</strong></li>
+<li><strong>Find Friends</strong></li>
+<li><strong>Message Notifications</strong></li>
+</ul>
+<p>The existing mobile game friends interfaces basically include these three parts. Depending on whether a certain game focuses on social interaction, the specific functions within each part will be different. Games that focus on social interaction often have more expanded functions, such as moments, message boards, social relationship recommendations, etc.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Block</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Existing Friends</strong></td>
+<td align="left">Displays a list of current friends, allowing players to interact with them (e.g., chat, gift-giving, team up).</td>
+</tr>
+<tr>
+<td align="left"><strong>Find Friends</strong></td>
+<td align="left">Provides methods to search for and add new friends (e.g., by username, nearby players, recommended players).</td>
+</tr>
+<tr>
+<td align="left"><strong>Message Notifications</strong></td>
+<td align="left">Displays friend requests, system messages related to social interactions, and potentially mail (though mail is sometimes a separate system entirely).</td>
+</tr>
+</tbody></table>
+<p>The diagram above (not included here, as it requires a visual representation) shows the specific functions usually included in the friends block. It can be seen that there are quite a lot of function items included. Therefore, sorting and merging these function items is a prerequisite for rationally arranging the layout of the friends interface and making the overall hierarchy simple and clear.</p>
+<h3 id="1-First-Level-Tab-Division"><a href="#1-First-Level-Tab-Division" class="headerlink" title="1. First-Level Tab Division"></a>1. First-Level Tab Division</h3><p>Usually, the three major functional blocks are used as the three first-level tabs of the friends section. If there are more expanded functions, then second-level tabs are added. The message notification part is special. Mail notification is a relatively independent part. Some games will put it together with the friends block as an independent tab, and some games will separate it. This can be determined according to the specific planning direction of the game, and it has little impact on the friends block itself.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190517%2F14864963-f950-42a9-83c7-5eacc0611caf.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190517&#x2F;14864963-f950-42a9-83c7-5eacc0611caf.jpg"></p>
+<h3 id="2-Friend-Request-List-Entry"><a href="#2-Friend-Request-List-Entry" class="headerlink" title="2. Friend Request List Entry"></a>2. Friend Request List Entry</h3><p>Although friend requests are message notifications, they are usually placed on the friends list page. This is because after a friend request is accepted, the friend will enter the friends list, which is logically related in terms of operation. Therefore, it is easier for players to understand that the request information is placed on the friends list page. And the importance of friend requests is relatively low, only requiring a prompt when there is request information. Usually, a button can be placed as an entry or used as a second-level tab.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190517%2Fb89e2134-5060-4bc6-9b04-7a50332ee48b.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190517&#x2F;b89e2134-5060-4bc6-9b04-7a50332ee48b.jpg"></p>
+<h3 id="3-Find-Friends-Functional-Block-Merging"><a href="#3-Find-Friends-Functional-Block-Merging" class="headerlink" title="3. Find Friends Functional Block Merging"></a>3. Find Friends Functional Block Merging</h3><p>In the “Find Friends” section, it can be seen that the search results, recommended friends, nearby people, and recent contacts all contain player lists and add friend operations, only differing in the specific information of the players.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190517%2F11bdfe76-676c-4b99-91ee-da8d68de4c43.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190517&#x2F;11bdfe76-676c-4b99-91ee-da8d68de4c43.jpg"></p>
+<p>Therefore, we can usually combine two of the blocks for display. For example, the recommended friends list is displayed in the default state, and after a search, this area displays the search results list.</p>
+<p>Using this method of switching display content in the same area can more effectively utilize interface space and simplify the interface hierarchy. If there are multiple functional blocks at the same time, tabs can be added to clarify the logic.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190517%2F37009328-b4f3-4afb-9806-3c9eac71b870.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190517&#x2F;37009328-b4f3-4afb-9806-3c9eac71b870.jpg"></p>
+<hr>
+<h2 id="II-Prompt-Detail-Design"><a href="#II-Prompt-Detail-Design" class="headerlink" title="II. Prompt Detail Design"></a>II. Prompt Detail Design</h2><p>In order to make the player’s operation smooth, in interaction design, it is necessary to exhaustively list all possible operation situations that the player may encounter, otherwise some details may be overlooked. There are also some design details that need attention in the friends section.</p>
+<h3 id="1-Nickname-Display"><a href="#1-Nickname-Display" class="headerlink" title="1. Nickname Display"></a>1. Nickname Display</h3><p>The nickname is the beginning of the player’s establishment of social relationships and identification of identity in the game. Therefore, the player’s nickname needs to be clearly displayed first in the friends list. Due to limited space in mobile games, the length of the nickname is usually limited. However, when designing the layout of list information, we still need to consider long nicknames and multiple languages. Simple icons or levels can be placed before the nickname, but free space needs to be reserved after the nickname. Usually, the nickname is on a separate line, and other information is on a new line. In this way, when the nicknames of various players are of different lengths, it will not affect the display of subsequent information and keep the layout clean.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190517%2F6e88d14c-41b1-405b-92ae-52815d46c7f4.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190517&#x2F;6e88d14c-41b1-405b-92ae-52815d46c7f4.jpg"></p>
+<h3 id="2-Prompt-Information"><a href="#2-Prompt-Information" class="headerlink" title="2. Prompt Information"></a>2. Prompt Information</h3><p>Clear prompt information is the guarantee of smooth use by players, and there are also a series of prompt information that needs attention in the friends section.</p>
+<p>For example, for nearby people, when the player turns off the positioning function, the list of nearby people is blank, and it needs to be prompted that the current positioning function is not turned on. In this case, we usually use positive guidance prompts such as “Turn on the positioning function to discover more players” with corresponding icons to guide players to use this function.</p>
+<p>For another example, when the request list and search results are empty, it is necessary to pay attention to displaying corresponding prompt information such as “No friend requests” and “No corresponding friends found”. Without these prompts, a blank interface will make players wonder if it is stuck or if there is no content.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190517%2F5b8cc86d-0b7c-443f-a771-9e33e55fdce1.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190517&#x2F;5b8cc86d-0b7c-443f-a771-9e33e55fdce1.jpg"></p>
+<p>Clear interface hierarchy, functional block division, and detailed design details are aspects that we must consider when doing interaction design. This is the basic guarantee for satisfying usability and the premise for producing more innovative designs.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/05/24/netease-ux-articles/news_20190527_28584_815436/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/05/14/netease-ux-articles/news_20190517_28584_813907/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

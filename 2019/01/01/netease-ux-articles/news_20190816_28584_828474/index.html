@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>[US Sharing] A First Look at Flink | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+        </div>
+        <div class="post-title">
+            
+            
+                [US Sharing] A First Look at Flink
+            
+            
+        </div>
+        <span class="post-date">
+            1 Jan, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190816%2F71fb48ce-48eb-4be1-8783-fd30289ec6c9.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20190816/28584_828474.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>Flink is a stream processing framework. In stream processing, data can usually be regarded as an infinite-capacity pipeline. Every time a message comes in, it is processed. This is a different concept from batch processing. Batch processing usually stores data in a file system and then processes the data.</p>
+<p><strong>From this, it can be seen that compared to the batch processing method, the stream processing calculation approach has lower latency and is more suitable for scenarios such as real-time calculation.</strong></p>
+<p>So how do we count data in this stream processing framework? In Flink, a variety of windows are provided to help us implement the calculation and statistics of stream data. This article will briefly introduce the concept of windows in Flink.</p>
+<p>Consider the following scenario: cars are constantly passing through a checkpoint from the same direction. We want to count the total number of cars passing through this checkpoint within a period of time. Since the cars are constantly coming, we cannot wait for all the cars to pass through this checkpoint before counting and summing.</p>
+<p><strong>So we need to change our thinking and try an accumulation strategy.</strong></p>
+<p>Every time a piece of data comes in, we add it to the previous result. In this way, for each input time, an updated record will be obtained:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190816%2Fc5fdce64-9b36-4fe1-b59a-83a48e0a06ec.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190816&#x2F;c5fdce64-9b36-4fe1-b59a-83a48e0a06ec.jpg"></p>
+<p>But this cumulative sum may not be what we ultimately want, because it may lose some data during the continuous updating of data. Then we may need to re-describe the problem:</p>
+<p><strong>Count the number of cars passing through the checkpoint every minute.</strong></p>
+<p>Then we need to count the vehicle data every 60 seconds. This is called a Tumbling window in Flink, as shown in the figure:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190816%2Fd008f363-137a-4332-bc8e-5ccce2bed086.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190816&#x2F;d008f363-137a-4332-bc8e-5ccce2bed086.jpg"></p>
+<p>As can be seen in the figure, each Tumbling window does not overlap. In some scenarios, we may need a smoother transition method, such as counting the data of the previous 1 minute every 30 seconds. This is a Sliding window, as shown in the figure:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190816%2Fb3483fb5-e053-4430-bf8c-0950f8305637.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190816&#x2F;b3483fb5-e053-4430-bf8c-0950f8305637.jpg"></p>
+<p>Consider another situation. Suppose there are multiple checkpoints, then we can process the data of different checkpoints in parallel according to the different IDs of the checkpoint sensors, as shown in the figure:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190816%2F1f256f3b-9a51-463d-8d7d-7d7a00950f9a.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190816&#x2F;1f256f3b-9a51-463d-8d7d-7d7a00950f9a.jpg"></p>
+<p>The above introduces several different types of windows that use time as the statistical object. These windows can be called Time Windows.</p>
+<p>Of course, these windows can also be data-driven (Count Window), such as processing every few words, etc. Understanding Flink’s window mechanism is only a small step in learning Flink. I will introduce more Flink features when I have the opportunity.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/01/01/netease-ux-articles/news_20190806_28584_826836/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/01/01/netease-ux-articles/news_20190823_28584_829556/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

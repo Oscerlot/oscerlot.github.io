@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Introduction and Practical Application of R-Q Factor Analysis | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-Research/">
+                            User Research
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Analysis/">
+                            Data Analysis
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/R-Q-Factor-Analysis/">
+                            R-Q Factor Analysis
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Correspondence-Analysis/">
+                            Correspondence Analysis
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/R-Language/">
+                            R Language
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Multivariate-Analysis/">
+                            Multivariate Analysis
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Dimension-Reduction/">
+                            Dimension Reduction
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Introduction and Practical Application of R-Q Factor Analysis
+            
+            
+        </div>
+        <span class="post-date">
+            27 Sep, 2021
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F9f2fa3a2-34ca-4351-b393-b6c341040fdd.png/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20211019/28584_979985.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<h2 id="Basic-Introduction"><a href="#Basic-Introduction" class="headerlink" title="Basic Introduction"></a>Basic Introduction</h2><p>R-Q factor analysis is a multivariate analysis method developed on the basis of R-type factor analysis and Q-type factor analysis. Its basic idea is to represent the rows (generally representing samples) and columns (generally representing variables) in the contingency table as points in a lower-dimensional space, so that more intuitive analysis can be carried out. For instance, consider a contingency table of different types of players’ purchases of items in a game:</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">Item A</th>
+<th align="left">Item B</th>
+<th align="left">Item C</th>
+<th align="left">Item D</th>
+<th align="left">Item E</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Type 1</td>
+<td align="left">10</td>
+<td align="left">5</td>
+<td align="left">15</td>
+<td align="left">20</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">Type 2</td>
+<td align="left">5</td>
+<td align="left">10</td>
+<td align="left">5</td>
+<td align="left">10</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">Type 3</td>
+<td align="left">20</td>
+<td align="left">15</td>
+<td align="left">10</td>
+<td align="left">5</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">Type 4</td>
+<td align="left">10</td>
+<td align="left">20</td>
+<td align="left">5</td>
+<td align="left">15</td>
+<td align="left">10</td>
+</tr>
+</tbody></table>
+<p>It can be found that when there are many categories of variables and samples under study, it is difficult to directly and intuitively reveal the relationship between variables through the contingency table. Therefore, the idea of dimensionality reduction can be used to simplify the structure of the contingency table. At this time, factor analysis will be the first thing that comes to mind. However, the disadvantage of general factor analysis is that R-type factor analysis only studies the relationship between variables, and Q-type factor analysis only studies the relationship between samples.  But in many fields, both need to be carried out at the same time. Therefore, R-Q factor analysis (also known as correspondence analysis) came into being. Correspondence analysis is to reflect the variables and the relationship between variables on a two-dimensional scatter plot. Closely related variable points are closer, while less related category points are more dispersed. By observing the corresponding distribution map, you can very intuitively feel the connection between variables, as shown in the following figure:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F928333ab-68c8-46d9-960f-b5314902f8cb.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;928333ab-68c8-46d9-960f-b5314902f8cb.png"></p>
+<h2 id="Method-Principle"><a href="#Method-Principle" class="headerlink" title="Method Principle"></a>Method Principle</h2><p>Because the theory of this method is more complicated and involves a lot of formulas, due to space limitations, this article does not involve the principle, and only briefly introduces the calculation process. Skipping it does not affect the subsequent practical part.</p>
+<p>First, convert the contingency table matrix to a probability matrix, where:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fa291bd8e-19d8-4c8f-9409-e7ae235948a3.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;a291bd8e-19d8-4c8f-9409-e7ae235948a3.png"></p>
+<p>Through transformation, the probability matrix P is obtained:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fb8e3a85d-bb91-4f4f-9f70-3070e3e33d9d.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;b8e3a85d-bb91-4f4f-9f70-3070e3e33d9d.png"></p>
+<p>Then, the transition matrix Z is obtained by standardizing the probability matrix:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fdd9fe4a3-8ce4-4fdf-b275-469182e8644d.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;dd9fe4a3-8ce4-4fdf-b275-469182e8644d.png"></p>
+<p>Therefore, the covariance matrix A of variables and the covariance matrix B of samples are respectively:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F523a7364-111a-4cdf-a21d-5fc97de6e516.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;523a7364-111a-4cdf-a21d-5fc97de6e516.png"></p>
+<p>Next, calculate the factor loading matrices F and G of R-type and Q-type respectively. They are respectively:</p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fe3b4e182-d4fb-4a78-8f92-fef880bc09f9.png/size/" alt="Factor Loading Matrices"><br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fcc169f88-f74f-43cb-aac7-70683e6bc0ad.png/size/" alt="Factor Loading Matrices"></p>
+<p>Where λi is the eigenvalue of matrices A and B, and ui and vi are the eigenvectors of matrices A and B.</p>
+<p>According to the theorem, matrices A and B have exactly the same non-zero eigenvalues, and these eigenvalues are the variances of each common factor. Therefore, the same factor axis can be used to represent variable points and sample points at the same time. Therefore, F and G are respectively regarded as p two-dimensional points and n two-dimensional points are drawn in a common coordinate plane, forming a corresponding distribution map, which can intuitively see the connection between various categories.</p>
+<h2 id="R-Language-Practical-Application"><a href="#R-Language-Practical-Application" class="headerlink" title="R Language Practical Application"></a>R Language Practical Application</h2><p>Although the theory of R-Q factor analysis is more complicated, its use in R language is very simple, and it can be completed in three steps:</p>
+<h3 id="Step-1-Install-the-R-language-package-‘ca’-and-load-it"><a href="#Step-1-Install-the-R-language-package-‘ca’-and-load-it" class="headerlink" title="Step 1: Install the R language package ‘ca’ and load it"></a>Step 1: Install the R language package ‘ca’ and load it</h3><p>Enter the code <code>install.packages(&#39;ca&#39;)</code> in the command line to complete the installation.</p>
+<p>Then load the package with the code <code>library(&#39;ca&#39;)</code>.</p>
+<h3 id="Step-2-Read-the-data"><a href="#Step-2-Read-the-data" class="headerlink" title="Step 2: Read the data"></a>Step 2: Read the data</h3><p>If it is a csv file, it can be completed by file reading code</p>
+<p><code>data &lt;- read.csv(“path/filename.csv”, header= T)</code></p>
+<h3 id="Step-3-R-language-modeling-and-drawing"><a href="#Step-3-R-language-modeling-and-drawing" class="headerlink" title="Step 3: R language modeling and drawing"></a>Step 3: R language modeling and drawing</h3><p>Model with code <code>result &lt;- ca(data)</code></p>
+<p>Then draw with the code <code>plot(result)</code>, and the corresponding distribution map is drawn successfully!</p>
+<p>At the same time, in the output results, we need to pay more attention to the indicator Principal inertias (eigenvalues), which represents the contribution rate of each eigenvalue. Since we finally need the largest two eigenvalues as two dimensions for the corresponding graph display, the larger the first two eigenvalues, the higher the contribution, and the more it can analyze the real information of the data. Our example is as follows:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F4c053811-f28d-4118-896f-03f4a439ee1f.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;4c053811-f28d-4118-896f-03f4a439ee1f.png"></p>
+<p>It can be seen that the first two eigenvalues can explain 86.01% of the data, which is a very good result.</p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>R-Q factor analysis has many application scenarios. It can be used to analyze the preferences of different types of players for game props and different gameplays, and can be well used in cross-recommendation; it can also analyze the preferences of users from different channels for different types of games, assist in the rational use of channel resources, and thus better promote channels; it can also analyze various dimensions among players of different occupations and different age groups. R-Q factor analysis has the following advantages:</p>
+<ol>
+<li>It can reveal the relationship between row variables and column variables</li>
+<li>Intuitively express the relationship between multi-dimensional variables in a two-dimensional graph</li>
+<li>The operation and implementation are relatively simple</li>
+</ol>
+<p>Finally, I hope everyone can gain something from this article and apply R-Q factor analysis to work and study practice!</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2021/10/01/netease-ux-articles/news_20211012_28584_978014/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2021/09/23/netease-ux-articles/news_20211012_28584_978028/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

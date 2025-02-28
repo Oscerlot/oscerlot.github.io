@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Battle Pass System Design in Games | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Interaction-Design/">
+                            Interaction Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Game-Design/">
+                            Game Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Battle-Pass/">
+                            Battle Pass
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Payment-Model/">
+                            Payment Model
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Hooked-Model/">
+                            Hooked Model
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Reward-Mechanism/">
+                            Reward Mechanism
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Game-Addiction/">
+                            Game Addiction
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Battle Pass System Design in Games
+            
+            
+        </div>
+        <span class="post-date">
+            1 Nov, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190926%2F1159b4f5-034a-431e-ba36-39405fe500ba.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20191104/28584_846575.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>What is a Battle Pass? It’s a fantastic payment design from <em>Fortnite</em> that has swept across various games, such as the Honor Pass system in <em>Honor of Kings</em>, the season pass in <em>PUBG Mobile</em>, the Battle Pass in <em>Apex Legends</em>, and so on. It can be said that the design of the Battle Pass is another revolution in the game payment model after the design of loot boxes.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191104%2F6141799c-3ee8-4dfe-bcb4-31f59c24bd16.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20191104&#x2F;6141799c-3ee8-4dfe-bcb4-31f59c24bd16.jpg"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191104%2F92d1422c-4920-4a87-8a29-48b94a1ef547.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20191104&#x2F;92d1422c-4920-4a87-8a29-48b94a1ef547.jpg"></p>
+<p>Looking at the major payment models of games, such as <em>Monument Valley</em>, a single-player game, the revenue mainly relies on “tickets”; such as <em>A Chinese Ghost Story</em>, an MMORPG game, the revenue mainly relies on a small number of big spenders; such as casual games like <em>Candy Crush</em>, the revenue is mainly the transaction of consumables; such as <em>Onmyoji</em>, a card game, the revenue is mainly from gacha, similarly <em>Overwatch</em>‘s loot boxes and <em>Hearthstone</em>‘s card packs; there are also ways to earn revenue such as skin sales.</p>
+<p>Each payment model has its advantages and limitations. For example, the skin itself has very low appeal to many players who focus on practicality. The method of gacha loot boxes has the same drawbacks as the skin payment method on the one hand, and the gacha of pure card games has greater limitations on the core of the game itself. So how does the Battle Pass work?</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191104%2Faf3e32ba-b3d8-4dca-b149-71c0be5918fe.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20191104&#x2F;af3e32ba-b3d8-4dca-b149-71c0be5918fe.jpg"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191104%2Fcd4173c5-516d-4172-b481-8678be7a865e.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20191104&#x2F;cd4173c5-516d-4172-b481-8678be7a865e.jpg"></p>
+<p>This mechanism is divided into two modes: free version and paid version.</p>
+<p>Free-to-play players can earn experience by completing tasks and other methods in the game, and accumulate levels to obtain corresponding level rewards; at the same time, they can also purchase the paid version to unlock more rewards at the corresponding experience level; of course, they can also directly purchase experience to obtain rewards.</p>
+<p>It can be found that under this mechanism, the more players play, the more rewards they get, and the greater the temptation to purchase the paid version. At the same time, once the paid version is purchased, players will be very eager to reach the final grand prize, so they will stay in the game for a longer time, or directly spend money to “buy time”.</p>
+<p>At the same time, this mechanism has a very big advantage. Its payment is separated from the core of the game itself, which means that payment will not impact the game balance, which is very friendly to players with low spending. In addition, this method of getting on the bus first and then buying a ticket is far more likely to give players the urge to pay than the method of buying a ticket first and then getting on the bus. At its root, this is a model that accumulates rewards for players.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191104%2F2ddc7789-6167-4c20-9490-4366cb4a838b.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20191104&#x2F;2ddc7789-6167-4c20-9490-4366cb4a838b.jpg"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191104%2F7ff0817b-ee24-4988-be25-30cba7434064.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20191104&#x2F;7ff0817b-ee24-4988-be25-30cba7434064.jpg"></p>
+<p>From the theory of game design, our core is to hope that players can be “addicted” to our games, that is, to improve players’ interactivity and stickiness, so that users develop usage habits. The HOOKED model explains and illustrates the operating mechanism of “addiction”.</p>
+<p>The hooked model mainly includes four stages: trigger, action, variable rewards, and investment. Trigger refers to the inducement that prompts users to take action. For example, the level 1 reward of the Battle Pass is often very generous and attractive. At the same time, as players continue to play the game, they will always be prompted to receive corresponding level rewards for free, and at the same time, they will be prompted that the paid rewards are more generous.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191104%2Fb0830a47-b203-4a22-b05e-3e437037d61c.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20191104&#x2F;b0830a47-b203-4a22-b05e-3e437037d61c.jpg"></p>
+<p>In action, as players continue to play the game, they will get closer and closer to completing the stage goal (next level&#x2F;final level). At this time, the motivation to complete the task will be stronger. Through the design of Battle Pass level rewards, a more attractive reward is set every few levels, and a higher attractive reward is set at level 1 and the highest level. Of course, in this process, players constantly receive rewards. Variable rewards can meet the needs of users and stimulate users’ desire to use; and constantly invest time, money, etc., investment will form user preferences, because users tend to overestimate their labor results, and try to be consistent with their past behavior to produce psychological associations and automatically take action, these are all converted into sunk costs that affect the player’s judgment, and promote the player to continuously enter such a cycle of addiction.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191104%2Fcf5c621a-bd5c-4c60-bb40-d27f49710250.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20191104&#x2F;cf5c621a-bd5c-4c60-bb40-d27f49710250.jpg"></p>
+<p>In the design of the Battle Pass, the most core and important thing is, first of all, the display of the next “small goal”, which is the direct driving force to attract players. Secondly, for players who have not upgraded, the overall comparison of rewards in the two modes is also an important driving force to promote players to pay. As the level increases, players will feel that they have missed more rewards, attracting players to pay. In addition, the arrangement and level distribution of sub-tabs such as tasks and exchanges in the system also need to be simplified to reduce the difficulty of understanding and operation for players.</p>
+<p>The Battle Pass payment model has gradually matured after more than a year, and there is also more commercial potential to be tapped.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/11/04/netease-ux-articles/news_20191105_28584_846836/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/10/28/netease-ux-articles/news_20191029_28584_844024/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

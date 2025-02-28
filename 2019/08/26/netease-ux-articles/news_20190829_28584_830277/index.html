@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>How Game Camera Angles Affect User Experience (Part Two) | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Game-Camera/">
+                            Game Camera
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Camera/">
+                            Camera
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Camera-Angle/">
+                            Camera Angle
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Locking/">
+                            Locking
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Smart-Locking/">
+                            Smart Locking
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Manual-Locking/">
+                            Manual Locking
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                How Game Camera Angles Affect User Experience (Part Two)
+            
+            
+        </div>
+        <span class="post-date">
+            26 Aug, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190829%2Fa160778f-621f-4c35-92bd-e720451d4e83.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20190829/28584_830277.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>In the previous article, “How Game Camera Angles Affect User Experience,” we introduced the classification of game camera angles (2D, 2.5D, Traditional 3D, Action 3D, Free Mode) and the parameters of camera settings (camera rotation sensitivity, perspective angle, viewing angle, FPS value, defocus and shading, etc.).</p>
+<p><strong>Camera angle and target locking are two inseparable game issues.</strong></p>
+<p>Locking refers to the selection of attack targets and the locking mechanism, including free unlocking mechanism, various conditional priority locking mechanisms (such as nearest, lowest health, most recently attacked), intelligent locking mechanism, and various unlocking mechanisms.</p>
+<p>Locking is closely related to the camera angle. For example, if a player wants to adjust the follow rate of the attack camera, they must first confirm that the game locking state is in the unlocked attack mode, such as: <em>Meteor Butterfly Sword mobile</em>. Today, we will introduce two parts of the game’s locking part - intelligent locking and manual locking.</p>
+<h2 id="I-Intelligent-Locking-Locking-Mechanisms-and-Principles"><a href="#I-Intelligent-Locking-Locking-Mechanisms-and-Principles" class="headerlink" title="I. Intelligent Locking - Locking Mechanisms and Principles"></a>I. Intelligent Locking - Locking Mechanisms and Principles</h2><p>In some games that can be intelligently locked, there are usually some locking mechanisms to choose from. When there are many attackable targets, a certain type of target will be selected for attack according to a specific mechanism&#x2F;principle. For example:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190829%2Fb2417dea-04a5-4d1a-9e2c-9247f0451954.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190829&#x2F;b2417dea-04a5-4d1a-9e2c-9247f0451954.jpg"></p>
+<p><strong>1. Prioritize attacking the unit with the lowest health</strong></p>
+<p>When many attacking units gather, prioritize attacking the unit with the lowest health to facilitate harvesting residual health and improving combat performance.</p>
+<p><strong>2. Prioritize attacking the nearest unit</strong></p>
+<p>When many attacking units gather, you can prioritize attacking the nearest unit to facilitate getting rid of close-range attacks and pursuits.</p>
+<p><strong>3. Prioritize attacking bosses&#x2F;minions</strong></p>
+<p>When you can attack both bosses and minions at the same time, you can switch the locked target and prioritize attacking minions or bosses.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190829%2F3a68b554-1138-4fd1-99f3-2b0f739cc804.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190829&#x2F;3a68b554-1138-4fd1-99f3-2b0f739cc804.jpg"></p>
+<p><strong>4. Prioritize attacking soldiers&#x2F;towers</strong></p>
+<p>Commonly used in MOBA games, switch the attack target of minions&#x2F;towers.</p>
+<h2 id="II-Manual-Locking-Position-of-Locking-Buttons-and-Unlock-Function"><a href="#II-Manual-Locking-Position-of-Locking-Buttons-and-Unlock-Function" class="headerlink" title="II. Manual Locking - Position of Locking Buttons and Unlock Function"></a>II. Manual Locking - Position of Locking Buttons and Unlock Function</h2><p>If the lock button is on the left, you cannot drag the joystick and switch the locked target at the same time, which is suitable for games that focus on skill attack combinations; if the lock button is on the right, you cannot release skills and switch the locked target at the same time, which is suitable for games that require frequent movement and dodging.</p>
+<p>In the design of the game, different players have different pursuits for the game, especially in games that combine PVE and PVP. Therefore, in order to improve the user experience, some games can adjust the UI position of the lock button according to player needs, such as <em>Meteor Swarm Legend mobile</em>, which can be locked by touch screen, top right corner lock, and top left corner lock.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190829%2F424081d5-ad0b-47ba-9968-c964664a6692.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190829&#x2F;424081d5-ad0b-47ba-9968-c964664a6692.jpg"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190829%2Fd6d98841-0362-4c79-b475-4e426f962a1e.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190829&#x2F;d6d98841-0362-4c79-b475-4e426f962a1e.jpg"></p>
+<p>It should be noted that, as game practitioners, we can understand the definition of some locking mechanisms and understand the applicable situations of some UI buttons in different positions. However, as players, most players need default locking settings that suit their minds and feel, rather than adjusting and finding the most suitable buttons for themselves in the process of studying definitions&#x2F;continuously practicing.</p>
+<p>Therefore, it is very important to set different default lock buttons according to different games and different gameplays.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/08/30/netease-ux-articles/news_20190903_28584_830849/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/08/19/netease-ux-articles/news_20190823_28584_829557/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

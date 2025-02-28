@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>How to Make Data Processing More Efficient | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+        </div>
+        <div class="post-title">
+            
+            
+                How to Make Data Processing More Efficient
+            
+            
+        </div>
+        <span class="post-date">
+            1 Jan, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20221101%2F44056b66-0a0e-45bd-b35b-d122969219eb.png/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<h2 id="Single-Machine-ETL-Optimization"><a href="#Single-Machine-ETL-Optimization" class="headerlink" title="Single-Machine ETL Optimization"></a>Single-Machine ETL Optimization</h2><h3 id="I-ETL-is-the-Core-Part-of-BI"><a href="#I-ETL-is-the-Core-Part-of-BI" class="headerlink" title="I. ETL is the Core Part of BI"></a>I. ETL is the Core Part of BI</h3><p><strong>What is ETL:</strong> Extract, Transform, Load. Faced with large amounts of data, how to load it efficiently?</p>
+<p><strong>Core:</strong> The process from JSON in logs to the data warehouse should be as efficient as possible, and it is best not to rely on any irrelevant tool frameworks. Ideally, shorten the time from raw logs to the database as much as possible, and make it accurate.</p>
+<p><strong>What is BI:</strong> Visualizing the data in the backend database? Making it look better?</p>
+<p><strong>Core:</strong> Data visualization is an art. A good visualization solution can analyze data more conveniently and comprehensively; and it can also monitor exceptions.</p>
+<p><strong>Main Process of ETL:</strong></p>
+<ul>
+<li><strong>Log Files:</strong> Raw player behavior logs.</li>
+<li><strong>Data Extraction:</strong> Parse raw logs through regular expression matching, etc.</li>
+<li><strong>Generate Intermediate Files, Format Conversion:</strong> Parse raw logs to generate intermediate files, perform format conversion for easy subsequent processing.</li>
+<li><strong>Scheduled Data Loading:</strong> Taking Hive as an example, usually partition by day, load the data of the previous day into Hive every day. It can also be processed by hour, depending on the needs.</li>
+<li>Usually, ETL takes at least 1&#x2F;3 of the time in the entire project. The quality of ETL determines the quality of the entire BI project.</li>
+<li>The ETL process must be pure, otherwise the automation process will be interfered with by other factors. If ETL is not smooth, there is no need to look at the rest.</li>
+<li>Data file storage should avoid a lot of copying and moving as much as possible. Moving calculations is cheap, moving data is expensive.</li>
+<li>ETL code must also be modular and easy to expand. Adding a new requirement does not require changing the core code, only adding the corresponding functional requirements.</li>
+<li>For log processing, it is necessary to make full use of computing resources and parallelize it because this process itself is a mutually independent process.</li>
+<li>Data processing code must be rigorously tested and can be automatically monitored (including partition missing, field updates, and the addition of new logs).</li>
+</ul>
+<h3 id="II-Single-Machine-Log-Processing"><a href="#II-Single-Machine-Log-Processing" class="headerlink" title="II. Single-Machine Log Processing"></a>II. Single-Machine Log Processing</h3><p>If you only have one machine, how can you achieve efficient ETL when processing log data? The processor of a computer system is often idle, especially since many current computer systems have good computing power, and most personal PCs are also multi-core processors. At the code level, we must let the computer exert its maximum computing power and keep the processor in a “busy state” at all times.</p>
+<p><strong>Usually, multiple processes are used for processing:</strong></p>
+<ol>
+<li>Python uses the Global Interpreter Lock (GIL), which serializes the threads in the process. That is, multi-core CPUs cannot actually achieve the purpose of parallel speedup. The use of multiple processes is not limited. In practical applications, multiple processes are recommended.</li>
+<li>If the time required for each child process to execute is very short (execute +1 operation, etc.), there is no need to use multiple processes, because the startup and shutdown of processes will also consume resources.</li>
+<li>Multi-processing is often used to handle CPU-intensive (scientific computing) requirements. If it is IO-intensive (file reading, web crawling, etc.), multi-threading can be used.</li>
+</ol>
+<p>Simple code example:</p>
+<p>#Psuedo-code representing the principles, not actual code<br>Write_process(Data_Queue):<br>	For Entry in Data_Source:<br>		Formatted_entry &#x3D; format(Entry)<br>		Data_Queue.put(Formatted_entry)<br>	Data_Queue.put(None)</p>
+<p>Read_process(Data_Queue):<br>	While True:<br>		Entry &#x3D; Data_Queue.get()<br>        If Entry &#x3D;&#x3D; None:<br>			Break<br>		process(Entry)</p>
+<p>Data_Queue &#x3D; Queue()<br>Write_p &#x3D; Process(Write_process, Data_Queue)<br>Read_p &#x3D; Process(Read_process, Data_Queue)</p>
+<p>Write_p.start()<br>Read_p.start()<br>Write_p.join()<br>Read_p.join()<br><em>The write process writes to the queue, and the read process reads from the queue.</em></p>
+<p><strong>Global Interpreter Lock (GIL):</strong> The execution of Python code is performed by the Python virtual machine, and access to the Python virtual machine is controlled by the Global Interpreter Lock (GIL). This lock ensures that only one thread is running at a time.</p>
+<p><strong>Important Modules:</strong></p>
+<ol>
+<li><strong>Process module:</strong> Used to create child processes, which can realize the creation, startup, and shutdown of multiple processes.</li>
+<li><strong>Queue module:</strong> Used to control process safety, the same as the Queue in threads.</li>
+<li><strong>Pool module:</strong> Used to create and manage a process pool. This module can be used when there are many child processes and the number of child processes needs to be controlled.</li>
+<li><strong>Lock module:</strong> When multiple processes need to access shared resources, Lock can be used to avoid access conflicts.</li>
+</ol>
+<p><strong>Note:</strong></p>
+<p>On UNIX platforms, when a process terminates, the process needs to be waited on by its parent process, otherwise the process becomes a zombie process. Therefore, it is necessary to call the <code>join()</code> method for each Process object (actually equivalent to <code>wait</code>). For multi-threading, since there is only one process, this necessity does not exist.</p>
+<p><strong>Single-Machine Multi-Process ETL Summary:</strong></p>
+<ol>
+<li>Data logs are usually placed on HDFS, and single-machine processing and copying to the local machine takes a lot of time. Avoid moving large amounts of data.</li>
+<li>The number of processes needs to be dynamically set, and the appropriate number of processes should be set according to the size of the task.</li>
+<li>In the face of large amounts of data, single-machine operations may become a bottleneck in efficiency. Increasing processes may not be very effective, and each step needs to be peeled off layer by layer.</li>
+<li>Output of error logs and performance monitoring, which is convenient for efficiency optimization.</li>
+<li>Of course, the biggest advantage of single-price processing of log data is stability and ease of debugging.</li>
+<li>Configuration of database connection pool: Better utilize network resources, minimize the overhead of connection establishment and disconnection, and improve ETL performance.</li>
+<li>Database grouping and sorting are better than ETL grouping and sorting. Hand over sorting and grouping problems to the database.</li>
+</ol>
+<p><strong>Core:</strong></p>
+<p>For projects with a relatively small amount of data, single-machine processing of logs is completely sufficient. It is necessary to pay attention to the efficiency of data copying. The most important thing is stability and ease of debugging.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/01/01/netease-ux-articles/news_20190524_28584_815044/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/01/01/netease-ux-articles/news_20190530_28584_816105/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

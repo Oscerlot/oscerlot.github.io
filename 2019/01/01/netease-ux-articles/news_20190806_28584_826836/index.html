@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Introduction to Feature Engineering Methods Using TensorFlow API | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-research/">
+                            User research
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/data-mining/">
+                            data mining
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/TensorFlow/">
+                            TensorFlow
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/feature-engineering/">
+                            feature engineering
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/feature-columns/">
+                            feature columns
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/deep-learning/">
+                            deep learning
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Introduction to Feature Engineering Methods Using TensorFlow API
+            
+            
+        </div>
+        <span class="post-date">
+            1 Jan, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2Fb2ba549c-f74a-4d36-be24-211a80bab375.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20190806/28584_826836.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>This US (User Study) sharing introduces a practical feature construction tool for feature engineering in data mining model building - <code>tensorflow.feature_column</code>, which is the feature column interface of TensorFlow.</p>
+<p>The TensorFlow framework is widely used in building deep learning models. Its feature column interface (<code>feature_column</code>) can be used to implement the construction and processing of various features. This interface provides a wealth of feature tools.</p>
+<p>In TensorFlow version 1.14, the TensorFlow feature column interface provides the following tools:</p>
+<ol>
+<li><code>bucketized_column</code>: Discretization of continuous features by bucketing.</li>
+<li><code>categorical_column_with_identity</code>: One-hot encoding of categorical ID features.</li>
+<li><code>crossed_column</code>: Feature crossing of categorical features.</li>
+<li><code>embedding_column</code>: Embedding feature compression of sparse categorical feature matrices.</li>
+<li><code>sequence_categorical_column_with_identity</code>: Categorical encoding of sequence features.<br>…</li>
+</ol>
+<p>The feature column interface tools provided by the official TensorFlow documentation.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2Fe3fe588b-b76a-4be5-b89c-08cdee77f38d.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;e3fe588b-b76a-4be5-b89c-08cdee77f38d.jpg"></p>
+<h2 id="1-bucketized-column"><a href="#1-bucketized-column" class="headerlink" title="(1) bucketized_column"></a>(1) <code>bucketized_column</code></h2><p>Two input parameters are required in <code>tf.feature_column.bucketized_column</code>:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2F673b5edc-520d-47a4-aa08-00a357a02f6a.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;673b5edc-520d-47a4-aa08-00a357a02f6a.jpg"></p>
+<p>Where <code>boundaries</code> specifies the specific boundaries of data bucketing, input in the form of a list.</p>
+<p>If <code>boundaries</code> is input as:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2Fd020fe65-0e6f-4278-9b82-26dae2eb2532.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;d020fe65-0e6f-4278-9b82-26dae2eb2532.jpg"></p>
+<p>Then the data will be divided according to:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2F92ac37cf-e419-4038-9b5c-ecbd62cbeca7.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;92ac37cf-e419-4038-9b5c-ecbd62cbeca7.jpg"></p>
+<p>Code:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2F42301855-6529-4153-a363-747dd4f01fc8.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;42301855-6529-4153-a363-747dd4f01fc8.jpg"></p>
+<p>Result:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2Fa7b02a1e-6517-4124-96c5-a9fc4be1c918.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;a7b02a1e-6517-4124-96c5-a9fc4be1c918.jpg"></p>
+<p>It can be found that the number of rows in the output result is the number of data samples, and the columns are the collection of the original feature results and the judgment values of whether the results fall into each bin. This display method more intuitively reflects the bin interval in which each value is located.</p>
+<h2 id="2-categorical-column-with-identity"><a href="#2-categorical-column-with-identity" class="headerlink" title="(2) categorical_column_with_identity"></a>(2) <code>categorical_column_with_identity</code></h2><p>Three input parameters are required in <code>tf.feature_column.categorical_column_with_identity</code>:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2F89308e8e-3135-485f-89a9-1d2360dab5ea.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;89308e8e-3135-485f-89a9-1d2360dab5ea.jpg"></p>
+<p>The <code>key</code> part inputs the corresponding feature name, and the <code>num_buckets</code> part indicates how many ID categories there are, corresponding to the range [0, num_buckets-1]. If in the actual feature, the ID value is greater than the upper bound of <code>num_buckets</code>, the program will report an error. After determining <code>num_buckets</code>, tf implements one-hot encoding.</p>
+<p>In addition, <code>default_value</code> specifies the situation of extra features appearing in the feature column, that is, the ID value is greater than the upper bound of the ID value range. If <code>default_value</code> is set, these extra ID values will be classified as <code>default_value</code>, but note that the value of <code>default_value</code> also needs to fall within the ID value range.</p>
+<p>Code:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2Fd29a6deb-0303-4a29-8027-ac42400861d1.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;d29a6deb-0303-4a29-8027-ac42400861d1.jpg"></p>
+<p>Result:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2F12457c30-09ac-45e9-b2bd-27b12d764a18.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;12457c30-09ac-45e9-b2bd-27b12d764a18.jpg"></p>
+<h2 id="3-categorical-column-with-hash-bucket"><a href="#3-categorical-column-with-hash-bucket" class="headerlink" title="(3) categorical_column_with_hash_bucket"></a>(3) <code>categorical_column_with_hash_bucket</code></h2><p>Three input parameters are required in <code>tf.feature_column.categorical_column_with_hash_bucket</code>:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2F6b8e032e-8fd8-4b65-8c8f-cf8892afcd6d.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;6b8e032e-8fd8-4b65-8c8f-cf8892afcd6d.jpg"></p>
+<p>It solves the classification problem when there are too many categories in practical problems. If there is no good manual classification index, the hash classification method is used to divide different fine-grained values into a coarse hash bucket. It uses the method of hashing and modulo operation on the same feature with different values to obtain the binning result of different values, so as to realize binning. It can be found that this will classify some irrelevant values into one bucket. Therefore, the number of buckets specified by this bucketing method should be large, as a preliminary bucketing of feature data.</p>
+<h2 id="4-embedding-column"><a href="#4-embedding-column" class="headerlink" title="(4) embedding_column"></a>(4) <code>embedding_column</code></h2><p>The parameters to be input in <code>tf.feature_column.embedding_column</code>:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2Fdb55efa4-8425-4049-bb56-7057d7b36bd6.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;db55efa4-8425-4049-bb56-7057d7b36bd6.jpg"></p>
+<p><code>embedding_column</code> can compress a sparse data matrix into a dense matrix to reduce dimensionality. Where <code>dimension</code> represents the dimension after data compression, and <code>combiner</code> represents the processing method of reduce in the data compression process, generally including mean, standard deviation (sqrtn), and sum.</p>
+<p><code>embedding_column</code> requires that the input data is a categorical sparse matrix. If the feature is originally a continuous feature, it needs to be discretized using the bucketing method and then input into <code>embedding_column</code>.</p>
+<p>Code:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2F4504dfc4-9988-453f-9c15-de1fe7054232.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;4504dfc4-9988-453f-9c15-de1fe7054232.jpg"></p>
+<p>Result:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190806%2Feac0ce4b-753e-4c96-87e7-61d2097e67c8.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190806&#x2F;eac0ce4b-753e-4c96-87e7-61d2097e67c8.jpg"></p>
+<p>Through this method, combined with tools such as <code>crossed_column</code>, it can be applied to scenarios such as advertising click-through rate prediction that involve sparse features and important cross features.</p>
+<p>In addition to the several tools introduced above, the TensorFlow feature column interface also provides many other useful feature engineering tools, such as <code>linear_model</code>, <code>sequence_categorical_column</code>, etc., to meet different feature data processing needs.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/01/01/netease-ux-articles/news_20190730_28584_825624/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/01/01/netease-ux-articles/news_20190816_28584_828474/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

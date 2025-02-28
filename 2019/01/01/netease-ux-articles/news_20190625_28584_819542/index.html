@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Introduction to Brand Advertising Click-Through Rate Prediction Models and Algorithms | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Introduction to Brand Advertising Click-Through Rate Prediction Models and Algorithms
+            
+            
+        </div>
+        <span class="post-date">
+            1 Jan, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20221101%2F44056b66-0a0e-45bd-b35b-d122969219eb.png/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p><strong>What is Ad Click-Through Rate Prediction?</strong></p>
+<p>To understand what ad click-through rate prediction is, we first need to understand the basic components of a general advertising business. A general advertising business can be divided into three main components: advertisers, advertising media, and advertising traffic.</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190625%2Fdc4c2127-0e46-467e-a75f-217f81e86e61.jpg/size/" alt="image.png"></th>
+</tr>
+</thead>
+</table>
+<p>Advertisers are the parties with advertising needs, hoping to increase the awareness of their brand products by exposing advertisements on various media; advertising traffic is the group reached by advertisements, that is, the audience of advertisements. For different types of advertisements, the groups they hope to reach are also different; the advertising medium is the intermediate platform connecting advertisers and advertising traffic. Advertising traffic obtains information from the advertising medium, and the advertising medium will provide the advertising content required by the advertiser to the advertising traffic.</p>
+<p>In the past, the main carriers of advertising were billboards, print media, and television, and other traditional media. In the era of mobile Internet, brand advertising exposure based on various applications and portal websites has become a new way of advertising display. Different from traditional media advertising, this type of advertising has the characteristics of large advertising traffic, large amounts of data, and real-time push. Since such advertisements can be directly clicked, many advertising platforms will charge based on the click-through rate of advertisements.</p>
+<p>So, how to measure the effectiveness of advertising on such media? Based on this, the concept of ad click-through rate came into being, which is expressed as the ratio of ad clicks to ad impressions over a period of time.</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190625%2F8afdc99a-034a-4f69-be73-ec1a1ecb85a6.png/size/" alt="image.png"></th>
+</tr>
+</thead>
+</table>
+<p>Since an ad click is a sign that an ad audience is attracted to the ad, ad platforms and advertisers always want to maximize the click-through rate of ads. Different users are attracted to different ads to different degrees. Therefore, as an intermediary, the advertising platform always hopes to push the most attractive ads to each user, so as to maximize the click-through rate of various ads.</p>
+<p>To achieve this great goal, the intermediary begins to rack their brains to predict the click-through rate of each advertisement among different groups of people, hoping to know the attractiveness of each advertisement among different groups of people before the advertisement is displayed, so that it is easier to push the advertisement. This process of wanting to achieve the function of predicting the future is called ad click-through rate prediction.</p>
+<p><strong>Problems Encountered in Ad Click-Through Rate Prediction</strong></p>
+<p>In the previous section, we mentioned that in order to improve the effectiveness of ad display, the ad platform hopes to predict in advance which ad is most likely to be clicked by the same user. Therefore, the ad platform needs to build a model based on data from multiple perspectives such as ad content and ad audience, so as to achieve ad click-through rate prediction. However, some problems encountered in this process may discount the prediction effect, which can be roughly classified into three points:</p>
+<p>(1) The advertising platform obtains fewer data fields and has more categorical features. As an intermediary, due to legal factors such as user protection regulations, it is generally difficult for advertising platforms to obtain detailed information about the advertising audience. Even the information obtained is often categorical features such as “whether the mobile phone brand is Huawei”, which makes it difficult to build a model;</p>
+<p>(2) Compared with single feature factors, feature interaction factors are more important for click-through rate prediction. For example, middle-aged men from Boston, USA are more likely to click on sports product advertisements. The click of an advertisement is often the result of a combination of multiple feature factors. However, due to the large number of feature interaction items, it is easy to cause feature dimension explosion by constructing interaction features through traversal;</p>
+<p>(3) Cold start problem. When a new advertisement is connected to the platform, since it has little sample data, or even no record of the advertisement being clicked, it will be very difficult to predict the click-through rate of the advertisement through a model built based on data.</p>
+<p><strong>How to Achieve Ad Click-Through Rate Prediction</strong></p>
+<p>In order to achieve ad click-through rate prediction and overcome the three difficulties mentioned in the previous section, some advertising systems often use feature engineering + machine learning model + Bayesian smoothing to achieve this. This article mainly focuses on the machine learning model and Bayesian smoothing.</p>
+<p><strong>Logistic Regression Model:</strong></p>
+<p>Basic principle: The logistic regression model is a model used earlier in click-through rate prediction. It combines the relationship between features in a linear form and then maps it to a range between 0 and 1, so as to provide the model user with the probability of a user clicking on an advertisement.</p>
+<p>What problems are solved:</p>
+<ol>
+<li><p>As shown in the formula, the logistic regression model has a relatively simple form and can still be trained quickly under large-scale feature dimensions;</p>
+</li>
+<li><p>Logistic regression performs well on data based on categorical features, and the data required by the model is more in line with the basic data characteristics of ad click-through rate prediction;</p>
+</li>
+<li><p>The model is highly interpretable. For an advertising flow, it is easy to know what features of the flow make it more likely to click on the advertisement based on the weight of each feature of the model, which facilitates further optimization of feature engineering.</p>
+</li>
+</ol>
+<p>What are the shortcomings:</p>
+<ol>
+<li><p>It does not solve the problem of the large dimension of feature interaction factors well. Although the logistic regression form is relatively simple and easy to train, based on the construction of interaction items from actual data features, the model still has huge parameters to deal with;</p>
+</li>
+<li><p>Logistic regression performs poorly on continuous variables (such as age, online time, etc.), so continuous variables cannot be well used for modeling in click-through rate prediction.</p>
+</li>
+</ol>
+<p><strong>Factorization Machine Model:</strong></p>
+<p>Basic principle: In view of the fact that data interaction items are important in ad click-through rate prediction and have a large dimension, the Factorization Machine (FM) model has made targeted processing of interaction item information. Because in actual business, data is often sparse, that is, advertising traffic has no value or meaningless value on most features, the FM model predefines a certain number of derived dimensions, and compresses the huge sparse features to this derived dimension, and only considers the interaction of this part of the derived dimension. This reduces the number of model parameters and takes into account the interaction between features.</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190625%2F3c7202e9-3289-455b-aad2-914262782d21.jpg/size/" alt="image.png"></th>
+</tr>
+</thead>
+</table>
+<p>What problems are solved:</p>
+<ol>
+<li><p>Transform sparse dimensional data into dense dimensional data to improve model generalization ability;</p>
+</li>
+<li><p>Take interaction items into account and control the number of model parameters.</p>
+</li>
+</ol>
+<p>What are the shortcomings:</p>
+<ol>
+<li><p>The model only considers the interaction between two features, and does not consider the interaction between more features;</p>
+</li>
+<li><p>Since the features are compressed, the interpretability of the model is not as strong as that of the logistic regression model.</p>
+</li>
+</ol>
+<p><strong>Ensemble Learning Models:</strong></p>
+<p>Basic principle: For example, the Xgboost model, GBDT model, and Lightgbm model organize decision trees or regression tree models in a regular manner to improve the generalization ability of the model. Ensemble learning models also consider multi-dimensional interaction factors between features.</p>
+<p>What problems are solved:</p>
+<ol>
+<li><p>Multi-dimensional feature interaction information can be automatically discovered according to the tree model;</p>
+</li>
+<li><p>Determine the importance of features according to the weight of different features in the decision tree to make splitting decisions;</p>
+</li>
+</ol>
+<p>What are the shortcomings:</p>
+<ol>
+<li><p>Since the tree model is limited by depth, the model is still unable to extract higher-dimensional interactions. Generally, it is necessary to use the high-dimensional interaction obtained by the neural network model as a feature to assist decision-making;</p>
+</li>
+<li><p>The model structure is relatively complex, and its training iteration period is longer than other models. This shortcoming causes difficulties for ad click-through rate prediction businesses that require rapid iteration.</p>
+</li>
+</ol>
+<p>In view of the advantages and disadvantages of different models, different models are often used in combination in practice, and each plays its advantages in different links.</p>
+<p><strong>Bayesian Smoothing:</strong></p>
+<p>Bayes, a probability theory expert who has tortured the majority of mathematics students, believes that everything has a probability distribution. For example, the probability of the sun rising from the west tomorrow is 0%, and the probability of rising from the east is 100%. We can give the probability of many things on various values before they happen. The click-through rate of advertisements is no exception. Perhaps because this pre-given probability distribution is not accurate enough to be convincing, we always hope to correct this experience (prior) that we have pre-determined through the results observed during the actual occurrence. After this correction, our new experience (posterior) will be more credible.</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190625%2F09b2066d-62d0-47fc-8b7d-a55ab3855d7d.jpg/size/" alt="image.png"></th>
+</tr>
+</thead>
+</table>
+<p>Therefore, in order to solve the problem that the model fails due to insufficient samples of new advertisements, Bayesian smoothing abstracts the ad click-through rate into a probability distribution from the perspective of probability statistics. This probability distribution shows the possibility of the click-through rate of an advertisement in different sections.</p>
+<p>For the problem that new advertisements do not have enough data to support their probability distribution, the click-through rate probability distribution of other advertisements can be used as the click-through rate distribution of new advertisements. Then, based on the experience of certain data accumulated by the new advertisement during the continuous exposure, this ad click-through rate distribution is corrected. Finally, based on the posterior click-through rate distribution, we take the most likely point of this ad click-through rate as the estimate of the click-through rate of this advertisement.</p>
+<p>In this way, not only can the estimated value of the click-through rate of new advertisements be effectively obtained, but also the click-through rate of the model can be corrected each time. For example, a certain model judges that the probability of a user clicking on the advertisement is 10%, but Bayesian smoothing believes that the probability of the click-through rate taking this value is very low and needs to be corrected, so it is adjusted based on the click-through rate distribution. Finally, the adjusted estimated click-through rate will be more accurate.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/01/01/netease-ux-articles/news_20190612_28584_817683/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/01/01/netease-ux-articles/news_20190625_28584_819591/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Common Commands for Data Analysis | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Analysis/">
+                            Data Analysis
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Shell-Commands/">
+                            Shell Commands
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Common Commands for Data Analysis
+            
+            
+        </div>
+        <span class="post-date">
+            24 Jul, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190730%2F7a05c29a-3a13-4d6d-af3a-339d5280412a.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20190730/28584_825588.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>In data analysis work, it is often necessary to pre-process data, such as viewing data, data deduplication, and some statistics. Of course, you can choose to use Python, Java, etc. for processing, but if the same thing is handed over to instructions, it may be much more efficient. Below I will introduce some common and effective commands for work.</p>
+<h2 id="head"><a href="#head" class="headerlink" title="head"></a><code>head</code></h2><p>The first thing to do when processing data is to see what the data we are facing is. At this time, the <code>head</code> command can be used. For example, <code>head a.txt</code> can output the first 10 lines of the file. Of course, you can modify the number of output lines by using <code>head -n a.txt</code>, and adjust the value of <code>n</code>. At the same time, <code>head</code> can be used in conjunction with other commands through pipes to complete processing needs.</p>
+<p>Commonly used methods are:</p>
+<ul>
+<li><strong><code>head -n file</code></strong>: Display the first <code>n</code> lines of the file.</li>
+<li><strong><code>head -c file</code></strong>: Display the first <code>n</code> bytes of the file.</li>
+</ul>
+<h2 id="wc"><a href="#wc" class="headerlink" title="wc"></a><code>wc</code></h2><p>The <code>wc</code> command is used to count words. The <code>wc</code> command can be used to calculate the number of bytes and words in a file. If no parameters are used, the number of lines, words, and bytes of the specified file will be calculated.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>wc a.txt</code></td>
+<td><code>lines words bytes filename</code> (The specific numbers will depend on the content of <code>a.txt</code>.)</td>
+</tr>
+</tbody></table>
+<p>The <code>wc</code> command can also be used on multiple files, and the information of all files will be汇总 (summarized) in the end.</p>
+<p>For example, using <code>wc a.txt b.txt</code> could produce output like:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>wc a.txt b.txt</code></td>
+<td><code>lines_a words_a bytes_a a.txt</code><br><code>lines_b words_b bytes_b b.txt</code><br><code>total_lines total_words total_bytes total</code></td>
+</tr>
+</tbody></table>
+<p>Commonly used methods are:</p>
+<ul>
+<li><strong><code>wc -c</code></strong>: Print the number of bytes.</li>
+<li><strong><code>wc -l</code></strong>: Print the number of lines.</li>
+<li><strong><code>wc -w</code></strong>: Display the number of words.</li>
+<li><strong><code>wc -m</code></strong>: Print the number of characters.</li>
+</ul>
+<h2 id="sort-uniq"><a href="#sort-uniq" class="headerlink" title="sort &amp; uniq"></a><code>sort</code> &amp; <code>uniq</code></h2><p>Obviously, these two commands are used for sorting and handling duplicates. Since <code>uniq</code> only handles duplicate adjacent lines, we often see the usage of <code>sort a.txt | uniq</code>. First sort the data, so that we can remove duplicate values.  Of course, <code>sort -u</code> can achieve the same effect. Note the difference between the two when using the <code>-k</code> option. Regular uses can be substituted.</p>
+<p>Regarding <code>sort</code>, <code>sort</code> treats each line of the file as a unit, compares them with each other, and the comparison principle is to compare the ASCII values from the first character backwards, and finally output them in ascending order. There are many details that can be discussed, here is a brief introduction to several usages:</p>
+<p>First is the <code>-t</code> option, which can specify what symbol is used as a separator, such as <code>sort -t &quot;,&quot; a.txt</code> which uses a comma as a separator;</p>
+<p>Then there is the <code>-k</code> option, which can be used to specify keys, such as <code>sort -t &quot;,&quot; -k2 a.txt</code>, which means to sort by the second field after comma separation.</p>
+<p>A complex example is: <code>sort -t &quot;,&quot; -k1.2,1.2 -k3,3nr</code> which means to sort by the second character of the first column, and if they are the same, sort the third column in descending order according to numerical standards.</p>
+<p><strong>Example Input (<code>a.txt</code>):</strong></p>
+<p>apple,banana,10<br>grape,orange,5<br>apple,cherry,20</p>
+<p>Running <code>sort -t &quot;,&quot; -k1.2,1.2 -k3,3nr a.txt</code> would produce:</p>
+<p>grape,orange,5<br>apple,banana,10<br>apple,cherry,20</p>
+<p>Commonly used options for <code>sort</code> are:</p>
+<ul>
+<li><strong><code>-c</code></strong>: Check if the file is already sorted. If not, it will prompt from which line the disorder starts.</li>
+<li><strong><code>-t</code></strong>: Specify the separator.</li>
+<li><strong><code>-n</code></strong>: Sort according to numerical value.</li>
+<li><strong><code>-r</code></strong>: Descending order.</li>
+<li><strong><code>-u</code></strong>: Ignore identical lines.</li>
+<li><strong><code>-k</code></strong>: Sort by which interval.</li>
+</ul>
+<h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a><code>grep</code></h2><p>The next thing to introduce is the three musketeers of Linux, <code>grep</code>, <code>sed</code> and <code>awk</code>. Each item can be described in a very long space. Here are some commonly used methods in work, which can help us better understand in the future.</p>
+<p><code>grep</code> is the global search for regular expressions and print, which is relatively straightforward to translate into Chinese. As the name suggests, it can search, print, and importantly, it can use regular expressions to assist in completion.</p>
+<p>Suppose we have a file <code>a.txt</code>:</p>
+<p>hello world<br>welcome<br>hello again</p>
+<p>The simplest way to use <code>grep</code> is to directly search the file for the string you want to match, such as:</p>
+<p><code>grep &#39;hello&#39; a.txt</code></p>
+<p>As you can see, it prints all lines in the file that contain <code>hello</code>.</p>
+<p>hello world<br>hello again</p>
+<p>When using <code>grep</code>, we have many parameters to choose from to assist in completing the requirements, such as:</p>
+<ul>
+<li><strong><code>grep -i</code></strong>: Case-insensitive.</li>
+<li><strong><code>grep -v</code></strong>: Match lines <em>not</em> containing a pattern.  <code>grep -v &#39;hello&#39; a.txt</code> would match the <code>welcome</code> line.</li>
+<li><strong><code>grep -n</code></strong>: Display the line number of matching lines.</li>
+<li><strong><code>grep -E</code></strong>: Allows the use of extended regular expressions (equivalent to using <code>egrep</code>).</li>
+<li><strong><code>grep -c</code></strong>: Print the number of matching lines.</li>
+<li><strong><code>grep -l</code></strong>: Can search in multiple files and print the file where it is located.  <code>grep -L</code> indicates files <em>not</em> containing the pattern.</li>
+<li><strong><code>grep -A n</code>, <code>grep -B n</code>, <code>grep -C n</code></strong>: These three options display <code>n</code> lines <em>after</em>, <em>before</em>, or <em>around</em> (context) each matching line, respectively.</li>
+</ul>
+<p>The above are some options that are often used in work. Of course, there are also some very useful ones such as <code>-r</code>, etc. A very important condition is that you need to have more knowledge of regular expressions to maximize the power of <code>grep</code>. Regular expressions are not described in detail here.</p>
+<h2 id="sed"><a href="#sed" class="headerlink" title="sed"></a><code>sed</code></h2><p><code>sed</code> is a stream editor, a very important text processing tool, mainly used in conjunction with regular expressions, and is good at replacing. During processing, the currently processed line is stored in a temporary buffer, and then the content in the buffer is processed with <code>sed</code>. After completion, the content of the buffer is printed to the screen, and then the processing of the next line continues until the end of the file.</p>
+<p>The most basic command is in the form of <code>s/old/new/g</code>, that is, search for <code>old</code> and replace <code>new</code> globally. Without <code>g</code>, it will terminate when <code>old</code> first appears. Similarly, when we replace content in <code>vim</code>, we also use a similar form.</p>
+<p>Here’s an example to introduce some commonly used methods, mainly involving regular expressions. Let’s say we have a file with the following content:</p>
+<p>1,234,567 JJ<br>9,876,543 KK</p>
+<p>First, we need to remove the commas from the numbers. Use the following command. As you can see, for the matched content, we can use <code>\1</code> and <code>\2</code> to represent the matched content. Pay attention to the content in the parentheses in the regular expression, which is what we often call grouping, that is, the matching item:<br>bash<br>cat a.txt | sed -r ‘s&#x2F;([0-9]),([0-9])&#x2F;\1\2&#x2F;g’</p>
+<p>This will result in:</p>
+<p>1234567 JJ<br>9876543 KK</p>
+<p>Using the <code>-r</code> option with <code>sed</code> allows us to use extended regular expressions; otherwise, we need to pay attention to many details, such as escaping parentheses.</p>
+<p>At the same time, we can use <code>&amp;</code> to replace the matched string, such as using <code>cat a.txt | sed &#39;s/\w\+/[&amp;]/g&#39;</code>.  (Assuming the output of the previous command has been redirected to <code>a.txt</code>).</p>
+<p>This would result in (note, without <code>-r</code> you might need <code>sed &#39;s/\w\+/\[&amp;\]/g&#39;</code>):</p>
+<p>[1234567] [JJ]<br>[9876543] [KK]<br>Similarly, you can use <code>sed</code> for filtering, or you can call it deletion. We can also do this using <code>grep -v</code> mentioned earlier.  Using <code>cat a.txt | sed &#39;/JJ/d&#39;</code>, we can successfully remove the line containing <code>JJ</code>.</p>
+<p>In addition, <code>sed</code> has many more interesting functions. There are special books on <code>sed</code> and <code>awk</code>, and you can also see that the knowledge in them is very deep. This is just a brief introduction that can make daily work convenient.</p>
+<p>Other commonly used options are:</p>
+<ul>
+<li><strong><code>sed -i</code></strong>: Edit the file content directly, which means that using replace will change the file content.</li>
+<li><strong><code>sed -e</code></strong>: Implement multi-point editing.  <code>sed -e ... -e ...</code>  The result of the previous one will affect the following ones.</li>
+</ul>
+<h2 id="awk"><a href="#awk" class="headerlink" title="awk"></a><code>awk</code></h2><p>This command is really hardcore, and it can actually be regarded as a programming language.</p>
+<p><code>awk</code> is a programming language tool for processing text. It reads input files, sorts data, processes data, performs calculations on input, and generates reports, and there are countless other functions.</p>
+<p>The main idea is to scan the data in the text file or text stream line by line, perform pattern matching on the current line of text, and if the match is successful, continue to execute the content of the data processing module, otherwise continue to process the next line of data.</p>
+<p>Let’s take an example. When processing logs, a simple scenario of using <code>awk</code>. The following is a simulated login log, and the data are all simulated. Only two of them are put here, and there are multiple items in the file. We need to count the types of <code>app_channel</code> after deduplication.</p>
+<p>2019-07-24 10:00:00,user1,login,app_channel&#x3D;”channel_a”,other_data<br>2019-07-24 10:01:00,user2,login,app_channel&#x3D;”channel_b”,other_data</p>
+<p>First of all, we need to get the corresponding content of <code>app_channel</code>, and we need to extract it. Of course, we can also use regular expressions here, but I want to introduce the <code>awk -F</code> command, which can specify the input separator. The separator can be a string or a regular expression. We can use this command repeatedly here to finally get the corresponding content.</p>
+<p>First, we separate according to <code>&quot;app_channel&quot;</code>:<br>bash<br>cat log.txt | awk -F ‘app_channel&#x3D;”‘</p>
+<p><code>&#123;print $2&#125;</code> after that means that we want to print the second part after separation. The result is as follows:</p>
+<p>channel_a”,other_data<br>channel_b”,other_data<br>We can see we need another separation.  We can clearly use the quotation mark as a delimiter to get the channels:<br>bash<br>cat log.txt | awk -F ‘app_channel&#x3D;”‘ ‘{print $2}’ | awk -F ‘“‘ ‘{print $1}’</p>
+<p>This gives us the channel names. The next steps involve <code>sort</code> and <code>uniq</code>, as shown above.</p>
+<p>To count each channel, you can use awk’s associative arrays (similar to Python dictionaries):<br>bash<br>cat log.txt | awk -F ‘app_channel&#x3D;”‘ ‘{print $2}’ | awk -F ‘“‘ ‘{print $1}’ | awk ‘{channels[$1]++} END {for (channel in channels) print channel, channels[channel]}’<br>This takes the extracted channel name (<code>$1</code>) and increments a count in the <code>channels</code> array. The <code>END</code> block prints out the counts for each channel after processing all lines.</p>
+<p>You can see that if we put the data into the database and use SQL to complete the requirements every time we encounter such a situation, it is certainly possible, but as I mentioned at the beginning of this article, instructions often bring efficiency. If it involves the association with other data to complete the requirements, then it still needs to be processed in the database with SQL.</p>
+<p>Of course, the function of <code>awk</code> is far more powerful than this small requirement. It is really unrealistic to expand on it. You can add a little difficulty to think about it. For example, to count each channel, you can use the array usage of <code>awk</code>. The array of <code>awk</code> can be characters or strings, similar to the assignment and value retrieval methods of dictionaries in Python. Then here we can use the data of the previously extracted channels for further processing.</p>
+<p>Here is the basic structure of <code>awk</code>:</p>
+<p>awk ‘BEGIN{ commands } pattern{ commands } END{ commands }’</p>
+<ul>
+<li>The first step is to execute the statements in <code>BEGIN&#123; commands &#125;</code>.</li>
+<li>The second step is to read a line from the file or standard input, and then execute the <code>pattern&#123; commands &#125;</code> statement block. It scans the file line by line and repeats this process from the first line to the last line until the file is completely read.</li>
+<li>The third step is to execute the content of <code>END&#123; commands &#125;</code> when the end is reached.</li>
+</ul>
+<p>You can compare it with the command we processed channel counts above, and the basic structure is consistent.</p>
+<p>So far, I have briefly introduced six commonly used commands for data analysis. These are all good helpers for data analysis work, because analysis is inseparable from the support of data. How to process it efficiently will also help us complete the analysis tasks more reasonably and accurately. Of course, there are many other useful commands, such as <code>cut</code>, <code>tr</code>, <code>join</code>, etc., all of which can well assist us in completing the requirements. Each command also has many functions worth our in-depth understanding. When they are used in combination, they are even more powerful. And my introduction above is just very basic and daily functions. You can do more discussions and explorations.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/07/26/netease-ux-articles/news_20190730_28584_825616/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/07/22/netease-ux-articles/news_20190723_28584_824329/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>The Significance of Measuring Sample Size: Wilson Score | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Wilson-Score/">
+                            Wilson Score
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Sample-Size/">
+                            Sample Size
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Binomial-Distribution/">
+                            Binomial Distribution
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Confidence-Interval/">
+                            Confidence Interval
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Interval-Estimation/">
+                            Interval Estimation
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                The Significance of Measuring Sample Size: Wilson Score
+            
+            
+        </div>
+        <span class="post-date">
+            20 Sep, 2021
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fb8d1007e-19eb-4292-9d6a-00a7fca911bb.png/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20211019/28584_980012.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In user questionnaire analysis, sometimes we face a situation:</p>
+<p>Fashion A: 8 out of 13 players voted “like,” 5 voted “dislike.”<br>Fashion B: 16 out of 28 players “like,” 12 “dislike.”<br>Fashion C: 135 out of 270 players “like,” 135 “dislike.”</p>
+<p>At this point, how should we choose which fashion is more popular with players?</p>
+<p>Method 1: Look at the net “like” count, i.e., “like” count - “dislike” count. In this case, Fashion B should be the most popular.</p>
+<p>Method 2: Look at the “like” rate, i.e., “like” count &#x2F; (“like” count + “dislike” count). In this case, Fashion A should be the most popular.</p>
+<p>Is there perhaps a more convincing method?</p>
+<p>Besides wondering why so many people filled out the questionnaire for Fashion C, while only a few people filled it out for Fashions A and B, this problem actually contains knowledge about sample size and statistics. One solution to this problem is the Wilson score, which cleverly applies the knowledge of statistical interval estimation to content evaluation, combining sample size and player evaluation to obtain a fairer and more effective evaluation score.</p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F003512c1-d39d-4d7a-9429-673e01246058.png/size/" alt="Outfits from Naraka Bladepoint"></p>
+<hr>
+<p><em>Image: Outfit in the game “Naraka: Bladepoint” - Yummy Yummy</em></p>
+<hr>
+<h2 id="What-is-the-Wilson-Score"><a href="#What-is-the-Wilson-Score" class="headerlink" title="What is the Wilson Score?"></a>What is the Wilson Score?</h2><p>Strictly speaking, the Wilson score can be called the lower bound of the confidence interval for the binomial distribution interval estimation. It makes the following assumptions about players’ voting behavior:</p>
+<ul>
+<li>Each player’s vote is an independent event.</li>
+<li>Players’ voting results are only “like” and “dislike”.</li>
+</ul>
+<p>Under such assumptions, voting “like” or “dislike” is transformed into a binomial distribution in probability. By collecting player questionnaires, we can estimate the player’s “like” rate <em>p</em> for a certain outfit. That is, in <em>n</em> independent votes, there are <em>k</em> votes for “like”. By using the actual values of <em>n</em> and <em>k</em>, we can evaluate the relationship between <em>k&#x2F;n</em> and <em>p</em>.</p>
+<p>Intuitively, when <em>n</em> is larger, <em>k&#x2F;n</em> will be closer to <em>p</em>, and when <em>n</em> is smaller, the result of <em>k&#x2F;n</em> may lack persuasiveness.</p>
+<p>Confidence intervals and interval estimation are a type of parameter estimation. For example, regarding the player’s preference rate <em>p</em> for a certain fashion item, unless we ask every player if they really like a certain fashion item, we can never get all players’ opinions on a certain fashion item. Therefore, we need to analyze the results of the questionnaires already obtained to infer the relationship between the player’s questionnaire preference rate <em>k&#x2F;n</em> and the player’s true preference rate <em>p</em> in the existing results. Since it is an inference or estimation, there are two situations: overestimation and underestimation. The entire interval connecting underestimation and overestimation is interval estimation. In contrast, point estimation only estimates one result.</p>
+<h2 id="Wilson-Score-Calculation"><a href="#Wilson-Score-Calculation" class="headerlink" title="Wilson Score Calculation"></a>Wilson Score Calculation</h2><p>The Wilson score formula is as follows (Wikipedia: Binomial proportion confidence interval):</p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fb512aa83-d416-44de-9075-2cfc8bfbe696.png/size/" alt="Wilson Score Formula"></p>
+<p>Where <em>n</em> is the sample size, i.e., the total number of votes;</p>
+<p><em>p</em> is the “like” rate of the questionnaire players, <em>k&#x2F;n</em>;</p>
+<p><em>z</em> is the standard normal distribution statistic for a certain confidence interval, which can be obtained by looking up the table, usually taking 1.96.</p>
+<p>From the score formula, we can find that the Wilson score adjusts the original simple calculation method of <em>k&#x2F;n</em> with the sample size <em>n</em>, making the result fairer:</p>
+<p>When the sample size is small, this value will tend to be smaller;<br>When the sample size is large, this value will keep approaching the actual data result of <em>k&#x2F;n</em>.</p>
+<p>In fact, this value formula is the lower bound of the confidence interval for the interval estimation of the binomial distribution parameter <em>p</em>. The lower bound, as the name suggests, is an underestimation of the parameter to be estimated. Only with strong evidence can we face up to the results of, for example, 95% or 99% preference rate generated from the questionnaire. Otherwise, under a small statistical sample size, the 95% preference rate will be greatly reduced.</p>
+<p>In addition, sometimes it may be necessary to overestimate certain values. For example, based on the principle of prudence, overestimating the future player churn rate, we can choose the upper bound of the confidence interval:</p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fbcb729ee-9898-46c0-ba73-ac1fafd99974.png/size/" alt="Upper Bound"></p>
+<p>This algorithm was proposed in 1927 by a middle-aged man named Wilson.</p>
+<p>In the same year, another elderly man named Wilson won the Nobel Prize in Physics for his research on microscopic particles.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2021/09/23/netease-ux-articles/news_20211012_28584_978028/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2021/09/18/netease-ux-articles/news_20211019_28584_980092/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

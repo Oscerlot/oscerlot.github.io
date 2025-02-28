@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Randomness and Positive Feedback Presentation in Auto Chess | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Game-Design/">
+                            Game Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Randomness/">
+                            Randomness
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Auto-Chess/">
+                            Auto Chess
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Positive-Feedback/">
+                            Positive Feedback
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Interface-Design/">
+                            Interface Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Dota-Auto-Chess/">
+                            Dota Auto Chess
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Teamfight-Tactics/">
+                            Teamfight Tactics
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Chess-Rush/">
+                            Chess Rush
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Arena-of-Evolution-Red-Tides/">
+                            Arena of Evolution: Red Tides
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Fight-for-Freedom/">
+                            Fight for Freedom
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Randomness and Positive Feedback Presentation in Auto Chess
+            
+            
+        </div>
+        <span class="post-date">
+            6 Feb, 2020
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210318%2F2bd18154-1768-4a7b-b890-13cc0446742b.png/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20210318/28584_937546.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p><strong>Analysis of Auto Chess Characteristics</strong></p>
+<p>Last year, Dota 2’s Auto Chess mod suddenly became popular. After its launch, <em>Dota Auto Chess</em> became the number one map in the DOTA 2 Workshop, with an average daily online presence of 300,000. With the launch of other auto chess games in the future, I believe there is still a lot of room for optimization in auto chess.</p>
+<p>Auto chess incorporates and optimizes the gameplay of mahjong, with automatic battles, a low learning curve, high randomness, and points for comebacks. There are many points where you can get happiness in random confrontations, rather than only the first place being able to get happiness.</p>
+<p>So how do the auto chess games on the market show their randomness in the game interface, and provide real-time positive feedback to players?</p>
+<p><strong>Randomness</strong></p>
+<p>Randomness is mainly concentrated in the interface for selecting pieces. In <em>Auto Chess</em> (Drodo) &#x2F; <em>Dota Auto Chess</em>, this is mainly reflected in the pop-up window for displaying pieces during the battle interlude. It only pops up automatically during the battle interlude, and is not a permanent window. To call it up, you need to click the gold button or the chess piece button.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210318%2F23562cc0-5838-4634-83d9-215a117c2e0c.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210318&#x2F;23562cc0-5838-4634-83d9-215a117c2e0c.jpg"></p>
+<hr>
+<p><em>Auto Chess (Drodo) Piece Pool</em></p>
+<hr>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210318%2F087381cd-96ab-4151-94dd-855664d7592d.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210318&#x2F;087381cd-96ab-4151-94dd-855664d7592d.jpg"></p>
+<hr>
+<p><em>Dota Auto Chess Piece Pool</em></p>
+<hr>
+<p>Here, in order to emphasize its randomness, owned pieces or recommended pieces will have special effects around them, and there will also be upgrade prompts. <em>Arena of Evolution: Red Tides</em> even has a “luck rating”.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210318%2F7672eaee-470e-423a-b89a-3e040a420417.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210318&#x2F;7672eaee-470e-423a-b89a-3e040a420417.jpg"></p>
+<hr>
+<p><em>Arena of Evolution: Red Tides</em></p>
+<hr>
+<p><em>Teamfight Tactics</em> has it as a permanent page at the bottom. (Permanent menus are more friendly on the PC side. <em>Justice Online</em>‘s <em>Fight for Freedom</em> made it into a switchable piece pool.)</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210318%2F60f1432e-98f0-4d55-9b66-b0882f287dc8.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210318&#x2F;60f1432e-98f0-4d55-9b66-b0882f287dc8.jpg"></p>
+<hr>
+<p><em>Teamfight Tactics Permanent Pieces</em></p>
+<hr>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210318%2F27bef8f5-4a8b-403b-ba9e-0ed3122cf75b.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210318&#x2F;27bef8f5-4a8b-403b-ba9e-0ed3122cf75b.jpg"></p>
+<hr>
+<p><em>Justice Online’s Fight For Freedom</em></p>
+<hr>
+<p><strong>Positive Feedback</strong></p>
+<p>The probability of each round of pieces appearing itself will bring certain positive feedback to the player, especially when there are two one-star pieces and the third one-star piece is drawn, when the key lineup card is drawn, and when the opponent of this round is defeated, there is a feeling of being the chosen one. (In contrast, the negative feedback content such as not drawing the card is not so strong.)</p>
+<p>In addition, after the end of each game, there is a settlement interface. Some have a settlement interface that tells the player the income of each round (including losing streak income) and the skill gold bonus in some game mechanisms; others have the income display appearing in the battle interface. <em>Teamfight Tactics</em> will accumulate 10 gold coins into a golden shell on one side.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210318%2F63baa8db-9eb6-433a-89f1-f88711b3272a.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210318&#x2F;63baa8db-9eb6-433a-89f1-f88711b3272a.jpg"></p>
+<hr>
+<p><em>Arena of Evolution: Red Tides</em></p>
+<hr>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210318%2Fa074da02-1aa5-43d0-977c-5864afe093c5.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210318&#x2F;a074da02-1aa5-43d0-977c-5864afe093c5.jpg"></p>
+<hr>
+<p><em>Teamfight Tactics Golden Shell</em></p>
+<hr>
+<p>But there is a problem with auto chess, that is, the length of time for each group of players to finish the current round is different. While waiting for other players to finish the game, some players may upgrade their pieces, etc. If you need to constantly switch perspectives to get this information, it is easy to miss your own chess selection time.</p>
+<p><strong>How to solve the problem of switching between rounds?</strong></p>
+<p>Some star-up information or victory information, etc., are realized by some auto chess games through bullet comments (danmu - 弹幕).</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210318%2Fe5ade8b0-35e3-4f0f-b3c6-830c0f696e35.gif/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210318&#x2F;e5ade8b0-35e3-4f0f-b3c6-830c0f696e35.gif"></p>
+<hr>
+<p><em>Dota Auto Chess Bullet Comments</em></p>
+<hr>
+<p><strong>Round Division</strong></p>
+<p>In order to clearly divide the rounds, <em>Teamfight Tactics</em> and <em>Dota Auto Chess</em> both use scene switching to distinguish.</p>
+<p><em>Teamfight Tactics</em> realizes scene switching through the shuttle of different spaces, while <em>Dota Auto Chess</em> switches through the illumination of day and night.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210318%2Fa11b5066-954e-418f-9c0b-fb8462ab4b2b.gif/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210318&#x2F;a11b5066-954e-418f-9c0b-fb8462ab4b2b.gif"></p>
+<hr>
+<p><em>《Teamfight Tactics》 Scene Switching</em></p>
+<hr>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210318%2F1fa298b8-174e-473a-bc80-a1dd8f4ffd5f.gif/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210318&#x2F;1fa298b8-174e-473a-bc80-a1dd8f4ffd5f.gif"></p>
+<hr>
+<h2 id="Dota-Auto-Chess-Scene-Switching"><a href="#Dota-Auto-Chess-Scene-Switching" class="headerlink" title="Dota Auto Chess Scene Switching"></a><em>Dota Auto Chess Scene Switching</em></h2>
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2020/05/22/netease-ux-articles/news_20210325_28584_938842/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2020/01/15/netease-ux-articles/news_20210112_28584_926555/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

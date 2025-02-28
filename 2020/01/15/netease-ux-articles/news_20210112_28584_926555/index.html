@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Randomness, Pseudo-Randomness, and Pseudo-Pseudo-Randomness in Games | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Game-User-Experience/">
+                            Game User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Randomness/">
+                            Randomness
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Pseudo-Randomness/">
+                            Pseudo-Randomness
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Pseudo-Pseudo-Randomness/">
+                            Pseudo-Pseudo-Randomness
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Probability/">
+                            Probability
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Gacha/">
+                            Gacha
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Critical-Hit/">
+                            Critical Hit
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Drop-Rate/">
+                            Drop Rate
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Randomness, Pseudo-Randomness, and Pseudo-Pseudo-Randomness in Games
+            
+            
+        </div>
+        <span class="post-date">
+            15 Jan, 2020
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210112%2F267fad2c-fb6f-41c1-918f-bd800c55f18f.png/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20210112/28584_926555.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a>)</p>
+</blockquote>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Randomness is an important characteristic that contributes to the fun of games. Every game incorporates randomness in its numerical design. Whether it’s opening loot boxes, drawing gacha, or experiencing critical hits and item drops during combat, these random probability events often leave the majority of players lamenting their bad luck, while a small minority rejoice in their good fortune. It is precisely because of this uncertainty that players have more anticipation and hope during their gaming experience. Each random outcome brings players a fresh experience.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210112%2Fd38f54cd-a8af-40c5-bdd6-ca80ebaf0158.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210112&#x2F;d38f54cd-a8af-40c5-bdd6-ca80ebaf0158.jpg"></p>
+<hr>
+<p><em>A Lucky Gacha Draw</em></p>
+<hr>
+<h2 id="Pseudo-Randomness-and-Philosophy"><a href="#Pseudo-Randomness-and-Philosophy" class="headerlink" title="Pseudo-Randomness and Philosophy"></a>Pseudo-Randomness and Philosophy</h2><p>Just like the principle of moderation in philosophy, too little randomness reduces player enjoyment, while too much randomness affects the balance of the game. Different types of games require different degrees of randomness in different aspects. At appropriate times, it is necessary to manually intervene in randomness to ensure the game experience.</p>
+<p>In computer language, 0 is 0 and 1 is 1. There is no data in a program that can be both 0 and 1. A quantum superposition state like Schrödinger’s cat cannot exist within a game program. To satisfy people’s need for randomness, programmers need to write a specific program to achieve random numerical changes within the game. In this sense, all so-called “randomness” in games is actually “pseudo-randomness” that has been manually intervened. Of course, whether all random events in nature should also be regarded as “pseudo-random” events belongs to the realm of philosophy, and we will not take up too much space to discuss it here.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210112%2Fbd5ca4e0-88da-4852-b5cc-8a0c5adfb519.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210112&#x2F;bd5ca4e0-88da-4852-b5cc-8a0c5adfb519.jpg"></p>
+<hr>
+<h2 id="Schrodinger’s-Cat"><a href="#Schrodinger’s-Cat" class="headerlink" title="Schrödinger’s Cat"></a><em>Schrödinger’s Cat</em></h2><h2 id="Pseudo-Pseudo-Randomness"><a href="#Pseudo-Pseudo-Randomness" class="headerlink" title="Pseudo-Pseudo-Randomness"></a>Pseudo-Pseudo-Randomness</h2><p>To prevent the random settings in the game from having a significant impact on game balance, and to protect the rights of players, most game manufacturers add some manual adjustments to the “pseudo-random” settings, namely “pseudo-pseudo-randomness”. This ensures that players with less-than-ideal luck obtain a basic gaming experience. Examples include pity systems in gacha mechanics, and making the frequency of some random skills, such as critical hits, constant during battles.</p>
+<p>Let’s take the hero Axe from the game <em>Dota 2</em> as an example. One of Axe’s skills, “Counter Helix,” is described as follows: When taking basic attacks from the enemy, Axe has a chance to perform a helix counterattack, attacking all nearby enemies. In older versions, this probability followed a “random distribution,” meaning that every time Axe was attacked, there was a 17%-20% chance (which increased with level) to trigger Counter Helix. This led to situations where a lucky player using this hero might spin like a fan, achieving kills, while an unlucky player might be killed without triggering the skill even once, causing frustration.</p>
+<p>In a later version, Valve adjusted all skills with “random distribution” in <em>Dota 2</em> to use “pseudo-random distribution.” This means that the actual probability of a skill triggering is different each time. Each attack that does not trigger the event increases the probability of the event occurring on the next attack. This ensures that the event will occur at least once within a fixed number of attacks&#x2F;casts. In simple terms, through manual intervention in “random events,” Valve ensured that Axe’s Counter Helix skill, at a 20% probability at max level, would trigger at least once every 5 attacks.</p>
+<h2 id="nbsp"><a href="#nbsp" class="headerlink" title="&nbsp;"></a>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20210112%2F50e78ed0-bce0-4f89-9b29-17bd86f6c112.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20210112&#x2F;50e78ed0-bce0-4f89-9b29-17bd86f6c112.jpg"></h2><h2 id="“Axe’s”-skill-“Counter-Helix”"><a href="#“Axe’s”-skill-“Counter-Helix”" class="headerlink" title="“Axe’s” skill, “Counter-Helix”"></a><em>“Axe’s” skill, “Counter-Helix”</em></h2><p>Of course, after such adjustments in the game, some skilled players playing heroes like Phantom Assassin (whose ultimate has a 15% chance of triggering a high-multiplier critical hit) will often attack creeps before “fighting” to “accumulate critical hit rate.” For example, if they attack creeps 3-4 times in a row without triggering a critical hit, they can choose to attack the enemy hero, thereby increasing the chance of a critical hit on the enemy hero.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In summary, randomness is important for enhancing the actual experience during the game. Adding appropriate random event gameplay in the game can effectively improve the player’s experience. Too high or too low a probability will have a negative impact. Choosing the appropriate type of randomness, pseudo-randomness, or pseudo-pseudo-randomness in the game is a decision that game designers need to make based on the game’s own gameplay attributes.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2020/02/06/netease-ux-articles/news_20210318_28584_937546/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2020/01/02/netease-ux-articles/news_20201106_28584_914219/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

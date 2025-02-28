@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>A Preliminary Exploration of HDFS | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+        </div>
+        <div class="post-title">
+            
+            
+                A Preliminary Exploration of HDFS
+            
+            
+        </div>
+        <span class="post-date">
+            11 Sep, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190926%2F85e46bf7-3367-4d66-b669-d2b6ca288d5e.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20190917/28584_833099.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a> </p>
+</blockquote>
+<p>With the advent of the big data era, the storage and processing of massive data has become a problem that plagues scholars in the computer field. Currently, typical representatives of frameworks or systems that are better at addressing such data mining and other massive data field problems on the market include Hadoop and Spark. And these two big data giants also use HDFS in the underlying storage engine.</p>
+<p>HDFS, or Hadoop Distributed Filesystem, as the name suggests, is Hadoop’s distributed file system. Due to its superior performance and low deployment cost, it has also been favored by Spark.</p>
+<p>What kind of magic does HDFS possess to provide high-speed throughput and storage performance for massive data?</p>
+<p>What are its characteristics?</p>
+<p>First of all, HDFS is a distributed file system. On an ordinary PC, the file system exists in the form of a single machine. However, no matter how efficient the CPU or how fast the storage device is, a single-machine system has certain performance problems due to the limitations of peripherals and the network. The theoretical performance of commonly used Gigabit Ethernet cards and m.2 high-speed SSDs on the market can only reach GB level, and 1PB of data even takes one million seconds to complete, which is completely unable to cope with the needs of PB or even EB big data environments. A single chopstick is easy to break, but a bundle of chopsticks is difficult to break. A single machine has a performance bottleneck, but multiple devices processing data in parallel can alleviate this problem. This is a distributed file system.</p>
+<p>Due to the concurrent operation of multiple servers in the cluster, multiple devices simultaneously perform data IO to the external network, which allows the system to have better throughput and greatly improves the system’s performance. For HDFS, the structure diagram of the entire system is as shown in the figure.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190917%2F80a5068d-fa18-476c-9cc9-fb95ef058d61.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190917&#x2F;80a5068d-fa18-476c-9cc9-fb95ef058d61.jpg"></p>
+<p>HDFS is mainly divided into three parts: client node, metadata node NameNode, and data node DataNode.</p>
+<p>The client node serves as the access interface of HDFS. It obtains the metadata information of the requested data by sending a request to the NameNode (metadata is similar to a directory, guiding to find the location of the target, and recording basic information such as the target’s size and type). It then accesses the DataNode through the address corresponding to the metadata to obtain the target data.</p>
+<p>For a large data cluster, data security is an extremely important issue.</p>
+<p>For HDFS, due to the large number of machines in the cluster, the failure rate of the system is accompanied. When a machine in the system experiences a power outage or damage, the data on that node will be lost. If there are no corresponding data protection measures, serious losses will occur. HDFS focuses on data reliability and adopts two different processing methods for data and metadata.</p>
+<ol>
+<li><strong>Metadata:</strong> Set up a Secondary NameNode for the metadata node NameNode to serve as a backup of the metadata node. The primary-standby mode is used to serve the system. If the NameNode fails, the Secondary NameNode will serve the entire system.</li>
+<li><strong>Data:</strong> In HDFS, data is stored in the form of multiple copies (usually three copies). These copies are stored in different cluster machines. When one or two of the servers fail, the target data can still be obtained through the third machine. At the same time, multiple copies can provide multiple concurrent operations when dealing with multiple clients accessing the same data.</li>
+</ol>
+<p>Although such a multi-copy strategy and primary-secondary NameNode strategy can effectively solve system performance, it will bring certain data consistency overhead to the system, that is, use performance in exchange for data accuracy.</p>
+<p>The so-called data consistency, in layman’s terms, means that accessing data in the system will always obtain the latest value. In other words, data in different copies or backups must always be updated synchronously.</p>
+<p>So, for such a large multi-node HDFS cluster, how to ensure such consistency?</p>
+<p>For the primary and secondary NameNode, when the client performs data operations on the system, the NameNode will record these operations, obtain the corresponding metadata operation log, and persist this log to the fsimage file.</p>
+<p>Synchronously, the Secondary NameNode will continuously request the fsimage file of the NameNode to ensure that the metadata information on the primary and secondary servers remains consistent.</p>
+<p>For data nodes, the concept of a primary copy and secondary copies is adopted. Data write operations will first interact with the primary copy. After writing to the primary copy node, the location of other copies will be obtained through the primary copy node, and the data writing will be completed level by level. When it is confirmed that all copies have been updated, the primary copy will return a write completion feedback. This ensures that the write completion operation is returned only after all three copies have been updated, ensuring the transactionality of a single write. The write process is shown in the figure.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190917%2Ff9503683-629f-4794-9068-8b3d7cdec4fd.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190917&#x2F;f9503683-629f-4794-9068-8b3d7cdec4fd.jpg"></p>
+<p>When a node in a multi-copy node fails, how will it be discovered?</p>
+<p>The NameNode plays the role of a manager during the operation of the entire cluster, and it monitors the status information of all nodes in the cluster (a typical distributed file system, sheepdog, shows the relationship between this management node and the data node relatively well. In sheepdog, the data node is called sheep, and the management node is dog).</p>
+<p>For the NameNode to monitor many nodes in the entire cluster at all times, continuous connection access will bring a great burden to the NameNode. Therefore, HDFS adopts a passive form of NameNode - the heartbeat mechanism.</p>
+<p>The heartbeat mechanism means that the DataNode sends status information to the NameNode regularly, and the NameNode does not actively request status information from the DataNode. When a DataNode does not send heartbeat information to the NameNode for a long time, it will be considered that the DataNode has failed, and then corresponding data recovery and migration measures will be implemented.</p>
+<p>HDFS improves system throughput through distribution; metadata nodes and data nodes complete data organization and management; multiple copies and primary and secondary NameNodes ensure data reliability; and the heartbeat mechanism completes cluster management. Each module has a clear division of labor, performs its own duties, and cooperates to ensure the high-performance performance of HDFS.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/09/16/netease-ux-articles/news_20190926_28584_834923/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/09/06/netease-ux-articles/news_20190917_28584_833017/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

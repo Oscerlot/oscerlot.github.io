@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>A Discussion on Learning to Rank (LTR) | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-Research/">
+                            User Research
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Learning-to-Rank/">
+                            Learning to Rank
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Pointwise/">
+                            Pointwise
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Pairwise/">
+                            Pairwise
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Listwise/">
+                            Listwise
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/CTR-Prediction/">
+                            CTR Prediction
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Feature-Combination/">
+                            Feature Combination
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Multi-Objective-Optimization/">
+                            Multi-Objective Optimization
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                A Discussion on Learning to Rank (LTR)
+            
+            
+        </div>
+        <span class="post-date">
+            9 Oct, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191010%2F027160cb-caca-4c27-ad93-fca74df3c9a3.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20191010/28584_836639.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>The problem of ranking has always been a classic and core issue in the computer field.  From simple numerical data sorting like bubble sort and quick sort, to more complex, real-world business problems, such as the ranking of results retrieved from keywords in an app’s search bar, display advertising, and the ordering of items in recommendation lists, the problem is quite involved.  The quality of the ranking results greatly impacts the user experience, as well as advertising revenue for search, recommendation, and advertising businesses.  Unlike traditional ranking methods, Learning to Rank (LTR) can be simply understood as using machine learning methods to sort and display instances.</p>
+<h2 id="Evaluation-Metrics-for-Learning-to-Rank"><a href="#Evaluation-Metrics-for-Learning-to-Rank" class="headerlink" title="Evaluation Metrics for Learning to Rank:"></a>Evaluation Metrics for Learning to Rank:</h2><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Precision and Recall (PR)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Mean Average Precision (MAP)</td>
+<td>See details below.</td>
+</tr>
+<tr>
+<td>nDCG</td>
+<td>See details below.</td>
+</tr>
+<tr>
+<td>ERR</td>
+<td>Takes the reciprocal of rank as accuracy.</td>
+</tr>
+</tbody></table>
+<p><strong>Precision and Recall (PR):</strong> Precision reflects the accuracy rate, and recall reflects the completeness rate.</p>
+<p><strong>Mean Average Precision (MAP):</strong>  AP (Average Precision) can be understood as order-sensitive recall. MAP then averages this. The higher the position of the relevant documents retrieved by the system, the higher the MAP value.  It is calculated for a single query as the mean of the average precision scores for each relevant document retrieved.</p>
+<p>AP &#x3D; Summation from(k&#x3D;1,n)[P(k) * rel(k)] &#x2F; Number of Relevant Documents</p>
+<ul>
+<li>Where <code>k</code> is the rank in the sequence of retrieved documents.</li>
+<li><code>n</code> is the number of retrieved documents.</li>
+<li><code>P(k)</code> is the precision at cut-off <code>k</code> in the list.</li>
+<li><code>rel(k)</code> is an indicator function equaling 1 if the item at rank <code>k</code> is a relevant document, zero otherwise.<br>MAP is the mean of the AP scores across multiple queries.</li>
+</ul>
+<p><strong>normalized Discounted Cumulative Gain (nDCG):</strong> Cumulatively calculates the overall gain value.  In MAP, the four documents are either relevant or irrelevant to the query, that is, the relevance is either 0 or 1.  nDCG improves this by dividing the relevance into r+1 levels from 0 to r. The formula in the figure above is the DCG calculation formula, but the comparability of DCG between lists of different lengths is not high. nDCG adds normalization processing.</p>
+<p>DCG_p &#x3D; rel_1 + summation from(i&#x3D;2,p) [ rel_i &#x2F; log2(i) ]</p>
+<ul>
+<li><code>p</code> is a particular rank position.</li>
+<li><code>rel_i</code> is the graded relevance of the result at position <code>i</code>.</li>
+</ul>
+<p>nDCG_p &#x3D; DCG_p &#x2F; IDCG</p>
+<ul>
+<li><code>IDCG</code> is the <em>ideal DCG</em>, the DCG value for a perfect ranking.</li>
+</ul>
+<p><strong>Expected Reciprocal Rank (ERR):</strong> Takes the reciprocal of the ranking of the correct answer in the results given by the evaluated system as its accuracy, and then averages it for all questions.</p>
+<h2 id="Model-Classification-for-Learning-to-Rank"><a href="#Model-Classification-for-Learning-to-Rank" class="headerlink" title="Model Classification for Learning to Rank:"></a>Model Classification for Learning to Rank:</h2><p>Learning to rank models are usually divided into pointwise methods, pairwise methods, and listwise methods. The three different design ideas are mainly reflected in the annotation methods and loss functions.</p>
+<p><strong>Pointwise Methods:</strong></p>
+<p>This is the simplest and easiest to understand solution. It transforms the ranking problem into a common classification or regression problem in machine learning. If the final prediction target is a real value, it is a regression problem. If it is a probability problem, it is a classification problem, such as CTR (Click-Through Rate) prediction. First, each processing object is manually labeled with training samples. Machine learning models such as support vector machines and logistic regression are used to adjust parameters. Finally, new instances use the model’s scoring function to get a new ranking score. This type of method has an obvious disadvantage: it does not consider the relative relationship between instances.</p>
+<p><strong>Pairwise Methods:</strong></p>
+<p>This approach gives the relative ranking between each instance. According to the relative ranking, the final ranking of all instances can also be given. This is mainly because it is easy to calculate the gradient of the loss function, but it is difficult to directly calculate the value of the loss function. Representative methods are the Lambda series, such as LambdaRank and LambdaMART, RankNet.</p>
+<p><strong>Listwise Methods:</strong></p>
+<p>This approach directly gives the overall ranking of all instances, directly optimizing evaluation indicators such as nDCG and ERR. However, it is more complicated during training because all training instances need to be labeled with their rankings.</p>
+<h2 id="Major-Challenges-in-Ranking"><a href="#Major-Challenges-in-Ranking" class="headerlink" title="Major Challenges in Ranking:"></a>Major Challenges in Ranking:</h2><ol>
+<li><strong>Serious imbalance in the ratio of positive and negative samples:</strong> How to sample reasonably. For example, in CTR, there are many impressions, but very few click behaviors. In recommendations, there are many browsing behaviors, but very few purchase behaviors.</li>
+<li><strong>Sparse target data:</strong> Accuracy is not high enough.</li>
+<li><strong>High real-time requirements:</strong> For example, being able to change the recommendation list in real time based on the latest click behavior.</li>
+<li><strong>The importance of multiple different objectives cannot be quantified:</strong> Advertising may aim to increase the CTR click-through rate, but in games, it is sometimes retention, purchase rate, repurchase rate, etc. How to measure the importance of recommended list instances for different objectives is also very complex.</li>
+</ol>
+<h2 id="Common-LTR-Ranking-Models-in-Industry"><a href="#Common-LTR-Ranking-Models-in-Industry" class="headerlink" title="Common LTR Ranking Models in Industry:"></a>Common LTR Ranking Models in Industry:</h2><p><strong>The evolution of algorithms in the industry:</strong></p>
+<pre><code>Artificial Rules -&gt; Linear Models -&gt; Tree Models (GBDT) -&gt; Deep Learning
+</code></pre>
+<p>Here are several ranking models widely used in the industry:</p>
+<ol>
+<li><p><strong>LR + GBDT (Semi-automated Feature Combination):</strong> This combined model has been widely used in CTR prediction, and of course, the ranking part of many companies’ recommendation systems also deploys this combined model. The LR model has good interpretability, but it requires good feature engineering and cannot effectively extract combined features. Therefore, the GBDT model can be used first to extract combined features and enhance the generalization performance of the model, and the new feature vector is input into LR.</p>
+</li>
+<li><p><strong>FM Model (Automated Second-Order Feature Combination):</strong> That is, the Factorization Machine model. On the basis of linear features, second-order feature combinations are directly introduced, and the inner product of corresponding feature vectors is used to represent them. In essence, these features are embedded.</p>
+</li>
+<li><p><strong>Wide &amp; Deep Model (Automated Higher-Order Feature Combination):</strong> First used by Google in Google Play for app recommendation ranking. The wide part is a linear model, and the deep part embeds the combined high-dimensional sparse features into low-dimensional dense feature vectors using a neural network. Joint training of the two parts can complement each other’s shortcomings in complex feature engineering and insufficient interpretability.</p>
+</li>
+</ol>
+<h2 id="Application-Scenarios-of-Learning-to-Rank-in-Recommendations"><a href="#Application-Scenarios-of-Learning-to-Rank-in-Recommendations" class="headerlink" title="Application Scenarios of Learning to Rank in Recommendations:"></a>Application Scenarios of Learning to Rank in Recommendations:</h2><ol>
+<li><p><strong>Multi-channel Recall Fusion Ranking:</strong></p>
+<p>A recommendation system’s recall phase may use a variety of different recall strategies, such as content-based recall, collaborative filtering-based recall, popular item-based recall, interest tag-based recall, and so on. It is impossible to definitively determine which recall strategy is more important for items recalled by different recall strategies. Therefore, a learning-to-rank model is needed to rank the items recalled by multiple channels based on user behavior feedback, which is also a major function of the ranking module. Each recall channel can use A&#x2F;B testing to select the appropriate number. Users have different levels of interest in each channel of content, so the top-k parameter <code>k</code> for recall can also be personalized.</p>
+</li>
+<li><p><strong>Multi-objective Fusion Ranking:</strong></p>
+<p>Not only to improve CTR and CVR (Conversion Rate), but also retention, add-to-cart, and other multiple objectives. Different parameters are trained for different objectives, and the parameters of different objective models need to be manually adjusted. In addition, different objective models have different levels of importance, and there needs to be a personalized weight for each type of person. We can construct pairs of items generated by multiple objectives, and train the order of different items during training. Another method is to adopt multi-task learning, share parameters, and fuse the learned scores. Typical algorithms include Google’s MMOE (Multi-gate Mixture-of-Experts) and Alibaba’s ESMM (Entire Space Multi-Task Model).</p>
+</li>
+</ol>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/10/25/netease-ux-articles/news_20191029_28584_843980/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/09/30/netease-ux-articles/news_20191010_28584_836594/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

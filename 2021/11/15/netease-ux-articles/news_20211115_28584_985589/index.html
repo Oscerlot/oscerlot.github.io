@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Introduction to Data Desensitization Technology | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Security/">
+                            Data Security
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Desensitization/">
+                            Data Desensitization
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Static-Data-Desensitization/">
+                            Static Data Desensitization
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Dynamic-Data-Desensitization/">
+                            Dynamic Data Desensitization
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Desensitization-Rules/">
+                            Desensitization Rules
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Masking/">
+                            Data Masking
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Encryption/">
+                            Data Encryption
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Introduction to Data Desensitization Technology
+            
+            
+        </div>
+        <span class="post-date">
+            15 Nov, 2021
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211115%2F133a7825-cfe4-4cbd-92b9-b2a52b797ab1.png/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20211115/28584_985589.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>With the advent of the big data era, data has become an important factor of production. For data controllers and data processors, how to maximize the value of data flow is the original intention and significance of data mining. However, the exposure of a series of information leakage incidents has made data security more and more widely concerned.</p>
+<p>Data security plays an important role in the construction of a data warehouse. The leakage of private or sensitive data will cause serious damage to the property, reputation, personal safety, and legitimate interests of the data subject. Therefore, we need to strictly control access to the data in the warehouse. This requires classifying the sensitivity of the data itself into security levels. With the classification of data security levels, we can better manage data access control to protect data security.</p>
+<p>But in the actual production process, the application scenarios will be more complex, and relying on access control alone, will be insufficient and other methods will be needed. Data desensitization is an effective method that can not only meet the needs of daily production, but also protect data security.</p>
+<h2 id="1-What-is-Data-Desensitization"><a href="#1-What-is-Data-Desensitization" class="headerlink" title="1. What is Data Desensitization?"></a>1. What is Data Desensitization?</h2><p>Data desensitization refers to the transformation of certain sensitive information through desensitization rules to achieve reliable protection of sensitive and private data. In this way, the security level of the data itself can be downgraded, and the desensitized real data set can be safely used in development, testing, and other non-production environments, as well as in outsourcing or cloud computing environments.</p>
+<p>But it should be noted that with the help of data desensitization technology, while erasing sensitive content in the data, it is also necessary to maintain the original data characteristics, business rules, and data correlation, to ensure that we will not be affected by desensitization in development, testing, and data analysis businesses, and to ensure the consistency and validity of data before and after desensitization.</p>
+<h2 id="2-Data-Desensitization-Strategies"><a href="#2-Data-Desensitization-Strategies" class="headerlink" title="2. Data Desensitization Strategies"></a>2. Data Desensitization Strategies</h2><p>Strategically, data desensitization is divided into Static Data Masking (SDM) and Dynamic Data Masking (DDM).</p>
+<h3 id="Static-Data-Desensitization"><a href="#Static-Data-Desensitization" class="headerlink" title="Static Data Desensitization"></a>Static Data Desensitization</h3><p>Static data desensitization is the “moving and simulated replacement” of data. The data is extracted for desensitization processing, and then distributed to downstream links for free access and read-write. The desensitized data is isolated from the production environment, meeting business needs and ensuring the security of the production database.</p>
+<p>Static data desensitization is suitable for extracting data from the production environment, desensitizing it, and distributing it to scenarios such as testing, development, training, and data analysis. Sometimes we may need to copy the data from the production environment to the test and development libraries to troubleshoot problems or perform data analysis, but for security reasons, sensitive data cannot be stored in a non-production environment. In this case, sensitive data must be desensitized from the production environment before being used in a non-production environment. In this way, the desensitized data is isolated from the production environment, meeting business needs while ensuring the security of production data.</p>
+<p>As shown in the figure above, the user’s real name, mobile phone number, ID number, and bank card number are desensitized by replacement, invalidation, scrambling, and symmetric encryption.</p>
+<h3 id="Dynamic-Data-Desensitization"><a href="#Dynamic-Data-Desensitization" class="headerlink" title="Dynamic Data Desensitization"></a>Dynamic Data Desensitization</h3><p>Dynamic data desensitization performs desensitization processing in real time while accessing sensitive data. It can execute different desensitization schemes for different roles, different permissions, and different data types, thereby ensuring that the returned data is usable and secure.</p>
+<p>Dynamic data desensitization is generally used in the production environment, because sometimes in different situations, different levels of desensitization processing are required for reading the same sensitive data. For example, different desensitization schemes may be executed for different roles and different permissions.</p>
+<h3 id="Differences-in-Technical-Routes-of-Static-Desensitization-and-Dynamic-Desensitization"><a href="#Differences-in-Technical-Routes-of-Static-Desensitization-and-Dynamic-Desensitization" class="headerlink" title="Differences in Technical Routes of Static Desensitization and Dynamic Desensitization"></a>Differences in Technical Routes of Static Desensitization and Dynamic Desensitization</h3><p>Static desensitization directly uses various desensitization algorithms such as masking, deformation, replacement, randomization, format-preserving encryption (FPE), and strong encryption algorithms (such as AES) to perform data masking disruption for different data types, and the desensitized data can be loaded into different environments according to user needs. Static desensitization can provide different loading methods such as file-to-file, file-to-database, database-to-database, and database-to-file. The exported data is stored in an external storage medium in a desensitized form, which actually changes the stored data content.</p>
+<p>Dynamic desensitization accurately parses SQL statements to match desensitization conditions, such as: access IP, MAC, database user, client tool, operating system user, host name, time, number of affected rows, etc. After successful matching, it rewrites the query SQL or intercepts and protects the returned desensitized data to the application side, thereby achieving desensitization of sensitive data. In fact, the data stored in the production database has not changed.</p>
+<h2 id="3-Data-Desensitization-Solutions"><a href="#3-Data-Desensitization-Solutions" class="headerlink" title="3. Data Desensitization Solutions"></a>3. Data Desensitization Solutions</h2><p>The data desensitization system can define and write desensitization rules according to different business scenarios, and can perform data desensitization without landing for a certain sensitive field of a library table.</p>
+<p>There are many ways to desensitize data, but no matter which method is used, it must be based on different application scenarios and follow the following two principles:</p>
+<ul>
+<li>remain meaningful for application logic</li>
+<li>sufficiently treated to avoid reverse engineer</li>
+</ul>
+<h3 id="Invalidation"><a href="#Invalidation" class="headerlink" title="Invalidation"></a>Invalidation</h3><p>The invalidation scheme processes the data to be desensitized by truncating, encrypting, hiding, etc. the data value of the field to desensitize the sensitive data and make it no longer valuable. Generally, special characters (*, etc.) are used to replace the true value. This method of hiding sensitive data is simple, but the disadvantage is that the user cannot know the format of the original data. If the user wants to obtain complete information, the user must be authorized to query. For example, if we replace the ID number with * to replace the real number, it becomes “220724 ****** 3523”, which is very simple.</p>
+<h3 id="Random-Value"><a href="#Random-Value" class="headerlink" title="Random Value"></a>Random Value</h3><p>Random value replacement replaces letters with random letters, numbers with random numbers, and text with random text to change sensitive data. The advantage of this scheme is that it can retain the format of the original data to a certain extent, and this method is often imperceptible to users.</p>
+<h3 id="Data-Replacement"><a href="#Data-Replacement" class="headerlink" title="Data Replacement"></a>Data Replacement</h3><p>Data replacement is similar to the previous invalidation method, except that special characters are not used for masking, but a set virtual value is used to replace the true value. For example, we set the mobile phone number to “13651300000”.</p>
+<h3 id="Symmetric-Encryption"><a href="#Symmetric-Encryption" class="headerlink" title="Symmetric Encryption"></a>Symmetric Encryption</h3><p>Symmetric encryption is a special reversible desensitization method. Sensitive data is encrypted through an encryption key and algorithm. The ciphertext format is consistent with the original data in logical rules, and the original data can be restored by decrypting the key. It is important to note the security of the key.</p>
+<h3 id="Average"><a href="#Average" class="headerlink" title="Average"></a>Average</h3><p>The average scheme is often used in statistical scenarios. For numerical data, we first calculate their average value, and then make the desensitized value randomly distributed around the average value, thereby keeping the sum of the data unchanged.</p>
+<h3 id="Offset-and-Rounding"><a href="#Offset-and-Rounding" class="headerlink" title="Offset and Rounding"></a>Offset and Rounding</h3><p>This method changes numerical data by random shifting. Offset and rounding ensure the approximate authenticity of the range while maintaining data security. It is closer to real data than the previous schemes and is of great significance in big data analysis scenarios. For example, the date field 2020-12-08 15:12:25 becomes 2018-01-02 15:00:00.</p>
+<p>Data desensitization rules are often used in combination with multiple schemes in practical applications to achieve a higher level of security.</p>
+<h2 id="4-Conclusion"><a href="#4-Conclusion" class="headerlink" title="4. Conclusion"></a>4. Conclusion</h2><p>Whether it is static desensitization or dynamic desensitization, the ultimate goal is to prevent the abuse of private data within the organization and prevent private data from flowing out of the organization without desensitization. In the design and implementation of data desensitization schemes, it is more important to start from specific application scenarios for overall design, taking into account the important consideration dimension of data warehouse construction. The implementation of data desensitization can provide strong support for the promotion of organizational data security.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2021/11/17/netease-ux-articles/news_20211119_28584_986688/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2021/11/12/netease-ux-articles/news_20211115_28584_985596/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

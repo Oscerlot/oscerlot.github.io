@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Still Using Font Icons? Try Building an SVG Icon Library | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Front-end-Development/">
+                            Front-end Development
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/SVG/">
+                            SVG
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Icon-Library/">
+                            Icon Library
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/React/">
+                            React
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Component-Library/">
+                            Component Library
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/SVG-Sprite/">
+                            SVG Sprite
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Webpack/">
+                            Webpack
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/svgr/">
+                            svgr
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/On-demand-Loading/">
+                            On-demand Loading
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Standardization/">
+                            Standardization
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Still Using Font Icons? Try Building an SVG Icon Library
+            
+            
+        </div>
+        <span class="post-date">
+            6 Dec, 2021
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211209%2Fdc3ce1f2-51f4-4850-96e3-bf4c655ec88e.png/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20211209/28584_990922.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<h2 id="I-Background"><a href="#I-Background" class="headerlink" title="I. Background"></a>I. Background</h2><p>SVG is an image file format, the full name is Scalable Vector Graphics. It is a text file based on XML syntax. Most other image formats are based on pixel processing, so SVG does not distort like other image formats when enlarged.</p>
+<p>Compared with PNG and JPEG images, SVG has a smaller size, stronger compressibility, and is scalable. It can be enlarged without losing image quality. It has an open standard and can be used to represent graphics, filters, animations, etc. It also has a very long history. It became a W3C standard in 2003, and mainstream browsers support SVG.</p>
+<p>In practical work, SVG is very suitable for static image display, high-fidelity document viewing and printing, and other scenarios. Since SVG is described based on XML syntax, it is convenient to change the XML description, such as Path, Line, color, size, etc., to achieve the effect of changing SVG icons. Designers only need to produce one SVG image, which can be changed in size, color, animation, etc., and used in multiple places on the page.</p>
+<h2 id="II-Disadvantages-of-the-icon-font-Solution"><a href="#II-Disadvantages-of-the-icon-font-Solution" class="headerlink" title="II. Disadvantages of the icon-font Solution"></a>II. Disadvantages of the icon-font Solution</h2><p>IconFont is a well-known, powerful SVG open-source library with very rich icon content in China. In addition, there are some common open-source SVG libraries:</p>
+<ul>
+<li>Font Awesome</li>
+<li>Iconicons</li>
+<li>css.gg</li>
+<li>Featheroicons</li>
+<li>Eva Icons</li>
+<li>Heroicon</li>
+<li>Bootstrap iconsl</li>
+<li>Remix icons</li>
+<li>…</li>
+</ul>
+<p>These commonly used SVG open-source libraries have a very large SVG icon resource.</p>
+<p>In the actual development process, the process of accessing and using these SVG resources is as follows:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211209%2Ff430ac3b-7bf5-4a5a-8123-e8796246b0be.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211209&#x2F;f430ac3b-7bf5-4a5a-8123-e8796246b0be.png"></p>
+<p>This method has some disadvantages:</p>
+<ul>
+<li>The operation steps are cumbersome. Every time the icon is updated, it is necessary to go through all the above processes again.</li>
+<li>It is impossible to form a standard, and it cannot be reused between different projects. Projects can only be repeatedly copied; there is no entry to query the SVGs that the company already has.</li>
+<li>It needs the help of a third-party website and is strongly dependent on the third-party websites mentioned above. There are security risks in uploading internal SVGs of the company.</li>
+<li>The actual use is to package all icons into a font file and introduce them through class+css, which cannot be loaded on demand.</li>
+</ul>
+<p>Based on these drawbacks, we would prefer to have an SVG component library with unified standards, reusability, independence from third-party websites, support for on-demand loading, and easier access, use, maintenance, and expansion.</p>
+<h2 id="III-Solution-Research"><a href="#III-Solution-Research" class="headerlink" title="III. Solution Research"></a>III. Solution Research</h2><h3 id="SVG-Sprite"><a href="#SVG-Sprite" class="headerlink" title="SVG Sprite"></a>SVG Sprite</h3><p>Webpack svg-sprite-loader supports merging SVG files into an SVG sprite and loading them into an element with display: none. When using it, pass in the id of the icon to render the icon. This solution supports on-demand loading and packaging.</p>
+<h3 id="SVG-To-React"><a href="#SVG-To-React" class="headerlink" title="SVG To React"></a>SVG To React</h3><p>Webpack svg-react-loader supports directly requiring an SVG image. Users only need to simply configure webpack to use it directly.</p>
+<h3 id="Convert-SVG-to-React-Component"><a href="#Convert-SVG-to-React-Component" class="headerlink" title="Convert SVG to React Component"></a>Convert SVG to React Component</h3><p>If the SVG Sprite and SVG To React solutions are placed in an independent component library, the business needs to configure the loader to process the files of node_modules. For these two methods, there are shortcomings in the ease of use of the component library.</p>
+<p>Therefore, consider converting each independent SVG in the component library into a pure React component, rendering and returning the XML of the SVG, and passing in Props to change the SVG.</p>
+<h2 id="IV-Development-Implementation"><a href="#IV-Development-Implementation" class="headerlink" title="IV. Development Implementation"></a>IV. Development Implementation</h2><p>Re-sort the above solution ideas and clarify what to do:</p>
+<ol>
+<li>Create an independent SVG component library to store common SVG images</li>
+<li>Convert each SVG into an independent React Component</li>
+<li>Compile and build each React Component to support business on-demand introduction</li>
+</ol>
+<p>We mainly introduce 2 and 3</p>
+<h3 id="Convert-SVG-to-an-Independent-React-Component"><a href="#Convert-SVG-to-an-Independent-React-Component" class="headerlink" title="Convert SVG to an Independent React Component"></a>Convert SVG to an Independent React Component</h3><ul>
+<li>The main method used is the svgr open-source library</li>
+</ul>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211209%2Ffe5d3615-8032-4b4e-9051-32dfafbbcd5c.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211209&#x2F;fe5d3615-8032-4b4e-9051-32dfafbbcd5c.png"></p>
+<ul>
+<li>Configuring svgr is very simple, just specify the react template after svg conversion</li>
+</ul>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211209%2F71e0c695-848c-4ec5-95e9-875dcda9ecdc.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211209&#x2F;71e0c695-848c-4ec5-95e9-875dcda9ecdc.png"></p>
+<ul>
+<li>You can get the converted React component</li>
+</ul>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211209%2F3369f6c8-4b65-4115-adc3-54955615ac16.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211209&#x2F;3369f6c8-4b65-4115-adc3-54955615ac16.png"></p>
+<h3 id="Compile-and-Build-React-Components-into-esm-and-cjs"><a href="#Compile-and-Build-React-Components-into-esm-and-cjs" class="headerlink" title="Compile and Build React Components into esm and cjs"></a>Compile and Build React Components into esm and cjs</h3><p>The configuration of babel and tsconfig will not be introduced in detail here.</p>
+<ul>
+<li>Use build:es to output each React Component to the es folder in esm format</li>
+</ul>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211209%2F04be7c5d-630b-41e9-97e4-859faa04d2d9.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211209&#x2F;04be7c5d-630b-41e9-97e4-859faa04d2d9.png"></p>
+<ul>
+<li>Specify the component library access path</li>
+</ul>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211209%2Fd69b08c7-dc8a-4c43-bd26-4836bc1eafe2.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211209&#x2F;d69b08c7-dc8a-4c43-bd26-4836bc1eafe2.png"></p>
+<p>At this point, the independent svg library that supports on-demand loading has been built. After publishing the svg component library to the npm repository, it can be referenced in a very convenient and convenient way.</p>
+<ul>
+<li>To add a new svg, just add the svg to the component library and execute the convert and build commands.</li>
+</ul>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211209%2F58f1316c-52d6-4c5f-a7a8-a770c8a9c2cb.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211209&#x2F;58f1316c-52d6-4c5f-a7a8-a770c8a9c2cb.png"></p>
+<p>At the same time, you can also get all SVG components of the component library through import *, and render them to the online Demo document for real-time viewing.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211209%2Fe5a31ec8-0137-40bd-ac8d-f3b3b24b736f.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211209&#x2F;e5a31ec8-0137-40bd-ac8d-f3b3b24b736f.png"></p>
+<h2 id="V-Summary"><a href="#V-Summary" class="headerlink" title="V. Summary"></a>V. Summary</h2><ul>
+<li>svg is an image file format described based on xml syntax. The biggest advantage is that it does not distort when enlarged, and it is convenient to modify the size and color value. It is very suitable for static image display in actual work;</li>
+<li>Companies often have their own common SVG Icons. Precipitating these SVG Icons into a component library can facilitate real-time access by designers, product managers, and developers;</li>
+<li>The idea of building an SVG library is mainly reflected in converting SVG into an independent React Component, and then outputting the corresponding esm and cjs formats of the React Component;</li>
+<li>The public SVG library can simplify the svg usage of icon font, and developers can easily change the svg; it can also unify and standardize the use and style of Icons in various products.</li>
+</ul>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2021/12/10/netease-ux-articles/news_20220722_28584_1032538/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2021/12/03/netease-ux-articles/news_20211209_28584_990916/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

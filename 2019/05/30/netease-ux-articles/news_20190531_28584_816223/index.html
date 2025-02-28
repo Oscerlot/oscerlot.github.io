@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Pandas: &#39;Using SQL&#39; in Python | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-Research/">
+                            User Research
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Analysis/">
+                            Data Analysis
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/pandas/">
+                            pandas
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/SQL/">
+                            SQL
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Python/">
+                            Python
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/DataFrame/">
+                            DataFrame
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Series/">
+                            Series
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Structure/">
+                            Data Structure
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Selection/">
+                            Data Selection
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Filtering/">
+                            Filtering
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Grouping/">
+                            Grouping
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Aggregation/">
+                            Aggregation
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Distinct/">
+                            Distinct
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Join/">
+                            Join
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Sorting/">
+                            Sorting
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Pandas: &#39;Using SQL&#39; in Python
+            
+            
+        </div>
+        <span class="post-date">
+            30 May, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F4288ff6b-b38a-4255-9444-966aa2732a23.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20190531/28584_816223.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<h2 id="What-is-pandas"><a href="#What-is-pandas" class="headerlink" title="What is pandas?"></a>What is pandas?</h2><p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F01118837-75f2-47d1-bd9c-2275d95666bb.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;01118837-75f2-47d1-bd9c-2275d95666bb.jpg"></p>
+<h3 id="pandas-Concept-Introduction"><a href="#pandas-Concept-Introduction" class="headerlink" title="pandas Concept Introduction"></a>pandas Concept Introduction</h3><p>Let’s briefly introduce pandas. pandas is a tool based on NumPy (which can be used to store and process large matrices), providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. As the official documentation states, many potential pandas users have some knowledge of SQL, so this article aims to compare pandas with common SQL usage methods.</p>
+<p>The official documentation states that new features in pandas will only support Python 3 after January of this year, so this article will use Python 3 for examples. The usage in Python 2 is basically the same.</p>
+<h3 id="pandas-Structured-Data-Classification"><a href="#pandas-Structured-Data-Classification" class="headerlink" title="pandas Structured Data Classification"></a>pandas Structured Data Classification</h3><p>Before we start, let’s briefly understand the data structures of pandas. pandas mainly has three types of data structures:</p>
+<ul>
+<li><strong>Series:</strong> A 1-dimensional sequence, which can be regarded as a DataFrame without column names and with only one column.</li>
+<li><strong>DataFrame:</strong> Multi-column 2-dimensional structured data, which can be regarded as a container for Series.</li>
+<li><strong>Panel:</strong> 3-dimensional structured data, which can be regarded as a container for DataFrame.</li>
+</ul>
+<p>Among them, DataFrame is more common and can be imagined as the form of an Excel table. It can be generated by reading multiple types of text such as .csv, .xlsx, and JSON data, or it can be generated through objects. This article will focus on the use of DataFrame.</p>
+<h3 id="Using-pandas-to-Implement-Basic-SQL-Functions"><a href="#Using-pandas-to-Implement-Basic-SQL-Functions" class="headerlink" title="Using pandas to Implement Basic SQL Functions"></a>Using pandas to Implement Basic SQL Functions</h3><p>We use the pandas test database <code>tips</code> and import it into a DataFrame. The data format is as follows:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F575ec9a3-b04c-424c-aa51-e00ced4b3a87.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;575ec9a3-b04c-424c-aa51-e00ced4b3a87.jpg"></p>
+<p><strong>SELECT</strong></p>
+<p>pandas is more flexible in data selection. To select the first two columns of data, the corresponding SQL is:<br>sql<br>select total_bill, tip from tips;</p>
+<p>Using pandas, you can filter data based on rows and columns. The simplest way to select rows&#x2F;columns is:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2Fd332727d-97ad-4d34-b82b-7c044d42b06e.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;d332727d-97ad-4d34-b82b-7c044d42b06e.jpg"></p>
+<p>Note that there are two square brackets here. pandas also supports row selection:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F7b82e6c2-7970-4ff5-9eb0-c19d68e62103.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;7b82e6c2-7970-4ff5-9eb0-c19d68e62103.jpg"></p>
+<p>Note that the row numbers here start from 0 by default, and the usage here is similar to list slicing.  Can we locate certain rows and columns? Of course, we can. Here we need to use the <code>loc</code> or <code>iloc</code> methods, as shown below:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F8fa0bcc3-9e18-46d8-b899-4248a42cb833.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;8fa0bcc3-9e18-46d8-b899-4248a42cb833.jpg"></p>
+<p>All four methods can achieve the results in the figure.  Of course, there is a more convenient method, which is to use the <code>ix</code> method. However, the official documentation does not recommend using this method now. <code>loc</code> and <code>iloc</code> are based on index and position, respectively, which can be distinguished by the representation of columns in the figure. One uses the column name, and the other uses the position of the column. This fully reflects the flexibility and convenience of pandas, which can use multiple methods to retrieve data by row and column.  There are also <code>at</code> and <code>iat</code> methods to locate the value of a certain row and column.</p>
+<p><strong>WHERE</strong></p>
+<p>The main filtering method in pandas is based on <code>df[df[column] boolean expr]</code>, such as:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2Fdcf7d310-4ece-4a5f-b650-a26577292c48.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;dcf7d310-4ece-4a5f-b650-a26577292c48.jpg"></p>
+<p>The corresponding SQL is <code>select * from tips where sex=&#39;Male&#39; limit 5</code>. If there are conditions such as <code>and</code> and <code>or</code> in the <code>where</code> filtering condition, you can use <code>&amp;</code> and <code>|</code> to add conditions.  As shown in the figure, add filtering conditions and select two columns:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F07514ffe-2dc9-477e-8d26-8bc504b83d47.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;07514ffe-2dc9-477e-8d26-8bc504b83d47.jpg"></p>
+<p>There are also methods such as <code>notna()</code> and <code>isna()</code> to assist in judgment, to determine whether it is empty. At the same time, you can also determine how many rows of data meet the conditions:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F409096bd-660c-49dc-a1cf-306e4ce36c3a.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;409096bd-660c-49dc-a1cf-306e4ce36c3a.jpg"></p>
+<p><strong>GROUP BY</strong></p>
+<p>In pandas, <code>group</code> is generally used with aggregation functions, such as <code>avg()</code>, <code>count()</code>, etc. There are not many supported methods in this area, but they can basically meet daily needs.</p>
+<p>The corresponding SQL is <code>select sex, count(*) from tips group by sex</code>. Here we need to look at the corresponding data volume according to gender. Using pandas will be very concise:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F6b64f330-dd54-4561-b2c1-220e992b1da2.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;6b64f330-dd54-4561-b2c1-220e992b1da2.jpg"></p>
+<p>Note that there is another method called <code>count()</code> method. The <code>count()</code> method cannot be used here because the <code>count()</code> method counts the columns. For the calculation of multiple aggregated values, such as the SQL:<br>sql<br>select sex, max(tip), max(size) from tips group by sex</p>
+<p>In pandas, you can use the <code>agg()</code> function with a dictionary configuration to achieve the goal:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F8d6afe9e-57dc-4ae6-b910-f8fb6ed118c2.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;8d6afe9e-57dc-4ae6-b910-f8fb6ed118c2.jpg"></p>
+<p>If there is a count, there is a distinct count. Here you can use a similar method to obtain the gender situation contained in each tip according to the tip:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F2210bebe-7d0a-475a-90bb-1ea2bbe28ff2.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;2210bebe-7d0a-475a-90bb-1ea2bbe28ff2.jpg"></p>
+<p><strong>DISTINCT</strong></p>
+<p>We mentioned distinct count above, so let’s take a look at distinct, which is also a very frequently used function in SQL. In pandas, we can also find a corresponding method, <code>drop_duplicates()</code>.</p>
+<p>For example, to remove duplicates from <code>tip</code>, you can use it like this:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F4039fca2-09f3-40a2-99bb-61290cd8e1bc.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;4039fca2-09f3-40a2-99bb-61290cd8e1bc.jpg"></p>
+<p>You can see the row numbers in front, 0 and 56. This is the role of <code>keep</code> in the method. <code>keep</code> can be set to <code>first</code>, <code>last</code>, and <code>False</code>, which means to keep the first, last, and delete all duplicates, respectively. The effect is as follows:</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F27d09520-5365-4565-9f56-7655312b4357.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;27d09520-5365-4565-9f56-7655312b4357.jpg"></p>
+<p><code>inplace</code> can be <code>True</code> or <code>False</code>, default is <code>False</code>, which means to return a new DataFrame or return the original DataFrame after removing duplicates.</p>
+<p><strong>JOIN</strong></p>
+<p>Speaking of SQL, we have to mention <code>join</code>. When performing data association, <code>join</code> can play a huge role. I won’t go into the difference between various types of <code>join</code> here. There are many vivid examples online. So what is the corresponding method in pandas? Is there a <code>join</code> method? Yes, there is, but this method is based on the <code>index</code>, which is the row number, so we generally use the second method, the <code>merge</code> method.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2Fb0f8e202-e2fa-4828-859e-c6b8617e2b8b.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;b0f8e202-e2fa-4828-859e-c6b8617e2b8b.jpg"></p>
+<p>You can see that the usage is very close to the <code>join</code> in our SQL. You only need to use a list to represent the columns to be joined, and you can use multiple dimensions as association items.</p>
+<p><strong>ORDER</strong></p>
+<p>The last more commonly used one is sorting. Similarly, the usage is also very flexible and very similar to SQL. As shown in the figure, it is to sort <code>sex</code> and <code>size</code>, where <code>sex</code> is in descending order and <code>size</code> is in ascending order. Here, you only need to use the list method to sort multiple columns.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190531%2F647aceff-78fb-4d56-b389-873fae7317f2.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190531&#x2F;647aceff-78fb-4d56-b389-873fae7317f2.jpg"></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>We have learned about the flexibility and power of pandas by corresponding to the high-frequency keywords of SQL. Of course, the capabilities of pandas are definitely not limited to this. When processing medium-sized data, if you can skillfully optimize the use of pandas, it will be very helpful to our work. After all, this is using a script. In addition to what SQL can do, there are more abundant means to process and obtain the data we want.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/06/03/netease-ux-articles/news_20190610_28584_817347/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/05/24/netease-ux-articles/news_20190527_28584_815436/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

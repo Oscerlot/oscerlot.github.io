@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>When a Computer Sees &#34;2333&#34;, What Does It Think It Means? | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Sentiment-Analysis/">
+                            Sentiment Analysis
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/NLP/">
+                            NLP
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Natural-Language-Processing/">
+                            Natural Language Processing
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Chinese-Word-Segmentation/">
+                            Chinese Word Segmentation
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Sentiment-Lexicon/">
+                            Sentiment Lexicon
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Text-Analysis/">
+                            Text Analysis
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                When a Computer Sees &#34;2333&#34;, What Does It Think It Means?
+            
+            
+        </div>
+        <span class="post-date">
+            23 Sep, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190926%2F05512f4d-f333-45a7-90ed-13cd15cfc804.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20190926/28584_834951.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>Imagine a scenario, if you get 100 sentences spoken by players, how would you analyze the players’ emotional attitudes?</p>
+<h3 id="How-do-we-do-it"><a href="#How-do-we-do-it" class="headerlink" title="How do we do it?"></a>How do we do it?</h3><p>You might do this: read through these 100 sentences and judge whether each sentence has a positive, negative, or neutral attitude.</p>
+<p>You might also do this: classify the 100 sentences spoken by the players and find that some sentences are praising the costumes, some are discussing playing dungeons, and some are enthusiastically discussing gossip (“818”, a Chinese internet slang that usually refers to gossip, scandals, or controversies within a community, especially online).</p>
+<p>Then, you get 500 player utterances, how are you going to analyze them? Maybe just grit your teeth and do it.</p>
+<p>So, if you get 50,000 player utterances, what are you going to do? You might ask for help from friends, or randomly select a small number of utterances for analysis…</p>
+<p>Of course, we can also ask a computer to do this for us.</p>
+<h3 id="How-does-a-computer-do-it"><a href="#How-does-a-computer-do-it" class="headerlink" title="How does a computer do it?"></a>How does a computer do it?</h3><p>If a computer analyzes these 50,000 utterances, the first troublesome thing for it is that it doesn’t really read Chinese sentences. Unlike English sentences, where spaces separate words, it needs to first convert sentences into words. This process of converting sentences into words is called word segmentation.</p>
+<p>Word segmentation is the basis for sentiment analysis. According to a certain strategy, the sentences to be analyzed are matched with the entries in the machine dictionary. If a word is found, then this word will be recognized.</p>
+<p>After word segmentation, the computer gets more words than the 50,000 sentences. At this time, it still doesn’t understand what these words mean. Then, it starts the second dictionary lookup process. This time, the dictionary it needs to check is what the attitude of each word is. For example, “excellent” is a positive word, and “bad” is a negative word. When it has a dictionary to compare with, it knows the sentiment polarity (positive&#x2F;negative&#x2F;neutral) of each word.</p>
+<p>Although our computer is relatively stupid and needs to be taught everything and check everything, it has a good memory and can remember as many words as there are. It can also map these words to the sentences before word segmentation, and finally tell us the sentiment polarity of each sentence.</p>
+<p>Here, we also need to specifically point out how the computer handles those negative words. For example, “not good”, the computer will multiply a score of -1 by the polarity of “good”. This is where the problem comes in, how is “have to say good” handled? The computer will use (-1)^2 to handle it, which is “double negation means affirmation”, triple is (-1)^3, and so on.</p>
+<h3 id="Advantages-and-disadvantages-of-sentiment-analysis"><a href="#Advantages-and-disadvantages-of-sentiment-analysis" class="headerlink" title="Advantages and disadvantages of sentiment analysis"></a>Advantages and disadvantages of sentiment analysis</h3><p>The advantages of using a computer are very obvious: speed, ability to handle large amounts of data, and uniform standards. Speed and the ability to handle large amounts of data literally mean that it can help us quickly process even very large text sentences. Uniform standards mean that although our manual processing is smarter than the computer and will read sentences directly, “a thousand readers have a thousand Hamlets”, different people have different understandings, which also causes deviations in the analysis, while the “foolish” computer will not have such deviations.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190926%2F9e262171-d6a8-4afe-9b16-1dddc72df525.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190926&#x2F;9e262171-d6a8-4afe-9b16-1dddc72df525.jpg"></p>
+<p>However, the weakness of this simple computer sentiment analysis is also obvious, which is “too stupid”. Chinese language is extensive and profound. The computer currently needs to handle negative words separately, not to mention emphasis, rhetorical questions, and negation of negation. Imagine if you ask the computer what “ba ba ba ba ba zhu le” (一把把把把住了) means, what will it understand it as.</p>
+<blockquote>
+<p>(Translator’s Note: This sentence means “One <em>ba</em> held the <em>ba</em> firmly”. Each <em>ba</em> 把 has its own meaning.<br>一 &#x3D; one, 把 &#x3D; measure word for things you can hold with a handle, 把 &#x3D; Handle (like a door handle), 把 &#x3D; to hold, 住 &#x3D; firmly, 了 &#x3D; (Verb Suffix showing completed action).)</p>
+</blockquote>
+<h3 id="How-to-improve-the-accuracy-of-sentiment-analysis"><a href="#How-to-improve-the-accuracy-of-sentiment-analysis" class="headerlink" title="How to improve the accuracy of sentiment analysis?"></a>How to improve the accuracy of sentiment analysis?</h3><p>Although our computer’s text processing accuracy is not high, it is fast and can handle large amounts of data. Of course, we can currently use some methods to make the results more accurate. One method is to expand the dictionary. For example, the widely used sentiment dictionary is HowNet’s “Chinese Sentiment Analysis Word Collection” (Dong Zhendong and Dong Qiang, 2007; Du Zhenlei, 2013), which summarizes words that express positive and negative tendencies and degree words.</p>
+<p>But when we use this dictionary to analyze texts containing more online terms, such as bullet comments, it is not enough. At this time, we can add other dictionaries, such as the multi-dimensional sentiment dictionary used by Xiao Zhuo et al. (2015), which includes 7 types of emotions. In this dictionary, “2333”, a neutral word in the original dictionary, is classified as “happy” (乐) emotion. Words like “male god” (男神), “against the sky” (逆天), and “awesome” (牛逼) are classified into the “good” (好) dimension.</p>
+<p>In addition to enriching the dictionary, we can also use different dictionaries to produce results and then cross-compare to enhance accuracy. Finally, at a higher level, machine learning such as clustering can be used to analyze text, and convolutional neural networks and fuzzy algorithms can be used to analyze images. Sentiment analysis is far more than just word segmentation and then looking up the dictionary. The NLP technologies related to sentiment analysis include text information encoding word2vector, sense2vector, elmo, etc. This article only introduces a basic and simple sentiment analysis method.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190926%2F5c69c544-f1ec-4aad-bd86-860ca73ac72d.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190926&#x2F;5c69c544-f1ec-4aad-bd86-860ca73ac72d.jpg"></p>
+<hr>
+<p><em>Mop No. 233 Expression</em></p>
+<hr>
+<blockquote>
+<p>(Translator’s Note: This is a very common internet slang phrase originating from the 233rd emoji on the Mop forums, a popular Chinese online community. The emoji depicts a character laughing hysterically while pounding the ground. Therefore, “2333” is often used to express laughter, similar to “lol” or “haha” in English. The number of ‘3’s can vary to indicate the intensity of the laughter.)</p>
+</blockquote>
+<p>In short, there are many kinds of algorithms, and they are constantly improving. Our user research is also constantly advancing with the times. There will be more research displays in the future, so stay tuned.</p>
+<p><em>References:</em></p>
+<ul>
+<li><em>Dong Qiang, Dong Zhendong. HowNet. [EB&#x2F;OL]. <a target="_blank" rel="noopener" href="http://www.keenage.com/">http://www.keenage.com</a>.</em></li>
+<li><em>Du Zhenlei. 2013. Research on Sentiment Analysis of Microblog Short Texts. Beijing Information Science and Technology University.</em></li>
+<li><em>Xiao Zhuo, Xu Jian, Zheng Yangyang. 2015. Application of Sentiment Analysis and Visualization Methods in the Analysis of Network Video Bullet Comment Data. Modern Library and Information Technology, 31(11): 82-90.</em></li>
+<li><em>Ksiazek, T. B., Peer, L., Lessard, K. 2016. User engagement with online news: Conceptualizing interactivity and exploring the relationship between online news videos and user comments. New Media &amp; Society, 18(3): 502-520.</em></li>
+<li><em>Liu, L., Suh, A., Wagner, C. 2016. Watching online videos interactively: the impact of media capabilities in Chinese Danmaku video sites. Chinese Journal of Communication, 9(3): 283-303.</em></li>
+</ul>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/09/25/netease-ux-articles/news_20190927_28584_835046/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/09/20/netease-ux-articles/news_20190926_28584_834949/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Mobile Game Social System - Detailed Explanation of Friends Interface Interaction Design (Part 2) | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Interaction-Design/">
+                            Interaction Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Friends-Interface/">
+                            Friends Interface
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Mobile-Games/">
+                            Mobile Games
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/UI-Design/">
+                            UI Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Social-Systems/">
+                            Social Systems
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Information-Hierarchy/">
+                            Information Hierarchy
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Heavy-Social-Interaction/">
+                            Heavy Social Interaction
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Light-Social-Interaction/">
+                            Light Social Interaction
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/A-Chinese-Ghost-Story/">
+                            A Chinese Ghost Story
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/UNO/">
+                            UNO!
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Mobile Game Social System - Detailed Explanation of Friends Interface Interaction Design (Part 2)
+            
+            
+        </div>
+        <span class="post-date">
+            22 Jun, 2019
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190628%2Fd9cd0dd6-d6d0-489a-8e70-56d95969f3c2.jpg/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20190628/28584_820175.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>The social system has always been an indispensable part of many games. Although it is not directly related to the core gameplay, it is a key system to increase player immersion and improve retention.</p>
+<p>In the previous sharing session (click to review), we summarized the functional blocks and detailed information items usually included in the mobile game friends interface (see the figure below), and analyzed the interaction levels and design details that usually need to be considered in the UI design of the casual mobile game friends interface with the <em>UNO!</em> project as an example. In the games we usually encounter, we can also find that the friends interface of common casual mobile games and battle royale mobile games are similar in design.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190628%2F02692a17-ad2a-4da5-ad85-759f18c79239.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190628&#x2F;02692a17-ad2a-4da5-ad85-759f18c79239.jpg"></p>
+<p>However, the design of the friends interface of heavily social MMO mobile games will be different from this, such as <em>A Chinese Ghost Story (倩女幽魂)</em> and <em>Moonlight Blade Mobile (天涯明月刀)</em>. <em>A Chinese Ghost Story</em> is famous for its excellent social design. First of all, in terms of overall functional blocks, <em>A Chinese Ghost Story</em> also includes existing friends, finding friends, and message notifications. However, in the specific function point planning and interaction design, <em>A Chinese Ghost Story</em> will have some designs that emphasize and promote social interaction. Here, we will take <em>A Chinese Ghost Story</em> and <em>UNO!</em> as examples to compare the differences in the design of friends interfaces between heavily social MMO mobile games and casual mobile games.</p>
+<h3 id="Home-Page-Structure-Difference-Friends-List-or-Friends-Chat"><a href="#Home-Page-Structure-Difference-Friends-List-or-Friends-Chat" class="headerlink" title="Home Page Structure Difference - Friends List or Friends Chat"></a><strong>Home Page Structure Difference - Friends List or Friends Chat</strong></h3><p>In the previous sharing session, we can see that the home page of the casual friends interface is usually a friends list, listing friends information and including some basic interaction operations and entrances. Friends dialogue is used as a secondary interface, which is entered through the chat entry on the friends list.</p>
+<p>The home page of <em>A Chinese Ghost Story</em>‘s friends is obviously different. It directly puts the dialogue window on the home page, and the friends list corresponds to the chat window. Moreover, the default display is not the ordinary friends list, but the recent contacts. The friends list and other detailed information are hidden in the secondary interface.</p>
+<p>Putting the chat or detailed information list on the home page, the difference between these two levels clearly reflects the different emphasis. <em>A Chinese Ghost Story</em> puts the recent contact chat window on the outermost layer, which greatly facilitates and encourages players to have dialogue and interaction with friends, and allows them to view new messages at the first time, which can better promote the formation of social relationships.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190628%2F0da92f96-e565-480b-bcd6-a0c523f01f73.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190628&#x2F;0da92f96-e565-480b-bcd6-a0c523f01f73.jpg"></p>
+<p><em>(A Chinese Ghost Story Mobile Game Friends System Home Page)</em></p>
+<hr>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190628%2F4b4bfbbf-5795-4885-903e-69356931c70a.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190628&#x2F;4b4bfbbf-5795-4885-903e-69356931c70a.jpg"></p>
+<p><em>(UNO! Mobile Game Friends System Home Page)</em></p>
+<h3 id="Social-Circle-Function-Mengdao-梦岛"><a href="#Social-Circle-Function-Mengdao-梦岛" class="headerlink" title="Social Circle Function - Mengdao (梦岛)"></a><strong>Social Circle Function - Mengdao (梦岛)</strong></h3><p>In the friends interface of <em>A Chinese Ghost Story</em>, there is also a special system called “Mengdao”. Mengdao is similar to the function of WeChat Moments and QQ Zone. Players can publish their own status, and other players can leave comments and so on. The addition of the Mengdao system greatly enhances the atmosphere of social interaction in the game. Players can not only share content in the game, but also exchange many feelings outside the game. This makes the social system in <em>A Chinese Ghost Story</em> not only a necessary communication for game play, but also a social circle for players.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190628%2F24fad9fc-5e06-4413-bab5-37ac48397f50.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190628&#x2F;24fad9fc-5e06-4413-bab5-37ac48397f50.jpg"></p>
+<p><em>(A Chinese Ghost Story Mobile Game Friends - Mengdao Interface)</em></p>
+<h3 id="Contact-Management-Friend-Grouping"><a href="#Contact-Management-Friend-Grouping" class="headerlink" title="Contact Management - Friend Grouping"></a><strong>Contact Management - Friend Grouping</strong></h3><p>In <em>A Chinese Ghost Story</em>‘s contact system, friends can be grouped. Combined with a variety of social relationship settings in the game, such as sworn brotherhood, master-apprentice, husband-wife, teammates, etc., players can refine and manage their social relationships. Complex social relationships are the premise for building a player’s social network. However, light social mobile games like <em>UNO!</em> do not have a strong demand for friend grouping. Some will add some labels to the friend entries, such as recent teams.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20190628%2Fe95f79da-e730-4a7d-a701-2288f665c74f.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20190628&#x2F;e95f79da-e730-4a7d-a701-2288f665c74f.jpg"></p>
+<p><em>(A Chinese Ghost Story Mobile Game Friend Grouping Interface)</em></p>
+<p>Through these points, we can find that the friends systems of <em>UNO!</em> and <em>A Chinese Ghost Story</em> have their own emphasis, which depends on the system’s own positioning of light or heavy social interaction and functional requirements. When we do UI design, we also need to combine the needs of the planning itself to plan the interface hierarchy, consider design details, and emphasize or weaken corresponding elements, in order to better achieve the design goals.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2019/06/24/netease-ux-articles/news_20190628_28584_820259/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2019/06/20/netease-ux-articles/news_20190625_28584_819620/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

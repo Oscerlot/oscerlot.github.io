@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Considerations for Game Map Design | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/User-Experience/">
+                            User Experience
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Game-Map/">
+                            Game Map
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Map-Design/">
+                            Map Design
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Map-Function/">
+                            Map Function
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Open-World/">
+                            Open World
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Small-Map/">
+                            Small Map
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Considerations for Game Map Design
+            
+            
+        </div>
+        <span class="post-date">
+            17 Nov, 2021
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2Fda39b869-4e53-45d6-b197-f2e3318e2168.png/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20211119/28584_986688.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In some very early games, such as the three classic Western RPGs: <em>Wizardry</em>, <em>Ultima</em>, and <em>Might and Magic</em>, there were no maps. So for older generations of gamers, playing games might have required them to draw maps themselves with pen and paper. Without the guidance of a map, it was easy for players to get “lost” in the game. Players couldn’t remember the routes at all, which made the game more challenging.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2F5a2fa1c8-6482-4335-a90c-b33acd5b5ff2.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;5a2fa1c8-6482-4335-a90c-b33acd5b5ff2.png"></p>
+<hr>
+<p><em>《Might and Magic》</em></p>
+<hr>
+<p>With the continuous development of hardware and software technology, all aspects of video games have been improved, and more and more game designers have begun to pay more attention to improving the gaming experience. For some games that require “maps”, the design of game maps has gradually become refined and distinctive. A good game map can bring players a lot of surprising experiences and also bring more diverse gameplay. For most video games, the player’s understanding of the overall world view of a game largely comes from their perception of the game space. Therefore, for games that require maps, it is crucial to enable players to read the map.</p>
+<h2 id="1-What-is-a-Game-Map"><a href="#1-What-is-a-Game-Map" class="headerlink" title="1. What is a Game Map?"></a>1. What is a Game Map?</h2><p>A game map virtualizes a complete world. The existence of a map can, to a certain extent, present the world view of the entire game to players in a more intuitive form. All events, characters, and environments are developed on the basis of the map. Different sizes of game maps will be designed according to the world view and gameplay of different games. Maps are generally presented to players in the following forms:</p>
+<h3 id="A-Complete-3D-Modeled-Scene"><a href="#A-Complete-3D-Modeled-Scene" class="headerlink" title="A Complete 3D Modeled Scene"></a>A Complete 3D Modeled Scene</h3><p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2F5bfff572-dc8d-4e7e-8eec-cc21530851ef.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;5bfff572-dc8d-4e7e-8eec-cc21530851ef.png"></p>
+<hr>
+<p><em>《Transport Fever 2》</em></p>
+<hr>
+<p>In this type of map, the game side provides a limited 3D scene, and players need to explore in this 3D model world. Typical examples include planning simulation games such as <em>Cities: Skylines</em> and <em>Transport Fever 2</em>. The size of the map is the size of the world that players can customize. Players can customize a virtual world and还原(huányuán - restore) the real-world scene in equal proportions.</p>
+<h3 id="A-UI-Interface-Displaying-the-World-View"><a href="#A-UI-Interface-Displaying-the-World-View" class="headerlink" title="A UI Interface Displaying the World View"></a>A UI Interface Displaying the World View</h3><p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2F3b1ea503-a3f3-458a-929b-481aea2135f4.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;3b1ea503-a3f3-458a-929b-481aea2135f4.png"></p>
+<hr>
+<p><em>《GTA5》</em></p>
+<hr>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2F213d5dae-d3e4-4cf3-9aae-9b883155ada7.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;213d5dae-d3e4-4cf3-9aae-9b883155ada7.png"></p>
+<hr>
+<p><em>《Conqueror’s Blade》</em></p>
+<hr>
+<p>This type of map is generally presented in a relatively flat form, with various signs indicating different attributes appearing on the map, which may represent various locations, events, tasks, etc. In this type of map, players can understand their position and see the locations of different tasks as if they were standing in a god-like perspective, allowing players to clearly understand the direction of the destination they want to reach.</p>
+<h2 id="2-Maps-and-Functions-of-Different-Types-of-Games"><a href="#2-Maps-and-Functions-of-Different-Types-of-Games" class="headerlink" title="2. Maps and Functions of Different Types of Games"></a>2. Maps and Functions of Different Types of Games</h2><p>However, not all games need to have maps. Board games generally do not have maps, such as match-3 games like <em>Candy Crush</em>, and games like <em>Arknights</em> and <em>Honkai Impact 3rd</em>. The so-called “map” is actually a UI interface showing the game progress, generally a linear route, to tell the player which level they have reached. The “map” of this type of game does not essentially undertake the functions of “guiding” and “showing the world view” that a map should have. Apart from some elements related to the game itself that appear in the interface, it is essentially a level list display.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2Fad0e6bec-42c7-4e37-a994-62bf22933450.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;ad0e6bec-42c7-4e37-a994-62bf22933450.png"></p>
+<hr>
+<p><em>《Arknights》</em></p>
+<hr>
+<p>In some side-scrolling games, their maps include the functions of “guiding” and “building the world view”. This type of map can also be directly jumped to, achieving the so-called “guiding” function, and to a certain extent, it also reflects the world view of the game, but it is closer to the above-mentioned “pseudo-map” and does not have a strong directional indication. It is more like a more complete UI interface.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2F871e391c-b2ce-4aa1-b79f-b8f2254b889e.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;871e391c-b2ce-4aa1-b79f-b8f2254b889e.png"></p>
+<hr>
+<p><em>《The Tale of Food》</em></p>
+<hr>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2F2c530d3a-bdcf-4f6b-b63d-302d8508638b.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;2c530d3a-bdcf-4f6b-b63d-302d8508638b.png"></p>
+<hr>
+<p><em>《Mole’s World》</em></p>
+<hr>
+<p>The maps of MOBA games mainly serve the functions of “guiding and marking positions”. In MOBA games that focus on competitive fun, the characteristics of the game determine that players will not spend much energy on exploring the map. Typical examples are <em>Dota</em> and <em>LOL</em>. Their map design ideas are relatively similar. Generally, the size of the map is relatively small, and the classic diagonal line form is adopted. Players start from the bases on two diagonal lines to PK. Games like <em>Demigod</em> and <em>Bloodline Champions</em> are based on three lanes and cross each other twice. The maps of MOBA games are limited by routes, so there is less room for development.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2Fd25eaa40-e8de-43f3-a75f-94545978a120.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;d25eaa40-e8de-43f3-a75f-94545978a120.png"></p>
+<hr>
+<p><em>《LOL》</em></p>
+<hr>
+<p>Open-world games have a high dependence on maps. The design of the game itself and the design of the map complement each other. The design of the map is to allow players to have a more immersive experience. The fun of the game is often presented in the process of players running around the map. Like <em>The Legend of Zelda</em> and <em>Genshin Impact</em>, the characters controlled by players can run and fly in the virtual world. Completing a task may require passing through many places. In this process, many hidden suspense in the map may be unlocked. Maps that are too small often cannot carry such a large world view, nor can they show the characteristics of the game itself. In FPS games, the map also has the function of “guiding”, which allows players to know the location of teammates and enemies. These games generally have large and small maps.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2Ff6e38fa8-fb9b-4679-bf5c-b9bf1992c848.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;f6e38fa8-fb9b-4679-bf5c-b9bf1992c848.png"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2Fda3d05db-a4dd-4d8b-beec-ca64b3f560d1.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;da3d05db-a4dd-4d8b-beec-ca64b3f560d1.png"></p>
+<hr>
+<p><em>《The Legend of Zelda》</em></p>
+<hr>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2Fec839799-14ff-4073-b6cd-f1ffdb297749.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;ec839799-14ff-4073-b6cd-f1ffdb297749.png"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2Fc6c3d63f-895c-49e0-beaa-b743eecee97a.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;c6c3d63f-895c-49e0-beaa-b743eecee97a.png"></p>
+<hr>
+<p><em>《Conqueror’s Blade》</em></p>
+<hr>
+<p>Of course, there are also some games that cannot be completely classified, such as <em>Dark Souls</em>. Its map design is between the traditional open world and linear levels. It combines linear levels in an open, non-linear way. This cleverly utilizes the strengths of both, retaining the freedom in the open world and giving players a lot of space to explore, while retaining the storyline and quest line set by the game designer, better avoiding the misunderstanding of players being at a loss in the open world, making the overall design of the game still compact and ingenious.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2F0380d298-e463-4d13-81e7-f5d1fba1a3e2.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;0380d298-e463-4d13-81e7-f5d1fba1a3e2.png"></p>
+<hr>
+<p><em>《Dark Souls》</em></p>
+<hr>
+<h2 id="3-The-Significance-of-the-Existence-of-Small-Maps"><a href="#3-The-Significance-of-the-Existence-of-Small-Maps" class="headerlink" title="3. The Significance of the Existence of Small Maps"></a>3. The Significance of the Existence of Small Maps</h2><p>The above statements are basically large maps that can present the overall world view in various games. In many games, there are also auxiliary small maps. The main function of the small map is to provide immediate directions and feedback information. Often the position of the small map will exist in a certain corner of the screen, which is convenient for players to check immediately, but it should avoid interfering with the player’s vision as much as possible. Compared with the large map, the small map can help players quickly understand their position in the overall situation and the surrounding geographical environment during the game. In some game settings, you can also see information about resources and enemies. Especially for some games with larger sizes, more complexity, and greater difficulty, the absence of a small map will increase the difficulty of the game, and it is very unfriendly to some players who are “directionally challenged”, and they may not be able to advance the progress of the game for a long time.</p>
+<p>Like some MOBA-type competitive games, since in many cases it is a team battle, there will generally be a small map in the game interface to provide a global view and better strengthen some communication with teammates. The setting of the small map reduces the difficulty for players to play the game. Players can quickly obtain some information without having to study the map in detail, remember the route, etc.</p>
+<p>Of course, not all games require small maps. The gameplay attributes and needs of the game itself still need to be considered. Typical examples are many games by Hidetaka Miyazaki, such as <em>Sekiro: Shadows Die Twice</em> and <em>Dark Souls</em>. In order to cooperate with the needs of their own game themes and create a more immersive game experience, if a small map appears in the interface, it may destroy some of the game atmosphere. Without the guidance of a small map, players need to explore the route themselves and remember it, so this requires players to form their own imagination of the overall space.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2F17b9a3a5-6467-49ae-b52f-18449260a1c1.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;17b9a3a5-6467-49ae-b52f-18449260a1c1.png"></p>
+<hr>
+<p><em>《Sekiro: Shadows Die Twice》</em></p>
+<hr>
+<p>There are also some games that will weaken the small map in the game. For example, <em>Identity V</em> only has a small map in the upper left corner of the screen that basically only indicates the direction of the character. It will not have a strong presence in the overall interface. The blurred information prompts also help to set off the horror atmosphere of the game itself.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211119%2Ff63f391f-0148-4864-abd4-49b178a30b9b.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211119&#x2F;f63f391f-0148-4864-abd4-49b178a30b9b.png"></p>
+<hr>
+<p><em>《Identity V》</em></p>
+<hr>
+<h2 id="4-Conclusion"><a href="#4-Conclusion" class="headerlink" title="4. Conclusion"></a>4. Conclusion</h2><p>Sometimes the quality of a map determines whether players can be retained. It plays a key role in the game. Good game settings need to be matched with appropriate map sizes. Some world views are suitable for grand maps, and some world views are suitable for exquisite maps. Regarding whether to design a small map, in general, in games with greater difficulty and some highly competitive games, it is necessary to have a small map. The former is to lower the threshold of the game, and the latter is because the focus of the game itself is not on the map. In any case, whether there is a small map, whether it is directly displayed or needs to be called to appear on the screen, is closely related to the game’s world view, gameplay, and attributes. Different designs will attract different players. Only when players learn how to read a map can they better understand a game, and they may be interested in continuing the game.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2021/11/19/netease-ux-articles/news_20211119_28584_986709/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2021/11/15/netease-ux-articles/news_20211115_28584_985589/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>
