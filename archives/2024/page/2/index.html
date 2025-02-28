@@ -80,6 +80,10 @@
                    
           
           
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
         </ul>
       </nav>
     </div>
@@ -97,24 +101,6 @@
 
         
             <div class="year-title">2024</div>
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/2024/02/26/netease-ux-articles/news_20240717_28584_1167669/">
-                
-                    How Can Game Plots Better Elicit Player Empathy
-                
-                </a> 
-            </div>
-            
-            <span class="post-date">26 Feb, 2024</span>
-        </div>
-
-    
-
-        
-
         
 
         <div class="post-list-item">
@@ -157,6 +143,37 @@
 
     </div>
 
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
     
     
 

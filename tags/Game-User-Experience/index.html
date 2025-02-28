@@ -80,6 +80,10 @@
                    
           
           
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
         </ul>
       </nav>
     </div>
@@ -98,26 +102,6 @@
     </p>
     <div class="post-list">
     
-    
-
-        
-
-        
-            <div class="year-title">2025</div>
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/2025/02/27/netease-ux-articles/news_20231030_28584_1117531/">
-                
-                    So, it can be done like this — Recontextualization of Game Experience Design
-                
-                </a> 
-            </div>
-            
-            <span class="post-date">27 Feb, 2025</span>
-        </div>
-
     
 
         
@@ -144,6 +128,24 @@
 
         
             <div class="year-title">2023</div>
+        
+
+        <div class="post-list-item">
+            <div class="post-title">
+            <a href="/2023/10/24/netease-ux-articles/news_20231030_28584_1117531/">
+                
+                    So, it can be done like this — Recontextualization of Game Experience Design
+                
+                </a> 
+            </div>
+            
+            <span class="post-date">24 Oct, 2023</span>
+        </div>
+
+    
+
+        
+
         
 
         <div class="post-list-item">
@@ -316,6 +318,37 @@
 
     </div>
 
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
     
     
 

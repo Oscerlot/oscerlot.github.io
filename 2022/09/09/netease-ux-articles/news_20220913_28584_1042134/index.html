@@ -80,6 +80,10 @@
                    
           
           
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
         </ul>
       </nav>
     </div>
@@ -98,14 +102,14 @@
             
                 
                     <span class="post-tag">
-                        <a href="/tags/Emotion/">
-                            Emotion
+                        <a href="/tags/Emotional-Design/">
+                            Emotional Design
                         </a>
                     </span>    
                 
                     <span class="post-tag">
-                        <a href="/tags/Emotional-Design/">
-                            Emotional Design
+                        <a href="/tags/Emotion/">
+                            Emotion
                         </a>
                     </span>    
                 
@@ -160,7 +164,7 @@
     </div>
     <div class="post-img">
         
-            <div class="h-line-primary"></div>
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220913%2F9b3915c0-3e33-43d9-8574-0a9ebd89464e.png/size/" alt="featured_image">
               
     </div>
 </div>
@@ -305,6 +309,37 @@
 
     </div>
 
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
     
     
 

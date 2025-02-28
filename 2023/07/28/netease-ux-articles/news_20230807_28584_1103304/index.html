@@ -80,6 +80,10 @@
                    
           
           
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
         </ul>
       </nav>
     </div>
@@ -167,12 +171,12 @@
             
         </div>
         <span class="post-date">
-            28 Jul, 2024
+            28 Jul, 2023
         </span>
     </div>
     <div class="post-img">
         
-            <div class="h-line-primary"></div>
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230807%2F133b3b1c-c62e-4ca0-8341-702ceaa91c7a.png/size/" alt="featured_image">
               
     </div>
 </div>
@@ -229,7 +233,7 @@
            
                 <div class="icon arrow-left"></div>
                 <div class="post-link">
-                    <a href="/2025/02/27/netease-ux-articles/news_20231030_28584_1117531/">Prev</a>
+                    <a href="/2023/07/31/netease-ux-articles/news_20230807_28584_1103305/">Prev</a>
                 </div>
             
         </div>
@@ -237,7 +241,7 @@
             
                 <div class="icon arrow-right"></div>
                 <div class="post-link">
-                  <a href="/2024/07/16/netease-ux-articles/news_20240716_28584_1167378/">Next</a>  
+                  <a href="/2023/07/25/netease-ux-articles/news_20230726_28584_1101047/">Next</a>  
                 </div>  
             
         </div>
@@ -272,6 +276,37 @@
 
     </div>
 
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
     
     
 

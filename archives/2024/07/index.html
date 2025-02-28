@@ -80,6 +80,10 @@
                    
           
           
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
         </ul>
       </nav>
     </div>
@@ -97,42 +101,6 @@
 
         
             <div class="year-title">2024</div>
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/2024/07/28/netease-ux-articles/news_20230807_28584_1103304/">
-                
-                    Immersive, Role-Playing, or Spectating - How Character Involvement Affects Your Purchase of Game Cosmetics
-                
-                </a> 
-            </div>
-            
-            <span class="post-date">28 Jul, 2024</span>
-        </div>
-
-    
-
-        
-
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/2024/07/16/netease-ux-articles/news_20240716_28584_1167378/">
-                
-                    Unveiling the Design Behind Horror Game Jumpscares and Players&#39; Cognitive Load
-                
-                </a> 
-            </div>
-            
-            <span class="post-date">16 Jul, 2024</span>
-        </div>
-
-    
-
-        
-
         
 
         <div class="post-list-item">
@@ -155,9 +123,9 @@
 
         <div class="post-list-item">
             <div class="post-title">
-            <a href="/2024/07/09/netease-ux-articles/news_20230710_28584_1097806/">
+            <a href="/2024/07/09/netease-ux-articles/news_20240717_28584_1167671/">
                 
-                    How Can Non-Experts Master the Character Creation System
+                    The Secret of Open World Map Design: Multi-dimensional Application of Icons
                 
                 </a> 
             </div>
@@ -173,14 +141,14 @@
 
         <div class="post-list-item">
             <div class="post-title">
-            <a href="/2024/07/09/netease-ux-articles/news_20240717_28584_1167671/">
+            <a href="/2024/07/05/netease-ux-articles/news_20230710_28584_1097806/">
                 
-                    The Secret of Open World Map Design: Multi-dimensional Application of Icons
+                    How Can Non-Experts Master the Character Creation System
                 
                 </a> 
             </div>
             
-            <span class="post-date">9 Jul, 2024</span>
+            <span class="post-date">5 Jul, 2024</span>
         </div>
 
     
@@ -204,6 +172,37 @@
 
     </div>
 
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
     
     
 

@@ -80,6 +80,10 @@
                    
           
           
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
         </ul>
       </nav>
     </div>
@@ -109,6 +113,24 @@
             </div>
             
             <span class="post-date">31 Jul, 2023</span>
+        </div>
+
+    
+
+        
+
+        
+
+        <div class="post-list-item">
+            <div class="post-title">
+            <a href="/2023/07/28/netease-ux-articles/news_20230807_28584_1103304/">
+                
+                    Immersive, Role-Playing, or Spectating - How Character Involvement Affects Your Purchase of Game Cosmetics
+                
+                </a> 
+            </div>
+            
+            <span class="post-date">28 Jul, 2023</span>
         </div>
 
     
@@ -256,26 +278,15 @@
         </div>
 
     
-
-        
-
-        
-
-        <div class="post-list-item">
-            <div class="post-title">
-            <a href="/2023/07/07/netease-ux-articles/news_20230710_28584_1097837/">
-                
-                    Following Intuition Mobile Game Gesture Design to Create Invisible Interactions
-                
-                </a> 
-            </div>
-            
-            <span class="post-date">7 Jul, 2023</span>
-        </div>
-
-    
     <div id="paginator">
         
+    <div class=paginator>
+        <div class="h-line-primary"></div>
+        <nav class="pagination">
+            <span class="page-number current">1</span><a class="page-number" href="/archives/2023/07/page/2/">2</a>
+        </nav>
+    </div>
+
     </div>
 </div>
 
@@ -294,6 +305,37 @@
 
     </div>
 
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
     
     
 
