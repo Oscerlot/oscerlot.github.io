@@ -273,107 +273,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Clocking In In The Virtual World Game Check-In System Experience Design</title>
-    <url>/2022/09/05/netease-ux-articles/news_20220916_28584_1042734/</url>
-    <content><![CDATA[<blockquote>
-<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20220916/28584_1042734.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
-</blockquote>
-<p>&nbsp; </p>
-<p>When it comes to checking in, you must be familiar with it. From reporting to school as a child to clocking in at work now, checking in has been integrated into all aspects of our lives. In games, we can often see this delightful and worrying check-in design.</p>
-<p>We hope to get corresponding rewards through check-ins, but too many check-ins will make us feel bored. And check-ins do have a magical attraction for us. To exaggerate, as long as the “check-in” function is added, we will unconsciously check in to receive rewards. Nowadays, the “addictive” effect of check-ins has also prompted more games and mobile applications to add this function to their products. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2Ffb44828e-b915-4989-8afa-7197145bb36f.png/size/"></p>
-<blockquote>
-<p><em>Check-in Page in the Game</em></p>
-</blockquote>
-<p>In game products, check-in means that the player has logged in to the game or participated in a certain activity. It refers to the player’s operation on the game interface at a specific time and conveys to the system that the product has been used. This method improves the user activity and retention rate of the game to a certain extent.</p>
-<p>Nowadays, check-in activities have basically become a standard gameplay in every game, especially check-ins during special events or festivals, which play an important role in maintaining high player activity during the event. It is precisely because the check-in system in the game has a strong attraction to players, allowing players to obtain certain rewards after checking in, that makes players dependent on and “addicted” to check-ins.</p>
-<p>Although check-ins will also bring an uncomfortable sense of restraint to some players, this sense of restraint is generally replaced by the pleasure of various rewards. Even if some players still cannot accept this method, it is undeniable that the design of the check-in function does have great appeal to players, while maintaining a high level of player activity in the game for a certain period of time, and even attracting some fans who are keen on checking in.</p>
-<h2 id="1-Why-Design-a-Check-in-Function-in-Games"><a href="#1-Why-Design-a-Check-in-Function-in-Games" class="headerlink" title="1. Why Design a Check-in Function in Games?"></a>1. Why Design a Check-in Function in Games?</h2><h3 id="Game-Perspective"><a href="#Game-Perspective" class="headerlink" title="Game Perspective"></a>Game Perspective</h3><p>For game products, the design of the check-in function mainly serves to increase player activity, improve retention, attract new users, and promote revenue.</p>
-<ul>
-<li><strong>Boost Activity:</strong> Through the check-in function, the game allows players to log in to the game every day, increasing player activity in the game.</li>
-<li><strong>Retention:</strong> The check-in function allows players to form a habit of playing the game through this form, encouraging players to go online and receive rewards as much as possible.</li>
-<li><strong>Attract New Users:</strong> Attracting new users means that players can share socially through check-in tasks, so that the number of players can be increased to a certain extent.</li>
-<li><strong>Promote Revenue:</strong> Promoting revenue is to guide players to transform from non-paying players to paying players by differentiating rewards.</li>
-</ul>
-<h3 id="Player-Perspective"><a href="#Player-Perspective" class="headerlink" title="Player Perspective"></a>Player Perspective</h3><p>From the player’s perspective, the main purpose of players checking in is to obtain certain rewards. According to Maslow’s hierarchy of needs, rewards are mainly divided into material and spiritual rewards.</p>
-<p>First, players can get material rewards: that is, players can get game points, prizes, skins, props and a series of rewards that attract them to log in through check-ins. Second, players can get spiritual rewards: that is, the rewards obtained by players through check-ins make them emotionally satisfied (the need to be praised and recognized by others), and self-actualization (such as game rankings, achievement completion, obtaining medals, etc.).</p>
-<p>Therefore, regardless of whether it is from the game perspective or the player perspective, the check-in design meets the needs of both parties. It can not only meet the deep needs of players for material and spiritual rewards, but also bring high attention, activity and retention rates to the game. Therefore, the importance of designing check-in functions in products is self-evident.</p>
-<h2 id="2-Why-Does-the-Game-Check-in-Design-Capture-the-Hearts-of-Players"><a href="#2-Why-Does-the-Game-Check-in-Design-Capture-the-Hearts-of-Players" class="headerlink" title="2. Why Does the Game Check-in Design Capture the Hearts of Players?"></a>2. Why Does the Game Check-in Design Capture the Hearts of Players?</h2><p>After understanding what check-in is and why we should design check-in, we need to discuss why check-in design is so “magical” and makes players fall into the cycle of check-ins. We believe that two points are very important.</p>
-<h3 id="Check-in-Becomes-a-Super-Symbol"><a href="#Check-in-Becomes-a-Super-Symbol" class="headerlink" title="Check-in Becomes a Super Symbol"></a>Check-in Becomes a Super Symbol</h3><p>As mentioned at the beginning of the article, check-in has been integrated into all aspects of our lives. It can be said that check-in has become a “super symbol” implanted in our brains. This forms that as long as it is any check-in design, players will unconsciously click to check in. Because they already have expectations for check-in in their minds, check-in will always have an attraction effect on players.</p>
-<h3 id="Psychological-Suggestion-of-Check-in"><a href="#Psychological-Suggestion-of-Check-in" class="headerlink" title="Psychological Suggestion of Check-in"></a>Psychological Suggestion of Check-in</h3><p>Check-in behavior is generally considered to be continuous, so after players start checking in, they will tend to complete it continuously. And players have a clear understanding of check-in. If they complete the check-in, they will get rewards. If they continue to complete the check-in, they will get more rewards. This psychological suggestion will drive players to actively complete the check-in. The check-in function first deeply attracts players at the psychological level, and then through different check-in designs in the game, players are driven to complete the check-in by psychological inertia. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F15ae2316-890d-4f65-998f-92bbc9ac8dde.jpg/size/"></p>
-<h2 id="3-How-to-Design-a-Check-in-Function-that-Players-Will-Love"><a href="#3-How-to-Design-a-Check-in-Function-that-Players-Will-Love" class="headerlink" title="3. How to Design a Check-in Function that Players Will Love?"></a>3. How to Design a Check-in Function that Players Will Love?</h2><p>Since check-in is so attractive to players, how should the check-in in the game be designed? In order to allow players to continue checking in for a long time and stay in the game, the “addiction” model can be incorporated.</p>
-<p>The “addiction model” mainly includes four links: trigger, action, reward, and investment. Through the reward mechanism, it stimulates users to repeatedly start the game, cultivates players’ behavior habits, and makes players dependent on and惯性(guàn xìng - inertia) to the game; at the same time, the characteristic function design further improves the activity and retention of existing players in the game, allowing the check-in function to achieve a win-win situation for the game and players.</p>
-<h3 id="Trigger-Design-Player-Guidance"><a href="#Trigger-Design-Player-Guidance" class="headerlink" title="Trigger Design - Player Guidance"></a>Trigger Design - Player Guidance</h3><p>The game check-in has a guiding effect on players. When guiding players, it is necessary to use triggers to drive players to enter the “addiction” cycle of check-in in the game. Triggers can prompt players to take action and give them psychological hints before the player’s check-in behavior begins.</p>
-<p>In the game, it is necessary to establish a more obvious check-in prompt to get the player’s attention and increase the exposure of check-in in the game. The commonly used prompt methods in the game are pop-up windows and non-modal reminders of icons. In <em>Naraka: Bladepoint</em>, when players enter the game, a modal activity window will pop up to remind players of recent activities and activity check-ins. After entering the game, the icons on the right use bright light flashing to highlight the activities and check-in entrance. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F3987c1ce-45ea-41f1-9c63-894670635bd0.png/size/"></p>
-<blockquote>
-<p><em>《Naraka: Bladepoint》 Activity Entrance</em></p>
-</blockquote>
-<p>At the same time, on the left side of the game lobby, task guidance is used to allow players to view the tasks that can be completed every day and obtain corresponding rewards. The setting of simple tasks not only guides players to familiarize themselves with the gameplay, modes, etc. of the game, but also becomes an important auxiliary function for players to experience the game. At the same time, reducing the difficulty of tasks and the amount of stimulation for players, reducing the burden on players, encouraging players to experience the game, and obtaining corresponding rewards after completing tasks, all make the trigger effective and allow players to enter the next link of the “addiction” model. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F68568932-c9db-4c62-b00b-e67b3850a33e.png/size/"></p>
-<blockquote>
-<p><em>《Naraka: Bladepoint》 Daily Tasks and Activity Center Icons</em></p>
-</blockquote>
-<h3 id="Behavior-Design-Emotional-Goals"><a href="#Behavior-Design-Emotional-Goals" class="headerlink" title="Behavior Design - Emotional Goals"></a>Behavior Design - Emotional Goals</h3><ul>
-<li><strong>Increase player motivation</strong></li>
-</ul>
-<p>A very important goal of check-in design is to influence player emotions and design player behavior. In the check-in process, it is necessary to provide players with a goal, so that players have expectations in their hearts, and hope that they can complete the goal at a certain stage. When players get closer and closer to this goal in the process, their actions will occur faster.</p>
-<p>This effect of accelerating player actions through behavior design will have an impact on player emotions. When the player’s current goal is achieved, their motivation will be restored. Therefore, when the player completes the current stage goal, it is necessary to continue to set the next goal to stimulate the player’s emotional goal. In <em>My Dear Farm</em>, players can get a box of furniture by completing 7 days of check-in. In order to get special prizes, players will insist on checking in, and the closer they are to the gift package, the rewards will gradually increase, thereby further increasing player motivation. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2Fc09970fd-a8f5-4efa-8fc1-cecfe616d534.png/size/"></p>
-<blockquote>
-<p><em>《My Dear Farm》 Check-in Interface</em></p>
-</blockquote>
-<ul>
-<li><strong>Reduce the player’s check-in cost</strong></li>
-</ul>
-<p>Another aspect of influencing player emotional goals is to reduce the player’s check-in cost. That is, when players face a large amount of information and choices, they will need more time to think, which will greatly increase the player’s burden and then reduce player emotions. Therefore, in the game, breaking down large goals into small goals that are achieved in stages will reduce the burden on players, increase players’ goal expectations, and enhance players’ phased sense of satisfaction.</p>
-<p>For example, in <em>Knives Out</em>, the game divides the days of each month into a target cycle of 7 days (i.e., one week). Players will receive gold chips as a reward for accumulating 7 check-ins. In order to obtain this reward and exchange items in the game, everyone will insist on checking in, and the closer they are to the 7-day gift package, the better the gift rewards will be. This effectively stimulates the player’s interest, enhances their check-in motivation, and makes the probability of players breaking their check-in streak lower and lower. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F7650609d-791e-49e0-97eb-9e28a30bfebf.png/size/"></p>
-<blockquote>
-<p><em>《Knives Out》 Check-in Page</em></p>
-</blockquote>
-<h3 id="Reward-Design-Strengthen-Behavior"><a href="#Reward-Design-Strengthen-Behavior" class="headerlink" title="Reward Design - Strengthen Behavior"></a>Reward Design - Strengthen Behavior</h3><p>Players obtain certain rewards through check-ins, which can enhance their check-in motivation. At the same time, the feedback of obtaining rewards reinforces this behavior. Check-in provides players with a new way to obtain game resources. Players only need to maintain loyalty to the game and perform simple check-in operations to obtain corresponding game resources. Of course, the design of rewards should also consider the gradual progress of the process, and it is necessary to meet the different needs of players according to different cycles.</p>
-<p>For example, <em>Naraka: Bladepoint</em>‘s anniversary celebration interspersed different levels of rewards during the check-in period, fully mobilizing players’ emotions and making them unable to stop once they started checking in. At the same time, they can obtain advanced costumes for new characters during the check-in to guide and strengthen their willingness to experience new characters, and meet the needs of new and old players through other rewards. Even in some games, a complete set of equipment will be broken down into check-in rewards, so that players can continue to complete check-ins to collect the equipment. This method can also stimulate players’ collection needs. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F2ebd7a9f-ffdd-4a3d-8a5d-ae0b001820f1.png/size/"></p>
-<blockquote>
-<p><em>《Naraka: Bladepoint》 Anniversary Event Check-in Page</em></p>
-</blockquote>
-<h3 id="Investment-Design-Emotional-Resonance"><a href="#Investment-Design-Emotional-Resonance" class="headerlink" title="Investment Design - Emotional Resonance"></a>Investment Design - Emotional Resonance</h3><p>As the last link of the “addiction” model, the investment design makes players develop a habit for the game by generating emotional resonance with players. The more players invest in the game, the more they will value check-in. The game can start with investment design and mobilize players’ emotions. As the number of check-ins increases, the number of days players have checked in is displayed, and even a personalized check-in commemorative booklet can be customized for players, so that players have a different kind of emotion for the game.</p>
-<p>For example, in <em>A Dream of Jianghu</em>, when a player reaches 666 days of check-in, the game thoughtfully prepares a personalized commemorative booklet for the player, visually displaying the player’s investment in the game. This design brings satisfaction and emotional resonance to the player’s emotional experience, and also makes the player unforgettable about the game. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F6f64a7c4-0690-4693-912b-6b244635ee70.png/size/"></p>
-<blockquote>
-<p><em>《A Dream of Jianghu》 Personalized Commemorative Booklet</em></p>
-</blockquote>
-<h3 id="Characteristic-Design-Theme-Presentation"><a href="#Characteristic-Design-Theme-Presentation" class="headerlink" title="Characteristic Design - Theme Presentation"></a>Characteristic Design - Theme Presentation</h3><p>In addition to the “addiction” model, attention should also be paid to the characteristic design of check-in. Common check-in activities are designed with regular check-in boards, but long-term presentation in this way will always give people a feeling of fatigue of looking at a calendar, which will cause players to have the burden of completing tasks. Therefore, breaking the conventional design can not only bring players a novel experience, but also highlight the theme of the game or the theme of new activities.</p>
-<p>For example, in the game <em>Onmyoji</em>, the design of its check-in interface is presented in the form of daily divination check-in, which is very consistent with the tonality of the game. The way of divination check-in also gives players a novel experience, driving players to unknowingly complete the check-in behavior during the divination process. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F58baf0e2-e047-4efd-9284-c07273cb8ee4.png/size/"></p>
-<blockquote>
-<p><em>《Onmyoji: The Card Game》 Check-in Page</em></p>
-</blockquote>
-<p>In the check-in interface of a certain period of activity in <em>Identity V</em>, players can check in by wiping the mirror, and they will also receive corresponding rewards after completing the check-in. In addition to the personalized design of the interface in combination with the game theme, the way of checking in by wiping the mirror is also very novel. At the same time, players will find that every time they wipe the mirror, the tasks in the mirror will change slightly, which hints at the development of the plot and makes players imaginative. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2Fdcbd3439-cd1d-4b17-bbad-7fd7aa85b80e.png/size/"></p>
-<blockquote>
-<p><em>《Identity V》 Event Check-in Page</em></p>
-</blockquote>
-<h2 id="4-Conclusion"><a href="#4-Conclusion" class="headerlink" title="4. Conclusion"></a>4. Conclusion</h2><p>In summary, if the check-in design wants to further attract players, make players develop the habit of logging in to the game every day, and complete the corresponding activity check-ins in the game to obtain rewards, it is necessary to guide players through trigger design, satisfy players’ emotional goals through behavior design, strengthen player behavior through reward design, and arouse player emotional resonance through investment design. And present novel themes with characteristic designs to improve event data.</p>
-<p>Although too many check-in designs will make some players feel bored, a good check-in design will definitely not make players feel burdened. As long as the check-in design is integrated with the game and presented in various forms, everything can be used for check-in. If it can make players think of the game unconsciously and develop the habit of opening the game unconsciously, it should be a check-in that players will never forget and love, and it is also a great game that amazes players!</p>
-]]></content>
-      <categories>
-        <category>NetEase UX</category>
-      </categories>
-      <tags>
-        <tag>User Experience</tag>
-        <tag>Game User Experience</tag>
-        <tag>Check-in Design</tag>
-        <tag>Player Engagement</tag>
-        <tag>Gamification</tag>
-        <tag>Rewards System</tag>
-        <tag>Emotional Design</tag>
-        <tag>Habit Formation</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Capturing the Myriad Thoughts of Players - Designing with Emotion</title>
     <url>/2022/09/09/netease-ux-articles/news_20220913_28584_1042134/</url>
     <content><![CDATA[<blockquote>
@@ -465,14 +364,115 @@
         <category>NetEase UX</category>
       </categories>
       <tags>
-        <tag>Emotional Design</tag>
         <tag>Emotion</tag>
+        <tag>Emotional Design</tag>
         <tag>Emotional Experience</tag>
         <tag>Interaction Frequency</tag>
         <tag>Interaction Feedback</tag>
         <tag>Real-time Performance</tag>
         <tag>Self-Discrepancy Theory</tag>
         <tag>Self-Sacrifice</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Clocking In In The Virtual World Game Check-In System Experience Design</title>
+    <url>/2022/09/05/netease-ux-articles/news_20220916_28584_1042734/</url>
+    <content><![CDATA[<blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20220916/28584_1042734.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>When it comes to checking in, you must be familiar with it. From reporting to school as a child to clocking in at work now, checking in has been integrated into all aspects of our lives. In games, we can often see this delightful and worrying check-in design.</p>
+<p>We hope to get corresponding rewards through check-ins, but too many check-ins will make us feel bored. And check-ins do have a magical attraction for us. To exaggerate, as long as the “check-in” function is added, we will unconsciously check in to receive rewards. Nowadays, the “addictive” effect of check-ins has also prompted more games and mobile applications to add this function to their products. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2Ffb44828e-b915-4989-8afa-7197145bb36f.png/size/"></p>
+<blockquote>
+<p><em>Check-in Page in the Game</em></p>
+</blockquote>
+<p>In game products, check-in means that the player has logged in to the game or participated in a certain activity. It refers to the player’s operation on the game interface at a specific time and conveys to the system that the product has been used. This method improves the user activity and retention rate of the game to a certain extent.</p>
+<p>Nowadays, check-in activities have basically become a standard gameplay in every game, especially check-ins during special events or festivals, which play an important role in maintaining high player activity during the event. It is precisely because the check-in system in the game has a strong attraction to players, allowing players to obtain certain rewards after checking in, that makes players dependent on and “addicted” to check-ins.</p>
+<p>Although check-ins will also bring an uncomfortable sense of restraint to some players, this sense of restraint is generally replaced by the pleasure of various rewards. Even if some players still cannot accept this method, it is undeniable that the design of the check-in function does have great appeal to players, while maintaining a high level of player activity in the game for a certain period of time, and even attracting some fans who are keen on checking in.</p>
+<h2 id="1-Why-Design-a-Check-in-Function-in-Games"><a href="#1-Why-Design-a-Check-in-Function-in-Games" class="headerlink" title="1. Why Design a Check-in Function in Games?"></a>1. Why Design a Check-in Function in Games?</h2><h3 id="Game-Perspective"><a href="#Game-Perspective" class="headerlink" title="Game Perspective"></a>Game Perspective</h3><p>For game products, the design of the check-in function mainly serves to increase player activity, improve retention, attract new users, and promote revenue.</p>
+<ul>
+<li><strong>Boost Activity:</strong> Through the check-in function, the game allows players to log in to the game every day, increasing player activity in the game.</li>
+<li><strong>Retention:</strong> The check-in function allows players to form a habit of playing the game through this form, encouraging players to go online and receive rewards as much as possible.</li>
+<li><strong>Attract New Users:</strong> Attracting new users means that players can share socially through check-in tasks, so that the number of players can be increased to a certain extent.</li>
+<li><strong>Promote Revenue:</strong> Promoting revenue is to guide players to transform from non-paying players to paying players by differentiating rewards.</li>
+</ul>
+<h3 id="Player-Perspective"><a href="#Player-Perspective" class="headerlink" title="Player Perspective"></a>Player Perspective</h3><p>From the player’s perspective, the main purpose of players checking in is to obtain certain rewards. According to Maslow’s hierarchy of needs, rewards are mainly divided into material and spiritual rewards.</p>
+<p>First, players can get material rewards: that is, players can get game points, prizes, skins, props and a series of rewards that attract them to log in through check-ins. Second, players can get spiritual rewards: that is, the rewards obtained by players through check-ins make them emotionally satisfied (the need to be praised and recognized by others), and self-actualization (such as game rankings, achievement completion, obtaining medals, etc.).</p>
+<p>Therefore, regardless of whether it is from the game perspective or the player perspective, the check-in design meets the needs of both parties. It can not only meet the deep needs of players for material and spiritual rewards, but also bring high attention, activity and retention rates to the game. Therefore, the importance of designing check-in functions in products is self-evident.</p>
+<h2 id="2-Why-Does-the-Game-Check-in-Design-Capture-the-Hearts-of-Players"><a href="#2-Why-Does-the-Game-Check-in-Design-Capture-the-Hearts-of-Players" class="headerlink" title="2. Why Does the Game Check-in Design Capture the Hearts of Players?"></a>2. Why Does the Game Check-in Design Capture the Hearts of Players?</h2><p>After understanding what check-in is and why we should design check-in, we need to discuss why check-in design is so “magical” and makes players fall into the cycle of check-ins. We believe that two points are very important.</p>
+<h3 id="Check-in-Becomes-a-Super-Symbol"><a href="#Check-in-Becomes-a-Super-Symbol" class="headerlink" title="Check-in Becomes a Super Symbol"></a>Check-in Becomes a Super Symbol</h3><p>As mentioned at the beginning of the article, check-in has been integrated into all aspects of our lives. It can be said that check-in has become a “super symbol” implanted in our brains. This forms that as long as it is any check-in design, players will unconsciously click to check in. Because they already have expectations for check-in in their minds, check-in will always have an attraction effect on players.</p>
+<h3 id="Psychological-Suggestion-of-Check-in"><a href="#Psychological-Suggestion-of-Check-in" class="headerlink" title="Psychological Suggestion of Check-in"></a>Psychological Suggestion of Check-in</h3><p>Check-in behavior is generally considered to be continuous, so after players start checking in, they will tend to complete it continuously. And players have a clear understanding of check-in. If they complete the check-in, they will get rewards. If they continue to complete the check-in, they will get more rewards. This psychological suggestion will drive players to actively complete the check-in. The check-in function first deeply attracts players at the psychological level, and then through different check-in designs in the game, players are driven to complete the check-in by psychological inertia. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F15ae2316-890d-4f65-998f-92bbc9ac8dde.jpg/size/"></p>
+<h2 id="3-How-to-Design-a-Check-in-Function-that-Players-Will-Love"><a href="#3-How-to-Design-a-Check-in-Function-that-Players-Will-Love" class="headerlink" title="3. How to Design a Check-in Function that Players Will Love?"></a>3. How to Design a Check-in Function that Players Will Love?</h2><p>Since check-in is so attractive to players, how should the check-in in the game be designed? In order to allow players to continue checking in for a long time and stay in the game, the “addiction” model can be incorporated.</p>
+<p>The “addiction model” mainly includes four links: trigger, action, reward, and investment. Through the reward mechanism, it stimulates users to repeatedly start the game, cultivates players’ behavior habits, and makes players dependent on and惯性(guàn xìng - inertia) to the game; at the same time, the characteristic function design further improves the activity and retention of existing players in the game, allowing the check-in function to achieve a win-win situation for the game and players.</p>
+<h3 id="Trigger-Design-Player-Guidance"><a href="#Trigger-Design-Player-Guidance" class="headerlink" title="Trigger Design - Player Guidance"></a>Trigger Design - Player Guidance</h3><p>The game check-in has a guiding effect on players. When guiding players, it is necessary to use triggers to drive players to enter the “addiction” cycle of check-in in the game. Triggers can prompt players to take action and give them psychological hints before the player’s check-in behavior begins.</p>
+<p>In the game, it is necessary to establish a more obvious check-in prompt to get the player’s attention and increase the exposure of check-in in the game. The commonly used prompt methods in the game are pop-up windows and non-modal reminders of icons. In <em>Naraka: Bladepoint</em>, when players enter the game, a modal activity window will pop up to remind players of recent activities and activity check-ins. After entering the game, the icons on the right use bright light flashing to highlight the activities and check-in entrance. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F3987c1ce-45ea-41f1-9c63-894670635bd0.png/size/"></p>
+<blockquote>
+<p><em>《Naraka: Bladepoint》 Activity Entrance</em></p>
+</blockquote>
+<p>At the same time, on the left side of the game lobby, task guidance is used to allow players to view the tasks that can be completed every day and obtain corresponding rewards. The setting of simple tasks not only guides players to familiarize themselves with the gameplay, modes, etc. of the game, but also becomes an important auxiliary function for players to experience the game. At the same time, reducing the difficulty of tasks and the amount of stimulation for players, reducing the burden on players, encouraging players to experience the game, and obtaining corresponding rewards after completing tasks, all make the trigger effective and allow players to enter the next link of the “addiction” model. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F68568932-c9db-4c62-b00b-e67b3850a33e.png/size/"></p>
+<blockquote>
+<p><em>《Naraka: Bladepoint》 Daily Tasks and Activity Center Icons</em></p>
+</blockquote>
+<h3 id="Behavior-Design-Emotional-Goals"><a href="#Behavior-Design-Emotional-Goals" class="headerlink" title="Behavior Design - Emotional Goals"></a>Behavior Design - Emotional Goals</h3><ul>
+<li><strong>Increase player motivation</strong></li>
+</ul>
+<p>A very important goal of check-in design is to influence player emotions and design player behavior. In the check-in process, it is necessary to provide players with a goal, so that players have expectations in their hearts, and hope that they can complete the goal at a certain stage. When players get closer and closer to this goal in the process, their actions will occur faster.</p>
+<p>This effect of accelerating player actions through behavior design will have an impact on player emotions. When the player’s current goal is achieved, their motivation will be restored. Therefore, when the player completes the current stage goal, it is necessary to continue to set the next goal to stimulate the player’s emotional goal. In <em>My Dear Farm</em>, players can get a box of furniture by completing 7 days of check-in. In order to get special prizes, players will insist on checking in, and the closer they are to the gift package, the rewards will gradually increase, thereby further increasing player motivation. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2Fc09970fd-a8f5-4efa-8fc1-cecfe616d534.png/size/"></p>
+<blockquote>
+<p><em>《My Dear Farm》 Check-in Interface</em></p>
+</blockquote>
+<ul>
+<li><strong>Reduce the player’s check-in cost</strong></li>
+</ul>
+<p>Another aspect of influencing player emotional goals is to reduce the player’s check-in cost. That is, when players face a large amount of information and choices, they will need more time to think, which will greatly increase the player’s burden and then reduce player emotions. Therefore, in the game, breaking down large goals into small goals that are achieved in stages will reduce the burden on players, increase players’ goal expectations, and enhance players’ phased sense of satisfaction.</p>
+<p>For example, in <em>Knives Out</em>, the game divides the days of each month into a target cycle of 7 days (i.e., one week). Players will receive gold chips as a reward for accumulating 7 check-ins. In order to obtain this reward and exchange items in the game, everyone will insist on checking in, and the closer they are to the 7-day gift package, the better the gift rewards will be. This effectively stimulates the player’s interest, enhances their check-in motivation, and makes the probability of players breaking their check-in streak lower and lower. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F7650609d-791e-49e0-97eb-9e28a30bfebf.png/size/"></p>
+<blockquote>
+<p><em>《Knives Out》 Check-in Page</em></p>
+</blockquote>
+<h3 id="Reward-Design-Strengthen-Behavior"><a href="#Reward-Design-Strengthen-Behavior" class="headerlink" title="Reward Design - Strengthen Behavior"></a>Reward Design - Strengthen Behavior</h3><p>Players obtain certain rewards through check-ins, which can enhance their check-in motivation. At the same time, the feedback of obtaining rewards reinforces this behavior. Check-in provides players with a new way to obtain game resources. Players only need to maintain loyalty to the game and perform simple check-in operations to obtain corresponding game resources. Of course, the design of rewards should also consider the gradual progress of the process, and it is necessary to meet the different needs of players according to different cycles.</p>
+<p>For example, <em>Naraka: Bladepoint</em>‘s anniversary celebration interspersed different levels of rewards during the check-in period, fully mobilizing players’ emotions and making them unable to stop once they started checking in. At the same time, they can obtain advanced costumes for new characters during the check-in to guide and strengthen their willingness to experience new characters, and meet the needs of new and old players through other rewards. Even in some games, a complete set of equipment will be broken down into check-in rewards, so that players can continue to complete check-ins to collect the equipment. This method can also stimulate players’ collection needs. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F2ebd7a9f-ffdd-4a3d-8a5d-ae0b001820f1.png/size/"></p>
+<blockquote>
+<p><em>《Naraka: Bladepoint》 Anniversary Event Check-in Page</em></p>
+</blockquote>
+<h3 id="Investment-Design-Emotional-Resonance"><a href="#Investment-Design-Emotional-Resonance" class="headerlink" title="Investment Design - Emotional Resonance"></a>Investment Design - Emotional Resonance</h3><p>As the last link of the “addiction” model, the investment design makes players develop a habit for the game by generating emotional resonance with players. The more players invest in the game, the more they will value check-in. The game can start with investment design and mobilize players’ emotions. As the number of check-ins increases, the number of days players have checked in is displayed, and even a personalized check-in commemorative booklet can be customized for players, so that players have a different kind of emotion for the game.</p>
+<p>For example, in <em>A Dream of Jianghu</em>, when a player reaches 666 days of check-in, the game thoughtfully prepares a personalized commemorative booklet for the player, visually displaying the player’s investment in the game. This design brings satisfaction and emotional resonance to the player’s emotional experience, and also makes the player unforgettable about the game. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F6f64a7c4-0690-4693-912b-6b244635ee70.png/size/"></p>
+<blockquote>
+<p><em>《A Dream of Jianghu》 Personalized Commemorative Booklet</em></p>
+</blockquote>
+<h3 id="Characteristic-Design-Theme-Presentation"><a href="#Characteristic-Design-Theme-Presentation" class="headerlink" title="Characteristic Design - Theme Presentation"></a>Characteristic Design - Theme Presentation</h3><p>In addition to the “addiction” model, attention should also be paid to the characteristic design of check-in. Common check-in activities are designed with regular check-in boards, but long-term presentation in this way will always give people a feeling of fatigue of looking at a calendar, which will cause players to have the burden of completing tasks. Therefore, breaking the conventional design can not only bring players a novel experience, but also highlight the theme of the game or the theme of new activities.</p>
+<p>For example, in the game <em>Onmyoji</em>, the design of its check-in interface is presented in the form of daily divination check-in, which is very consistent with the tonality of the game. The way of divination check-in also gives players a novel experience, driving players to unknowingly complete the check-in behavior during the divination process. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2F58baf0e2-e047-4efd-9284-c07273cb8ee4.png/size/"></p>
+<blockquote>
+<p><em>《Onmyoji: The Card Game》 Check-in Page</em></p>
+</blockquote>
+<p>In the check-in interface of a certain period of activity in <em>Identity V</em>, players can check in by wiping the mirror, and they will also receive corresponding rewards after completing the check-in. In addition to the personalized design of the interface in combination with the game theme, the way of checking in by wiping the mirror is also very novel. At the same time, players will find that every time they wipe the mirror, the tasks in the mirror will change slightly, which hints at the development of the plot and makes players imaginative. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220916%2Fdcbd3439-cd1d-4b17-bbad-7fd7aa85b80e.png/size/"></p>
+<blockquote>
+<p><em>《Identity V》 Event Check-in Page</em></p>
+</blockquote>
+<h2 id="4-Conclusion"><a href="#4-Conclusion" class="headerlink" title="4. Conclusion"></a>4. Conclusion</h2><p>In summary, if the check-in design wants to further attract players, make players develop the habit of logging in to the game every day, and complete the corresponding activity check-ins in the game to obtain rewards, it is necessary to guide players through trigger design, satisfy players’ emotional goals through behavior design, strengthen player behavior through reward design, and arouse player emotional resonance through investment design. And present novel themes with characteristic designs to improve event data.</p>
+<p>Although too many check-in designs will make some players feel bored, a good check-in design will definitely not make players feel burdened. As long as the check-in design is integrated with the game and presented in various forms, everything can be used for check-in. If it can make players think of the game unconsciously and develop the habit of opening the game unconsciously, it should be a check-in that players will never forget and love, and it is also a great game that amazes players!</p>
+]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
+      <tags>
+        <tag>User Experience</tag>
+        <tag>Emotional Design</tag>
+        <tag>Game User Experience</tag>
+        <tag>Check-in Design</tag>
+        <tag>Player Engagement</tag>
+        <tag>Gamification</tag>
+        <tag>Rewards System</tag>
+        <tag>Habit Formation</tag>
       </tags>
   </entry>
   <entry>
@@ -4320,114 +4320,6 @@ There is a website called Astats, which will count the game achievements of the 
       </tags>
   </entry>
   <entry>
-    <title>Skeuomorphism - Creating an Interface Experience with Both Realism and Affinity</title>
-    <url>/2023/07/21/netease-ux-articles/news_20230724_28584_1100416/</url>
-    <content><![CDATA[<blockquote>
-<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20230724/28584_1100416.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
-</blockquote>
-<p>&nbsp; </p>
-<h2 id="1-What-is-Skeuomorphic-Design"><a href="#1-What-is-Skeuomorphic-Design" class="headerlink" title="1. What is Skeuomorphic Design?"></a>1. What is Skeuomorphic Design?</h2><h3 id="Skeuomorphic-Design"><a href="#Skeuomorphic-Design" class="headerlink" title="Skeuomorphic Design"></a>Skeuomorphic Design</h3><p>Skeuomorphism is a form of materializing information, also known as realism. A common method is to simulate the style of real-world objects in the interface, pursuing extreme textures and light and shadow, but it can also imitate the user’s familiar operation methods. By materializing information, it improves the efficiency of people’s information understanding, reduces learning costs, and allows users to become familiar with the interface faster.</p>
-<p>In games, a large number of skeuomorphic designs can not only present a more refined interface, but also fully mobilize the player’s sense of intimacy and substitution for the game, and the sense of immersion is even better. Therefore, we can often see the application of skeuomorphic design in games. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F50d7c80c-ba92-4082-8905-d38be6c573e4.png/size/"></p>
-<blockquote>
-<p><em>Flat vs. Skeuomorphic</em></p>
-</blockquote>
-<h3 id="Characteristics-of-Skeuomorphic-Design"><a href="#Characteristics-of-Skeuomorphic-Design" class="headerlink" title="Characteristics of Skeuomorphic Design"></a>Characteristics of Skeuomorphic Design</h3><ul>
-<li><strong>More intuitive</strong></li>
-</ul>
-<p>By combining information with real objects familiar to players, the presentation of information can be more intuitive and efficient. In <em>Sifu</em>, the game’s worldview and storyline are presented in the form of a collage, allowing players to see the plot at a glance, intuitively view and understand the development of the plot. The whole process is not only in line with the player’s cognition, but also allows players to better substitute into the story presented in front of them, and the information presented in the interface is also very intuitive and clear. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F151a2919-d0a2-4471-bd6b-4f55f445e970.png/size/"></p>
-<blockquote>
-<p><em>《Sifu》 Interface</em></p>
-</blockquote>
-<ul>
-<li><strong>Easy to accept</strong></li>
-</ul>
-<p>On an emotional level, skeuomorphic design makes it easier for players to accept and reduces the player’s learning cost. The design of the sign-in page of <em>Onmyoji: The Card Game</em> is presented in the form of a wishing wind chime. The interface is simple and clear, which not only conforms to the player’s cognition, making it easier for players to complete the sign-in process, but also allows players to complete fortune-telling during the sign-in, making it easier to understand and accept, and improving the sign-in rate from a design perspective. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fe38b7922-b545-40c1-afc8-47e136ad615b.png/size/"></p>
-<blockquote>
-<p><em>《Onmyoji: The Card Game》 Sign-in Page</em></p>
-</blockquote>
-<h3 id="Risks-of-Skeuomorphic-Design"><a href="#Risks-of-Skeuomorphic-Design" class="headerlink" title="Risks of Skeuomorphic Design"></a>Risks of Skeuomorphic Design</h3><p>Skeuomorphic design can create a realistic worldview scene in the game, strengthen the atmosphere of the game by simulating objects, and enhance the player’s psychological and emotional substitution. It can be said that skeuomorphic design is one of the preferred methods for game interface design. However, with the continuous enrichment of game interface information, it is difficult to present a large amount of interface information by simply using skeuomorphic design, and it is also difficult to control the layout and hierarchy of information. To a certain extent, it may put the cart before the horse. If used improperly, a clear interaction path cannot be achieved.</p>
-<h2 id="2-Why-Use-Skeuomorphic-Design"><a href="#2-Why-Use-Skeuomorphic-Design" class="headerlink" title="2. Why Use Skeuomorphic Design?"></a>2. Why Use Skeuomorphic Design?</h2><p>Skeuomorphic design in games is very beneficial to both the game itself and the players, so we often find such designs in games. Specifically, we can explore from two aspects:</p>
-<h3 id="Improve-the-Quality-of-the-Game-Interface"><a href="#Improve-the-Quality-of-the-Game-Interface" class="headerlink" title="Improve the Quality of the Game Interface"></a>Improve the Quality of the Game Interface</h3><p>On the one hand, for the game itself, the design of the skeuomorphic interface can combine the interface with simulated real elements and carry out artistic processing to form an interface design that meets the psychological needs of players. Through skeuomorphic design, it enhances the efficient matching of game interface information. At the same time, the exquisite and artistic design can also enhance the quality of the interface, easily express the theme of the work, and integrate with the game world. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F209b0cea-2cca-4af5-9e75-e2caf90f5bf7.png/size/"></p>
-<blockquote>
-<p><em>《Ratchet &amp; Clank》 Interface</em></p>
-</blockquote>
-<h3 id="Situational-Interface-Enhances-Player-Immersion"><a href="#Situational-Interface-Enhances-Player-Immersion" class="headerlink" title="Situational Interface Enhances Player Immersion"></a>Situational Interface Enhances Player Immersion</h3><p>On the other hand, especially for players, the exquisite&#x2F;realistic skeuomorphic design makes the game interface more situational by effectively connecting reality and the game, and players can also more easily substitute into the current scene and interface. In <em>The Last of Us</em>, the information is connected with the game plot scene, and the map is placed in the player’s audience and scene. This skeuomorphic method is used to enhance the player’s sense of substitution and immersion. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fae3363fa-9a68-478c-9bb0-f64af990f870.png/size/"></p>
-<blockquote>
-<p><em>《The Last of Us》 Interface</em></p>
-</blockquote>
-<h2 id="3-How-to-Make-the-Interface-in-the-Game-More-Realistic-and-Friendly"><a href="#3-How-to-Make-the-Interface-in-the-Game-More-Realistic-and-Friendly" class="headerlink" title="3. How to Make the Interface in the Game More Realistic and Friendly?"></a>3. How to Make the Interface in the Game More Realistic and Friendly?</h2><p>Skeuomorphic design can make the game interface more vivid, but if it is not designed properly, it will also lead to low adaptability, interface discordance, inability to present effective information, and other problems. Therefore, in the process of skeuomorphic design, designers should pay attention to:</p>
-<h3 id="Skeuomorphic-Elements-Associated-with-Reality"><a href="#Skeuomorphic-Elements-Associated-with-Reality" class="headerlink" title="Skeuomorphic Elements Associated with Reality"></a>Skeuomorphic Elements Associated with Reality</h3><p>The skeuomorphic interface design should simulate object elements that are more in line with the player’s psychological cognition, reduce learning costs, and allow players to naturally integrate into the game. In the interface design of <em>Gran Turismo 7</em>, the game combines the collection of cars with the display form of menus, allowing players to view the collected models by flipping through different menus. Through the element form of the real menu, players are more receptive to the collection of items, and the presentation of the interface is also more vivid. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F2b11bb7a-ce70-47a3-8285-1a3d40d35f96.png/size/"></p>
-<blockquote>
-<p><em>《Gran Turismo 7》 Interface</em></p>
-</blockquote>
-<p>In the skill page of <em>God of War Ragnarök</em>, the overall interface is designed in the form of stone rubbings, making the overall interface present a heavy effect. Players are like carving on a slate when upgrading skills and equipment, creating a more realistic feeling. In the equipment interface, each weapon has its own exclusive skeuomorphic background. For example, the Blades of Chaos uses the texture of the blade and lava to show the weapon characteristics; while the UI background of the Leviathan Axe shows the frozen attributes. Such a design helps players have a more intuitive and clear understanding of the weapon’s attributes. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F9e09de5b-1dd9-48f4-b292-96b85a3becd5.png.%20%0A%20%0A%0A%26nbsp%3B%20%0A%21%5B%5D%28https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fe6786c28-1cda-463b-ba63-644b8d2c177a.png/size/"></p>
-<blockquote>
-<p><em>《God of War Ragnarök》 Interface</em></p>
-</blockquote>
-<h3 id="Skeuomorphic-Design-More-in-Line-with-the-Game-Theme"><a href="#Skeuomorphic-Design-More-in-Line-with-the-Game-Theme" class="headerlink" title="Skeuomorphic Design More in Line with the Game Theme"></a>Skeuomorphic Design More in Line with the Game Theme</h3><p>Another key to skeuomorphic design is to make the skeuomorphic elements appearing in the interface conform to the theme of the game itself, so as to strengthen the unity between the interface and the theme and achieve a perfect integration of the interface and the game. <em>Hogwarts Legacy</em> uses the form of magic books and letters in the main interface, combining them with the interface. The yellowish letters and books reflect the mysterious and retro magical colors in the game, and also conform to the background of the times. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F5bcb1245-f1af-4e3e-b52e-9edf17c88b33.png/size/"></p>
-<blockquote>
-<p><em>《Hogwarts Legacy》 Interface</em></p>
-</blockquote>
-<p>In <em>God of War Ragnarök</em>, a skeuomorphic design that is very consistent with the theme of the game is also selected. In the interface, the form of Atreus’s old books, notebooks, and sketches is used to show the characters, worldview, plot, etc. of the game, which not only fits the theme of the game, but also strengthens the texture and style of the game, rendering the immersive atmosphere of the player’s game. Players are like opening a notepad, reading their own past. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fba6c00d9-bb77-4edd-8d9c-ab067b719bed.jpg/size/"></p>
-<blockquote>
-<p><em>《God of War Ragnarök》 Interface</em></p>
-</blockquote>
-<p><em>The Sinking City</em> also uses the elements of old and damaged notebooks, which fits the theme of detective games. The yellowish notebook shows various information in the game, allowing players to feel full of suspense and enhance the player’s detective experience. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F475a2e02-5e5f-485e-8478-d6d7fcd13bf4.png/size/"></p>
-<blockquote>
-<p><em>《The Sinking City》 Interface</em></p>
-</blockquote>
-<h3 id="Full-Integration-of-Interface-and-Game-Scene"><a href="#Full-Integration-of-Interface-and-Game-Scene" class="headerlink" title="Full Integration of Interface and Game Scene"></a>Full Integration of Interface and Game Scene</h3><p>The skeuomorphic design in the game needs to fully combine the interface information with the game scene to achieve better unity, and even integrate it into the game, so that players will not be detached from the game world. In <em>Red Dead Redemption 2</em>, the game combines the interface for purchasing items with the scene, allowing players to complete the purchase of items by flipping through the books in the scene, as if they were cowboys in that era, using ancient methods to obtain information about guns, and then selecting and placing orders. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F5d740af2-4c45-4442-9aef-02dfb470fa89.png/size/"></p>
-<blockquote>
-<p><em>《Red Dead Redemption 2》 Purchase Interface</em></p>
-</blockquote>
-<p>In <em>What Remains of Edith Finch</em>, the interface information is very cleverly combined with the items in the game, and the information prompts are integrated into the scene. The scattering of dandelion text brings a good visual experience to the player. Integrating the interface into the scene cannot appear isolated and abrupt, but should be designed in combination with the current scene, gameplay, etc. of the game, so that this combination is not far-fetched and does not jump out of the scene. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F397fa426-0c58-407a-86ab-8d66496fd565.png/size/"></p>
-<blockquote>
-<p><em>《What Remains of Edith Finch》 Interface</em></p>
-</blockquote>
-<h3 id="Deeper-Penetration-of-Skeuomorphism"><a href="#Deeper-Penetration-of-Skeuomorphism" class="headerlink" title="Deeper Penetration of Skeuomorphism"></a>Deeper Penetration of Skeuomorphism</h3><p>One of the goals of skeuomorphism is to allow players to continue their cognition and operation methods in life and reduce learning costs. Therefore, in addition to the external decoration of skeuomorphism, the skeuomorphic design of the player’s operation method is its deeper penetration.</p>
-<p>In <em>Ratchet &amp; Clank</em>, the interface is combined with the electronic screen in the game, connecting information with the scene and placing the interface in the game, making the overall scene produce a more three-dimensional sense of space, and the integration with the scene is also more harmonious and unified. Players seem to be clicking on a control screen, and they are also brought into this virtual world. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F2522fed2-e641-48ff-82fc-da55de9d7a8b.png/size/"></p>
-<blockquote>
-<p><em>《Ratchet &amp; Clank》 Interface</em></p>
-</blockquote>
-<p><em>Dead Space</em> very cleverly integrates the UI with characters and scenes, realizing a deeper exploration of skeuomorphism. The UI interface is completely integrated with the game characters. The character’s health bar in the game can be viewed from the glowing body on the character’s back; while the real-time information of the game is displayed through the character’s hologram in the game. Through the internal UI interface of the scene, the overall game is presented more unified, complete, and real; it also makes the UI, characters, and scenes have a strong connection. Players will not feel detached during the game, and can fully devote themselves to the horror atmosphere. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fe2d1f48e-ebb8-404e-bf31-d90f7ec9d069.png.%20%0A%20%0A%0A%26nbsp%3B%20%0A%21%5B%5D%28https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fa22643bc-29cd-4efe-9054-483a03aa31aa.png/size/"></p>
-<blockquote>
-<p><em>《Dead Space》 Interface</em></p>
-</blockquote>
-<h3 id="Use-Skeuomorphism-to-Build-Page-Hierarchy"><a href="#Use-Skeuomorphism-to-Build-Page-Hierarchy" class="headerlink" title="Use Skeuomorphism to Build Page Hierarchy"></a>Use Skeuomorphism to Build Page Hierarchy</h3><p>In skeuomorphic design, if it is not handled properly, it will cause confusion in the page hierarchy or inability to expand interface information. Therefore, in the design, attention should also be paid to using skeuomorphism to build the hierarchical relationship of the page. For example, in <em>Harry Potter: Magic Awakened</em>, cards and notebooks are used to unfold the plot, and the page hierarchy is constructed through the plane relationship, front and back occlusion relationship, color light and shadow of the objects in this skeuomorphic interface, and with the help of book page turning. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F58f0514d-8fd2-4006-85fb-4635556adf5f.png/size/"></p>
-<blockquote>
-<p><em>《Harry Potter: Magic Awakened》</em></p>
-</blockquote>
-<h2 id="4-Conclusion"><a href="#4-Conclusion" class="headerlink" title="4. Conclusion"></a>4. Conclusion</h2><p>The skeuomorphic style in the game world has left a deep impression on us. By simulating things and operation methods familiar to players, it can often allow players to quickly accept the game settings and substitute into the entire atmosphere. Skeuomorphic design not only conforms to various whimsical ideas in the game, but also enhances the player’s immersive experience, so it is widely used in many games. If you lack inspiration in design, you may consider referring to various clues in the real world, carrying out skeuomorphic design, and creating a more realistic and friendly interface!</p>
-]]></content>
-      <categories>
-        <category>NetEase UX</category>
-      </categories>
-      <tags>
-        <tag>User Experience</tag>
-        <tag>Immersion</tag>
-        <tag>Game Interface</tag>
-        <tag>Skeuomorphism</tag>
-        <tag>Realism</tag>
-        <tag>Affinity</tag>
-        <tag>UI Design</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>The Appearance and Disappearance of Information - Game Tooltip Design</title>
     <url>/2023/07/24/netease-ux-articles/news_20230726_28584_1101043/</url>
     <content><![CDATA[<blockquote>
@@ -4541,6 +4433,114 @@ There is a website called Astats, which will count the game achievements of the 
         <tag>Text Layout</tag>
         <tag>Visual Hierarchy</tag>
         <tag>Animation Effects</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Skeuomorphism - Creating an Interface Experience with Both Realism and Affinity</title>
+    <url>/2023/07/21/netease-ux-articles/news_20230724_28584_1100416/</url>
+    <content><![CDATA[<blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20230724/28584_1100416.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<h2 id="1-What-is-Skeuomorphic-Design"><a href="#1-What-is-Skeuomorphic-Design" class="headerlink" title="1. What is Skeuomorphic Design?"></a>1. What is Skeuomorphic Design?</h2><h3 id="Skeuomorphic-Design"><a href="#Skeuomorphic-Design" class="headerlink" title="Skeuomorphic Design"></a>Skeuomorphic Design</h3><p>Skeuomorphism is a form of materializing information, also known as realism. A common method is to simulate the style of real-world objects in the interface, pursuing extreme textures and light and shadow, but it can also imitate the user’s familiar operation methods. By materializing information, it improves the efficiency of people’s information understanding, reduces learning costs, and allows users to become familiar with the interface faster.</p>
+<p>In games, a large number of skeuomorphic designs can not only present a more refined interface, but also fully mobilize the player’s sense of intimacy and substitution for the game, and the sense of immersion is even better. Therefore, we can often see the application of skeuomorphic design in games. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F50d7c80c-ba92-4082-8905-d38be6c573e4.png/size/"></p>
+<blockquote>
+<p><em>Flat vs. Skeuomorphic</em></p>
+</blockquote>
+<h3 id="Characteristics-of-Skeuomorphic-Design"><a href="#Characteristics-of-Skeuomorphic-Design" class="headerlink" title="Characteristics of Skeuomorphic Design"></a>Characteristics of Skeuomorphic Design</h3><ul>
+<li><strong>More intuitive</strong></li>
+</ul>
+<p>By combining information with real objects familiar to players, the presentation of information can be more intuitive and efficient. In <em>Sifu</em>, the game’s worldview and storyline are presented in the form of a collage, allowing players to see the plot at a glance, intuitively view and understand the development of the plot. The whole process is not only in line with the player’s cognition, but also allows players to better substitute into the story presented in front of them, and the information presented in the interface is also very intuitive and clear. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F151a2919-d0a2-4471-bd6b-4f55f445e970.png/size/"></p>
+<blockquote>
+<p><em>《Sifu》 Interface</em></p>
+</blockquote>
+<ul>
+<li><strong>Easy to accept</strong></li>
+</ul>
+<p>On an emotional level, skeuomorphic design makes it easier for players to accept and reduces the player’s learning cost. The design of the sign-in page of <em>Onmyoji: The Card Game</em> is presented in the form of a wishing wind chime. The interface is simple and clear, which not only conforms to the player’s cognition, making it easier for players to complete the sign-in process, but also allows players to complete fortune-telling during the sign-in, making it easier to understand and accept, and improving the sign-in rate from a design perspective. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fe38b7922-b545-40c1-afc8-47e136ad615b.png/size/"></p>
+<blockquote>
+<p><em>《Onmyoji: The Card Game》 Sign-in Page</em></p>
+</blockquote>
+<h3 id="Risks-of-Skeuomorphic-Design"><a href="#Risks-of-Skeuomorphic-Design" class="headerlink" title="Risks of Skeuomorphic Design"></a>Risks of Skeuomorphic Design</h3><p>Skeuomorphic design can create a realistic worldview scene in the game, strengthen the atmosphere of the game by simulating objects, and enhance the player’s psychological and emotional substitution. It can be said that skeuomorphic design is one of the preferred methods for game interface design. However, with the continuous enrichment of game interface information, it is difficult to present a large amount of interface information by simply using skeuomorphic design, and it is also difficult to control the layout and hierarchy of information. To a certain extent, it may put the cart before the horse. If used improperly, a clear interaction path cannot be achieved.</p>
+<h2 id="2-Why-Use-Skeuomorphic-Design"><a href="#2-Why-Use-Skeuomorphic-Design" class="headerlink" title="2. Why Use Skeuomorphic Design?"></a>2. Why Use Skeuomorphic Design?</h2><p>Skeuomorphic design in games is very beneficial to both the game itself and the players, so we often find such designs in games. Specifically, we can explore from two aspects:</p>
+<h3 id="Improve-the-Quality-of-the-Game-Interface"><a href="#Improve-the-Quality-of-the-Game-Interface" class="headerlink" title="Improve the Quality of the Game Interface"></a>Improve the Quality of the Game Interface</h3><p>On the one hand, for the game itself, the design of the skeuomorphic interface can combine the interface with simulated real elements and carry out artistic processing to form an interface design that meets the psychological needs of players. Through skeuomorphic design, it enhances the efficient matching of game interface information. At the same time, the exquisite and artistic design can also enhance the quality of the interface, easily express the theme of the work, and integrate with the game world. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F209b0cea-2cca-4af5-9e75-e2caf90f5bf7.png/size/"></p>
+<blockquote>
+<p><em>《Ratchet &amp; Clank》 Interface</em></p>
+</blockquote>
+<h3 id="Situational-Interface-Enhances-Player-Immersion"><a href="#Situational-Interface-Enhances-Player-Immersion" class="headerlink" title="Situational Interface Enhances Player Immersion"></a>Situational Interface Enhances Player Immersion</h3><p>On the other hand, especially for players, the exquisite&#x2F;realistic skeuomorphic design makes the game interface more situational by effectively connecting reality and the game, and players can also more easily substitute into the current scene and interface. In <em>The Last of Us</em>, the information is connected with the game plot scene, and the map is placed in the player’s audience and scene. This skeuomorphic method is used to enhance the player’s sense of substitution and immersion. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fae3363fa-9a68-478c-9bb0-f64af990f870.png/size/"></p>
+<blockquote>
+<p><em>《The Last of Us》 Interface</em></p>
+</blockquote>
+<h2 id="3-How-to-Make-the-Interface-in-the-Game-More-Realistic-and-Friendly"><a href="#3-How-to-Make-the-Interface-in-the-Game-More-Realistic-and-Friendly" class="headerlink" title="3. How to Make the Interface in the Game More Realistic and Friendly?"></a>3. How to Make the Interface in the Game More Realistic and Friendly?</h2><p>Skeuomorphic design can make the game interface more vivid, but if it is not designed properly, it will also lead to low adaptability, interface discordance, inability to present effective information, and other problems. Therefore, in the process of skeuomorphic design, designers should pay attention to:</p>
+<h3 id="Skeuomorphic-Elements-Associated-with-Reality"><a href="#Skeuomorphic-Elements-Associated-with-Reality" class="headerlink" title="Skeuomorphic Elements Associated with Reality"></a>Skeuomorphic Elements Associated with Reality</h3><p>The skeuomorphic interface design should simulate object elements that are more in line with the player’s psychological cognition, reduce learning costs, and allow players to naturally integrate into the game. In the interface design of <em>Gran Turismo 7</em>, the game combines the collection of cars with the display form of menus, allowing players to view the collected models by flipping through different menus. Through the element form of the real menu, players are more receptive to the collection of items, and the presentation of the interface is also more vivid. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F2b11bb7a-ce70-47a3-8285-1a3d40d35f96.png/size/"></p>
+<blockquote>
+<p><em>《Gran Turismo 7》 Interface</em></p>
+</blockquote>
+<p>In the skill page of <em>God of War Ragnarök</em>, the overall interface is designed in the form of stone rubbings, making the overall interface present a heavy effect. Players are like carving on a slate when upgrading skills and equipment, creating a more realistic feeling. In the equipment interface, each weapon has its own exclusive skeuomorphic background. For example, the Blades of Chaos uses the texture of the blade and lava to show the weapon characteristics; while the UI background of the Leviathan Axe shows the frozen attributes. Such a design helps players have a more intuitive and clear understanding of the weapon’s attributes. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F9e09de5b-1dd9-48f4-b292-96b85a3becd5.png.%20%0A%20%0A%0A%26nbsp%3B%20%0A%21%5B%5D%28https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fe6786c28-1cda-463b-ba63-644b8d2c177a.png/size/"></p>
+<blockquote>
+<p><em>《God of War Ragnarök》 Interface</em></p>
+</blockquote>
+<h3 id="Skeuomorphic-Design-More-in-Line-with-the-Game-Theme"><a href="#Skeuomorphic-Design-More-in-Line-with-the-Game-Theme" class="headerlink" title="Skeuomorphic Design More in Line with the Game Theme"></a>Skeuomorphic Design More in Line with the Game Theme</h3><p>Another key to skeuomorphic design is to make the skeuomorphic elements appearing in the interface conform to the theme of the game itself, so as to strengthen the unity between the interface and the theme and achieve a perfect integration of the interface and the game. <em>Hogwarts Legacy</em> uses the form of magic books and letters in the main interface, combining them with the interface. The yellowish letters and books reflect the mysterious and retro magical colors in the game, and also conform to the background of the times. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F5bcb1245-f1af-4e3e-b52e-9edf17c88b33.png/size/"></p>
+<blockquote>
+<p><em>《Hogwarts Legacy》 Interface</em></p>
+</blockquote>
+<p>In <em>God of War Ragnarök</em>, a skeuomorphic design that is very consistent with the theme of the game is also selected. In the interface, the form of Atreus’s old books, notebooks, and sketches is used to show the characters, worldview, plot, etc. of the game, which not only fits the theme of the game, but also strengthens the texture and style of the game, rendering the immersive atmosphere of the player’s game. Players are like opening a notepad, reading their own past. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fba6c00d9-bb77-4edd-8d9c-ab067b719bed.jpg/size/"></p>
+<blockquote>
+<p><em>《God of War Ragnarök》 Interface</em></p>
+</blockquote>
+<p><em>The Sinking City</em> also uses the elements of old and damaged notebooks, which fits the theme of detective games. The yellowish notebook shows various information in the game, allowing players to feel full of suspense and enhance the player’s detective experience. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F475a2e02-5e5f-485e-8478-d6d7fcd13bf4.png/size/"></p>
+<blockquote>
+<p><em>《The Sinking City》 Interface</em></p>
+</blockquote>
+<h3 id="Full-Integration-of-Interface-and-Game-Scene"><a href="#Full-Integration-of-Interface-and-Game-Scene" class="headerlink" title="Full Integration of Interface and Game Scene"></a>Full Integration of Interface and Game Scene</h3><p>The skeuomorphic design in the game needs to fully combine the interface information with the game scene to achieve better unity, and even integrate it into the game, so that players will not be detached from the game world. In <em>Red Dead Redemption 2</em>, the game combines the interface for purchasing items with the scene, allowing players to complete the purchase of items by flipping through the books in the scene, as if they were cowboys in that era, using ancient methods to obtain information about guns, and then selecting and placing orders. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F5d740af2-4c45-4442-9aef-02dfb470fa89.png/size/"></p>
+<blockquote>
+<p><em>《Red Dead Redemption 2》 Purchase Interface</em></p>
+</blockquote>
+<p>In <em>What Remains of Edith Finch</em>, the interface information is very cleverly combined with the items in the game, and the information prompts are integrated into the scene. The scattering of dandelion text brings a good visual experience to the player. Integrating the interface into the scene cannot appear isolated and abrupt, but should be designed in combination with the current scene, gameplay, etc. of the game, so that this combination is not far-fetched and does not jump out of the scene. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F397fa426-0c58-407a-86ab-8d66496fd565.png/size/"></p>
+<blockquote>
+<p><em>《What Remains of Edith Finch》 Interface</em></p>
+</blockquote>
+<h3 id="Deeper-Penetration-of-Skeuomorphism"><a href="#Deeper-Penetration-of-Skeuomorphism" class="headerlink" title="Deeper Penetration of Skeuomorphism"></a>Deeper Penetration of Skeuomorphism</h3><p>One of the goals of skeuomorphism is to allow players to continue their cognition and operation methods in life and reduce learning costs. Therefore, in addition to the external decoration of skeuomorphism, the skeuomorphic design of the player’s operation method is its deeper penetration.</p>
+<p>In <em>Ratchet &amp; Clank</em>, the interface is combined with the electronic screen in the game, connecting information with the scene and placing the interface in the game, making the overall scene produce a more three-dimensional sense of space, and the integration with the scene is also more harmonious and unified. Players seem to be clicking on a control screen, and they are also brought into this virtual world. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F2522fed2-e641-48ff-82fc-da55de9d7a8b.png/size/"></p>
+<blockquote>
+<p><em>《Ratchet &amp; Clank》 Interface</em></p>
+</blockquote>
+<p><em>Dead Space</em> very cleverly integrates the UI with characters and scenes, realizing a deeper exploration of skeuomorphism. The UI interface is completely integrated with the game characters. The character’s health bar in the game can be viewed from the glowing body on the character’s back; while the real-time information of the game is displayed through the character’s hologram in the game. Through the internal UI interface of the scene, the overall game is presented more unified, complete, and real; it also makes the UI, characters, and scenes have a strong connection. Players will not feel detached during the game, and can fully devote themselves to the horror atmosphere. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fe2d1f48e-ebb8-404e-bf31-d90f7ec9d069.png.%20%0A%20%0A%0A%26nbsp%3B%20%0A%21%5B%5D%28https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2Fa22643bc-29cd-4efe-9054-483a03aa31aa.png/size/"></p>
+<blockquote>
+<p><em>《Dead Space》 Interface</em></p>
+</blockquote>
+<h3 id="Use-Skeuomorphism-to-Build-Page-Hierarchy"><a href="#Use-Skeuomorphism-to-Build-Page-Hierarchy" class="headerlink" title="Use Skeuomorphism to Build Page Hierarchy"></a>Use Skeuomorphism to Build Page Hierarchy</h3><p>In skeuomorphic design, if it is not handled properly, it will cause confusion in the page hierarchy or inability to expand interface information. Therefore, in the design, attention should also be paid to using skeuomorphism to build the hierarchical relationship of the page. For example, in <em>Harry Potter: Magic Awakened</em>, cards and notebooks are used to unfold the plot, and the page hierarchy is constructed through the plane relationship, front and back occlusion relationship, color light and shadow of the objects in this skeuomorphic interface, and with the help of book page turning. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230724%2F58f0514d-8fd2-4006-85fb-4635556adf5f.png/size/"></p>
+<blockquote>
+<p><em>《Harry Potter: Magic Awakened》</em></p>
+</blockquote>
+<h2 id="4-Conclusion"><a href="#4-Conclusion" class="headerlink" title="4. Conclusion"></a>4. Conclusion</h2><p>The skeuomorphic style in the game world has left a deep impression on us. By simulating things and operation methods familiar to players, it can often allow players to quickly accept the game settings and substitute into the entire atmosphere. Skeuomorphic design not only conforms to various whimsical ideas in the game, but also enhances the player’s immersive experience, so it is widely used in many games. If you lack inspiration in design, you may consider referring to various clues in the real world, carrying out skeuomorphic design, and creating a more realistic and friendly interface!</p>
+]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
+      <tags>
+        <tag>User Experience</tag>
+        <tag>Immersion</tag>
+        <tag>Game Interface</tag>
+        <tag>Skeuomorphism</tag>
+        <tag>Realism</tag>
+        <tag>Affinity</tag>
+        <tag>UI Design</tag>
       </tags>
   </entry>
   <entry>
@@ -5357,6 +5357,83 @@ There is a website called Astats, which will count the game achievements of the 
       </tags>
   </entry>
   <entry>
+    <title>Text Overflow - The Old Problem of Game Localization</title>
+    <url>/2023/09/19/netease-ux-articles/news_20231008_28584_1113543/</url>
+    <content><![CDATA[<blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20231008/28584_1113543.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>Localization translation and interface adaptation are indispensable parts of the process of launching a game overseas. However, some troublesome problems are often encountered in this process. One of the most common problems is that many foreign language expressions are much longer in characters than the corresponding Chinese, causing the translated text to exceed the originally designed UI, icon, or text box, resulting in incomplete display.</p>
+<p>This situation hinders players’ understanding, and at the same time greatly reduces the sense of quality of the game in the minds of overseas players, which has a negative impact on retention and reputation. Localization translators always hope to accurately reproduce the meaning of the original language and maintain the original flavor as much as possible, achieving faithfulness, expressiveness, and elegance, but they often feel helpless because of the length of foreign language expressions.</p>
+<h2 id="1-Length-Comparison-of-Different-Languages"><a href="#1-Length-Comparison-of-Different-Languages" class="headerlink" title="1. Length Comparison of Different Languages"></a>1. Length Comparison of Different Languages</h2><p>Languages of different countries have their own unique writing norms, and the same is true in the localization of games. When performing localization translation, it is necessary to comprehensively consider the fields involved to ensure the accuracy of the translation and the integrity of the semantics.</p>
+<p>However, different languages have a general ratio of words when translated. For example, the ratio of English translated into Chinese is 1:1.6, while the ratio of Japanese and Korean translated into Chinese is about 1:1. In contrast, the text of some minor European languages is much longer. The ratio of German and French translated into Chinese is 1:1.8, and the ratio of Russian, Spanish, Italian, Portuguese, and Arabic translated into Chinese is as high as 1:2. The higher the word count ratio, the easier it is to cause the problem of translated text exceeding the box during the localization process. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2Fb430dff5-5c1c-479e-b84f-33700c328842.png/size/"></p>
+<p>Taking <em>Naraka: Bladepoint</em>, which is handled by the localization team under NetEase Leihuo UX, as an example, we analyzed the number of characters in the foreign language text and the number of characters in the Chinese text of the game, and obtained the risk of text exceeding the box in different languages in the game, as shown in the figure below. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2F147aa651-7f19-40a7-87b1-1c2058316515.png/size/"></p>
+<p>It can be seen that the risk of text exceeding the box in all 11 languages in the figure is greater than 50%. Japanese and Korean have about 60% probability of seeing the text window, while European minor languages are almost “completely wiped out”, becoming the hardest hit areas for exceeding the box, with a probability close to 80%. Therefore, it can be said that how to face and solve the problem of text exceeding the box during game localization is a “long-standing” problem faced by every language.</p>
+<h2 id="2-How-to-Reduce-the-Risk-of-Exceeding-the-Box"><a href="#2-How-to-Reduce-the-Risk-of-Exceeding-the-Box" class="headerlink" title="2. How to Reduce the Risk of Exceeding the Box?"></a>2. How to Reduce the Risk of Exceeding the Box?</h2><p>Although exceeding the box is a major problem that often occurs in the localization process of games, after years of exploration and experience accumulation, and in-depth exploration with technical team members, we can still find some potential methods to minimize the risk of exceeding the box of localized text in various languages, and even avoid this problem from the source as much as possible, so as to ensure the basic understanding and game experience of players in different countries and regions.</p>
+<h3 id="Game-Development-Stage"><a href="#Game-Development-Stage" class="headerlink" title="Game Development Stage"></a>Game Development Stage</h3><p>• <strong>Prepare for multiple languages when designing text boxes in the UI</strong></p>
+<p>If the game is intended to be released overseas at the beginning of its development, the UI team can comprehensively consider it in conjunction with the localization team at the beginning of the design. On the premise of ensuring interface design and interaction effects, the original text box can be appropriately expanded according to the length ratio of multiple languages to increase the text tolerance threshold of different languages.</p>
+<p>• <strong>Design scrolling effects for text boxes</strong></p>
+<p>Some Chinese expressions are very concise, using multiple compound sentences in just a few sentences, or having a strong classical Chinese nature (such as poems, ancient Chinese styles, etc.). Therefore, during the translation process, the number of characters in foreign languages may be 2-3 times longer than that of Chinese. In this case, when localizing game text, it is difficult for translators to significantly reduce the translation while retaining the original meaning. If the text box in the game is limited by the interface width and cannot be further expanded, you can consider making the text scroll to avoid the problem of exceeding the box.</p>
+<p>There are many benefits to this approach. Scrolling text can theoretically play text of any length and has strong inclusiveness; at the same time, there is no need to adjust the font and font size of the text, and the length of the text box does not need to be expanded to the maximum extent that the interface can bear; players can generally obtain and understand the information that the game wants to provide from the scrolling text.</p>
+<p>Of course, considering the current mainstream games at home and abroad, the design of scrolling text generally appears in the game in task names, equipment introductions, etc., and is not suitable for the problem of exceeding the box in all positions and content forms. Some of the reasons include that scrolling some text technically and programmatically will lead to reduced game performance and increased overhead, and when the text that requires context understanding is too long, it is easier to increase understanding barriers and reduce the reading experience.</p>
+<p>• <strong>Give character length suggestions</strong></p>
+<p>Compared with directly expanding the text box in UI design in the early stage of the project, giving text character length suggestions and finding the method of the longest character number can improve certain flexibility. Because this method can give more design space to UI and interaction, and at the same time, it can also minimize the risk of exceeding the box of the original Chinese (copywriting planners, system planners, etc. also know this character number suggestion) and localized translation.</p>
+<p>However, there are two points to note here:</p>
+<ol>
+<li><strong>The impact of resolution on text length:</strong> Text that has no problems may exceed the box and display incompletely after changing the resolution. Or, some fonts have been adjusted to the smallest font size, even if the adaptive (best fit, can adjust the font size or wrap) is turned on, the font size cannot be further reduced when the resolution is lowered.</li>
+</ol>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2F74b8e32c-f86d-4771-850c-7b7fdbe2af97.png/size/"></p>
+<p>Therefore, when the UI team gives suggestions on the length of text characters for text boxes, it is best to consider the various resolutions supported by the game in combination with the different platforms on which the game is launched.</p>
+<ol start="2">
+<li><strong>The impact of fonts:</strong> Even within the same language, different fonts will have a relatively obvious impact on the length of the displayed text. As shown below, the font of the first line of English is Arial, and the font of the second line of English is Times New Roman.</li>
+</ol>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2Fb5401acf-fb1a-4c76-8179-b6e18ecb82f9.png/size/"></p>
+<p>It can be clearly seen that the length of the same text will be different if it is displayed in different fonts. Therefore, if only a character limit is given, such as 4 characters, the translator uses a different font from the developer when using excel or other translation software, the length of the translation is likely to be different from the standard character length given by the development team.</p>
+<p>Let’s give another example: the developer set a maximum of 23 characters for a button in the game, and the font from the developer’s perspective is Times New Roman. The translator set the font to Arial when performing localization in the translation system. The translator translates the text in this button as:</p>
+<pre><code>&amp;nbsp; 
+</code></pre>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2F390df84a-d821-4ebf-b9fa-892c4ce0d6f1.jpg/size/"></p>
+<p>It can be seen that although the translator’s translation is exactly 23 characters, it still exceeds the box by one letter.</p>
+<p>Even if the upstream and downstream departments unify the font, simply giving a character limit is still not necessarily the most recommended solution. Because different translators have different translation habits and commonly used words, the same sentence will have multiple translations. For example:</p>
+<blockquote>
+<p><em>Buy this with gold</em></p>
+</blockquote>
+<blockquote>
+<p><em>With gold unlock it</em></p>
+</blockquote>
+<p>It can be seen that the number of characters in both translations is 18, but the following sentence exceeds the box by one letter compared to the above sentence. This problem will be more obvious in longer compound sentences.</p>
+<p>Therefore, the UI team can give character length suggestions based on “m, n”. For example, the length of a button is “mmmmmmn”. At this time, no matter what font or expression the translator uses, they only need to compare the length with “mmmmmmn” to determine whether there is a risk of exceeding the box.</p>
+<h3 id="Localization-Translation-Stage"><a href="#Localization-Translation-Stage" class="headerlink" title="Localization Translation Stage"></a>Localization Translation Stage</h3><p>In addition to the early operation of reducing the risk of text exceeding the box during the development and design stage of the game, the translation during the localization process is also an important stage to ensure that the game interface finally presented to overseas players does not exceed the box.</p>
+<p>• First of all, translators need to have enough understanding of the game content to be able to identify the possible location of the text during the translation stage and appropriately streamline the translation.</p>
+<p>For example, “Unlock in time-limited event”, a new translator may translate it as “You can unlock this item by the time-limited event”; and a translator who knows the game well enough can immediately judge that this sentence is likely to appear in a certain prop, the unlocking method interface (button) of a certain item, usually a small text box, so it can be directly translated as “Unlock by time-limited event”.</p>
+<p>• Use abbreviations instead of full spelling</p>
+<p>This method is common in secondary interfaces or later in the game (players have a prior understanding of the full spelling), and can also reduce the risk of text exceeding the box with high efficiency. Common abbreviations include: damage-DMG; attack-ATK; experience-EXP, etc.</p>
+<p>• Split sentences and reduce the use of conjunctions and prepositions during the localization process.</p>
+<p>For example, the translation of the following sentence: 奧义状态下再造成100点伤害提升至第3级.</p>
+<p>Dealing 100 damage by Hero’s Ultimate state and then raising to level 3.</p>
+<p>Upgrade to Lv.3: Deal 100 more damage by Hero’s Ultimate</p>
+<p>This translation divides the original complex expression into two sentences, avoiding the use of lengthy and difficult-to-understand compound sentences, which not only simplifies the translation, but also reduces the reading cost of players.</p>
+<h2 id="3-Summary"><a href="#3-Summary" class="headerlink" title="3. Summary"></a>3. Summary</h2><p>The problem of exceeding the box during the game localization translation process may be common in games on different platforms. We also found that this is a common problem in various languages, which not only affects the playability of the game and player reputation, but may also further hinder the retention of the game. Based on the experience of previous projects, we propose some solutions, aiming to avoid the problem of text exceeding the box as much as possible during the development and localization process of the game.</p>
+<p>First of all, we recommend that the localization issues be considered jointly by various functions at the game development stage, including UI, GUI, localization, planning, programming, etc. This means that the design of the game must take into account the differences between different languages and cultures from the beginning to ensure the playability and consistency of the game in different languages. Secondly, during the translation process, we recommend using professional translation software and tools to help identify and correct the problem of exceeding the box to ensure the accuracy and quality of the translation and improve the player experience.</p>
+<p>In short, the problem of exceeding the box is one of the challenges that must be faced in game localization. By taking appropriate measures during the development and translation process of the game, these problems can be avoided to the greatest extent, and a better game experience can be provided for players around the world.</p>
+]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
+      <tags>
+        <tag>User Experience</tag>
+        <tag>Game User Experience</tag>
+        <tag>Game Localization</tag>
+        <tag>UI Design</tag>
+        <tag>Text Overflow</tag>
+        <tag>Game Text Length</tag>
+        <tag>Translation Length Comparison</tag>
+        <tag>Multi-language Adaptation</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Expanding Design Principles: How Does Emotion Affect Game Experience?</title>
     <url>/2023/09/22/netease-ux-articles/news_20231008_28584_1113540/</url>
     <content><![CDATA[<blockquote>
@@ -5448,89 +5525,12 @@ There is a website called Astats, which will count the game achievements of the 
         <tag>User Experience</tag>
         <tag>Immersion</tag>
         <tag>Empathy</tag>
-        <tag>Game User Experience</tag>
         <tag>Emotional Design</tag>
+        <tag>Game User Experience</tag>
         <tag>Visceral Design</tag>
         <tag>Behavioral Design</tag>
         <tag>Reflective Design</tag>
         <tag>Sense of Accomplishment</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Text Overflow - The Old Problem of Game Localization</title>
-    <url>/2023/09/19/netease-ux-articles/news_20231008_28584_1113543/</url>
-    <content><![CDATA[<blockquote>
-<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20231008/28584_1113543.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
-</blockquote>
-<p>&nbsp; </p>
-<p>Localization translation and interface adaptation are indispensable parts of the process of launching a game overseas. However, some troublesome problems are often encountered in this process. One of the most common problems is that many foreign language expressions are much longer in characters than the corresponding Chinese, causing the translated text to exceed the originally designed UI, icon, or text box, resulting in incomplete display.</p>
-<p>This situation hinders players’ understanding, and at the same time greatly reduces the sense of quality of the game in the minds of overseas players, which has a negative impact on retention and reputation. Localization translators always hope to accurately reproduce the meaning of the original language and maintain the original flavor as much as possible, achieving faithfulness, expressiveness, and elegance, but they often feel helpless because of the length of foreign language expressions.</p>
-<h2 id="1-Length-Comparison-of-Different-Languages"><a href="#1-Length-Comparison-of-Different-Languages" class="headerlink" title="1. Length Comparison of Different Languages"></a>1. Length Comparison of Different Languages</h2><p>Languages of different countries have their own unique writing norms, and the same is true in the localization of games. When performing localization translation, it is necessary to comprehensively consider the fields involved to ensure the accuracy of the translation and the integrity of the semantics.</p>
-<p>However, different languages have a general ratio of words when translated. For example, the ratio of English translated into Chinese is 1:1.6, while the ratio of Japanese and Korean translated into Chinese is about 1:1. In contrast, the text of some minor European languages is much longer. The ratio of German and French translated into Chinese is 1:1.8, and the ratio of Russian, Spanish, Italian, Portuguese, and Arabic translated into Chinese is as high as 1:2. The higher the word count ratio, the easier it is to cause the problem of translated text exceeding the box during the localization process. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2Fb430dff5-5c1c-479e-b84f-33700c328842.png/size/"></p>
-<p>Taking <em>Naraka: Bladepoint</em>, which is handled by the localization team under NetEase Leihuo UX, as an example, we analyzed the number of characters in the foreign language text and the number of characters in the Chinese text of the game, and obtained the risk of text exceeding the box in different languages in the game, as shown in the figure below. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2F147aa651-7f19-40a7-87b1-1c2058316515.png/size/"></p>
-<p>It can be seen that the risk of text exceeding the box in all 11 languages in the figure is greater than 50%. Japanese and Korean have about 60% probability of seeing the text window, while European minor languages are almost “completely wiped out”, becoming the hardest hit areas for exceeding the box, with a probability close to 80%. Therefore, it can be said that how to face and solve the problem of text exceeding the box during game localization is a “long-standing” problem faced by every language.</p>
-<h2 id="2-How-to-Reduce-the-Risk-of-Exceeding-the-Box"><a href="#2-How-to-Reduce-the-Risk-of-Exceeding-the-Box" class="headerlink" title="2. How to Reduce the Risk of Exceeding the Box?"></a>2. How to Reduce the Risk of Exceeding the Box?</h2><p>Although exceeding the box is a major problem that often occurs in the localization process of games, after years of exploration and experience accumulation, and in-depth exploration with technical team members, we can still find some potential methods to minimize the risk of exceeding the box of localized text in various languages, and even avoid this problem from the source as much as possible, so as to ensure the basic understanding and game experience of players in different countries and regions.</p>
-<h3 id="Game-Development-Stage"><a href="#Game-Development-Stage" class="headerlink" title="Game Development Stage"></a>Game Development Stage</h3><p>• <strong>Prepare for multiple languages when designing text boxes in the UI</strong></p>
-<p>If the game is intended to be released overseas at the beginning of its development, the UI team can comprehensively consider it in conjunction with the localization team at the beginning of the design. On the premise of ensuring interface design and interaction effects, the original text box can be appropriately expanded according to the length ratio of multiple languages to increase the text tolerance threshold of different languages.</p>
-<p>• <strong>Design scrolling effects for text boxes</strong></p>
-<p>Some Chinese expressions are very concise, using multiple compound sentences in just a few sentences, or having a strong classical Chinese nature (such as poems, ancient Chinese styles, etc.). Therefore, during the translation process, the number of characters in foreign languages may be 2-3 times longer than that of Chinese. In this case, when localizing game text, it is difficult for translators to significantly reduce the translation while retaining the original meaning. If the text box in the game is limited by the interface width and cannot be further expanded, you can consider making the text scroll to avoid the problem of exceeding the box.</p>
-<p>There are many benefits to this approach. Scrolling text can theoretically play text of any length and has strong inclusiveness; at the same time, there is no need to adjust the font and font size of the text, and the length of the text box does not need to be expanded to the maximum extent that the interface can bear; players can generally obtain and understand the information that the game wants to provide from the scrolling text.</p>
-<p>Of course, considering the current mainstream games at home and abroad, the design of scrolling text generally appears in the game in task names, equipment introductions, etc., and is not suitable for the problem of exceeding the box in all positions and content forms. Some of the reasons include that scrolling some text technically and programmatically will lead to reduced game performance and increased overhead, and when the text that requires context understanding is too long, it is easier to increase understanding barriers and reduce the reading experience.</p>
-<p>• <strong>Give character length suggestions</strong></p>
-<p>Compared with directly expanding the text box in UI design in the early stage of the project, giving text character length suggestions and finding the method of the longest character number can improve certain flexibility. Because this method can give more design space to UI and interaction, and at the same time, it can also minimize the risk of exceeding the box of the original Chinese (copywriting planners, system planners, etc. also know this character number suggestion) and localized translation.</p>
-<p>However, there are two points to note here:</p>
-<ol>
-<li><strong>The impact of resolution on text length:</strong> Text that has no problems may exceed the box and display incompletely after changing the resolution. Or, some fonts have been adjusted to the smallest font size, even if the adaptive (best fit, can adjust the font size or wrap) is turned on, the font size cannot be further reduced when the resolution is lowered.</li>
-</ol>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2F74b8e32c-f86d-4771-850c-7b7fdbe2af97.png/size/"></p>
-<p>Therefore, when the UI team gives suggestions on the length of text characters for text boxes, it is best to consider the various resolutions supported by the game in combination with the different platforms on which the game is launched.</p>
-<ol start="2">
-<li><strong>The impact of fonts:</strong> Even within the same language, different fonts will have a relatively obvious impact on the length of the displayed text. As shown below, the font of the first line of English is Arial, and the font of the second line of English is Times New Roman.</li>
-</ol>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2Fb5401acf-fb1a-4c76-8179-b6e18ecb82f9.png/size/"></p>
-<p>It can be clearly seen that the length of the same text will be different if it is displayed in different fonts. Therefore, if only a character limit is given, such as 4 characters, the translator uses a different font from the developer when using excel or other translation software, the length of the translation is likely to be different from the standard character length given by the development team.</p>
-<p>Let’s give another example: the developer set a maximum of 23 characters for a button in the game, and the font from the developer’s perspective is Times New Roman. The translator set the font to Arial when performing localization in the translation system. The translator translates the text in this button as:</p>
-<pre><code>&amp;nbsp; 
-</code></pre>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20231008%2F390df84a-d821-4ebf-b9fa-892c4ce0d6f1.jpg/size/"></p>
-<p>It can be seen that although the translator’s translation is exactly 23 characters, it still exceeds the box by one letter.</p>
-<p>Even if the upstream and downstream departments unify the font, simply giving a character limit is still not necessarily the most recommended solution. Because different translators have different translation habits and commonly used words, the same sentence will have multiple translations. For example:</p>
-<blockquote>
-<p><em>Buy this with gold</em></p>
-</blockquote>
-<blockquote>
-<p><em>With gold unlock it</em></p>
-</blockquote>
-<p>It can be seen that the number of characters in both translations is 18, but the following sentence exceeds the box by one letter compared to the above sentence. This problem will be more obvious in longer compound sentences.</p>
-<p>Therefore, the UI team can give character length suggestions based on “m, n”. For example, the length of a button is “mmmmmmn”. At this time, no matter what font or expression the translator uses, they only need to compare the length with “mmmmmmn” to determine whether there is a risk of exceeding the box.</p>
-<h3 id="Localization-Translation-Stage"><a href="#Localization-Translation-Stage" class="headerlink" title="Localization Translation Stage"></a>Localization Translation Stage</h3><p>In addition to the early operation of reducing the risk of text exceeding the box during the development and design stage of the game, the translation during the localization process is also an important stage to ensure that the game interface finally presented to overseas players does not exceed the box.</p>
-<p>• First of all, translators need to have enough understanding of the game content to be able to identify the possible location of the text during the translation stage and appropriately streamline the translation.</p>
-<p>For example, “Unlock in time-limited event”, a new translator may translate it as “You can unlock this item by the time-limited event”; and a translator who knows the game well enough can immediately judge that this sentence is likely to appear in a certain prop, the unlocking method interface (button) of a certain item, usually a small text box, so it can be directly translated as “Unlock by time-limited event”.</p>
-<p>• Use abbreviations instead of full spelling</p>
-<p>This method is common in secondary interfaces or later in the game (players have a prior understanding of the full spelling), and can also reduce the risk of text exceeding the box with high efficiency. Common abbreviations include: damage-DMG; attack-ATK; experience-EXP, etc.</p>
-<p>• Split sentences and reduce the use of conjunctions and prepositions during the localization process.</p>
-<p>For example, the translation of the following sentence: 奧义状态下再造成100点伤害提升至第3级.</p>
-<p>Dealing 100 damage by Hero’s Ultimate state and then raising to level 3.</p>
-<p>Upgrade to Lv.3: Deal 100 more damage by Hero’s Ultimate</p>
-<p>This translation divides the original complex expression into two sentences, avoiding the use of lengthy and difficult-to-understand compound sentences, which not only simplifies the translation, but also reduces the reading cost of players.</p>
-<h2 id="3-Summary"><a href="#3-Summary" class="headerlink" title="3. Summary"></a>3. Summary</h2><p>The problem of exceeding the box during the game localization translation process may be common in games on different platforms. We also found that this is a common problem in various languages, which not only affects the playability of the game and player reputation, but may also further hinder the retention of the game. Based on the experience of previous projects, we propose some solutions, aiming to avoid the problem of text exceeding the box as much as possible during the development and localization process of the game.</p>
-<p>First of all, we recommend that the localization issues be considered jointly by various functions at the game development stage, including UI, GUI, localization, planning, programming, etc. This means that the design of the game must take into account the differences between different languages and cultures from the beginning to ensure the playability and consistency of the game in different languages. Secondly, during the translation process, we recommend using professional translation software and tools to help identify and correct the problem of exceeding the box to ensure the accuracy and quality of the translation and improve the player experience.</p>
-<p>In short, the problem of exceeding the box is one of the challenges that must be faced in game localization. By taking appropriate measures during the development and translation process of the game, these problems can be avoided to the greatest extent, and a better game experience can be provided for players around the world.</p>
-]]></content>
-      <categories>
-        <category>NetEase UX</category>
-      </categories>
-      <tags>
-        <tag>User Experience</tag>
-        <tag>Game User Experience</tag>
-        <tag>Game Localization</tag>
-        <tag>UI Design</tag>
-        <tag>Text Overflow</tag>
-        <tag>Game Text Length</tag>
-        <tag>Translation Length Comparison</tag>
-        <tag>Multi-language Adaptation</tag>
       </tags>
   </entry>
   <entry>
