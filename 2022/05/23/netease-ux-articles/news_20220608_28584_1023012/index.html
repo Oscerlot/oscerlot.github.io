@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>Automation in Practice - Procedural Content Generation | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/GDC/">
+                            GDC
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Balance/">
+                            Balance
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Automation/">
+                            Automation
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Procedural-Content-Generation/">
+                            Procedural Content Generation
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Simulation-Experiments/">
+                            Simulation Experiments
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Mathematical-Models/">
+                            Mathematical Models
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Fairness/">
+                            Fairness
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Pathfinding-Algorithms/">
+                            Pathfinding Algorithms
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Uniform-Distribution/">
+                            Uniform Distribution
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Perlin-Noise/">
+                            Perlin Noise
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Fractal-Noise/">
+                            Fractal Noise
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                Automation in Practice - Procedural Content Generation
+            
+            
+        </div>
+        <span class="post-date">
+            23 May, 2022
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20220608/28584_1023012.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a>)</p>
+</blockquote>
+<h2 id="GDC-2022"><a href="#GDC-2022" class="headerlink" title="GDC 2022"></a>GDC 2022</h2><p>From March 21st to March 25th this year, GDC 2022, the world’s largest, most authoritative, and most influential professional summit in the global game industry, was grandly held at the Moscone Center in San Francisco. In this year’s GDC, Leihuo UX was invited to give 17 presentations, distributed in 9 core presentations and 8 summit presentations, once again breaking the record of the Chinese game industry and leading the world.</p>
+<p>This article introduces the presentation “Automation in Practice: A Guide to Procedural Content Generation” by Zhou Yi, Senior Data Analyst at Leihuo UX, and Tianpeng, Data Mining Engineer at Leihuo UX.</p>
+<h2 id="Problems-We-Encountered-in-Game-Development"><a href="#Problems-We-Encountered-in-Game-Development" class="headerlink" title="Problems We Encountered in Game Development"></a>Problems We Encountered in Game Development</h2><p>When generating content and terrain for games, we encounter multiple problems, and these problems are likely to exist in many game design processes. For example, players always complain that the map design is unfair, the spawn points are unreasonable, the resources are unbalanced, and so on. For another example, given two maps, how to compare which map is better and fairer to both sides? Under a specific map, is it still fair if the two teams have different numbers of players? Is it easy to obtain items at the beginning? What size of the map can ensure fairness? Which random generation algorithm to choose? These are all likely to exist.</p>
+<p>The above summarizes the problems encountered in the generation of random content (such as maps). Next, we will explain how we use mathematical methods to achieve automated content generation from the perspectives of practice and simulation programs.</p>
+<p>In practice, from spawn point settings to map item placement, it will greatly affect the initial growth of players. The growth of players in the middle and late stages of the game mainly depends on the players’ own skills. Therefore, in order to reduce the interference of irrelevant factors (such as the operation and skills of different players), we will compare the effectiveness and fairness of the map in the early stage of the game. Comprehensive simulation experiments are an effective way to test these hypotheses, and the method of controlling variables is the key to simulation experiments.</p>
+<h2 id="The-Simulation-Experiment-We-Designed"><a href="#The-Simulation-Experiment-We-Designed" class="headerlink" title="The Simulation Experiment We Designed"></a>The Simulation Experiment We Designed</h2><p>In order to conduct simulation experiments, we designed a program. The background of the program is that two teams (red team and blue team) mine gold mines on the edge of a snow mountain, and both the gold mines and the snow mountain are algorithm-generated. The red team randomly spawns in the west (i.e., the left half), and the blue team randomly spawns in the east (i.e., the right half). Each team member uses the same pathfinding strategy. The game ends if the two teams meet (i.e., early stage) or the gold mine resources are exhausted. When the two teams meet for the first time, they may fight or share gold mine information, which will bring the game into the middle and late stages.</p>
+<p>Why do we use data from the early stages for experiments? First, these data are relatively easy to interpret, and the experimental results can be better applied to the application. In addition, the time-consuming of a single experiment is also a factor we consider. The faster a single experiment is, the more experiments we can do.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2F0d64b8e5-a49c-44e6-9fba-561676f66104.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;0d64b8e5-a49c-44e6-9fba-561676f66104.png"></p>
+<h2 id="The-Mathematical-Model-We-Designed"><a href="#The-Mathematical-Model-We-Designed" class="headerlink" title="The Mathematical Model We Designed"></a>The Mathematical Model We Designed</h2><p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2Fff76ae9e-ed34-4bfc-b357-33659571300b.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;ff76ae9e-ed34-4bfc-b357-33659571300b.png"></p>
+<p>In our mathematical model, the difference in gold coins obtained by two teams in a single game can reflect the difference in spawn points and resource locations, because they all use the same pathfinding method. The variance of the gold coin difference caused by thousands of games can reflect the stability of the map; the expectation of multiple experiments can reflect the fairness of the map; the variance of different maps can compare the quality of the map; the variance of different random generation algorithms can compare the effectiveness of the map.</p>
+<p>Let’s look at the following two maps, one with snow mountain piles and gold coin piles, and the other with only scattered gold coins. Can you directly see which map is more beneficial to the red team (born in the left half area)? Through our mathematical model, we do 3,000 experiments on each map, and we can now get the density map of the gold coin difference between the red team and the blue team.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2Fcfdc930d-a5fc-4d50-8d4c-38540592a51d.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;cfdc930d-a5fc-4d50-8d4c-38540592a51d.png"></p>
+<p>After our model analysis, Map 2 is symmetrical about the zero point, and it is more stable because the curve is narrow and high. Map 1 is not symmetrical, although its peak is zero. In addition, Map 1 has multiple peaks, and we can roughly see that Map 1 is more beneficial to the blue team. Now, we can do a Z-Test to verify this hypothesis: Map 1 is more beneficial to the blue team.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2F2c26a352-fdb0-475c-8991-fc6fc47a4eff.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;2c26a352-fdb0-475c-8991-fc6fc47a4eff.png"></p>
+<p>After the significance test, we know that the hypothesis is correct, that is, Map 1 is indeed more beneficial to the blue team.</p>
+<h2 id="Ways-to-Make-the-Map-Fair"><a href="#Ways-to-Make-the-Map-Fair" class="headerlink" title="Ways to Make the Map Fair"></a>Ways to Make the Map Fair</h2><p>We did a few things. First, we tried to determine the map size and team size. Generally, the larger the map, the smoother the curve, that is, the smaller the variance of the gold coin difference between the two teams, indicating that the stability of the map is higher.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2F5f53de8f-12c9-4602-ba8d-9a2158387cfe.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;5f53de8f-12c9-4602-ba8d-9a2158387cfe.png"></p>
+<p>On the other hand, as the number of red team members increases, the result is more beneficial to the red team; and as the number of blue team members increases, the result is more beneficial to the blue team. It can be seen that the number of people can indeed change the fairness of the map. This also answers the questions we raised earlier. The following table shows the μ values under different team sizes, where rows represent the blue team and columns represent the red team. It can be seen that most of the values in the table are negative, indicating that in most cases, the map is beneficial to the blue team.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2F1ea42523-35f3-43e9-b2d1-45e81554917e.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;1ea42523-35f3-43e9-b2d1-45e81554917e.png"></p>
+<p>In addition, we also designed a pathfinding algorithm, specifically referring to the strategy by which each person in the team finds gold coins, because the coefficient indicators of pathfinding may affect the final result of the experimental model. For the reliability of simulation experiments, when considering pathfinding strategy coefficients, at least 5 principles should be referred to: Everyone (AI) is always greedy for obtaining gold coins; they do not always follow a fixed route, but the randomness is limited; everyone uses the same pathfinding algorithm; they have a certain ability to escape traps; and they conform to human behavior characteristics. The following is a pathfinding strategy coefficient we designed. You can also design your own algorithm, but you need to consider these 5 principles when designing.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2Fe8ed45e3-7dbb-4696-9c10-c54b8ed2ab9b.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;e8ed45e3-7dbb-4696-9c10-c54b8ed2ab9b.png"></p>
+<p>And, we designed a random generation algorithm. The function of the random content generator is to generate obstacles, reward items, and so on. The mainstream algorithms are uniform distribution selection, Perlin noise, Fractal noise, etc. Here, we take uniform distribution as an example to illustrate how the random content generator works. The first step is to generate a matrix of the same size as the map, and each value is sampled according to a uniform distribution between 0.0 and 1.0. The second step is to traverse all elements of the matrix and get the positions with the largest k values. The third step is to display gold coins (or snow mountains) at these k positions.</p>
+<p>The figure below shows the gold coins generated by the uniform distribution selection algorithm. The left side is the value of the matrix, and the right side is the position of the gold coins.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2F7de40efd-6aee-4618-b20d-018e45ac0df3.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;7de40efd-6aee-4618-b20d-018e45ac0df3.png"></p>
+<p>The figure below shows the snow mountain generated by Perlin noise.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2F07b35e90-53c9-4b4f-b011-e264711210a7.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;07b35e90-53c9-4b4f-b011-e264711210a7.png"></p>
+<p>The figure below shows the snow mountain generated by Fractal noise.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2F085019c6-62c7-4f35-83aa-9e8b1e535ceb.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;085019c6-62c7-4f35-83aa-9e8b1e535ceb.png"></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Now that we have the mathematical tools, how can we automate the content generation process?</p>
+<p>First, design the map scale, reward quantity, obstacle quantity, and player quantity according to expert knowledge. Step two, set our indicator baseline, for example, sigma cannot exceed 30. Step three, define the “early stage”. Step four, choose the appropriate random generation algorithm. Step five, generate multiple simplified maps. Step six, conduct thousands of simulations on these simplified maps. Step seven, calculate the indicators. Finally, accept maps that meet the baseline.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2Fb6a829b0-ae35-4baa-9023-8ac2524382fb.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;b6a829b0-ae35-4baa-9023-8ac2524382fb.png"></p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2022/05/31/netease-ux-articles/news_20220607_28584_1022808/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2022/05/22/netease-ux-articles/news_20220607_28584_1022854/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>

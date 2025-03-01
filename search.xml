@@ -4066,6 +4066,52 @@
       </tags>
   </entry>
   <entry>
+    <title>Overseas Player &quot;Scream-degree&quot; Testing</title>
+    <url>/2019/01/01/netease-ux-articles/news_20191112_28584_848135/</url>
+    <content><![CDATA[<blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20191112/28584_848135.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>As a very important category in game user experience testing, “scream-degree” testing has always been a powerful tool for evaluating the quality of gameplay during the project initiation period.</p>
+<p>Many companies are also using this system for project rating and filtering. The many indicators in this system are crucial and are highly correlated with the market performance of the project after its launch.</p>
+<p>Starting from 2013, known as the first year of mobile games, major manufacturers began to comprehensively deploy in the mobile game market, accelerating their speed to seize the opportunity. This scene of competing powers also led to the explosion of the mobile game market in 2014.</p>
+<p>Consequently, this market situation also raised the production cost of mobile games to an unprecedented level. The result is that the competition to create a high-quality mobile game product that is acceptable to the market has become very fierce.</p>
+<p>On the other hand, the strategy of major manufacturers to fully deploy in mobile games and the rising overall development costs have created a situation that runs counter to each other. If you want to blossom everywhere and save costs to increase profits, the risk is too great for every company.</p>
+<p>Full-scale deployment is a good thing, but not every product will be successful. So you need to “use good steel on the blade.” Within the limited annual development budget, how to develop mobile game products that are most likely to be accepted by the market is a question that every manufacturer wants to try to figure out.</p>
+<p>In this process, “scream-degree testing” emerged and began to establish a stable and convincing mechanism for project evaluation.</p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191112%2F70e45727-48ff-4b60-a5ed-060856ab7d1a.jpg/size/" alt="Scream-degree Test"></p>
+<p>The so-called “scream-degree test” is to use a minimized version of the Demo containing the most core experience and gameplay of the product before the product is officially launched and starts to be developed vigorously. It collects indicators that can reflect the quality of the product’s core gameplay and future market potential, as well as player expectations, in the form of street interviews, and uses them for project rating and filtering.</p>
+<p>Through this filtering, we can more effectively invest more manpower, capital, etc., into products that are more likely to succeed in the future, and focus on deploying in core strategic markets.</p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191112%2F581ce8eb-faf4-4efb-ac2d-dac145a2ff09.jpg/size/" alt="Street Intercept"></p>
+<p>Everyone may have a question, why is this system called “scream-degree test” instead of “satisfaction test” or “fun test”?</p>
+<p>The answer is simple. Based on the above, the purpose of this test is to select products that can thrive in the future market as much as possible during the project’s infancy. Compared with the “satisfaction” survey of players’ satisfaction with the game (which itself may have an evaluation standard), the “scream-degree” tests the players’ “excitement” for the game, whether the game is beyond the players’ expectations, and whether it can make the players scream “OMG, buy it”. This is what we need to achieve in the test.</p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191112%2F07c7d792-0ed1-4e00-bd21-a5c8d2e3ae2d.jpg/size/" alt="OMG, buy it"></p>
+<p>If 2013 was a year of explosion for mobile games, then by 2018 and 2019, the red ocean market for domestic mobile games had also arrived. Without the demographic dividend, without the device dividend, and even without the policy dividend, the difficulty of obtaining game licenses is also increasing.</p>
+<p>So, what are the major game manufacturers considering now? Going global. Using their own R&amp;D strength and their vision and research on overseas markets, many domestic manufacturers have begun to continuously develop or directly distribute to overseas markets. In the process of this strategic adjustment, “scream-degree testing” is also an indispensable part. Because no one will think that the competition in foreign markets is much smaller than that in the domestic market.</p>
+<p>You know, although the cost of acquiring users for Chinese mobile games is higher than that in Southeast Asia and other places, it is still much lower than that in relatively developed and mature countries in Europe, America, or East Asia. This also means that the cost of user acquisition after the game goes overseas is still a major barrier to entry. In terms of core gameplay, to win the favor of users, we also need to understand what they think about the game.</p>
+<p>We recently had a new casual game project, planning to go overseas for distribution. Accordingly, according to the company’s internal project initiation process, we also planned this “scream-degree test for foreign players” together.</p>
+<p>In order to improve the efficiency of the test and provide quick review and decision-making support for the decision-making level, we chose to conduct street intercepts of foreign players in Hangzhou.</p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191112%2F6ed87df4-f99d-46d9-9154-af20a751bdef.jpg/size/" alt="Hangzhou Street Intercept"></p>
+<p>The main locations considered include the bar streets where foreigners in Hangzhou mainly hang out, the international student teaching buildings and dormitories of various university campuses, the office buildings where foreign working people hang out, the major business districts in the city center, some famous scenic spots along the West Lake, and some personal resources, such as the game night that the user researcher participates in.</p>
+<p>We combined the time when foreigners appear and tactically carried out “surprise attacks” at various locations. For example, in office buildings, we tried to conduct street intercepts at noon or dusk, which can effectively improve the efficiency of intercepts and the hit rate of players; for example, on university campuses, we mainly conducted intercepts in the afternoon when international students were leaving class, etc.</p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191112%2Fbb4387c8-ac1b-4c3a-8238-0a57c73324c8.jpg/size/" alt="University Campus Street Intercept"></p>
+<p>Of course, we will strictly control the demographic ratio, such as male and female players, working people and students, in the execution of the test in combination with the product positioning. In this way, the information we collect will be more convincing. The specific implementation method we adopted was to record with a mobile app and manually record the players’ specific verbal feedback and operational problems.</p>
+<p>Overall, the scream-degree test for foreign players is much more difficult than for domestic players. In the later stage, we will also gradually develop scream-degree tests for foreigners in other cities, including some overseas cities. North America, Japan, and some countries in Southeast Asia are important markets for games to go overseas. Conducting tests in these local areas and collecting the most authentic feedback from players is also one of the strategies we will continue to implement.</p>
+]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
+      <tags>
+        <tag>User Experience</tag>
+        <tag>Game User Research</tag>
+        <tag>Scream-degree Test</tag>
+        <tag>Overseas Market</tag>
+        <tag>Game Localization</tag>
+        <tag>Street Intercept</tag>
+        <tag>Core Gameplay</tag>
+        <tag>Project Evaluation</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>The Intertwined Relationships of Various Tools in Data Analysis</title>
     <url>/2019/11/06/netease-ux-articles/news_20191108_28584_847506/</url>
     <content><![CDATA[<blockquote>
@@ -4138,52 +4184,6 @@
         <tag>Data Processing</tag>
         <tag>Time Functions</tag>
         <tag>Regular Expressions</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Overseas Player &quot;Scream-degree&quot; Testing</title>
-    <url>/2019/01/01/netease-ux-articles/news_20191112_28584_848135/</url>
-    <content><![CDATA[<blockquote>
-<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20191112/28584_848135.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
-</blockquote>
-<p>As a very important category in game user experience testing, “scream-degree” testing has always been a powerful tool for evaluating the quality of gameplay during the project initiation period.</p>
-<p>Many companies are also using this system for project rating and filtering. The many indicators in this system are crucial and are highly correlated with the market performance of the project after its launch.</p>
-<p>Starting from 2013, known as the first year of mobile games, major manufacturers began to comprehensively deploy in the mobile game market, accelerating their speed to seize the opportunity. This scene of competing powers also led to the explosion of the mobile game market in 2014.</p>
-<p>Consequently, this market situation also raised the production cost of mobile games to an unprecedented level. The result is that the competition to create a high-quality mobile game product that is acceptable to the market has become very fierce.</p>
-<p>On the other hand, the strategy of major manufacturers to fully deploy in mobile games and the rising overall development costs have created a situation that runs counter to each other. If you want to blossom everywhere and save costs to increase profits, the risk is too great for every company.</p>
-<p>Full-scale deployment is a good thing, but not every product will be successful. So you need to “use good steel on the blade.” Within the limited annual development budget, how to develop mobile game products that are most likely to be accepted by the market is a question that every manufacturer wants to try to figure out.</p>
-<p>In this process, “scream-degree testing” emerged and began to establish a stable and convincing mechanism for project evaluation.</p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191112%2F70e45727-48ff-4b60-a5ed-060856ab7d1a.jpg/size/" alt="Scream-degree Test"></p>
-<p>The so-called “scream-degree test” is to use a minimized version of the Demo containing the most core experience and gameplay of the product before the product is officially launched and starts to be developed vigorously. It collects indicators that can reflect the quality of the product’s core gameplay and future market potential, as well as player expectations, in the form of street interviews, and uses them for project rating and filtering.</p>
-<p>Through this filtering, we can more effectively invest more manpower, capital, etc., into products that are more likely to succeed in the future, and focus on deploying in core strategic markets.</p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191112%2F581ce8eb-faf4-4efb-ac2d-dac145a2ff09.jpg/size/" alt="Street Intercept"></p>
-<p>Everyone may have a question, why is this system called “scream-degree test” instead of “satisfaction test” or “fun test”?</p>
-<p>The answer is simple. Based on the above, the purpose of this test is to select products that can thrive in the future market as much as possible during the project’s infancy. Compared with the “satisfaction” survey of players’ satisfaction with the game (which itself may have an evaluation standard), the “scream-degree” tests the players’ “excitement” for the game, whether the game is beyond the players’ expectations, and whether it can make the players scream “OMG, buy it”. This is what we need to achieve in the test.</p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191112%2F07c7d792-0ed1-4e00-bd21-a5c8d2e3ae2d.jpg/size/" alt="OMG, buy it"></p>
-<p>If 2013 was a year of explosion for mobile games, then by 2018 and 2019, the red ocean market for domestic mobile games had also arrived. Without the demographic dividend, without the device dividend, and even without the policy dividend, the difficulty of obtaining game licenses is also increasing.</p>
-<p>So, what are the major game manufacturers considering now? Going global. Using their own R&amp;D strength and their vision and research on overseas markets, many domestic manufacturers have begun to continuously develop or directly distribute to overseas markets. In the process of this strategic adjustment, “scream-degree testing” is also an indispensable part. Because no one will think that the competition in foreign markets is much smaller than that in the domestic market.</p>
-<p>You know, although the cost of acquiring users for Chinese mobile games is higher than that in Southeast Asia and other places, it is still much lower than that in relatively developed and mature countries in Europe, America, or East Asia. This also means that the cost of user acquisition after the game goes overseas is still a major barrier to entry. In terms of core gameplay, to win the favor of users, we also need to understand what they think about the game.</p>
-<p>We recently had a new casual game project, planning to go overseas for distribution. Accordingly, according to the company’s internal project initiation process, we also planned this “scream-degree test for foreign players” together.</p>
-<p>In order to improve the efficiency of the test and provide quick review and decision-making support for the decision-making level, we chose to conduct street intercepts of foreign players in Hangzhou.</p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191112%2F6ed87df4-f99d-46d9-9154-af20a751bdef.jpg/size/" alt="Hangzhou Street Intercept"></p>
-<p>The main locations considered include the bar streets where foreigners in Hangzhou mainly hang out, the international student teaching buildings and dormitories of various university campuses, the office buildings where foreign working people hang out, the major business districts in the city center, some famous scenic spots along the West Lake, and some personal resources, such as the game night that the user researcher participates in.</p>
-<p>We combined the time when foreigners appear and tactically carried out “surprise attacks” at various locations. For example, in office buildings, we tried to conduct street intercepts at noon or dusk, which can effectively improve the efficiency of intercepts and the hit rate of players; for example, on university campuses, we mainly conducted intercepts in the afternoon when international students were leaving class, etc.</p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20191112%2Fbb4387c8-ac1b-4c3a-8238-0a57c73324c8.jpg/size/" alt="University Campus Street Intercept"></p>
-<p>Of course, we will strictly control the demographic ratio, such as male and female players, working people and students, in the execution of the test in combination with the product positioning. In this way, the information we collect will be more convincing. The specific implementation method we adopted was to record with a mobile app and manually record the players’ specific verbal feedback and operational problems.</p>
-<p>Overall, the scream-degree test for foreign players is much more difficult than for domestic players. In the later stage, we will also gradually develop scream-degree tests for foreigners in other cities, including some overseas cities. North America, Japan, and some countries in Southeast Asia are important markets for games to go overseas. Conducting tests in these local areas and collecting the most authentic feedback from players is also one of the strategies we will continue to implement.</p>
-]]></content>
-      <categories>
-        <category>NetEase UX</category>
-      </categories>
-      <tags>
-        <tag>User Experience</tag>
-        <tag>Game User Research</tag>
-        <tag>Scream-degree Test</tag>
-        <tag>Overseas Market</tag>
-        <tag>Game Localization</tag>
-        <tag>Street Intercept</tag>
-        <tag>Core Gameplay</tag>
-        <tag>Project Evaluation</tag>
       </tags>
   </entry>
   <entry>
@@ -6113,7 +6113,7 @@
   </entry>
   <entry>
     <title>Sure: Server Opening Strategies for Multiplayer Online Games from a Big Data Perspective</title>
-    <url>/2025/03/01/netease-ux-articles/news_20210721_28584_961277/</url>
+    <url>/2021/07/21/netease-ux-articles/news_20210721_28584_961277/</url>
     <content><![CDATA[<blockquote>
 <p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20210721/28584_961277.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
 </blockquote>
@@ -6133,6 +6133,9 @@
 <hr>
 <p>At the beginning of this year, he was successfully promoted to Data Mining Supervisor, and he is also one of the youngest supervisors to be promoted in NetEase in the same period. Let us look forward to his more achievements in the field of data mining and more active presence on the GDC stage!</p>
 ]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
       <tags>
         <tag>User Experience</tag>
         <tag>A Chinese Ghost Story</tag>
@@ -6326,7 +6329,7 @@
   </entry>
   <entry>
     <title>Is Beauty Objective or Subjective? - Characters and Appearances in Games</title>
-    <url>/2025/03/01/netease-ux-articles/news_20211012_28584_978017/</url>
+    <url>/2021/09/24/netease-ux-articles/news_20211012_28584_978017/</url>
     <content><![CDATA[<blockquote>
 <p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20211012/28584_978017.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
 </blockquote>
@@ -6364,6 +6367,9 @@
 <p>In addition, the fit of the skin and the character is another very key factor. In our research process, we found that players have a specific “color positioning” for each character of <em>Naraka: Bladepoint</em>. For example, players think that Ning Hongye should be red, Kurumi should be pink, and Canaan should be white. This will also become another important factor affecting players’ purchase. For example, although the quality of Kurumi’s pink appearance is not the highest, even just blue, players’ evaluation of it will exceed many higher-quality skins.</p>
 <h2 id="Final-Thoughts"><a href="#Final-Thoughts" class="headerlink" title="Final Thoughts"></a>Final Thoughts</h2><p>Returning to the question at the beginning of the full text: what kind of characters and appearances will be favored by players, it is difficult to come to a certain answer. People’s views on “beauty” have been changing and have never been unified, but from the above discussion, we may be able to get a glimpse of the aesthetic concepts of different players. In fact, from another perspective, the design of each character image or skin is the product of the careful conception of art designers. After being imported into the game, there may be comparisons of high and low sales, but everyone’s pursuit of beauty is always unrelenting. Perhaps it is precisely because of their wild imagination that people’s cognition of “beauty” has no conclusion.</p>
 ]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
       <tags>
         <tag>User Research</tag>
         <tag>Player Preference</tag>
@@ -6569,7 +6575,7 @@
   </entry>
   <entry>
     <title>What We Talk About When We Talk About Map Data Visualization</title>
-    <url>/2024/10/12/netease-ux-articles/news_20211019_28584_979953/</url>
+    <url>/2021/10/12/netease-ux-articles/news_20211019_28584_979953/</url>
     <content><![CDATA[<blockquote>
 <p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20211019/28584_979953.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
 </blockquote>
@@ -7082,7 +7088,7 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
   </entry>
   <entry>
     <title>The Secret to the Longevity of Popular Japanese Otome Mobile Games</title>
-    <url>/2025/03/01/netease-ux-articles/news_20211108_28584_984383/</url>
+    <url>/2021/11/05/netease-ux-articles/news_20211108_28584_984383/</url>
     <content><![CDATA[<blockquote>
 <p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20211108/28584_984383.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
 </blockquote>
@@ -7121,6 +7127,9 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
 </ol>
 <p>While doing the above three points, <em>Ensemble Stars!!</em> also maintained good publicity channels. In addition to the official stable publicity, old users also brought new players to the game, so the game has a long life.</p>
 ]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
       <tags>
         <tag>User Experience</tag>
         <tag>User Research</tag>
@@ -7131,11 +7140,6 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
         <tag>Character Building</tag>
         <tag>Game Content</tag>
         <tag>Game Operation</tag>
-        <tag>Ensemble Stars!!</tag>
-        <tag>DREAM!ing</tag>
-        <tag>I-Chu</tag>
-        <tag>MakeS</tag>
-        <tag>User Experience4</tag>
       </tags>
   </entry>
   <entry>
@@ -7297,7 +7301,7 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
   </entry>
   <entry>
     <title>Is What&#39;s Last the Least Important? A Brief Discussion on Serial Position Effect</title>
-    <url>/2025/03/01/netease-ux-articles/news_20211115_28584_985625/</url>
+    <url>/2019/01/01/netease-ux-articles/news_20211115_28584_985625/</url>
     <content><![CDATA[<blockquote>
 <p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
 </blockquote>
@@ -7321,6 +7325,9 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
 <p>Studies have shown that the serial position effect also has a certain impact on attribution. In combat games, the performance in the late stage is often considered by players to have a more decisive effect on the final result. At the same time, because of the recency effect, the effect of the end of the game is easier to remember than the effect of the middle part of the game, which will have an important impact on the player’s experience and evaluation. Therefore, the user experience in the final part is also crucial.</p>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>The serial position effect is very common in people’s daily life and cognitive behavior, and plays a subtle role in people’s decision-making, attribution, and evaluation. Relevant scholars also pointed out that when acquaintances interact, the recency effect plays a greater role; when interacting with strangers, the primacy effect plays a greater role. Reasonably using the cognitive law of the serial position effect according to the situation will help designers create a smoother user experience and obtain higher user evaluations.</p>
 ]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
   </entry>
   <entry>
     <title>Considerations for Game Map Design</title>
@@ -7809,7 +7816,7 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
   </entry>
   <entry>
     <title>Emotional Connection: How Games Capture Your Heart</title>
-    <url>/2025/03/01/netease-ux-articles/news_20211209_28584_990927/</url>
+    <url>/2021/12/01/netease-ux-articles/news_20211209_28584_990927/</url>
     <content><![CDATA[<blockquote>
 <p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20211209/28584_990927.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
 </blockquote>
@@ -7842,6 +7849,9 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
 <hr>
 <h2 id="III-Conclusion"><a href="#III-Conclusion" class="headerlink" title="III. Conclusion"></a>III. Conclusion</h2><p>Games do not only attract players with storylines. What is more attractive than content and plot are emotional factors. In the process of being in the game, players can further have the desire to explore because of the stimulation of emotions such as joy, anger, sorrow, and happiness, and these emotional energies are also the deep purpose of players’ investment in the game. Only by achieving emotional connection and the reproduction of emotional connection can the game firmly grasp the user’s heart.</p>
 ]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
       <tags>
         <tag>Game Immersion</tag>
         <tag>Emotional Connection</tag>
@@ -7855,7 +7865,7 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
   </entry>
   <entry>
     <title>Recommendation Systems: The MAB Problem and Bandit Algorithms</title>
-    <url>/2025/03/01/netease-ux-articles/news_20211209_28584_990929/</url>
+    <url>/2021/11/30/netease-ux-articles/news_20211209_28584_990929/</url>
     <content><![CDATA[<blockquote>
 <p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20211209/28584_990929.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
 </blockquote>
@@ -7887,6 +7897,9 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
 </ul>
 <h2 id="IV-Summary"><a href="#IV-Summary" class="headerlink" title="IV. Summary"></a>IV. Summary</h2><p>Bandit algorithms are a general term for a class of algorithms that can be used to solve the MAB problem of recommendation systems. In fact, it can also be used to solve the cold start problem, which is left for readers to think about. In addition to the Thompson sampling algorithm, common Bandit algorithms also include the UCB algorithm, the Epsilon-greedy algorithm, and others.</p>
 ]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
       <tags>
         <tag>Recommendation System</tag>
         <tag>MAB Problem</tag>
@@ -8074,7 +8087,7 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
   </entry>
   <entry>
     <title>What Do Players of &quot;Buy-to-Play Otome Games&quot; Really Like?</title>
-    <url>/2025/03/01/netease-ux-articles/news_20220607_28584_1022838/</url>
+    <url>/2022/05/16/netease-ux-articles/news_20220607_28584_1022838/</url>
     <content><![CDATA[<blockquote>
 <p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20220607/28584_1022838.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
 </blockquote>
@@ -8140,6 +8153,9 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
 <p>Players will make friends spontaneously through Weibo or communities. Only by playing the game will they have a common topic and maintain a relationship. Therefore, under the influence of this small circle culture, players will buy the game itself, complete the game, and communicate and interact with like-minded people.</p>
 <h2 id="6-Smooth-Reading-Experience-Brought-by-Buy-to-Play"><a href="#6-Smooth-Reading-Experience-Brought-by-Buy-to-Play" class="headerlink" title="6. Smooth Reading Experience Brought by Buy-to-Play"></a>6. Smooth Reading Experience Brought by Buy-to-Play</h2><p>Unlike free mobile games, buy-to-play otome games often do not charge players any fees after paying the amount of the game itself. The phenomenon of script reading stalls caused by level-up and level-stuck in mobile games is uncommon in buy-to-play games. Players can reasonably arrange their time and read the plot content they like in one go. Many players often mind the reading stall caused by the bundling of plot and level in mobile games. On the way to wait for the upgrade, players may have forgotten the plot content of the previous chapter, thus interfering with the player’s immersive experience. The smoother reading experience is also the reason why players will choose buy-to-play otome games.</p>
 ]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
       <tags>
         <tag>User Research</tag>
         <tag>Narrative</tag>
@@ -8215,7 +8231,7 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
   </entry>
   <entry>
     <title>Where Did All the Mothers in Video Games Go?</title>
-    <url>/2025/03/01/netease-ux-articles/news_20220607_28584_1022869/</url>
+    <url>/2022/05/08/netease-ux-articles/news_20220607_28584_1022869/</url>
     <content><![CDATA[<blockquote>
 <p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20220607/28584_1022869.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
 </blockquote>
@@ -8277,6 +8293,9 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
 <p>If one day we want to experience a warm and comfortable journey in the game, it is not impossible to join a nagging mother to accompany you.</p>
 <p>Finally, I would like to dedicate this article to all mothers in the world, Happy Mother’s Day!</p>
 ]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
       <tags>
         <tag>User Experience</tag>
         <tag>User Research</tag>
@@ -8289,7 +8308,7 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
   </entry>
   <entry>
     <title>Online Intimate Relationships and In-Game Purchases</title>
-    <url>/2025/03/01/netease-ux-articles/news_20220607_28584_1022875/</url>
+    <url>/2022/05/14/netease-ux-articles/news_20220607_28584_1022875/</url>
     <content><![CDATA[<blockquote>
 <p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20220607/28584_1022875.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
 </blockquote>
@@ -8321,6 +8340,9 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
 <p>Finally, the intimate relationship that this article focuses on and discusses is a narrow intimate relationship. From a broad perspective, parent-child, kinship, friends, etc. are all within the scope of intimate relationships. They are also affected by intimacy and other factors to a certain extent. Will affect the behavior of users&#x2F;players. These interpersonal relationships can more or less find a correspondence in current online games - such as sworn brothers, fixed teams, gangs, etc. commonly seen in major games. Therefore, broad intimate relationships are also worthy of attention for user researchers, especially game user experience researchers.</p>
 <p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220607%2Fa1f899aa-b886-424f-9b81-94c06c44af88.jpg/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220607&#x2F;a1f899aa-b886-424f-9b81-94c06c44af88.jpg"></p>
 ]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
       <tags>
         <tag>User Experience</tag>
         <tag>User Research</tag>
@@ -8334,8 +8356,8 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
       </tags>
   </entry>
   <entry>
-    <title>Leihuo UX | GDC 2022 Presentation Transcript: Automation in Practice - Procedural Content Generation</title>
-    <url>/2025/03/01/netease-ux-articles/news_20220608_28584_1023012/</url>
+    <title>Automation in Practice - Procedural Content Generation</title>
+    <url>/2022/05/23/netease-ux-articles/news_20220608_28584_1023012/</url>
     <content><![CDATA[<blockquote>
 <p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20220608/28584_1023012.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a>)</p>
 </blockquote>
@@ -8371,6 +8393,9 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
 <p>First, design the map scale, reward quantity, obstacle quantity, and player quantity according to expert knowledge. Step two, set our indicator baseline, for example, sigma cannot exceed 30. Step three, define the “early stage”. Step four, choose the appropriate random generation algorithm. Step five, generate multiple simplified maps. Step six, conduct thousands of simulations on these simplified maps. Step seven, calculate the indicators. Finally, accept maps that meet the baseline.</p>
 <p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220608%2Fb6a829b0-ae35-4baa-9023-8ac2524382fb.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220608&#x2F;b6a829b0-ae35-4baa-9023-8ac2524382fb.png"></p>
 ]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
       <tags>
         <tag>GDC</tag>
         <tag>Balance</tag>
@@ -10175,6 +10200,67 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
       </tags>
   </entry>
   <entry>
+    <title>&#39;Can someone help Kurumi?&#39; — Are Female Characters in Games Really Weak?</title>
+    <url>/2022/07/05/netease-ux-articles/news_20220720_28584_1031927/</url>
+    <content><![CDATA[<blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20220720/28584_1031927.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a>)</p>
+</blockquote>
+<p>“Can someone help Kurumi?” — This is the most famous line of the hero Kurumi (Hu Tao) in the game <em>Naraka: Bladepoint</em>. Kurumi is always easily targeted and besieged by enemies on the battlefield, and her classic voice line is also used very frequently, becoming a well-known mantra among <em>Naraka: Bladepoint</em> players.</p>
+<p>But, is Kurumi really weak?</p>
+<p>Let’s take a look at the actual combat situation: In an impressive trio match in last autumn’s Naraka Championship, Bilibili Gaming (BKG) player Huya丶niko saved his teammates at the last critical moment. He turned the tide with Kurumi and won the title of “God of War”. In daily games, many skilled players also say that Kurumi’s solo hero ranking is the most difficult, but also the most challenging.</p>
+<p>Perhaps it can be said that Kurumi is difficult to operate, but if played well, she can bring infinite possibilities to the team. High-level Kurumi players often become the “mastermind” of a team. It can be seen that Kurumi is not really weak.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fe0fbdced-8e98-4e79-8705-c1d9fb72c0ae.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;e0fbdced-8e98-4e79-8705-c1d9fb72c0ae.png"></p>
+<blockquote>
+<p><em>Huya丶niko won the title of “God of War” in the Naraka Championship</em></p>
+</blockquote>
+<p>So why do players often habitually think that these female characters are usually in a weak position in the game and need help? This article will analyze the positioning and changes of female characters in games in recent years from the following three aspects, and whether they are really “weak”.</p>
+<h2 id="1-The-Image-and-Positioning-of-Female-Characters-in-Early-Games"><a href="#1-The-Image-and-Positioning-of-Female-Characters-in-Early-Games" class="headerlink" title="1. The Image and Positioning of Female Characters in Early Games"></a>1. The Image and Positioning of Female Characters in Early Games</h2><p>In some early game works, there were indeed many female game characters who really “needed to be saved by others to survive”.</p>
+<h3 id="The-Universal-Narrative-Formula-of-“Saving-the-Maiden”"><a href="#The-Universal-Narrative-Formula-of-“Saving-the-Maiden”" class="headerlink" title="The Universal Narrative Formula of “Saving the Maiden”"></a>The Universal Narrative Formula of “Saving the Maiden”</h3><p>Whether it’s the frequent appearance of “saving the kidnapped Peach” in the Super Mario series, or “finding the crystal and saving the princess” in the Zelda series, I believe many players are familiar with it. In fact, there are many similar plots of saving Princess Peach - Damsel in Distress is a relatively common narrative framework in early games. It comes from the French Demoiselle en Détresse, which can be simply translated as “a maiden in danger”. In such narratives, regardless of whether the female character has combat power, they are often in a helpless image of danger in the story, and are often set as the core incentive or motivation for the male protagonist to start the adventure.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fe0188a87-eb35-4254-ae6e-487ef906bfe2.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;e0188a87-eb35-4254-ae6e-487ef906bfe2.png"></p>
+<p>These female characters usually appear as princesses, wives or sisters of male protagonists. When analyzing such female characters, the subject&#x2F;object dichotomy is usually used, that is, the subject acts and the object is acted upon. The subject can be understood as the protagonist, the central character of the story, and generally the main playable character in the game. In the Damsel in Distress narrative, it is usually assumed that the male is the subject and the female is placed in the role of the object. In the game, she usually becomes “the reward to be won”, “the treasure to be found”, or “the goal to be achieved”.</p>
+<h3 id="The-Gender-Perspective-Behind-the-Story-Narration"><a href="#The-Gender-Perspective-Behind-the-Story-Narration" class="headerlink" title="The Gender Perspective Behind the Story Narration"></a>The Gender Perspective Behind the Story Narration</h3><p>The story narration of a game can usually reflect the perspective of the game maker and the worldview they want to express, and it will inevitably be reflected in the game. <em>Grand Theft Auto (GTA)</em>‘s gender controversy, objectification of female characters, and lack of inclusivity are often criticized: there are no female characters that can be played in the first person, no female characters that can influence the main storyline, and most female NPCs are also labeled with a single “sexy” tag. Every main poster of <em>GTA</em> must have a woman wearing overly revealing clothes, and the protagonist’s wife in the game is also set as a stripper.</p>
+<p>Whether it is a game or a film and television work, if you want players to be immersed, a sense of story substitution is essential. Imagine, if female characters in the game can be arbitrarily abused, how will female players feel? Are the female game characters labeled “sexy” and “weak” a stereotype or an invisible misogynistic tendency? Nearly half of the game players in the United States are women, while women account for only 24% of the game developer group. Should the roles of women be presented by female practitioners to be more reasonable?</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fc3ec7333-431d-44fe-b3c8-6853ed5023d2.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;c3ec7333-431d-44fe-b3c8-6853ed5023d2.png"></p>
+<blockquote>
+<p><em>Female image in the game “GTA”</em></p>
+</blockquote>
+<h3 id="Changes-in-the-Image-of-Women-in-Games-in-the-Past-20-Years"><a href="#Changes-in-the-Image-of-Women-in-Games-in-the-Past-20-Years" class="headerlink" title="Changes in the Image of Women in Games in the Past 20 Years"></a>Changes in the Image of Women in Games in the Past 20 Years</h3><p>In the 80s and 90s, the plot of “saving the distressed girl” once became a cliché in video games. Whether it was action fighting, role-playing, or first-person shooters, people were keen to add this old-fashioned but “effective” plot formula, and enjoyed it. And now, the old-fashioned plot of “saving the princess” and “saving the girl” has long been criticized and abandoned by the times.</p>
+<p>In the past nearly 20 years, a significant change in female characters in games is playability. In the earliest video games, many female characters existed only to promote the plot. And now, female characters are no longer a kind of “accessory” or “catalyst”, but one of the game protagonists with combat capabilities, with maximum playability and controllability. EEDAR (Electronic Entertainment Design and Research) company counted in 2021 that 45% of 669 games, that is, 300 games, allow players to operate female characters, but there are 369 games that can only play male characters, and only 24 games can only play female characters.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fbe0f41a9-1c91-40ec-a720-d8c2d89c35ee.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;be0f41a9-1c91-40ec-a720-d8c2d89c35ee.png"></p>
+<blockquote>
+<p><em>《Apex Legends》</em></p>
+</blockquote>
+<p>On the point of gender balance and diversity, <em>Apex Legends</em> is an excellent model, achieving a high degree of balance in the proportion of hero gender and race. Bloodhound is called “they”, is it a male or a female? There are different opinions about the gender of this mysterious hunter, and some people say that ta is actually the only non-binary gender in the game.</p>
+<h2 id="2-What-are-the-Female-Characters-Like-in-Naraka-Bladepoint"><a href="#2-What-are-the-Female-Characters-Like-in-Naraka-Bladepoint" class="headerlink" title="2. What are the Female Characters Like in Naraka: Bladepoint"></a>2. What are the Female Characters Like in <em>Naraka: Bladepoint</em></h2><h3 id="Breaking-Stereotypes-The-Strong-in-the-Game-World"><a href="#Breaking-Stereotypes-The-Strong-in-the-Game-World" class="headerlink" title="Breaking Stereotypes - The Strong in the Game World"></a>Breaking Stereotypes - The Strong in the Game World</h3><p>In early games, the subjective consciousness of most female characters was often ignored. After being imprisoned, kidnapped, and cursed, did they never think of resisting or breaking free from the shackles of fate? Maybe they did, but the game setting often did not allow them to “escape successfully” until the male protagonist arrived. In recent years, in games, we can not only see that the stereotype of “the princess to be rescued” is being broken, but more importantly, more and more female game characters are changing their fate through their own struggles, rather than waiting in place to be “rescued”.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2F50eb5861-24a3-460e-976d-14266e0ccea5.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;50eb5861-24a3-460e-976d-14266e0ccea5.png"></p>
+<p>In <em>Naraka: Bladepoint</em>, whether it is playability, the positioning of female characters, or the self-awareness of characters, they are completely different from the weak images in past games. Of the twelve heroes currently open in the game, female characters account for half, each with talent skills that can mutually check and balance all heroes. Another breakthrough worth noting is that Yoto Hime (Ning Hongye), as the main promotional image of the game, is a female hero, and becomes the default protagonist in the novice tutorial.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fb5c68310-f85a-487d-9dec-c936476f4df4.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;b5c68310-f85a-487d-9dec-c936476f4df4.png"></p>
+<p>In the character background story of <em>Naraka: Bladepoint</em>, the image of the female hero portrayed is very distinct and three-dimensional, with both a sense of power and combat effectiveness. There is the unyielding, beautiful and dangerous red snake, the swordsman Yoto Hime; the ghostly assassin Viper Ning (Jia Nan) who haunts the desert; the ambitious and resourceful sea overlord Tsuchimikado Kurumi (Cui Sanniang); and the ranger Justina Gu (Gu Qinghan) who was born as an imperial princess but wanders the world to bury her enemies in blood. Whether it is the Kunlun Goddess, the Desert Blackhawk, the Flower of Heliothis, or the Dragon King of the Mist Sea, these titles given to them all imply that they are “the strong” in their respective fields.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2F02775539-6fae-4d22-8684-4b03bf9ffba7.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;02775539-6fae-4d22-8684-4b03bf9ffba7.png"></p>
+<h3 id="“My-Fate-is-up-to-Me”"><a href="#“My-Fate-is-up-to-Me”" class="headerlink" title="“My Fate is up to Me”"></a>“My Fate is up to Me”</h3><p>If analyzed by the subject-object dichotomy, they are undoubtedly the central subject of the game. Not only that, in the description of the hero’s legend, we can see their growth line and determination to become strong. For example, in the prologue of Tsuchimikado Kurumi’s hero story, her original words are “The weak can only drift with the tide and eventually be swallowed by the sea.” “And the strong will steer their own course, ride the wind and waves, and reach the shore of victory.” In many details of <em>Naraka: Bladepoint</em>, from the hero story to the description of an appearance, it is not difficult to see that female characters are given more dominant positions, and their own awareness of resistance is awakened.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fc0b8a8d8-64e4-40d2-bc7e-d04f249bbf4b.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;c0b8a8d8-64e4-40d2-bc7e-d04f249bbf4b.png"></p>
+<h3 id="Seemingly-Weak-But-Can-Also-Be-a-“Savior”"><a href="#Seemingly-Weak-But-Can-Also-Be-a-“Savior”" class="headerlink" title="Seemingly Weak, But Can Also Be a “Savior”"></a>Seemingly Weak, But Can Also Be a “Savior”</h3><p>Finally, back to Kurumi. After several versions of iterations, although Kurumi’s skills and positioning have been repeatedly adjusted and modified, when it comes to Kurumi, players will not easily say the word “easy”. Although she has been beaten all the time, she is also very strong, and she must always judge the situation to support her teammates, and find opportunities to help dismantle the fire when necessary.</p>
+<h2 id="3-Pay-Attention-to-Female-Players-and-Female-Characters-in-Games"><a href="#3-Pay-Attention-to-Female-Players-and-Female-Characters-in-Games" class="headerlink" title="3. Pay Attention to Female Players and Female Characters in Games"></a>3. Pay Attention to Female Players and Female Characters in Games</h2><p>In fact, in current video games, the presence and importance of female characters are increasing. The ESA found in a survey that 48% of the surveyed players were women. Recently, a MOBA game producer also shared an interesting piece of data on Reddit, 97% of female players will only choose female characters, while the ratio of male players choosing male and female characters is 50% to 50%.</p>
+<p>More and more players will choose female characters, which also requires game makers to set female characters from an equal perspective. Compared with the labeled masculinity and femininity, what is more important is how to define female characters - she can be a father’s daughter, a husband’s wife, a younger brother’s sister, but she should be herself more, and she can overcome difficulties, explore and conquer the world like other male characters.</p>
+<h2 id="4-Summary"><a href="#4-Summary" class="headerlink" title="4. Summary"></a>4. Summary</h2><p>In the setting of female game characters, many games no longer label them with stereotypes of traditional game females such as “weak”, “need to be rescued”, “accessories of the male protagonist”, etc. They are the protagonists themselves, brave, loyal, wise, powerful, and exemplary. Compared with some of the criticized Damsel in Distress settings in the early days, this is undoubtedly a forward-looking breakthrough and progress.</p>
+<p>As the population of female game players is constantly growing, we believe that paying attention to and improving the situation of female characters in games, and then extending to exploring the needs of female players, will also be an important topic for user research. The importance of female players in today’s game market is obvious, and these newly emerging female players need respect and recognition from the game culture. By combining their demographic information, psycho-social environment, and the game culture they belong to, we user researchers have more directions worth studying.</p>
+]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
+      <tags>
+        <tag>User Experience</tag>
+        <tag>User Research</tag>
+        <tag>Game Narrative</tag>
+        <tag>Female Characters</tag>
+        <tag>Gender Representation</tag>
+        <tag>Damsel in Distress</tag>
+        <tag>Playable Characters</tag>
+        <tag>Player Agency</tag>
+        <tag>Stereotypes</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Overseas Holy Land: Analysis of the Korean Game Market and Localization Optimization Suggestions</title>
     <url>/2022/07/15/netease-ux-articles/news_20220720_28584_1031931/</url>
     <content><![CDATA[<blockquote>
@@ -10246,67 +10332,6 @@ The interface of *Pokémon Quest* uses reverse type to highlight information, su
         <tag>Global Localization</tag>
         <tag>Korean Game Market</tag>
         <tag>Localization Optimization</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>&#39;Can someone help Kurumi?&#39; — Are Female Characters in Games Really Weak?</title>
-    <url>/2022/07/05/netease-ux-articles/news_20220720_28584_1031927/</url>
-    <content><![CDATA[<blockquote>
-<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20220720/28584_1031927.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a>)</p>
-</blockquote>
-<p>“Can someone help Kurumi?” — This is the most famous line of the hero Kurumi (Hu Tao) in the game <em>Naraka: Bladepoint</em>. Kurumi is always easily targeted and besieged by enemies on the battlefield, and her classic voice line is also used very frequently, becoming a well-known mantra among <em>Naraka: Bladepoint</em> players.</p>
-<p>But, is Kurumi really weak?</p>
-<p>Let’s take a look at the actual combat situation: In an impressive trio match in last autumn’s Naraka Championship, Bilibili Gaming (BKG) player Huya丶niko saved his teammates at the last critical moment. He turned the tide with Kurumi and won the title of “God of War”. In daily games, many skilled players also say that Kurumi’s solo hero ranking is the most difficult, but also the most challenging.</p>
-<p>Perhaps it can be said that Kurumi is difficult to operate, but if played well, she can bring infinite possibilities to the team. High-level Kurumi players often become the “mastermind” of a team. It can be seen that Kurumi is not really weak.</p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fe0fbdced-8e98-4e79-8705-c1d9fb72c0ae.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;e0fbdced-8e98-4e79-8705-c1d9fb72c0ae.png"></p>
-<blockquote>
-<p><em>Huya丶niko won the title of “God of War” in the Naraka Championship</em></p>
-</blockquote>
-<p>So why do players often habitually think that these female characters are usually in a weak position in the game and need help? This article will analyze the positioning and changes of female characters in games in recent years from the following three aspects, and whether they are really “weak”.</p>
-<h2 id="1-The-Image-and-Positioning-of-Female-Characters-in-Early-Games"><a href="#1-The-Image-and-Positioning-of-Female-Characters-in-Early-Games" class="headerlink" title="1. The Image and Positioning of Female Characters in Early Games"></a>1. The Image and Positioning of Female Characters in Early Games</h2><p>In some early game works, there were indeed many female game characters who really “needed to be saved by others to survive”.</p>
-<h3 id="The-Universal-Narrative-Formula-of-“Saving-the-Maiden”"><a href="#The-Universal-Narrative-Formula-of-“Saving-the-Maiden”" class="headerlink" title="The Universal Narrative Formula of “Saving the Maiden”"></a>The Universal Narrative Formula of “Saving the Maiden”</h3><p>Whether it’s the frequent appearance of “saving the kidnapped Peach” in the Super Mario series, or “finding the crystal and saving the princess” in the Zelda series, I believe many players are familiar with it. In fact, there are many similar plots of saving Princess Peach - Damsel in Distress is a relatively common narrative framework in early games. It comes from the French Demoiselle en Détresse, which can be simply translated as “a maiden in danger”. In such narratives, regardless of whether the female character has combat power, they are often in a helpless image of danger in the story, and are often set as the core incentive or motivation for the male protagonist to start the adventure.</p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fe0188a87-eb35-4254-ae6e-487ef906bfe2.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;e0188a87-eb35-4254-ae6e-487ef906bfe2.png"></p>
-<p>These female characters usually appear as princesses, wives or sisters of male protagonists. When analyzing such female characters, the subject&#x2F;object dichotomy is usually used, that is, the subject acts and the object is acted upon. The subject can be understood as the protagonist, the central character of the story, and generally the main playable character in the game. In the Damsel in Distress narrative, it is usually assumed that the male is the subject and the female is placed in the role of the object. In the game, she usually becomes “the reward to be won”, “the treasure to be found”, or “the goal to be achieved”.</p>
-<h3 id="The-Gender-Perspective-Behind-the-Story-Narration"><a href="#The-Gender-Perspective-Behind-the-Story-Narration" class="headerlink" title="The Gender Perspective Behind the Story Narration"></a>The Gender Perspective Behind the Story Narration</h3><p>The story narration of a game can usually reflect the perspective of the game maker and the worldview they want to express, and it will inevitably be reflected in the game. <em>Grand Theft Auto (GTA)</em>‘s gender controversy, objectification of female characters, and lack of inclusivity are often criticized: there are no female characters that can be played in the first person, no female characters that can influence the main storyline, and most female NPCs are also labeled with a single “sexy” tag. Every main poster of <em>GTA</em> must have a woman wearing overly revealing clothes, and the protagonist’s wife in the game is also set as a stripper.</p>
-<p>Whether it is a game or a film and television work, if you want players to be immersed, a sense of story substitution is essential. Imagine, if female characters in the game can be arbitrarily abused, how will female players feel? Are the female game characters labeled “sexy” and “weak” a stereotype or an invisible misogynistic tendency? Nearly half of the game players in the United States are women, while women account for only 24% of the game developer group. Should the roles of women be presented by female practitioners to be more reasonable?</p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fc3ec7333-431d-44fe-b3c8-6853ed5023d2.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;c3ec7333-431d-44fe-b3c8-6853ed5023d2.png"></p>
-<blockquote>
-<p><em>Female image in the game “GTA”</em></p>
-</blockquote>
-<h3 id="Changes-in-the-Image-of-Women-in-Games-in-the-Past-20-Years"><a href="#Changes-in-the-Image-of-Women-in-Games-in-the-Past-20-Years" class="headerlink" title="Changes in the Image of Women in Games in the Past 20 Years"></a>Changes in the Image of Women in Games in the Past 20 Years</h3><p>In the 80s and 90s, the plot of “saving the distressed girl” once became a cliché in video games. Whether it was action fighting, role-playing, or first-person shooters, people were keen to add this old-fashioned but “effective” plot formula, and enjoyed it. And now, the old-fashioned plot of “saving the princess” and “saving the girl” has long been criticized and abandoned by the times.</p>
-<p>In the past nearly 20 years, a significant change in female characters in games is playability. In the earliest video games, many female characters existed only to promote the plot. And now, female characters are no longer a kind of “accessory” or “catalyst”, but one of the game protagonists with combat capabilities, with maximum playability and controllability. EEDAR (Electronic Entertainment Design and Research) company counted in 2021 that 45% of 669 games, that is, 300 games, allow players to operate female characters, but there are 369 games that can only play male characters, and only 24 games can only play female characters.</p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fbe0f41a9-1c91-40ec-a720-d8c2d89c35ee.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;be0f41a9-1c91-40ec-a720-d8c2d89c35ee.png"></p>
-<blockquote>
-<p><em>《Apex Legends》</em></p>
-</blockquote>
-<p>On the point of gender balance and diversity, <em>Apex Legends</em> is an excellent model, achieving a high degree of balance in the proportion of hero gender and race. Bloodhound is called “they”, is it a male or a female? There are different opinions about the gender of this mysterious hunter, and some people say that ta is actually the only non-binary gender in the game.</p>
-<h2 id="2-What-are-the-Female-Characters-Like-in-Naraka-Bladepoint"><a href="#2-What-are-the-Female-Characters-Like-in-Naraka-Bladepoint" class="headerlink" title="2. What are the Female Characters Like in Naraka: Bladepoint"></a>2. What are the Female Characters Like in <em>Naraka: Bladepoint</em></h2><h3 id="Breaking-Stereotypes-The-Strong-in-the-Game-World"><a href="#Breaking-Stereotypes-The-Strong-in-the-Game-World" class="headerlink" title="Breaking Stereotypes - The Strong in the Game World"></a>Breaking Stereotypes - The Strong in the Game World</h3><p>In early games, the subjective consciousness of most female characters was often ignored. After being imprisoned, kidnapped, and cursed, did they never think of resisting or breaking free from the shackles of fate? Maybe they did, but the game setting often did not allow them to “escape successfully” until the male protagonist arrived. In recent years, in games, we can not only see that the stereotype of “the princess to be rescued” is being broken, but more importantly, more and more female game characters are changing their fate through their own struggles, rather than waiting in place to be “rescued”.</p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2F50eb5861-24a3-460e-976d-14266e0ccea5.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;50eb5861-24a3-460e-976d-14266e0ccea5.png"></p>
-<p>In <em>Naraka: Bladepoint</em>, whether it is playability, the positioning of female characters, or the self-awareness of characters, they are completely different from the weak images in past games. Of the twelve heroes currently open in the game, female characters account for half, each with talent skills that can mutually check and balance all heroes. Another breakthrough worth noting is that Yoto Hime (Ning Hongye), as the main promotional image of the game, is a female hero, and becomes the default protagonist in the novice tutorial.</p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fb5c68310-f85a-487d-9dec-c936476f4df4.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;b5c68310-f85a-487d-9dec-c936476f4df4.png"></p>
-<p>In the character background story of <em>Naraka: Bladepoint</em>, the image of the female hero portrayed is very distinct and three-dimensional, with both a sense of power and combat effectiveness. There is the unyielding, beautiful and dangerous red snake, the swordsman Yoto Hime; the ghostly assassin Viper Ning (Jia Nan) who haunts the desert; the ambitious and resourceful sea overlord Tsuchimikado Kurumi (Cui Sanniang); and the ranger Justina Gu (Gu Qinghan) who was born as an imperial princess but wanders the world to bury her enemies in blood. Whether it is the Kunlun Goddess, the Desert Blackhawk, the Flower of Heliothis, or the Dragon King of the Mist Sea, these titles given to them all imply that they are “the strong” in their respective fields.</p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2F02775539-6fae-4d22-8684-4b03bf9ffba7.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;02775539-6fae-4d22-8684-4b03bf9ffba7.png"></p>
-<h3 id="“My-Fate-is-up-to-Me”"><a href="#“My-Fate-is-up-to-Me”" class="headerlink" title="“My Fate is up to Me”"></a>“My Fate is up to Me”</h3><p>If analyzed by the subject-object dichotomy, they are undoubtedly the central subject of the game. Not only that, in the description of the hero’s legend, we can see their growth line and determination to become strong. For example, in the prologue of Tsuchimikado Kurumi’s hero story, her original words are “The weak can only drift with the tide and eventually be swallowed by the sea.” “And the strong will steer their own course, ride the wind and waves, and reach the shore of victory.” In many details of <em>Naraka: Bladepoint</em>, from the hero story to the description of an appearance, it is not difficult to see that female characters are given more dominant positions, and their own awareness of resistance is awakened.</p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20220720%2Fc0b8a8d8-64e4-40d2-bc7e-d04f249bbf4b.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20220720&#x2F;c0b8a8d8-64e4-40d2-bc7e-d04f249bbf4b.png"></p>
-<h3 id="Seemingly-Weak-But-Can-Also-Be-a-“Savior”"><a href="#Seemingly-Weak-But-Can-Also-Be-a-“Savior”" class="headerlink" title="Seemingly Weak, But Can Also Be a “Savior”"></a>Seemingly Weak, But Can Also Be a “Savior”</h3><p>Finally, back to Kurumi. After several versions of iterations, although Kurumi’s skills and positioning have been repeatedly adjusted and modified, when it comes to Kurumi, players will not easily say the word “easy”. Although she has been beaten all the time, she is also very strong, and she must always judge the situation to support her teammates, and find opportunities to help dismantle the fire when necessary.</p>
-<h2 id="3-Pay-Attention-to-Female-Players-and-Female-Characters-in-Games"><a href="#3-Pay-Attention-to-Female-Players-and-Female-Characters-in-Games" class="headerlink" title="3. Pay Attention to Female Players and Female Characters in Games"></a>3. Pay Attention to Female Players and Female Characters in Games</h2><p>In fact, in current video games, the presence and importance of female characters are increasing. The ESA found in a survey that 48% of the surveyed players were women. Recently, a MOBA game producer also shared an interesting piece of data on Reddit, 97% of female players will only choose female characters, while the ratio of male players choosing male and female characters is 50% to 50%.</p>
-<p>More and more players will choose female characters, which also requires game makers to set female characters from an equal perspective. Compared with the labeled masculinity and femininity, what is more important is how to define female characters - she can be a father’s daughter, a husband’s wife, a younger brother’s sister, but she should be herself more, and she can overcome difficulties, explore and conquer the world like other male characters.</p>
-<h2 id="4-Summary"><a href="#4-Summary" class="headerlink" title="4. Summary"></a>4. Summary</h2><p>In the setting of female game characters, many games no longer label them with stereotypes of traditional game females such as “weak”, “need to be rescued”, “accessories of the male protagonist”, etc. They are the protagonists themselves, brave, loyal, wise, powerful, and exemplary. Compared with some of the criticized Damsel in Distress settings in the early days, this is undoubtedly a forward-looking breakthrough and progress.</p>
-<p>As the population of female game players is constantly growing, we believe that paying attention to and improving the situation of female characters in games, and then extending to exploring the needs of female players, will also be an important topic for user research. The importance of female players in today’s game market is obvious, and these newly emerging female players need respect and recognition from the game culture. By combining their demographic information, psycho-social environment, and the game culture they belong to, we user researchers have more directions worth studying.</p>
-]]></content>
-      <categories>
-        <category>NetEase UX</category>
-      </categories>
-      <tags>
-        <tag>User Experience</tag>
-        <tag>User Research</tag>
-        <tag>Game Narrative</tag>
-        <tag>Female Characters</tag>
-        <tag>Gender Representation</tag>
-        <tag>Damsel in Distress</tag>
-        <tag>Playable Characters</tag>
-        <tag>Player Agency</tag>
-        <tag>Stereotypes</tag>
       </tags>
   </entry>
   <entry>
@@ -13706,6 +13731,64 @@ There is a website called Astats, which will count the game achievements of the 
       </tags>
   </entry>
   <entry>
+    <title>What Are the Game Preferences and Choices of Rigorous and Conservative German Players</title>
+    <url>/2023/04/06/netease-ux-articles/news_20230424_28584_1084777/</url>
+    <content><![CDATA[<blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20230424/28584_1084777.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<h2 id="1-Overview-of-the-German-Game-Market"><a href="#1-Overview-of-the-German-Game-Market" class="headerlink" title="1. Overview of the German Game Market"></a>1. Overview of the German Game Market</h2><p>Germany is located in central Europe. It is the engine of Europe and also the largest economy in Europe and the fourth largest in the world. Data shows that Germany’s total GDP in 2022 was 27.38 trillion.</p>
+<p>After setting a revenue record in 2020, the German game market also achieved explosive growth in 2021, with a total revenue (including hardware, games, subscriptions, and in-game purchases) of approximately 9.76 billion euros. Compared with 2012, it has more than tripled. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2F0577e133-b993-4283-8938-df10249a1715.png/size/"></p>
+<p><em>As of 2021, German game market revenue (published on February 23, 2023)</em></p>
+<p>The growing demand of German players for game-related hardware (especially consoles) is considered to be an important driving force for the booming German game market. Although some game consoles were in short supply due to the impact of the epidemic on the supply chain and logistics, the overall revenue of consoles also resisted the pressure and increased by 23%, reaching 808 million euros. Revenue from in-app purchases has also increased. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Fe20c6691-9d75-4f14-8349-8446df2ae533.png/size/"></p>
+<p><em>German hardware revenue achieved huge growth in 2021</em></p>
+<p>It is worth noting that, in addition to areas strongly related to games, such as game copies and hardware, which have performed well, the market for game furniture and game accessories in Germany is also gradually taking the stage. According to a survey by the German Game Industry Association, nearly millions of players have purchased game-related furniture, and more than 11 million players plan to purchase game-related furniture, including gaming chairs, computer stands, controller stands, lamps, etc. Therefore, many well-known furniture manufacturers in Germany have also launched their game series furniture in order to occupy this huge market early. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2F556d943f-5330-4021-9f2d-38fdfacceaca.png/size/"></p>
+<p>From a platform perspective, according to statistics from the German Game Association, as of 2022, there are 23.5 million mobile game players in Germany. In addition, there are 10.7 million users who use tablets to play games. The number of mobile game users accounts for a relatively high proportion.</p>
+<p>The demand of German players for consoles (such as Switch, PlayStation, Xbox) is also basically increasing year by year. It may be that the impact of the epidemic is getting smaller and smaller, and most Germans are no longer locked down at home, so the number of PC players has decreased slightly in comparison. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Ff8b65aab-f810-4ca3-9c34-19207216004c.png/size/"></p>
+<h2 id="2-The-Consequences-of-an-Aging-Population-An-Aging-Player-Base"><a href="#2-The-Consequences-of-an-Aging-Population-An-Aging-Player-Base" class="headerlink" title="2. The Consequences of an Aging Population: An Aging Player Base"></a>2. The Consequences of an Aging Population: An Aging Player Base</h2><p>According to the latest population statistics in 2022, Germany has a total population of 82.196 million. Its game penetration rate is nearly 60%, which means that 6 out of every 10 people have gaming experience, and the number of game players is approaching 50 million.</p>
+<p>At the same time, the quality of German game users is also very high. Most German players believe that payment is a guarantee of game quality, and their willingness to pay is second only to the United States. Nearly 70% of players are willing to pay for games. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2F68d60fbd-52ef-4ecd-8411-5b87fafeadf5.jpg/size/"></p>
+<p><em>(Note: The data comes from a questionnaire survey conducted by Gamma Data (CNG) on mobile game user groups in the United States&#x2F;Germany&#x2F;France&#x2F;United Kingdom.)</em></p>
+<p>On the other hand, according to data from the German Federal Statistical Office, except for the elderly group over 75 years old, the largest age group in Germany is 55-59 years old, accounting for 8.2% of the total population. The average age of the German population has reached 47 years old. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2F8f28d6d7-6457-40df-900c-d6057eef668c.png/size/"></p>
+<p>The serious aging of the population has also increased the average age of game players. According to survey data from market research company GfK: The proportion of middle-aged and elderly players in Germany aged 50-59 reached 18%, which is the highest proportion of age groups. Many players in the 1980s and 1990s have maintained their hobby of playing video games to this day. At the same time, the average age of German game players is also increasing year by year: in 2020, the average age of players was 37.4 years old, and in 2021, it has reached 37.6 years old. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Fa29b2c20-9ae4-44a6-aab9-949502d0ba86.png/size/"></p>
+<p>Germany has a general trend of an aging society, so German residents are rigorous, relatively conservative, pay attention to order, and are less social. Nearly 80% of players will learn about product user reviews, overall ratings, and descriptions before downloading the game. At the same time, the relatively conservative characteristics are also subtly affecting the aesthetics of Germans. For example, Germans tend to wear darker clothes, and like to wear practical clothes such as jackets. At the same time, they are also conservative in the aesthetic style of games, and do not like overly chaotic and bright colors.</p>
+<p>For example, in the evaluation of the appearance of female characters in <em>Naraka: Bladepoint</em>, some German players gave positive comments because some female characters did not wear high heels, which is very practical in actual combat.</p>
+<p>Therefore, grasping the above characteristics of German players can help game manufacturers to be more successful when going overseas to Germany. At the same time, these characteristics are also reflected in German players’ preferences for games.</p>
+<h2 id="3-German-Players’-Game-Preferences-and-Choices"><a href="#3-German-Players’-Game-Preferences-and-Choices" class="headerlink" title="3. German Players’ Game Preferences and Choices"></a>3. German Players’ Game Preferences and Choices</h2><p>Rigorous and conservative Germans maintain their consistent habits in the choice of game genres: strategy games are especially popular. Surveys show that the 5 most popular game categories in Germany in 2022 are: strategy, action, action-adventure, adventure, and simulation. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Fc8d90a2d-2444-4364-8533-e9f50e0dbbb6.png/size/"></p>
+<p>According to data from Data.ai, among the games with the most downloads by German players, strategy games + match-3 games account for 70% of the list. The Top 10 of the list are basically casual puzzle games, which is also in line with the needs of middle-aged and elderly players for game choices: they don’t need to spend too much time, the gameplay is not particularly intense, and they can sit quietly on the sofa and use their brains. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Fb235ef91-07af-453f-b561-e4318c0fc947.png/size/"></p>
+<p>The loyalty of the German mobile game market is very high, which is not only reflected in the choice of games: <em>Coin Master</em>, which ranks first in mobile game revenue, was released 13 years ago, but it still occupies the top few positions in the German game list for many years. Classic match-3 games like <em>Candy Crush Saga</em> have also been released for 9 years. Most of the games on the list are old games that have been released for more than two years. It can be seen that Germans are very dedicated to their favorite games.</p>
+<p>In addition, their choice of game genres is also very single, fixed on strategy, elimination, and simulation management. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2F3a93b057-1e16-4bd9-bf7e-4a50e88642e2.png/size/"></p>
+<p>The rankings of PC and console games are very different from those of mobile games. In addition to the simulation management games that German players love, most of the PC games on the list are relatively hardcore. <em>EA Sports FIFA 22</em>, which was just released by EA, once again topped the sales chart, which shows the German players’ love for football. It is followed by the open-world game <em>Grand Theft Auto V</em> launched by Rockstar. The third place is the racing game <em>Mario Kart 8 Deluxe</em>. The fourth place is <em>Farming Simulator 22</em>, and the fifth place is <em>Minecraft</em>. Most of the games on the list can meet the needs of teaming up or have pvp modes, which can meet some competitive needs of hardcore PC players. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Fc765c7f5-35c6-4ef7-a2d0-eb93d8897cad.jpg/size/"></p>
+<h2 id="4-Summary"><a href="#4-Summary" class="headerlink" title="4. Summary"></a>4. Summary</h2><p>The game culture in Germany is very mature, and many players have been exposed to games since childhood. In addition, German players have a high willingness to pay. Due to the aging of the population, the average age of players has increased, which is also the reason why German players have relatively strong payment capabilities. As the engine of the European economy, Germany also has one of the largest game markets in Europe, with almost 60% of Germans having gaming experience.</p>
+<p>Unlike Chinese players, console games still maintain a high status in Germany, but the development of mobile games has surpassed traditional games, and more than 70% of players play mobile games.</p>
+<p>In addition, German players have obvious “nostalgic” characteristics. Most of the various rankings are old games that have been online for more than 2 years, and the genres are relatively single. This also brings a lot of pressure to some new products that want to enter the German market. But on the other hand, when you want to enter the German market, the selection of products is more accurate. Once a new product is accepted by players, it is easier to stabilize and settle down.</p>
+]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
+      <tags>
+        <tag>User Experience</tag>
+        <tag>Player Characteristics</tag>
+        <tag>Mobile Games</tag>
+        <tag>Game Preferences</tag>
+        <tag>PC Games</tag>
+        <tag>Console Games</tag>
+        <tag>Global Localization</tag>
+        <tag>German Market</tag>
+        <tag>Player Research</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ChatGPT Evaluation Is It a Good Translation Tool</title>
     <url>/2023/03/30/netease-ux-articles/news_20230424_28584_1084772/</url>
     <content><![CDATA[<blockquote>
@@ -13878,64 +13961,6 @@ There is a website called Astats, which will count the game achievements of the 
         <tag>Translation Quality Evaluation</tag>
         <tag>Machine Translation</tag>
         <tag>BLEU</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>What Are the Game Preferences and Choices of Rigorous and Conservative German Players</title>
-    <url>/2023/04/06/netease-ux-articles/news_20230424_28584_1084777/</url>
-    <content><![CDATA[<blockquote>
-<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20230424/28584_1084777.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
-</blockquote>
-<p>&nbsp; </p>
-<h2 id="1-Overview-of-the-German-Game-Market"><a href="#1-Overview-of-the-German-Game-Market" class="headerlink" title="1. Overview of the German Game Market"></a>1. Overview of the German Game Market</h2><p>Germany is located in central Europe. It is the engine of Europe and also the largest economy in Europe and the fourth largest in the world. Data shows that Germany’s total GDP in 2022 was 27.38 trillion.</p>
-<p>After setting a revenue record in 2020, the German game market also achieved explosive growth in 2021, with a total revenue (including hardware, games, subscriptions, and in-game purchases) of approximately 9.76 billion euros. Compared with 2012, it has more than tripled. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2F0577e133-b993-4283-8938-df10249a1715.png/size/"></p>
-<p><em>As of 2021, German game market revenue (published on February 23, 2023)</em></p>
-<p>The growing demand of German players for game-related hardware (especially consoles) is considered to be an important driving force for the booming German game market. Although some game consoles were in short supply due to the impact of the epidemic on the supply chain and logistics, the overall revenue of consoles also resisted the pressure and increased by 23%, reaching 808 million euros. Revenue from in-app purchases has also increased. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Fe20c6691-9d75-4f14-8349-8446df2ae533.png/size/"></p>
-<p><em>German hardware revenue achieved huge growth in 2021</em></p>
-<p>It is worth noting that, in addition to areas strongly related to games, such as game copies and hardware, which have performed well, the market for game furniture and game accessories in Germany is also gradually taking the stage. According to a survey by the German Game Industry Association, nearly millions of players have purchased game-related furniture, and more than 11 million players plan to purchase game-related furniture, including gaming chairs, computer stands, controller stands, lamps, etc. Therefore, many well-known furniture manufacturers in Germany have also launched their game series furniture in order to occupy this huge market early. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2F556d943f-5330-4021-9f2d-38fdfacceaca.png/size/"></p>
-<p>From a platform perspective, according to statistics from the German Game Association, as of 2022, there are 23.5 million mobile game players in Germany. In addition, there are 10.7 million users who use tablets to play games. The number of mobile game users accounts for a relatively high proportion.</p>
-<p>The demand of German players for consoles (such as Switch, PlayStation, Xbox) is also basically increasing year by year. It may be that the impact of the epidemic is getting smaller and smaller, and most Germans are no longer locked down at home, so the number of PC players has decreased slightly in comparison. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Ff8b65aab-f810-4ca3-9c34-19207216004c.png/size/"></p>
-<h2 id="2-The-Consequences-of-an-Aging-Population-An-Aging-Player-Base"><a href="#2-The-Consequences-of-an-Aging-Population-An-Aging-Player-Base" class="headerlink" title="2. The Consequences of an Aging Population: An Aging Player Base"></a>2. The Consequences of an Aging Population: An Aging Player Base</h2><p>According to the latest population statistics in 2022, Germany has a total population of 82.196 million. Its game penetration rate is nearly 60%, which means that 6 out of every 10 people have gaming experience, and the number of game players is approaching 50 million.</p>
-<p>At the same time, the quality of German game users is also very high. Most German players believe that payment is a guarantee of game quality, and their willingness to pay is second only to the United States. Nearly 70% of players are willing to pay for games. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2F68d60fbd-52ef-4ecd-8411-5b87fafeadf5.jpg/size/"></p>
-<p><em>(Note: The data comes from a questionnaire survey conducted by Gamma Data (CNG) on mobile game user groups in the United States&#x2F;Germany&#x2F;France&#x2F;United Kingdom.)</em></p>
-<p>On the other hand, according to data from the German Federal Statistical Office, except for the elderly group over 75 years old, the largest age group in Germany is 55-59 years old, accounting for 8.2% of the total population. The average age of the German population has reached 47 years old. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2F8f28d6d7-6457-40df-900c-d6057eef668c.png/size/"></p>
-<p>The serious aging of the population has also increased the average age of game players. According to survey data from market research company GfK: The proportion of middle-aged and elderly players in Germany aged 50-59 reached 18%, which is the highest proportion of age groups. Many players in the 1980s and 1990s have maintained their hobby of playing video games to this day. At the same time, the average age of German game players is also increasing year by year: in 2020, the average age of players was 37.4 years old, and in 2021, it has reached 37.6 years old. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Fa29b2c20-9ae4-44a6-aab9-949502d0ba86.png/size/"></p>
-<p>Germany has a general trend of an aging society, so German residents are rigorous, relatively conservative, pay attention to order, and are less social. Nearly 80% of players will learn about product user reviews, overall ratings, and descriptions before downloading the game. At the same time, the relatively conservative characteristics are also subtly affecting the aesthetics of Germans. For example, Germans tend to wear darker clothes, and like to wear practical clothes such as jackets. At the same time, they are also conservative in the aesthetic style of games, and do not like overly chaotic and bright colors.</p>
-<p>For example, in the evaluation of the appearance of female characters in <em>Naraka: Bladepoint</em>, some German players gave positive comments because some female characters did not wear high heels, which is very practical in actual combat.</p>
-<p>Therefore, grasping the above characteristics of German players can help game manufacturers to be more successful when going overseas to Germany. At the same time, these characteristics are also reflected in German players’ preferences for games.</p>
-<h2 id="3-German-Players’-Game-Preferences-and-Choices"><a href="#3-German-Players’-Game-Preferences-and-Choices" class="headerlink" title="3. German Players’ Game Preferences and Choices"></a>3. German Players’ Game Preferences and Choices</h2><p>Rigorous and conservative Germans maintain their consistent habits in the choice of game genres: strategy games are especially popular. Surveys show that the 5 most popular game categories in Germany in 2022 are: strategy, action, action-adventure, adventure, and simulation. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Fc8d90a2d-2444-4364-8533-e9f50e0dbbb6.png/size/"></p>
-<p>According to data from Data.ai, among the games with the most downloads by German players, strategy games + match-3 games account for 70% of the list. The Top 10 of the list are basically casual puzzle games, which is also in line with the needs of middle-aged and elderly players for game choices: they don’t need to spend too much time, the gameplay is not particularly intense, and they can sit quietly on the sofa and use their brains. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Fb235ef91-07af-453f-b561-e4318c0fc947.png/size/"></p>
-<p>The loyalty of the German mobile game market is very high, which is not only reflected in the choice of games: <em>Coin Master</em>, which ranks first in mobile game revenue, was released 13 years ago, but it still occupies the top few positions in the German game list for many years. Classic match-3 games like <em>Candy Crush Saga</em> have also been released for 9 years. Most of the games on the list are old games that have been released for more than two years. It can be seen that Germans are very dedicated to their favorite games.</p>
-<p>In addition, their choice of game genres is also very single, fixed on strategy, elimination, and simulation management. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2F3a93b057-1e16-4bd9-bf7e-4a50e88642e2.png/size/"></p>
-<p>The rankings of PC and console games are very different from those of mobile games. In addition to the simulation management games that German players love, most of the PC games on the list are relatively hardcore. <em>EA Sports FIFA 22</em>, which was just released by EA, once again topped the sales chart, which shows the German players’ love for football. It is followed by the open-world game <em>Grand Theft Auto V</em> launched by Rockstar. The third place is the racing game <em>Mario Kart 8 Deluxe</em>. The fourth place is <em>Farming Simulator 22</em>, and the fifth place is <em>Minecraft</em>. Most of the games on the list can meet the needs of teaming up or have pvp modes, which can meet some competitive needs of hardcore PC players. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20230424%2Fc765c7f5-35c6-4ef7-a2d0-eb93d8897cad.jpg/size/"></p>
-<h2 id="4-Summary"><a href="#4-Summary" class="headerlink" title="4. Summary"></a>4. Summary</h2><p>The game culture in Germany is very mature, and many players have been exposed to games since childhood. In addition, German players have a high willingness to pay. Due to the aging of the population, the average age of players has increased, which is also the reason why German players have relatively strong payment capabilities. As the engine of the European economy, Germany also has one of the largest game markets in Europe, with almost 60% of Germans having gaming experience.</p>
-<p>Unlike Chinese players, console games still maintain a high status in Germany, but the development of mobile games has surpassed traditional games, and more than 70% of players play mobile games.</p>
-<p>In addition, German players have obvious “nostalgic” characteristics. Most of the various rankings are old games that have been online for more than 2 years, and the genres are relatively single. This also brings a lot of pressure to some new products that want to enter the German market. But on the other hand, when you want to enter the German market, the selection of products is more accurate. Once a new product is accepted by players, it is easier to stabilize and settle down.</p>
-]]></content>
-      <categories>
-        <category>NetEase UX</category>
-      </categories>
-      <tags>
-        <tag>User Experience</tag>
-        <tag>Player Characteristics</tag>
-        <tag>Mobile Games</tag>
-        <tag>Game Preferences</tag>
-        <tag>PC Games</tag>
-        <tag>Console Games</tag>
-        <tag>Global Localization</tag>
-        <tag>German Market</tag>
-        <tag>Player Research</tag>
       </tags>
   </entry>
   <entry>
@@ -16988,67 +17013,6 @@ There is a website called Astats, which will count the game achievements of the 
       </tags>
   </entry>
   <entry>
-    <title>Why Are Players Obsessed with Virtual Avatars: From Custom Character Creation to Fashion Outfits</title>
-    <url>/2024/07/13/netease-ux-articles/news_20240716_28584_1167368/</url>
-    <content><![CDATA[<blockquote>
-<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20240716/28584_1167368.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
-</blockquote>
-<p>&nbsp; </p>
-<p>From the Barbie doll, popular in the toy market in 1959 for its interchangeable clothing, to the QQ Show, familiar to Generation Z, with its customizable outfits and interactive expressions, and from early single-player dress-up games with fixed character images and clothing to highly customizable online character creation systems with hundreds of body parameters. The game format of dressing up characters has been popular from the beginning, and after becoming a virtual avatar online, it has developed rapidly due to its freedom of appearance customization, and has gained a lot of attention and recognition from players. </p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240716%2F732f8c08-6a14-4868-a75b-5c49aec31282.webp/size/" alt="Example of Early Barbie Doll Types"></p>
-<hr>
-<p><em>Early Barbie dolls with various career images</em></p>
-<hr>
-<p>In 2023, after the first cloud character creation experience of <em>Justice Online</em> mobile game was launched, it set a record for simultaneous online players within ten minutes. The topic of “part-time game character creators earning over 10,000 yuan per month” was once on the Weibo hot list, attracting widespread attention and discussion. The hottest character creation data in the official character creation station has more than 50,000 downloads, and the sharing and exchange of character creation data among active players in social media has become a daily routine, which shows that there is a huge demand for character creation among players in the game.</p>
-<p>Why can character creation, as a form of shaping virtual images, trigger a player experience frenzy and demand far beyond everyone’s expectations? It is also worth thinking about why selling game fashion and appearances has become a business model accepted by players around the world. Why are players willing to pay for some high-quality and exquisite fashion that can only be worn in virtual images?</p>
-<p>Next, this article will start from the psychological connection between the player and the game character, and analyze the reasons why players are so concerned about the fashion, character creation and other appearances of game characters.</p>
-<h2 id="I-Game-Characters-are-Players’-Virtual-Avatars"><a href="#I-Game-Characters-are-Players’-Virtual-Avatars" class="headerlink" title="I. Game Characters are Players’ Virtual Avatars"></a>I. Game Characters are Players’ Virtual Avatars</h2><p>The avatar identification theory proposes that in the game environment, players project their self-identity onto the game character through interaction with the game character, forming a special psychological connection.</p>
-<h3 id="The-Origin-of-the-Term-Avatar"><a href="#The-Origin-of-the-Term-Avatar" class="headerlink" title="The Origin of the Term Avatar"></a>The Origin of the Term Avatar</h3><p>The original Zelda game first allowed players to customize the protagonist’s name, and subsequent games gradually began to allow players to customize the protagonist’s clothing and appearance. Later, it was collectively referred to as: Avatar system. The word Avatar comes from Sanskrit. In Hinduism, Avatar is a special ability user who can change his image, and is generally regarded as the image of gods in the human world. That is to say, the game character, that is, the avatar, is the digital representation of the player, and the player imagines and experiences the emotions and viewpoints of the character from the game character.</p>
-<h3 id="Avatar-and-Projection"><a href="#Avatar-and-Projection" class="headerlink" title="Avatar and Projection"></a>Avatar and Projection</h3><p>Freud’s theory of personality structure believes that a person is composed of three parts: id, ego, and superego. The “id” follows the pleasure principle and contains a group of chaotic, instinctive, and suppressed desires. The “ego” follows the reality principle and satisfies the needs of the id under the conditions of real environment and moral standards. The “superego” follows the moral principle and contains moral ideals and conscience.</p>
-<p>However, in real life, many desires of the id are restricted and cannot be realized. For example, office workers cannot travel and enjoy the beautiful mountains and rivers as they wish, but they can log in to the <em>Justice Online</em> game in their spare time and explore mountains and rivers in the dreamy and beautiful environment, so that their leisure exploration desires can be satisfied in another way. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240716%2Fb3d15ef4-2167-4b20-8a8e-8c874f7b2007.webp/size/"></p>
-<hr>
-<p><em>《Justice Online》 Mobile Game Scene</em></p>
-<hr>
-<p>The same is true in terms of appearance. For example, the <em>Justice Online</em> mobile game fashion [Star Palace] Pegasus skirt’s elegant and gorgeous design and court style can enable players to realize the dream of becoming a gorgeous female star that is difficult to achieve in daily life. It is the existence of a virtual avatar. It allows the desires for unfulfilled behaviors and appearances to have an object of projection and another possibility of realization. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240716%2F9f3d471b-ddac-4c44-ba41-4de0dee077b9.webp/size/"></p>
-<hr>
-<p><em>《Justice Online》 Mobile Game Theme Fashion [Star Palace]</em></p>
-<hr>
-<h2 id="II-Character-Appearance-Promotes-Avatar-Identification"><a href="#II-Character-Appearance-Promotes-Avatar-Identification" class="headerlink" title="II. Character Appearance Promotes Avatar Identification"></a>II. Character Appearance Promotes Avatar Identification</h2><p>Studies have shown that avatars are not only seen as characters temporarily manipulated by players, but players also regard avatars as part of their self-concept. So how does this psychological connection explain players’ obsession with appearance and character creation?</p>
-<p>The similarity between the virtual avatar and the player in terms of physical appearance, personality characteristics, race, etc. can promote the realization of avatar identification. When players choose or customize virtual images in the game, they are often based on the psychological mechanism of self-identification and projection. They hope to show their personality, interests, or ideal self through the character image in the game. This is why most players’ game character creation results have characteristics that are in line with their own aesthetics and character style settings</p>
-<p>The game has developed a function in the character creation module that allows intelligent character creation based on pictures uploaded by players, allowing players who are not good at character creation to restore their beauty in the game with the help of AI tools. In addition, many players upload not photos of celebrity beauties, but their own photos. In the game, players actually carry out a kind of emotional projection by choosing or customizing the appearance of the character. With the support of AI technology and the addition of exquisite costumes in game design, virtual characters can be infinitely close to a player’s ideal image of themselves. What players project is the beautiful image they want to become, as players say: “Pinch yourself into a beautification, and what you pinch out is what I hope to grow into.. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240716%2F6f5c7247-6db2-4f6f-adfe-0ec08bf8322c.webp/size/"></p>
-<hr>
-<p><em>《Justice Online》 Character Creation System</em></p>
-<hr>
-<h2 id="III-Specific-Appearance-is-a-Mask-to-Switch-Identities"><a href="#III-Specific-Appearance-is-a-Mask-to-Switch-Identities" class="headerlink" title="III. Specific Appearance is a Mask to Switch Identities"></a>III. Specific Appearance is a Mask to Switch Identities</h2><p>In the virtual world of online games, players project the desires they want to satisfy in the id, and the images they have not pursued in reality, onto the avatar.</p>
-<h3 id="The-Proteus-Effect"><a href="#The-Proteus-Effect" class="headerlink" title="The Proteus Effect"></a>The Proteus Effect</h3><p>The Proteus effect shows that when individuals are given specific character traits, they tend to behave in a manner consistent with those traits. This phenomenon originally came from the sea god Proteus in ancient Greek mythology, who had the ability to change his appearance, so the word “Proteus” is also used to refer to “ready to change shape and personality at any time”. In the game, by choosing or customizing the appearance and dress of the character, the player is actually setting a specific character image for himself, and showing the corresponding behavior pattern under this image.</p>
-<h3 id="The-Mask-Function-of-Character-Image"><a href="#The-Mask-Function-of-Character-Image" class="headerlink" title="The Mask Function of Character Image"></a>The Mask Function of Character Image</h3><p>We can regard such a specific appearance image as a kind of “mask”, which is a symbol and sense of ritual to switch identities, and it is also a prop to increase the immersion of the new identity. In <em>Naraka: Bladepoint</em>, a national style martial arts game, in addition to the antique scenes, the ancient style appearance of the characters also allows players to quickly feel that they can travel to ancient times, and Ning Hongye’s blindfolded cloth strips and capable and neat fashion can also allow players to substitute into a brave and decisive swordsman identity. </p>
-<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240716%2F36a6b2fb-cdc3-47f4-9d7c-9e6e15be79ee.webp/size/"></p>
-<hr>
-<p><em>《Naraka: Bladepoint》 Ning Hongye</em></p>
-<hr>
-<p>And when this “mask” does not meet the player’s conditions for identity setting, there will be a sense of incongruity. Therefore, in the design of game fashion, not only should we start from the era background and identity of the game character itself, but also combine the player’s inherent cognition of the character or a certain type of image to think.</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Game characters are players’ virtual avatars in another world. Appearance customization and other features can promote players’ identification with the avatar. Players will invest their imagination of their ideal self in the avatar. Different appearance images are like a mask, allowing players to be more deeply immersed in the role of the game.</p>
-<p>Of course, such projection cannot explain all players’ appearance settings for game characters. Perhaps in the eyes of some players, game character creation and fashion matching are a way of personalized self-expression. By choosing different appearances and dresses, players can show their uniqueness and creativity.</p>
-]]></content>
-      <categories>
-        <category>NetEase UX</category>
-      </categories>
-      <tags>
-        <tag>User Experience</tag>
-        <tag>User Research</tag>
-        <tag>Face Customization</tag>
-        <tag>Self-Projection</tag>
-        <tag>Proteus Effect</tag>
-        <tag>Virtual Avatar</tag>
-        <tag>Game Fashion</tag>
-        <tag>Game Characters</tag>
-        <tag>Character Customization</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Unveiling the Design Behind Horror Game Jumpscares and Players&#39; Cognitive Load</title>
     <url>/2024/06/08/netease-ux-articles/news_20240716_28584_1167378/</url>
     <content><![CDATA[<blockquote>
@@ -17146,6 +17110,108 @@ There is a website called Astats, which will count the game achievements of the 
       </tags>
   </entry>
   <entry>
+    <title>Why Are Players Obsessed with Virtual Avatars: From Custom Character Creation to Fashion Outfits</title>
+    <url>/2024/07/13/netease-ux-articles/news_20240716_28584_1167368/</url>
+    <content><![CDATA[<blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20240716/28584_1167368.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>From the Barbie doll, popular in the toy market in 1959 for its interchangeable clothing, to the QQ Show, familiar to Generation Z, with its customizable outfits and interactive expressions, and from early single-player dress-up games with fixed character images and clothing to highly customizable online character creation systems with hundreds of body parameters. The game format of dressing up characters has been popular from the beginning, and after becoming a virtual avatar online, it has developed rapidly due to its freedom of appearance customization, and has gained a lot of attention and recognition from players. </p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240716%2F732f8c08-6a14-4868-a75b-5c49aec31282.webp/size/" alt="Example of Early Barbie Doll Types"></p>
+<hr>
+<p><em>Early Barbie dolls with various career images</em></p>
+<hr>
+<p>In 2023, after the first cloud character creation experience of <em>Justice Online</em> mobile game was launched, it set a record for simultaneous online players within ten minutes. The topic of “part-time game character creators earning over 10,000 yuan per month” was once on the Weibo hot list, attracting widespread attention and discussion. The hottest character creation data in the official character creation station has more than 50,000 downloads, and the sharing and exchange of character creation data among active players in social media has become a daily routine, which shows that there is a huge demand for character creation among players in the game.</p>
+<p>Why can character creation, as a form of shaping virtual images, trigger a player experience frenzy and demand far beyond everyone’s expectations? It is also worth thinking about why selling game fashion and appearances has become a business model accepted by players around the world. Why are players willing to pay for some high-quality and exquisite fashion that can only be worn in virtual images?</p>
+<p>Next, this article will start from the psychological connection between the player and the game character, and analyze the reasons why players are so concerned about the fashion, character creation and other appearances of game characters.</p>
+<h2 id="I-Game-Characters-are-Players’-Virtual-Avatars"><a href="#I-Game-Characters-are-Players’-Virtual-Avatars" class="headerlink" title="I. Game Characters are Players’ Virtual Avatars"></a>I. Game Characters are Players’ Virtual Avatars</h2><p>The avatar identification theory proposes that in the game environment, players project their self-identity onto the game character through interaction with the game character, forming a special psychological connection.</p>
+<h3 id="The-Origin-of-the-Term-Avatar"><a href="#The-Origin-of-the-Term-Avatar" class="headerlink" title="The Origin of the Term Avatar"></a>The Origin of the Term Avatar</h3><p>The original Zelda game first allowed players to customize the protagonist’s name, and subsequent games gradually began to allow players to customize the protagonist’s clothing and appearance. Later, it was collectively referred to as: Avatar system. The word Avatar comes from Sanskrit. In Hinduism, Avatar is a special ability user who can change his image, and is generally regarded as the image of gods in the human world. That is to say, the game character, that is, the avatar, is the digital representation of the player, and the player imagines and experiences the emotions and viewpoints of the character from the game character.</p>
+<h3 id="Avatar-and-Projection"><a href="#Avatar-and-Projection" class="headerlink" title="Avatar and Projection"></a>Avatar and Projection</h3><p>Freud’s theory of personality structure believes that a person is composed of three parts: id, ego, and superego. The “id” follows the pleasure principle and contains a group of chaotic, instinctive, and suppressed desires. The “ego” follows the reality principle and satisfies the needs of the id under the conditions of real environment and moral standards. The “superego” follows the moral principle and contains moral ideals and conscience.</p>
+<p>However, in real life, many desires of the id are restricted and cannot be realized. For example, office workers cannot travel and enjoy the beautiful mountains and rivers as they wish, but they can log in to the <em>Justice Online</em> game in their spare time and explore mountains and rivers in the dreamy and beautiful environment, so that their leisure exploration desires can be satisfied in another way. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240716%2Fb3d15ef4-2167-4b20-8a8e-8c874f7b2007.webp/size/"></p>
+<hr>
+<p><em>《Justice Online》 Mobile Game Scene</em></p>
+<hr>
+<p>The same is true in terms of appearance. For example, the <em>Justice Online</em> mobile game fashion [Star Palace] Pegasus skirt’s elegant and gorgeous design and court style can enable players to realize the dream of becoming a gorgeous female star that is difficult to achieve in daily life. It is the existence of a virtual avatar. It allows the desires for unfulfilled behaviors and appearances to have an object of projection and another possibility of realization. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240716%2F9f3d471b-ddac-4c44-ba41-4de0dee077b9.webp/size/"></p>
+<hr>
+<p><em>《Justice Online》 Mobile Game Theme Fashion [Star Palace]</em></p>
+<hr>
+<h2 id="II-Character-Appearance-Promotes-Avatar-Identification"><a href="#II-Character-Appearance-Promotes-Avatar-Identification" class="headerlink" title="II. Character Appearance Promotes Avatar Identification"></a>II. Character Appearance Promotes Avatar Identification</h2><p>Studies have shown that avatars are not only seen as characters temporarily manipulated by players, but players also regard avatars as part of their self-concept. So how does this psychological connection explain players’ obsession with appearance and character creation?</p>
+<p>The similarity between the virtual avatar and the player in terms of physical appearance, personality characteristics, race, etc. can promote the realization of avatar identification. When players choose or customize virtual images in the game, they are often based on the psychological mechanism of self-identification and projection. They hope to show their personality, interests, or ideal self through the character image in the game. This is why most players’ game character creation results have characteristics that are in line with their own aesthetics and character style settings</p>
+<p>The game has developed a function in the character creation module that allows intelligent character creation based on pictures uploaded by players, allowing players who are not good at character creation to restore their beauty in the game with the help of AI tools. In addition, many players upload not photos of celebrity beauties, but their own photos. In the game, players actually carry out a kind of emotional projection by choosing or customizing the appearance of the character. With the support of AI technology and the addition of exquisite costumes in game design, virtual characters can be infinitely close to a player’s ideal image of themselves. What players project is the beautiful image they want to become, as players say: “Pinch yourself into a beautification, and what you pinch out is what I hope to grow into.. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240716%2F6f5c7247-6db2-4f6f-adfe-0ec08bf8322c.webp/size/"></p>
+<hr>
+<p><em>《Justice Online》 Character Creation System</em></p>
+<hr>
+<h2 id="III-Specific-Appearance-is-a-Mask-to-Switch-Identities"><a href="#III-Specific-Appearance-is-a-Mask-to-Switch-Identities" class="headerlink" title="III. Specific Appearance is a Mask to Switch Identities"></a>III. Specific Appearance is a Mask to Switch Identities</h2><p>In the virtual world of online games, players project the desires they want to satisfy in the id, and the images they have not pursued in reality, onto the avatar.</p>
+<h3 id="The-Proteus-Effect"><a href="#The-Proteus-Effect" class="headerlink" title="The Proteus Effect"></a>The Proteus Effect</h3><p>The Proteus effect shows that when individuals are given specific character traits, they tend to behave in a manner consistent with those traits. This phenomenon originally came from the sea god Proteus in ancient Greek mythology, who had the ability to change his appearance, so the word “Proteus” is also used to refer to “ready to change shape and personality at any time”. In the game, by choosing or customizing the appearance and dress of the character, the player is actually setting a specific character image for himself, and showing the corresponding behavior pattern under this image.</p>
+<h3 id="The-Mask-Function-of-Character-Image"><a href="#The-Mask-Function-of-Character-Image" class="headerlink" title="The Mask Function of Character Image"></a>The Mask Function of Character Image</h3><p>We can regard such a specific appearance image as a kind of “mask”, which is a symbol and sense of ritual to switch identities, and it is also a prop to increase the immersion of the new identity. In <em>Naraka: Bladepoint</em>, a national style martial arts game, in addition to the antique scenes, the ancient style appearance of the characters also allows players to quickly feel that they can travel to ancient times, and Ning Hongye’s blindfolded cloth strips and capable and neat fashion can also allow players to substitute into a brave and decisive swordsman identity. </p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240716%2F36a6b2fb-cdc3-47f4-9d7c-9e6e15be79ee.webp/size/"></p>
+<hr>
+<p><em>《Naraka: Bladepoint》 Ning Hongye</em></p>
+<hr>
+<p>And when this “mask” does not meet the player’s conditions for identity setting, there will be a sense of incongruity. Therefore, in the design of game fashion, not only should we start from the era background and identity of the game character itself, but also combine the player’s inherent cognition of the character or a certain type of image to think.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Game characters are players’ virtual avatars in another world. Appearance customization and other features can promote players’ identification with the avatar. Players will invest their imagination of their ideal self in the avatar. Different appearance images are like a mask, allowing players to be more deeply immersed in the role of the game.</p>
+<p>Of course, such projection cannot explain all players’ appearance settings for game characters. Perhaps in the eyes of some players, game character creation and fashion matching are a way of personalized self-expression. By choosing different appearances and dresses, players can show their uniqueness and creativity.</p>
+]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
+      <tags>
+        <tag>User Experience</tag>
+        <tag>User Research</tag>
+        <tag>Face Customization</tag>
+        <tag>Self-Projection</tag>
+        <tag>Proteus Effect</tag>
+        <tag>Virtual Avatar</tag>
+        <tag>Game Fashion</tag>
+        <tag>Game Characters</tag>
+        <tag>Character Customization</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Rejecting Stereotypes: What Kind of Game Characters Can Best Capture Players&#39; Hearts</title>
+    <url>/2024/05/14/netease-ux-articles/news_20240716_28584_1167413/</url>
+    <content><![CDATA[<blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20240716/28584_1167413.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>Games, as an important social medium, have one of their most important functions: the ability to quickly mobilize people’s emotions in a short period. In many games, one of the most common elements that mobilize players’ emotions is the game character. Because whether it is deeply exploring the plot or experiencing intense battles, the first thing players come into contact with is the character.</p>
+<p>So what kind of game character can best capture the player’s heart in the first place? An important point is to enable players to truly immerse themselves in the role and experience the game immersively during the game, that is, to quickly enter a state of flow. The state that people show when they are focused on something is called flow by psychologist Mihaly Csikszentmihalyi. For example, when an artist is creating, when a player is engrossed in a game, their energy is completely invested in it, and at the same time, they have a strong sense of excitement and fulfillment. This is also why we sometimes play a game so “selflessly” that we ignore the passage of time.</p>
+<p>When we talk about game characters, there are many ways to express the dimensions that are often mentioned. This article will focus on the visual image, persona, personality and other aspects of the character to explore what kind of game characters can capture the player’s heart and leave a unique and vivid impression.</p>
+<h2 id="I-The-External-Image-of-the-Character"><a href="#I-The-External-Image-of-the-Character" class="headerlink" title="I. The External Image of the Character"></a>I. The External Image of the Character</h2><p>External image usually refers to the character’s shape, appearance, physical attributes, etc. When first getting to know a character, the first thing a player sees is their external image, and whether the player likes the character or not is often initially judged at first sight. Only when there is initial goodwill towards the character will there be an interest in further understanding the character.</p>
+<p>For example, during the promotional period before the official launch of the character Ji Yingying in the game <em>Naraka: Bladepoint</em>, even in just 20 seconds of the trailer CG, players couldn’t resist her “smile back”, and almost couldn’t forget her face at first sight. An amazing first impression also laid a good foundation for Ji Yingying’s continued high popularity. After her hero’s actual gameplay demonstration was released, the skill effects based on the Wuchang Lock and Nether Fire also brought players a hearty battle experience, enhancing the sense of satisfaction from multiple senses.</p>
+<p>Another example is YORHA No. 2 Type B (2B), one of the protagonists of <em>NieR: Automata</em>. She is the most popular character in the game and the most beautiful character in the hearts of players. Short white hair, blue-grey eyes, wearing a black blindfold (standard military goggles), carrying a silver-white samurai sword behind her, coupled with a black Gothic-style dress, the cool image surprised everyone as soon as it appeared. In addition, she always covers her eyes with a black half-face blindfold, revealing only a little bit of her face, which also casts a mysterious veil over this character. The form of wielding a giant weapon in battle, the agility, and the elegant action design, combined with the setting of a mecha-girl, are even more eye-catching.</p>
+<h2 id="II-Character-Persona-Tags"><a href="#II-Character-Persona-Tags" class="headerlink" title="II. Character Persona Tags"></a>II. Character Persona Tags</h2><p>Giving characters some specific persona tags can enhance the richness and three-dimensionality of the characters and help establish psychological identification with players. This is the core process of closely connecting the player’s heart with the character, and it is also a crucial part of driving the player’s preferences and decision-making and other psychological mechanisms. When a character has prominent traits, it is easy for players to establish a good impression of them.</p>
+<p>For example, previously, on the occasion of the 35th anniversary of the <em>Final Fantasy</em> series, the official released a vote, allowing players to choose the best series of games and characters in their minds. Among them, Emet-Selch from <em>Final Fantasy XIV</em> ranked first in the number of votes. One of the reasons why he is so popular with players is his distinctive and contrasting personality.</p>
+<p>First of all, when he first appeared, the initial impression he gave players was a puzzling and very indifferent villain image. But with more in-depth contact and understanding later, his completely opposite gentle and careful side will gradually be revealed. Combined with his personal experience: although he is good at conspiracy and has killed many people, his inner obsession is ultimately just to find his relatives and revive his compatriots. This kind of flesh-and-blood, and very contrasting personality makes players love and hate him, and leave a deep impression.</p>
+<p>Taking Ji Yingying as an example, in the story background of <em>Naraka: Bladepoint</em>, she is the most outstanding ghost messenger of the Wuchang Division, and she is a daunting existence in Morus Isle. Her hero introduction describes her as, “The infernal fire from the netherworld will burn all those who have betrayed her.” At the same time, her powerful combat ability also aroused the player’s admiration for the strong.</p>
+<p>On the other hand, her persona is a “three-no girl”, silent, introverted, and keeping strangers away, which creates a sense of contrast, making players not only imagine that without emotions, it is hard to imagine how strong she would be. Looking at her life background, she was abandoned by her family since she was a child and bears the infernal fire of revenge as Bai Wuchang - players will always remember the character they deeply sympathized with. The persona tags discussed above can effectively evoke and strengthen the player’s emotions.</p>
+<p>When a game character goes deep into the player’s mind, the character is established. We found in our research that when players examine their appearance and skins, they will also have a conventional answer based on the character’s image. Players are more concerned about the fit of fashion and characters. Factors such as lines, voice, hero stories, and character relationships that constitute the three-dimensionality of the character’s personality will affect the player’s judgment on whether a piece of fashion is beautiful and coordinated, and whether it has a story, and whether it can stand up to scrutiny.</p>
+<p>Therefore, it is very risky to easily change the persona or create points that contradict the original persona. For example, the male character Temulch in <em>Naraka: Bladepoint</em> was set from the beginning of the game as the bloodline of the prairie wolf king. “The legends of the ancestors are engraved in the mind, and the great glory is in front of you. The wolf from the prairie will run wildly again.” When he puts on a gorgeous dress, there are many players who stick to the persona, and they will feel very out of place.</p>
+<h2 id="III-The-Inner-Character-of-the-Character"><a href="#III-The-Inner-Character-of-the-Character" class="headerlink" title="III. The Inner Character of the Character"></a>III. The Inner Character of the Character</h2><p>Inner personality usually refers to the character’s internal tendencies and psychological characteristics, in terms of thinking and behavior towards people, things, and themselves. Just like the popularity of MBTI tests among friends in recent years, some personality tests are popular because they can give people more recognition and a sense of belonging from a psychological point of view. When everyone has their own “personality label”, they can quickly establish and deepen people’s understanding of each other.</p>
+<p>People always yearn to understand their own hearts and are obsessed with finding similar souls that resonate with them. In the game, when a character’s internal personality is rich and three-dimensional enough, it also has the importance of conveying emotions. Players’ preferences for the personality traits of game characters also vary from person to person. These characteristics can be confident, humorous, vulnerable, kind, brave; they can be like Astarion in <em>Baldur’s Gate 3</em>, with a complex but unique personality; they can be like Geralt in <em>The Witcher 3: Wild Hunt</em>, a mature and professional witcher, providing players with a deep sense of empowerment and helping them deal with powerful enemies; or you can also fall in love with Tali in <em>Mass Effect 2</em>, and she doesn’t even have a face.</p>
+<p>The above are examples of popular game character images with distinct characteristics that are loved by players all over the world. They are unique in the hearts of players and can also resonate strongly with players. At the same time, there are also many characters that are relatively unattractive. We found in player research that players will give feedback such as “no impression”, “not sure what he (in the story) wants to do, what is his goal”, “seems to see the shadow of several existing characters”, etc. for some characters who have a relatively low sense of existence in some games, that is, the characterization is “stereotyped”.</p>
+<p>The stereotyped here does not refer to the visual image of the face. After all, many games now support personalized face customization. Players can customize their faces according to their own preferences, or even photos. The character stereotype discussed in this article focuses more on internal personality traits.</p>
+<p>For example, in our research on a certain game, based on the data fed back by players, we compared the similarity of personality traits of two male characters and found that the similarity of the two in various dimensions is extremely high. This is also the reason why players are confused and ask “the two are indistinguishable”. If there is no difference in internal personality, it will be difficult to create a memorable character in the subsequent development of the character line.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In many scenarios where we usually contact users, whether it is about art or gameplay, players always tend to focus on characters. By shaping a memorable character, we can better understand the motivation and emotional connection of players to experience the game, and also better understand how to deepen the attraction and psychological identification of players in the game.</p>
+<p>The above is a preliminary exploration of character shaping in game design. In addition, the character’s special skills, dubbing, etc. are also sufficient manifestations to help shape its three-dimensional image and identity. Of course, when talking about a certain character, we are definitely not looking at it from a single dimension. Only by fully considering many factors such as the character’s appearance, background, personality, and setting can we create a distinctive and beloved character.</p>
+]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
+      <tags>
+        <tag>User Research</tag>
+        <tag>Character Design</tag>
+        <tag>Player Psychology</tag>
+        <tag>Character Image</tag>
+        <tag>Personality Traits</tag>
+        <tag>Character Archetypes</tag>
+        <tag>Character Development</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Help! Why is This Boss Music Stuck in My Head!</title>
     <url>/2024/04/25/netease-ux-articles/news_20240716_28584_1167423/</url>
     <content><![CDATA[<blockquote>
@@ -17206,47 +17272,6 @@ There is a website called Astats, which will count the game achievements of the 
         <tag>Cognitive Load</tag>
         <tag>Short-Term Musical Memory</tag>
         <tag>Harmonic Context</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Rejecting Stereotypes: What Kind of Game Characters Can Best Capture Players&#39; Hearts</title>
-    <url>/2024/05/14/netease-ux-articles/news_20240716_28584_1167413/</url>
-    <content><![CDATA[<blockquote>
-<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20240716/28584_1167413.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
-</blockquote>
-<p>&nbsp; </p>
-<p>Games, as an important social medium, have one of their most important functions: the ability to quickly mobilize people’s emotions in a short period. In many games, one of the most common elements that mobilize players’ emotions is the game character. Because whether it is deeply exploring the plot or experiencing intense battles, the first thing players come into contact with is the character.</p>
-<p>So what kind of game character can best capture the player’s heart in the first place? An important point is to enable players to truly immerse themselves in the role and experience the game immersively during the game, that is, to quickly enter a state of flow. The state that people show when they are focused on something is called flow by psychologist Mihaly Csikszentmihalyi. For example, when an artist is creating, when a player is engrossed in a game, their energy is completely invested in it, and at the same time, they have a strong sense of excitement and fulfillment. This is also why we sometimes play a game so “selflessly” that we ignore the passage of time.</p>
-<p>When we talk about game characters, there are many ways to express the dimensions that are often mentioned. This article will focus on the visual image, persona, personality and other aspects of the character to explore what kind of game characters can capture the player’s heart and leave a unique and vivid impression.</p>
-<h2 id="I-The-External-Image-of-the-Character"><a href="#I-The-External-Image-of-the-Character" class="headerlink" title="I. The External Image of the Character"></a>I. The External Image of the Character</h2><p>External image usually refers to the character’s shape, appearance, physical attributes, etc. When first getting to know a character, the first thing a player sees is their external image, and whether the player likes the character or not is often initially judged at first sight. Only when there is initial goodwill towards the character will there be an interest in further understanding the character.</p>
-<p>For example, during the promotional period before the official launch of the character Ji Yingying in the game <em>Naraka: Bladepoint</em>, even in just 20 seconds of the trailer CG, players couldn’t resist her “smile back”, and almost couldn’t forget her face at first sight. An amazing first impression also laid a good foundation for Ji Yingying’s continued high popularity. After her hero’s actual gameplay demonstration was released, the skill effects based on the Wuchang Lock and Nether Fire also brought players a hearty battle experience, enhancing the sense of satisfaction from multiple senses.</p>
-<p>Another example is YORHA No. 2 Type B (2B), one of the protagonists of <em>NieR: Automata</em>. She is the most popular character in the game and the most beautiful character in the hearts of players. Short white hair, blue-grey eyes, wearing a black blindfold (standard military goggles), carrying a silver-white samurai sword behind her, coupled with a black Gothic-style dress, the cool image surprised everyone as soon as it appeared. In addition, she always covers her eyes with a black half-face blindfold, revealing only a little bit of her face, which also casts a mysterious veil over this character. The form of wielding a giant weapon in battle, the agility, and the elegant action design, combined with the setting of a mecha-girl, are even more eye-catching.</p>
-<h2 id="II-Character-Persona-Tags"><a href="#II-Character-Persona-Tags" class="headerlink" title="II. Character Persona Tags"></a>II. Character Persona Tags</h2><p>Giving characters some specific persona tags can enhance the richness and three-dimensionality of the characters and help establish psychological identification with players. This is the core process of closely connecting the player’s heart with the character, and it is also a crucial part of driving the player’s preferences and decision-making and other psychological mechanisms. When a character has prominent traits, it is easy for players to establish a good impression of them.</p>
-<p>For example, previously, on the occasion of the 35th anniversary of the <em>Final Fantasy</em> series, the official released a vote, allowing players to choose the best series of games and characters in their minds. Among them, Emet-Selch from <em>Final Fantasy XIV</em> ranked first in the number of votes. One of the reasons why he is so popular with players is his distinctive and contrasting personality.</p>
-<p>First of all, when he first appeared, the initial impression he gave players was a puzzling and very indifferent villain image. But with more in-depth contact and understanding later, his completely opposite gentle and careful side will gradually be revealed. Combined with his personal experience: although he is good at conspiracy and has killed many people, his inner obsession is ultimately just to find his relatives and revive his compatriots. This kind of flesh-and-blood, and very contrasting personality makes players love and hate him, and leave a deep impression.</p>
-<p>Taking Ji Yingying as an example, in the story background of <em>Naraka: Bladepoint</em>, she is the most outstanding ghost messenger of the Wuchang Division, and she is a daunting existence in Morus Isle. Her hero introduction describes her as, “The infernal fire from the netherworld will burn all those who have betrayed her.” At the same time, her powerful combat ability also aroused the player’s admiration for the strong.</p>
-<p>On the other hand, her persona is a “three-no girl”, silent, introverted, and keeping strangers away, which creates a sense of contrast, making players not only imagine that without emotions, it is hard to imagine how strong she would be. Looking at her life background, she was abandoned by her family since she was a child and bears the infernal fire of revenge as Bai Wuchang - players will always remember the character they deeply sympathized with. The persona tags discussed above can effectively evoke and strengthen the player’s emotions.</p>
-<p>When a game character goes deep into the player’s mind, the character is established. We found in our research that when players examine their appearance and skins, they will also have a conventional answer based on the character’s image. Players are more concerned about the fit of fashion and characters. Factors such as lines, voice, hero stories, and character relationships that constitute the three-dimensionality of the character’s personality will affect the player’s judgment on whether a piece of fashion is beautiful and coordinated, and whether it has a story, and whether it can stand up to scrutiny.</p>
-<p>Therefore, it is very risky to easily change the persona or create points that contradict the original persona. For example, the male character Temulch in <em>Naraka: Bladepoint</em> was set from the beginning of the game as the bloodline of the prairie wolf king. “The legends of the ancestors are engraved in the mind, and the great glory is in front of you. The wolf from the prairie will run wildly again.” When he puts on a gorgeous dress, there are many players who stick to the persona, and they will feel very out of place.</p>
-<h2 id="III-The-Inner-Character-of-the-Character"><a href="#III-The-Inner-Character-of-the-Character" class="headerlink" title="III. The Inner Character of the Character"></a>III. The Inner Character of the Character</h2><p>Inner personality usually refers to the character’s internal tendencies and psychological characteristics, in terms of thinking and behavior towards people, things, and themselves. Just like the popularity of MBTI tests among friends in recent years, some personality tests are popular because they can give people more recognition and a sense of belonging from a psychological point of view. When everyone has their own “personality label”, they can quickly establish and deepen people’s understanding of each other.</p>
-<p>People always yearn to understand their own hearts and are obsessed with finding similar souls that resonate with them. In the game, when a character’s internal personality is rich and three-dimensional enough, it also has the importance of conveying emotions. Players’ preferences for the personality traits of game characters also vary from person to person. These characteristics can be confident, humorous, vulnerable, kind, brave; they can be like Astarion in <em>Baldur’s Gate 3</em>, with a complex but unique personality; they can be like Geralt in <em>The Witcher 3: Wild Hunt</em>, a mature and professional witcher, providing players with a deep sense of empowerment and helping them deal with powerful enemies; or you can also fall in love with Tali in <em>Mass Effect 2</em>, and she doesn’t even have a face.</p>
-<p>The above are examples of popular game character images with distinct characteristics that are loved by players all over the world. They are unique in the hearts of players and can also resonate strongly with players. At the same time, there are also many characters that are relatively unattractive. We found in player research that players will give feedback such as “no impression”, “not sure what he (in the story) wants to do, what is his goal”, “seems to see the shadow of several existing characters”, etc. for some characters who have a relatively low sense of existence in some games, that is, the characterization is “stereotyped”.</p>
-<p>The stereotyped here does not refer to the visual image of the face. After all, many games now support personalized face customization. Players can customize their faces according to their own preferences, or even photos. The character stereotype discussed in this article focuses more on internal personality traits.</p>
-<p>For example, in our research on a certain game, based on the data fed back by players, we compared the similarity of personality traits of two male characters and found that the similarity of the two in various dimensions is extremely high. This is also the reason why players are confused and ask “the two are indistinguishable”. If there is no difference in internal personality, it will be difficult to create a memorable character in the subsequent development of the character line.</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In many scenarios where we usually contact users, whether it is about art or gameplay, players always tend to focus on characters. By shaping a memorable character, we can better understand the motivation and emotional connection of players to experience the game, and also better understand how to deepen the attraction and psychological identification of players in the game.</p>
-<p>The above is a preliminary exploration of character shaping in game design. In addition, the character’s special skills, dubbing, etc. are also sufficient manifestations to help shape its three-dimensional image and identity. Of course, when talking about a certain character, we are definitely not looking at it from a single dimension. Only by fully considering many factors such as the character’s appearance, background, personality, and setting can we create a distinctive and beloved character.</p>
-]]></content>
-      <categories>
-        <category>NetEase UX</category>
-      </categories>
-      <tags>
-        <tag>User Research</tag>
-        <tag>Character Design</tag>
-        <tag>Player Psychology</tag>
-        <tag>Character Image</tag>
-        <tag>Personality Traits</tag>
-        <tag>Character Archetypes</tag>
-        <tag>Character Development</tag>
       </tags>
   </entry>
   <entry>
@@ -17486,74 +17511,6 @@ There is a website called Astats, which will count the game achievements of the 
       </tags>
   </entry>
   <entry>
-    <title>Player&#39;s Digital Museum: Exploring the Experience Design of Bestiary Systems</title>
-    <url>/2024/04/06/netease-ux-articles/news_20240717_28584_1167718/</url>
-    <content><![CDATA[<blockquote>
-<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20240717/28584_1167718.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
-</blockquote>
-<p>&nbsp; </p>
-<p>When we collect various items and unlock new information in games, we often use a system that is not so attractive to players, but is very important - the Bestiary system. Setting up a Bestiary system is one of the most direct ways to reflect the worldview of the entire game. It can carry various character settings, achievement information, item map data, and so on in each game.</p>
-<p>This article will focus on the design of the Bestiary, introducing different game cases for analysis, aiming to explore some important commonalities and advantages in Bestiary design, in order to provide some ideas and references for Bestiary design.</p>
-<h2 id="1-Definition-and-Types-of-Bestiary-Systems"><a href="#1-Definition-and-Types-of-Bestiary-Systems" class="headerlink" title="1. Definition and Types of Bestiary Systems"></a>1. Definition and Types of Bestiary Systems</h2><p>The concept of “Bestiary (pictorial book)” originally refers to the creation of a general natural history book by drawing scientific illustrations of things in a certain field and adding corresponding explanatory texts. In many games, there are “bestiaries” with different or similar functionalities. In this case, it can be defined as “a collectible system that can collect, classify, display, and allow players to consult various item information obtained by players in various ways in the game.. </p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F451e98b5-0892-4f49-8984-3431946ba4e0.webp/size/" alt="《Pokémon Scarlet and Violet》 Pokédex"></p>
-<p>Generally speaking, the Bestiary system can present several main types according to their respective classification attributes. Here they are divided into:</p>
-<ul>
-<li><strong>Achievement Bestiary</strong>, which includes achievements, game endings, and CG collections, tending to collect certain results obtained by players;</li>
-<li><strong>Collectible item Bestiary</strong>, such as weapons, costumes, recipes, plants, materials, etc.;</li>
-<li><strong>Text information Bestiary</strong>, such as some story background information, character information, and dialogue information obtained in puzzle games;</li>
-<li><strong>Character Bestiary</strong>, including characters, creature settings, character information, display of unlocked new characters, and may be accompanied by other functions, such as a favorability system (such as in <em>Love and Sword</em> (Chinese Title: 遇见逆水寒), <em>Stardew Valley</em>);</li>
-<li><strong>Other systems with Bestiary attributes</strong>, this type may not be a pure Bestiary collection interface, but it can bring players a similar experience, such as clothing and furniture decoration systems, card collection interfaces, etc.</li>
-</ul>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2Fa119104e-9bfe-4016-8718-6b053824e1ca.webp/size/" alt="Stardew Valley Character Gift Guide Bestiary"></p>
-<h2 id="2-Bestiary-System-and-Collection-Gameplay-Experience-Design"><a href="#2-Bestiary-System-and-Collection-Gameplay-Experience-Design" class="headerlink" title="2. Bestiary System and Collection Gameplay Experience Design"></a>2. Bestiary System and Collection Gameplay Experience Design</h2><p>Bestiary design involves one of the main gameplays: collection gameplay, and the Bestiary system is the most intuitive way to display the results of collection gameplay.</p>
-<p>Adding collection elements to the game is an important way to enhance the player’s sense of accomplishment and prolong the player’s game retention time. Take open-world games as an example. In open-world games, if there are only main quests and side quests, more costs need to be invested in writing the storyline, which will consume more time and budget. Therefore, placing some collection elements as “seasoning” and “content filler” is a time-saving and labor-saving solution. It can directly increase the content of the game, guide players to explore the map, and add fun to the open-world experience. </p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F28aa85c7-1da0-4abe-8646-1dd7ef815488.webp/size/" alt="Assassin&#39;s Creed: Odyssey Map Collectible Markers"></p>
-<p>In the book “The Overspent American”, Harvard University economist Juliet Schor proposed a new concept - the “Diderot Effect” or “matching effect”, which specifically refers to the phenomenon that people continue to configure items that match them after owning a new item to achieve psychological balance.</p>
-<p>Therefore, many games use people’s “matching psychology” to stimulate players’ desire to collect, add matching designs, sets, and other concepts, and consider how to design the Bestiary system from the perspectives of player psychology and interactive experience.</p>
-<h3 id="Arrange-Collectibles-According-to-Classification-Principles"><a href="#Arrange-Collectibles-According-to-Classification-Principles" class="headerlink" title="Arrange Collectibles According to Classification Principles"></a>Arrange Collectibles According to Classification Principles</h3><p>When designing, collectibles can be classified and arranged according to different types of labels. Collected collectibles are displayed in order, and uncollected collectibles appear in a semi-transparent, gray silhouette, or other unlocked way. In addition to making the items more intuitive and orderly, this can also make it easier for players to see how many things they may be missing in the same type of Bestiary, arousing players’ desire to collect. </p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F33fefec6-4748-407a-98ea-153916164810.webp/size/" alt="Famine creates a character dressing interface"></p>
-<h3 id="Make-the-Bestiary-More-Than-Just-a-“Bestiary”"><a href="#Make-the-Bestiary-More-Than-Just-a-“Bestiary”" class="headerlink" title="Make the Bestiary More Than Just a “Bestiary”"></a>Make the Bestiary More Than Just a “Bestiary”</h3><p>In games, how to greatly increase the frequency of use of the Bestiary and make various interaction processes more convenient and concentrated? The answer is to use a functionally integrated approach. In addition to the most critical Bestiary function, let some Bestiaries carry other functions, such as placing level, combat skill display, and promotion UI; placing character skin and clothing collections, store, and other page jump UIs.</p>
-<p>For example, in <em>Naraka: Bladepoint</em>, the hero display page clearly serves as a character Bestiary. In the interface, it can be seen that whether it is character information, combat strength attributes, and character skills, or related appearance changes and other functions, they are clearly and directly presented on the same interface. When players enter the character Bestiary, they mostly want to check other information related to the character. This is also a design method that conforms to the player’s interactive thinking. </p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F46d89aa8-d090-4205-8a91-7d0a92cc8f09.webp/size/" alt="Naraka: Bladepoint Hero Display Page"></p>
-<p>At this time, the Bestiary system becomes an important part of the fully integrated game experience, rather than a dispensable independent interface. This Bestiary attribute system with comprehensive functions will become one of the key interfaces.</p>
-<h3 id="Add-Path-Guidance-to-Collectibles"><a href="#Add-Path-Guidance-to-Collectibles" class="headerlink" title="Add Path Guidance to Collectibles"></a>Add Path Guidance to Collectibles</h3><p>There are two schemes for the path guidance of collectibles: one is to prompt or tell the player where to obtain the collectible, including map information or limited-time event information; the other is that after the player collects the item, the information related to the collectible will also be unlocked. After that, when the player wants to collect this item again, they can directly check the location information in the Bestiary. In survival adventure games, farming management games, and card games, adding path guidance to the Bestiary is a very common and important design method. </p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2Fa00bab7a-1275-44a9-8be5-a3853d92142c.webp/size/" alt="The Legend of Zelda: Tears of the Kingdom Bestiary Screenshot"></p>
-<h2 id="3-Visual-and-Interactive-Experience-Design-in-the-Bestiary"><a href="#3-Visual-and-Interactive-Experience-Design-in-the-Bestiary" class="headerlink" title="3. Visual and Interactive Experience Design in the Bestiary"></a>3. Visual and Interactive Experience Design in the Bestiary</h2><h3 id="Leverage-the-Advantages-of-Conventional-Bestiary-Interfaces"><a href="#Leverage-the-Advantages-of-Conventional-Bestiary-Interfaces" class="headerlink" title="Leverage the Advantages of Conventional Bestiary Interfaces"></a>Leverage the Advantages of Conventional Bestiary Interfaces</h3><p>Many common Bestiaries are made by planar interface design methods. They can incorporate artistic and emotional understanding of the game background on the basis of concise and clear design. This design can make the Bestiary system not grab the attention of other interfaces. In other words, developers do not need this interface to be so attractive, but it must be harmoniously integrated into the game environment and maintain overall consistency with other interfaces of the same level.</p>
-<p>For example, the construction and collection interfaces of <em>Cult of the Lamb</em> inherit the style of the game itself, using dark tones to set off the atmosphere, which is in line with the story background setting of the game; the UI size is prominent, and the distribution is simple and clear, and players can quickly find the items they want to click. </p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F3540e505-8c9f-41a7-8f5d-ace03a286dae.webp/size/" alt="*Cult of the Lamb*"></p>
-<h3 id="Use-Situational-Design-to-Enhance-Immersion"><a href="#Use-Situational-Design-to-Enhance-Immersion" class="headerlink" title="Use Situational Design to Enhance Immersion"></a>Use Situational Design to Enhance Immersion</h3><p>Most of the impressive Bestiary designs on the market, or the Bestiary systems in high-quality games in the hearts of players, have one thing in common, that is, they use the situational design of the game. The situational design of the Bestiary can be said to be centered on and aimed at highlighting and expressing the worldview, and is closely linked to the performance of the GUI. By packaging the interface in a way that conforms to and is embedded in the game background, players can have emotional resonance and recognition.</p>
-<p>This kind of situational design can also be called scene-based design to some extent, because producers often use perspective scenes for specific performance. Generally speaking, its production process can be three-dimensional or two-dimensional, but from the perspective of the presentation results, their common feature is that the function of the Bestiary is placed in a three-dimensional scene. Among them, not only around the scene, but more emphasis on the sense of substitution, immersion, and atmosphere in the background of this worldview.</p>
-<p><em>Animal Crossing: New Horizons</em> is a classic case of immersive situational Bestiary design. Its special feature is the use of a walk-in scene. A walk-in scene is a special category of scene-based Bestiaries. Players can operate characters to move and interact in the packaged Bestiary system, which generally appears in three-dimensional games. <em>Animal Crossing</em> cleverly packages the Bestiary into a museum that can be walked in. Players can display the collected items in the form of display and display. When players see that the fossil fragments collected on weekdays are spliced into complete fossils, and the aquarium and insect hall become colorful and vivid, they will feel that the time and energy they put into collection are very worthwhile. </p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F632955fc-a6db-47be-b0fa-2caea4fc6d9a.gif/size/" alt="Animal Crossing: New Horizons Museum Area"></p>
-<p>Situational design can also be exemplified by Nintendo’s <em>Luigi’s Mansion 3</em>. In this game, players can use a vacuum cleaner to capture ghosts, and check the names and types of ghosts we captured in the doctor’s display room, and also see the different Bosses collected in the plot. In the interface, players can switch multiple glass sealed vessels left and right, which contain different collected ghosts.</p>
-<p>Although the scene perspective is fixed and players cannot move, being able to manipulate the glowing glass jars that look like scientific laboratory glass jars still gives players a strong sense of atmosphere. The background setting and emotional response are well conveyed to the players through the scene. </p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F0c31837c-540f-4de7-87df-318d4fdc94b3.gif/size/" alt="Luigi&#39;s Mansion 3 Ghost Bestiary"></p>
-<h3 id="Reasonably-Choose-Special-Carriers"><a href="#Reasonably-Choose-Special-Carriers" class="headerlink" title="Reasonably Choose Special Carriers"></a>Reasonably Choose Special Carriers</h3><p>Special Bestiary carriers actually exist in both planar types and situational types. The reason why they are analyzed separately is that this is a way to make full use of the Bestiary to increase the game effect.</p>
-<p><em>The Forest</em> is a first-person open-world survival game. The protagonist survives in the primitive jungle in a plane crash accident, and the Bestiary design inside is also very worthy of reference. The designer combines all the important information that players must consult, such as weapon and material production methods, and jungle creature records, into a “survival guide”. Through the form of this special carrier, supplemented by the immersive first-person browsing dynamics, it can give a good sense of substitution, which is very in line with the game setting and the interaction is very convenient. </p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F60266013-c838-474f-9878-e8ab9460de7b.gif/size/" alt="The Forest Production Bestiary &quot;Survival Guide&quot;"></p>
-<h3 id="Handle-Interface-Interaction-Levels-According-to-Needs"><a href="#Handle-Interface-Interaction-Levels-According-to-Needs" class="headerlink" title="Handle Interface Interaction Levels According to Needs"></a>Handle Interface Interaction Levels According to Needs</h3><p>In addition, the interaction level and different positions of the Bestiary in the game also have different effects.</p>
-<p>Some games will directly place part of the Bestiary system on the main interface of the initial entry into the game, at the same level as the “save and load”, “start game” and other UIs. This is so that players can quickly check their gains when starting and ending the game. It also shows that this type of Bestiary system can generally be slightly separated from the main content of the game, and players can consult the Bestiary after playing.</p>
-<p>Many Bestiary systems, especially the functionally integrated Bestiary systems mentioned above, will mostly be set at the same level as “vbackpack”, “character status” and other functions, in a conspicuous place on the game interface or set as a pop-up interface for commonly used keys. At this time, the primary purpose is for players to be able to find and use them in a timely manner. </p>
-<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F40a3364b-f8f9-43ae-aac4-144b4d7ab9f4.webp/size/" alt="Terraria toolbar and other Bestiaries are in a conspicuous position"></p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>A good Bestiary system design can be guided by the game’s worldview, allowing players to immerse themselves in the game world and enhance the game experience. As one of the important systems in the game, the Bestiary system can not only provide strategic guidance and collection value, but also enrich the content of the game and increase playability through different types of Bestiary presentations.</p>
-<p>All in all, in the process of game production, Bestiary system design is essential to create an attractive game world.</p>
-]]></content>
-      <categories>
-        <category>NetEase UX</category>
-      </categories>
-      <tags>
-        <tag>User Experience</tag>
-        <tag>Interaction Design</tag>
-        <tag>Immersion</tag>
-        <tag>Sense of Accomplishment</tag>
-        <tag>Bestiary</tag>
-        <tag>Collection</tag>
-        <tag>Game Worldview</tag>
-        <tag>Categorization</tag>
-        <tag>Presentation</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Silent Communication in Games: An Essential Tool for Creating Immersive Experiences</title>
     <url>/2024/06/17/netease-ux-articles/news_20240717_28584_1167686/</url>
     <content><![CDATA[<blockquote>
@@ -17673,6 +17630,74 @@ There is a website called Astats, which will count the game achievements of the 
         <tag>Cognitive Load</tag>
         <tag>Non-Verbal Communication</tag>
         <tag>Mental Model</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Player&#39;s Digital Museum: Exploring the Experience Design of Bestiary Systems</title>
+    <url>/2024/04/06/netease-ux-articles/news_20240717_28584_1167718/</url>
+    <content><![CDATA[<blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a href="https://ux.163.com/news/20240717/28584_1167718.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>&nbsp; </p>
+<p>When we collect various items and unlock new information in games, we often use a system that is not so attractive to players, but is very important - the Bestiary system. Setting up a Bestiary system is one of the most direct ways to reflect the worldview of the entire game. It can carry various character settings, achievement information, item map data, and so on in each game.</p>
+<p>This article will focus on the design of the Bestiary, introducing different game cases for analysis, aiming to explore some important commonalities and advantages in Bestiary design, in order to provide some ideas and references for Bestiary design.</p>
+<h2 id="1-Definition-and-Types-of-Bestiary-Systems"><a href="#1-Definition-and-Types-of-Bestiary-Systems" class="headerlink" title="1. Definition and Types of Bestiary Systems"></a>1. Definition and Types of Bestiary Systems</h2><p>The concept of “Bestiary (pictorial book)” originally refers to the creation of a general natural history book by drawing scientific illustrations of things in a certain field and adding corresponding explanatory texts. In many games, there are “bestiaries” with different or similar functionalities. In this case, it can be defined as “a collectible system that can collect, classify, display, and allow players to consult various item information obtained by players in various ways in the game.. </p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F451e98b5-0892-4f49-8984-3431946ba4e0.webp/size/" alt="《Pokémon Scarlet and Violet》 Pokédex"></p>
+<p>Generally speaking, the Bestiary system can present several main types according to their respective classification attributes. Here they are divided into:</p>
+<ul>
+<li><strong>Achievement Bestiary</strong>, which includes achievements, game endings, and CG collections, tending to collect certain results obtained by players;</li>
+<li><strong>Collectible item Bestiary</strong>, such as weapons, costumes, recipes, plants, materials, etc.;</li>
+<li><strong>Text information Bestiary</strong>, such as some story background information, character information, and dialogue information obtained in puzzle games;</li>
+<li><strong>Character Bestiary</strong>, including characters, creature settings, character information, display of unlocked new characters, and may be accompanied by other functions, such as a favorability system (such as in <em>Love and Sword</em> (Chinese Title: 遇见逆水寒), <em>Stardew Valley</em>);</li>
+<li><strong>Other systems with Bestiary attributes</strong>, this type may not be a pure Bestiary collection interface, but it can bring players a similar experience, such as clothing and furniture decoration systems, card collection interfaces, etc.</li>
+</ul>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2Fa119104e-9bfe-4016-8718-6b053824e1ca.webp/size/" alt="Stardew Valley Character Gift Guide Bestiary"></p>
+<h2 id="2-Bestiary-System-and-Collection-Gameplay-Experience-Design"><a href="#2-Bestiary-System-and-Collection-Gameplay-Experience-Design" class="headerlink" title="2. Bestiary System and Collection Gameplay Experience Design"></a>2. Bestiary System and Collection Gameplay Experience Design</h2><p>Bestiary design involves one of the main gameplays: collection gameplay, and the Bestiary system is the most intuitive way to display the results of collection gameplay.</p>
+<p>Adding collection elements to the game is an important way to enhance the player’s sense of accomplishment and prolong the player’s game retention time. Take open-world games as an example. In open-world games, if there are only main quests and side quests, more costs need to be invested in writing the storyline, which will consume more time and budget. Therefore, placing some collection elements as “seasoning” and “content filler” is a time-saving and labor-saving solution. It can directly increase the content of the game, guide players to explore the map, and add fun to the open-world experience. </p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F28aa85c7-1da0-4abe-8646-1dd7ef815488.webp/size/" alt="Assassin&#39;s Creed: Odyssey Map Collectible Markers"></p>
+<p>In the book “The Overspent American”, Harvard University economist Juliet Schor proposed a new concept - the “Diderot Effect” or “matching effect”, which specifically refers to the phenomenon that people continue to configure items that match them after owning a new item to achieve psychological balance.</p>
+<p>Therefore, many games use people’s “matching psychology” to stimulate players’ desire to collect, add matching designs, sets, and other concepts, and consider how to design the Bestiary system from the perspectives of player psychology and interactive experience.</p>
+<h3 id="Arrange-Collectibles-According-to-Classification-Principles"><a href="#Arrange-Collectibles-According-to-Classification-Principles" class="headerlink" title="Arrange Collectibles According to Classification Principles"></a>Arrange Collectibles According to Classification Principles</h3><p>When designing, collectibles can be classified and arranged according to different types of labels. Collected collectibles are displayed in order, and uncollected collectibles appear in a semi-transparent, gray silhouette, or other unlocked way. In addition to making the items more intuitive and orderly, this can also make it easier for players to see how many things they may be missing in the same type of Bestiary, arousing players’ desire to collect. </p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F33fefec6-4748-407a-98ea-153916164810.webp/size/" alt="Famine creates a character dressing interface"></p>
+<h3 id="Make-the-Bestiary-More-Than-Just-a-“Bestiary”"><a href="#Make-the-Bestiary-More-Than-Just-a-“Bestiary”" class="headerlink" title="Make the Bestiary More Than Just a “Bestiary”"></a>Make the Bestiary More Than Just a “Bestiary”</h3><p>In games, how to greatly increase the frequency of use of the Bestiary and make various interaction processes more convenient and concentrated? The answer is to use a functionally integrated approach. In addition to the most critical Bestiary function, let some Bestiaries carry other functions, such as placing level, combat skill display, and promotion UI; placing character skin and clothing collections, store, and other page jump UIs.</p>
+<p>For example, in <em>Naraka: Bladepoint</em>, the hero display page clearly serves as a character Bestiary. In the interface, it can be seen that whether it is character information, combat strength attributes, and character skills, or related appearance changes and other functions, they are clearly and directly presented on the same interface. When players enter the character Bestiary, they mostly want to check other information related to the character. This is also a design method that conforms to the player’s interactive thinking. </p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F46d89aa8-d090-4205-8a91-7d0a92cc8f09.webp/size/" alt="Naraka: Bladepoint Hero Display Page"></p>
+<p>At this time, the Bestiary system becomes an important part of the fully integrated game experience, rather than a dispensable independent interface. This Bestiary attribute system with comprehensive functions will become one of the key interfaces.</p>
+<h3 id="Add-Path-Guidance-to-Collectibles"><a href="#Add-Path-Guidance-to-Collectibles" class="headerlink" title="Add Path Guidance to Collectibles"></a>Add Path Guidance to Collectibles</h3><p>There are two schemes for the path guidance of collectibles: one is to prompt or tell the player where to obtain the collectible, including map information or limited-time event information; the other is that after the player collects the item, the information related to the collectible will also be unlocked. After that, when the player wants to collect this item again, they can directly check the location information in the Bestiary. In survival adventure games, farming management games, and card games, adding path guidance to the Bestiary is a very common and important design method. </p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2Fa00bab7a-1275-44a9-8be5-a3853d92142c.webp/size/" alt="The Legend of Zelda: Tears of the Kingdom Bestiary Screenshot"></p>
+<h2 id="3-Visual-and-Interactive-Experience-Design-in-the-Bestiary"><a href="#3-Visual-and-Interactive-Experience-Design-in-the-Bestiary" class="headerlink" title="3. Visual and Interactive Experience Design in the Bestiary"></a>3. Visual and Interactive Experience Design in the Bestiary</h2><h3 id="Leverage-the-Advantages-of-Conventional-Bestiary-Interfaces"><a href="#Leverage-the-Advantages-of-Conventional-Bestiary-Interfaces" class="headerlink" title="Leverage the Advantages of Conventional Bestiary Interfaces"></a>Leverage the Advantages of Conventional Bestiary Interfaces</h3><p>Many common Bestiaries are made by planar interface design methods. They can incorporate artistic and emotional understanding of the game background on the basis of concise and clear design. This design can make the Bestiary system not grab the attention of other interfaces. In other words, developers do not need this interface to be so attractive, but it must be harmoniously integrated into the game environment and maintain overall consistency with other interfaces of the same level.</p>
+<p>For example, the construction and collection interfaces of <em>Cult of the Lamb</em> inherit the style of the game itself, using dark tones to set off the atmosphere, which is in line with the story background setting of the game; the UI size is prominent, and the distribution is simple and clear, and players can quickly find the items they want to click. </p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F3540e505-8c9f-41a7-8f5d-ace03a286dae.webp/size/" alt="*Cult of the Lamb*"></p>
+<h3 id="Use-Situational-Design-to-Enhance-Immersion"><a href="#Use-Situational-Design-to-Enhance-Immersion" class="headerlink" title="Use Situational Design to Enhance Immersion"></a>Use Situational Design to Enhance Immersion</h3><p>Most of the impressive Bestiary designs on the market, or the Bestiary systems in high-quality games in the hearts of players, have one thing in common, that is, they use the situational design of the game. The situational design of the Bestiary can be said to be centered on and aimed at highlighting and expressing the worldview, and is closely linked to the performance of the GUI. By packaging the interface in a way that conforms to and is embedded in the game background, players can have emotional resonance and recognition.</p>
+<p>This kind of situational design can also be called scene-based design to some extent, because producers often use perspective scenes for specific performance. Generally speaking, its production process can be three-dimensional or two-dimensional, but from the perspective of the presentation results, their common feature is that the function of the Bestiary is placed in a three-dimensional scene. Among them, not only around the scene, but more emphasis on the sense of substitution, immersion, and atmosphere in the background of this worldview.</p>
+<p><em>Animal Crossing: New Horizons</em> is a classic case of immersive situational Bestiary design. Its special feature is the use of a walk-in scene. A walk-in scene is a special category of scene-based Bestiaries. Players can operate characters to move and interact in the packaged Bestiary system, which generally appears in three-dimensional games. <em>Animal Crossing</em> cleverly packages the Bestiary into a museum that can be walked in. Players can display the collected items in the form of display and display. When players see that the fossil fragments collected on weekdays are spliced into complete fossils, and the aquarium and insect hall become colorful and vivid, they will feel that the time and energy they put into collection are very worthwhile. </p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F632955fc-a6db-47be-b0fa-2caea4fc6d9a.gif/size/" alt="Animal Crossing: New Horizons Museum Area"></p>
+<p>Situational design can also be exemplified by Nintendo’s <em>Luigi’s Mansion 3</em>. In this game, players can use a vacuum cleaner to capture ghosts, and check the names and types of ghosts we captured in the doctor’s display room, and also see the different Bosses collected in the plot. In the interface, players can switch multiple glass sealed vessels left and right, which contain different collected ghosts.</p>
+<p>Although the scene perspective is fixed and players cannot move, being able to manipulate the glowing glass jars that look like scientific laboratory glass jars still gives players a strong sense of atmosphere. The background setting and emotional response are well conveyed to the players through the scene. </p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F0c31837c-540f-4de7-87df-318d4fdc94b3.gif/size/" alt="Luigi&#39;s Mansion 3 Ghost Bestiary"></p>
+<h3 id="Reasonably-Choose-Special-Carriers"><a href="#Reasonably-Choose-Special-Carriers" class="headerlink" title="Reasonably Choose Special Carriers"></a>Reasonably Choose Special Carriers</h3><p>Special Bestiary carriers actually exist in both planar types and situational types. The reason why they are analyzed separately is that this is a way to make full use of the Bestiary to increase the game effect.</p>
+<p><em>The Forest</em> is a first-person open-world survival game. The protagonist survives in the primitive jungle in a plane crash accident, and the Bestiary design inside is also very worthy of reference. The designer combines all the important information that players must consult, such as weapon and material production methods, and jungle creature records, into a “survival guide”. Through the form of this special carrier, supplemented by the immersive first-person browsing dynamics, it can give a good sense of substitution, which is very in line with the game setting and the interaction is very convenient. </p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F60266013-c838-474f-9878-e8ab9460de7b.gif/size/" alt="The Forest Production Bestiary &quot;Survival Guide&quot;"></p>
+<h3 id="Handle-Interface-Interaction-Levels-According-to-Needs"><a href="#Handle-Interface-Interaction-Levels-According-to-Needs" class="headerlink" title="Handle Interface Interaction Levels According to Needs"></a>Handle Interface Interaction Levels According to Needs</h3><p>In addition, the interaction level and different positions of the Bestiary in the game also have different effects.</p>
+<p>Some games will directly place part of the Bestiary system on the main interface of the initial entry into the game, at the same level as the “save and load”, “start game” and other UIs. This is so that players can quickly check their gains when starting and ending the game. It also shows that this type of Bestiary system can generally be slightly separated from the main content of the game, and players can consult the Bestiary after playing.</p>
+<p>Many Bestiary systems, especially the functionally integrated Bestiary systems mentioned above, will mostly be set at the same level as “vbackpack”, “character status” and other functions, in a conspicuous place on the game interface or set as a pop-up interface for commonly used keys. At this time, the primary purpose is for players to be able to find and use them in a timely manner. </p>
+<p><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20240717%2F40a3364b-f8f9-43ae-aac4-144b4d7ab9f4.webp/size/" alt="Terraria toolbar and other Bestiaries are in a conspicuous position"></p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>A good Bestiary system design can be guided by the game’s worldview, allowing players to immerse themselves in the game world and enhance the game experience. As one of the important systems in the game, the Bestiary system can not only provide strategic guidance and collection value, but also enrich the content of the game and increase playability through different types of Bestiary presentations.</p>
+<p>All in all, in the process of game production, Bestiary system design is essential to create an attractive game world.</p>
+]]></content>
+      <categories>
+        <category>NetEase UX</category>
+      </categories>
+      <tags>
+        <tag>User Experience</tag>
+        <tag>Interaction Design</tag>
+        <tag>Immersion</tag>
+        <tag>Sense of Accomplishment</tag>
+        <tag>Bestiary</tag>
+        <tag>Collection</tag>
+        <tag>Game Worldview</tag>
+        <tag>Categorization</tag>
+        <tag>Presentation</tag>
       </tags>
   </entry>
 </search>

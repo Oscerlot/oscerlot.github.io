@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- hexo injector head_begin start --><!-- Google tag (gtag.js) begins-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDVFDN1ZLY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NDVFDN1ZLY');
+    </script>
+    <!-- Google tag (gtag.js) ends-->
+    <!-- hexo injector head_begin end -->
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Oscar Armstrong-Davies">
+
+
+
+
+
+
+
+<title>What We Talk About When We Talk About Map Data Visualization | oad</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            oad.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+            <li class="menu-item search-btn">
+              <a href="#">Search</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/Data-Visualization/">
+                            Data Visualization
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Map-Visualization/">
+                            Map Visualization
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/GIS/">
+                            GIS
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/GeoJSON/">
+                            GeoJSON
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/WebGL/">
+                            WebGL
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Echarts/">
+                            Echarts
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Mapbox/">
+                            Mapbox
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                What We Talk About When We Talk About Map Data Visualization
+            
+            
+        </div>
+        <span class="post-date">
+            12 Oct, 2021
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F9f2fa3a2-34ca-4351-b393-b6c341040fdd.png/size/" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <blockquote>
+<p><em>Machine Translated from Chinese to English</em><br><a target="_blank" rel="noopener" href="https://ux.163.com/news/20211019/28584_979953.html"><em><strong>Original article written by ThunderFire UX (NetEase)</strong></em></a></p>
+</blockquote>
+<p>Cognitive science research shows that illustrations can help people understand knowledge faster and retain it for longer periods. In the era of big data, we have also reached a consensus: data visualization can help us gain insight into the meaning of data. Map data visualization can express the spatial relationship between data in the most intuitive form, and has capabilities that no other method has. So what is map data visualization? What are its application scenarios? What are the implementation schemes on the Web? This article will discuss these one by one, and at the end of the article, some tools for map visualization will also be introduced.</p>
+<h2 id="What-is-Map-Visualization-and-Its-Application-Scenarios"><a href="#What-is-Map-Visualization-and-Its-Application-Scenarios" class="headerlink" title="What is Map Visualization and Its Application Scenarios"></a>What is Map Visualization and Its Application Scenarios</h2><p>Map data visualization does not have a very official definition. It can be summarized as: Map data visualization is a data visualization method that visually presents data with geographical characteristics or analysis results on a geographic information map, which makes it easier for users to understand data patterns. The definition in words is not intuitive, and the following examples of application scenarios will make the definition easier to understand.</p>
+<p>Starting from our surroundings, querying scenic spots and routes through map software (web pages) is a kind of map visualization, which visually marks locations, paths, road conditions and other information on real geographic information.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F1c78154a-2945-43bd-80b1-3076fa2ba7e6.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;1c78154a-2945-43bd-80b1-3076fa2ba7e6.png"></p>
+<p>From a higher perspective, statistical analysis of earthquakes around the world over a period of time, the following figure marks the earthquake points on the world map, which can visually show the seismic zone.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F320b0e4c-a310-43a9-aec6-8b12d2037f07.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;320b0e4c-a310-43a9-aec6-8b12d2037f07.png"></p>
+<p>In business activities, map visualization often appears in various reports to clearly show the distribution of data in geographic space.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fef7cb52f-d744-474b-a59b-edccf0f877af.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;ef7cb52f-d744-474b-a59b-edccf0f877af.png"></p>
+<p>In addition to real-world, national and other geographic information, other data visualizations related to spatial location can also be called map data visualization. For example, data visualization on a game map to show the distribution of birth points, character movement trajectories, and so on.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F4f3d3d95-d12e-46b4-924f-15590e331e06.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;4f3d3d95-d12e-46b4-924f-15590e331e06.png"></p>
+<p>Through the above examples, the rules of map visualization can be summarized:</p>
+<ol>
+<li>Map visualization uses geographic information as the base map, and uses points, lines, and surfaces to represent data on the upper layer.</li>
+<li>Map visualization is usually used to represent the distribution and flow of data in geographic space.</li>
+</ol>
+<h2 id="Related-Technologies-for-Map-Data-Visualization-on-the-Web"><a href="#Related-Technologies-for-Map-Data-Visualization-on-the-Web" class="headerlink" title="Related Technologies for Map Data Visualization on the Web"></a>Related Technologies for Map Data Visualization on the Web</h2><p>Since the map uses geographic information as the base map and then adds data display of points, lines, and surfaces, the discussion of technical solutions can also be divided into two steps: geographic information base map rendering, and data layer visualization. The visualization of the data layer is basically the same as other data visualization methods, using canvas, svg or their upper-level technologies, but it is necessary to choose various projection functions to map the position to the base map. Therefore, this article will focus on the visualization technology of geographic information base maps.</p>
+<p>In many systems, the geographic information base map does not actually render a map, but merely pastes a picture. The upper-level data is displayed through absolute or relative positioning, which is a visual deception, but it is effective and can save resources.</p>
+<p>It can be seen that the base map in the report map mentioned earlier is composed of a series of polygons, which is a simple base map rendering method. Both Canvas and SVG in Web applications can render polygons (including curved edges).</p>
+<p>Below is a visualization of an aircraft seat map. The base map is obtained through the graphic elements of SVG, and the data layer is filled with colors for the graphic elements.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fa7135f09-ce8a-4796-983c-e436d4e4a519.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;a7135f09-ce8a-4796-983c-e436d4e4a519.png"></p>
+<p>The polygon description of maps of Chinese provinces, world countries, and other maps that we are familiar with has a unified format: GeoJSON (GeoJSON is a format for encoding various geographic data structures, a geographic spatial information data exchange format based on Javascript object notation). TopoJSON and other data formats have also been derived later. The coordinate points in GeoJSON are composed of longitude and latitude, so each piece of data in the data layer should also contain longitude, latitude, and numerical values. Some mature visualization libraries do not seem to require users to provide longitude and latitude, but actually complete the calculation internally. For example, in the following example from the Echarts official website, passing in the name of the area can complete the drawing of the data layer.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F85eaa845-b673-47ec-8ae4-91576ffe664a.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;85eaa845-b673-47ec-8ae4-91576ffe664a.png"></p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fcae6ced7-8749-48c4-9671-f0dedc33c552.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;cae6ced7-8749-48c4-9671-f0dedc33c552.png"></p>
+<p>Similar to the earthquake distribution map in the previous section, maps that contain terrain information (need to render different heights), or as shown in the figure below, need to display spheres, need to use WebGL technology (WebGL is a JavaScript API, with a very consistent API with OpenGL ES 2.0, used for Web 3D rendering) for drawing. Mature 3D drawing libraries like Three.js are upper-level encapsulations based on WebGL. In actual use, choosing these mature underlying libraries can improve development efficiency.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F81f7f66e-1391-48db-8d5a-8cb9b6f24a61.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;81f7f66e-1391-48db-8d5a-8cb9b6f24a61.png"></p>
+<p>The example of map navigation mentioned at the beginning of the article uses a high-precision base map, which is a completely different drawing technique. They may use a vector map solution, or a tile map (the tile map pyramid model is a multi-resolution hierarchical model. From the bottom to the top of the tile pyramid, the resolution becomes lower and lower, but the geographic range represented remains unchanged). When the map in the viewport is loaded in batches of rectangles, it uses the tile map technology solution. The accuracy of this type of map is much higher than that of polygon maps, and it can basically be accurate to buildings and shops. It is naturally superior to polygon maps in zooming interaction, so it is used for map data visualization with high precision requirements. The data layer also uses longitude and latitude to identify the data location. Now map service providers such as Mapbox, AutoNavi Maps, Tianditu, etc. all provide SDK for JavaScript. Mature chart libraries also encapsulate the calls of these SDKs, which are relatively convenient to use. Offline tile data can also be found online for developers to build offline map services. However, the development difficulty of this type of base map is higher than that of polygon maps, and there are different regulations on the number of calls and commercial access.</p>
+<h2 id="Map-Data-Visualization-Tools"><a href="#Map-Data-Visualization-Tools" class="headerlink" title="Map Data Visualization Tools"></a>Map Data Visualization Tools</h2><h3 id="Excel"><a href="#Excel" class="headerlink" title="Excel"></a>Excel</h3><p>Excel provides map drawing functions, and Microsoft Power Map for Excel needs to be introduced. This is suitable for people who are familiar with Excel to perform static map data visualization. The usage methods of different Excel versions are not exactly the same.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fd0ce7d75-c135-415e-822c-bdd7fa3a0964.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;d0ce7d75-c135-415e-822c-bdd7fa3a0964.png"></p>
+<h3 id="Echarts"><a href="#Echarts" class="headerlink" title="Echarts"></a>Echarts</h3><p>Echarts is a mature visualization library of js, which not only contains a small amount of 3D functions, but also uniformly provides high-precision base map API, which is suitable for most map data visualizations. Many BI platforms are implemented based on Echarts, but using Echarts requires users to have some programming skills. Programming languages such as Python and Matlab also have corresponding map visualization libraries.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F21a095de-03b1-490f-bc52-e468976ef8dd.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;21a095de-03b1-490f-bc52-e468976ef8dd.png"></p>
+<h3 id="Mapbox"><a href="#Mapbox" class="headerlink" title="Mapbox"></a>Mapbox</h3><p>Mapbox provides high-precision base map services and rich data layer drawing APIs, with highly free base map style customization, but as a lower-level map tool than Echarts, it requires higher programming skills.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2F569b3f4c-8e66-4e7c-b268-74dfe23842f7.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;569b3f4c-8e66-4e7c-b268-74dfe23842f7.png"></p>
+<h3 id="Commercial-BI-such-as-NetEase-Youdata"><a href="#Commercial-BI-such-as-NetEase-Youdata" class="headerlink" title="Commercial BI such as NetEase Youdata"></a>Commercial BI such as NetEase Youdata</h3><p>Many commercial platforms provide map data visualization functions. Their functions are rich and do not require users to program, but they basically require registration and fees.</p>
+<p>&nbsp;<br><img src="https://img.notionusercontent.com/ext/https%3A%2F%2Fnie.res.netease.com%2Fr%2Fpic%2F20211019%2Fe06c79e0-8e89-4d1e-840c-8a09c7dc9d5d.png/size/" alt="https:&#x2F;&#x2F;nie.res.netease.com&#x2F;r&#x2F;pic&#x2F;20211019&#x2F;e06c79e0-8e89-4d1e-840c-8a09c7dc9d5d.png"></p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Different data visualization methods are suitable for different information expressions. Map data visualization is suitable for expressing data distribution and flow related to geographic information. Map data visualization can be divided into two steps: base map drawing and data map drawing. Developers need to choose different technical solutions according to different needs scenarios. Data visualization has always been a method, and our real goal is to more clearly represent the information in the data through visualization.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2021/10/12/netease-ux-articles/news_20211012_28584_977961/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2021/10/01/netease-ux-articles/news_20211012_28584_978014/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+      <div class="search-popup">
+    <div class="search-popup-overlay">  
+    </div>
+    <div class="search-popup-window" >
+        <div class="search-header">
+            <div class="search-input-container">
+              <input autocomplete="off" autocapitalize="off" maxlength="80"
+                     placeholder="Search Anything" spellcheck="false"
+                     type="search" class="search-input">
+            </div>
+            <div class="search-close-btn">
+                <div class="icon close-btn"></div>
+            </div>
+        </div>
+        <div class="search-result-container">
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchConfig = {
+        path             : "/search.xml",
+        top_n_per_article: "1",
+        unescape         : "false",
+        trigger: "auto",
+        preload: "false"
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+<script src="/js/search.js"></script>
+    
+    
+
+  </body>
+</html>
