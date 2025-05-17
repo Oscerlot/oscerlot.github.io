@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Base64 Decoder</title>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#output, #nested-output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+.decoded-highlight {
+    background-color: lightyellow;
+    padding: 0 2px;
+}
+</style>
+</head>
+<body>
+
+  <h1>Base64 Decoder</h1>
+
+  <textarea id="encodedInput" placeholder="Enter string containing Base64 encoded parts..."></textarea>
+  <button id="decodeButton">Decode String</button>
+
+  <h2>Decoded Output:</h2>
+  <div id="output"></div>
+
+  <h2>Nested Decoded Output:</h2>
+  <div id="nested-output"></div>
+
+  <script>
+    const base64CharsRegex = /^[A-Za-z0-9+\/\-_=]+$/;
+    const MIN_BASE64_LENGTH = 20;
+
+    function isBase64String(str) {
+        if (str.length < MIN_BASE64_LENGTH) {
+            return false;
+        }
+
+        if (!base64CharsRegex.test(str)) {
+            return false; 
+        }
+
+        const len = str.length;
+        if (len % 4 !== 0) {
+            if (str.endsWith('=')) {
+                let paddingCount = 0;
+                if (str.endsWith('==')) paddingCount = 2;
+                else if (str.endsWith('=')) paddingCount = 1;
+
+                if (paddingCount > 0 && len < 4) return false;
+                if ((len - paddingCount) % 4 !== 0) return false;
+            } else {
+                return false;
+            }
+        }
+
+        try {
+            base64Decode(str);
+            return true;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    function base64Decode(encodedStr) {
+      const base64CharMap = {
+        'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7, 'I': 8, 'J': 9, 'K': 10, 'L': 11, 'M': 12, 'N': 13, 'O': 14, 'P': 15, 'Q': 16, 'R': 17, 'S': 18, 'T': 19, 'U': 20, 'V': 21, 'W': 22, 'X': 23, 'Y': 24, 'Z': 25,
+        'a': 26, 'b': 27, 'c': 28, 'd': 29, 'e': 30, 'f': 31, 'g': 32, 'h': 33, 'i': 34, 'j': 35, 'k': 36, 'l': 37, 'm': 38, 'n': 39, 'o': 40, 'p': 41, 'q': 42, 'r': 43, 's': 44, 't': 45, 'u': 46, 'v': 47, 'w': 48, 'x': 49, 'y': 50, 'z': 51,
+        '0': 52, '1': 53, '2': 54, '3': 55, '4': 56, '5': 57, '6': 58, '7': 59, '8': 60, '9': 61,
+        '+': 62, '/': 63,
+        '-': 62, '_': 63
+      };
+
+      let decodedBytes = [];
+      let paddingCount = 0;
+      encodedStr = encodedStr.replace(/=+$/, (match) => { paddingCount = match.length; return ''; });
+
+      for (let i = 0; i < encodedStr.length; i += 4) {
+        const chunk = encodedStr.substring(i, i + 4);
+        const v1 = base64CharMap[chunk[0]] ?? 0;
+        const v2 = base64CharMap[chunk[1]] ?? 0;
+        const v3 = base64CharMap[chunk[2]] ?? 0;
+        const v4 = base64CharMap[chunk[3]] ?? 0;
+
+        const combined = (v1 << 18) | (v2 << 12) | (v3 << 6) | v4;
+
+        const byte1 = (combined >> 16) & 255;
+        const byte2 = (combined >> 8) & 255;
+        const byte3 = combined & 255;
+
+        decodedBytes.push(byte1);
+        if (chunk[2] !== undefined && chunk[2] !== '=') {
+           decodedBytes.push(byte2);
+        }
+        if (chunk[3] !== undefined && chunk[3] !== '=') {
+           decodedBytes.push(byte3);
+        }
+
+      }
+      return String.fromCharCode(...decodedBytes);
+    }
+
+    function decodeAndHighlight(inputText) {
+        let outputHTML = '';
+        let processingIndex = 0;
+
+        while (processingIndex < inputText.length) {
+            let nextBase64StartIndex = -1;
+            let base64Candidate = '';
+
+            for (let i = processingIndex; i < inputText.length; i++) {
+                if (base64CharsRegex.test(inputText[i])) {
+                    nextBase64StartIndex = i;
+                    break;
+                }
+            }
+
+            if (nextBase64StartIndex === -1) {
+                outputHTML += document.createTextNode(inputText.substring(processingIndex)).textContent;
+                break;
+            } else {
+                outputHTML += document.createTextNode(inputText.substring(processingIndex, nextBase64StartIndex)).textContent;
+                processingIndex = nextBase64StartIndex;
+
+                for (let j = nextBase64StartIndex; j < inputText.length; j++) {
+                    if (base64CharsRegex.test(inputText[j])) {
+                        base64Candidate += inputText[j];
+                    } else {
+                        break;
+                    }
+                }
+
+              if (isBase64String(base64Candidate)) {
+                try {
+                  const decodedValue = base64Decode(base64Candidate);
+                  let decodedOutput = '';
+                  try {
+                    const jsonOutput = JSON.parse(decodedValue);
+                    decodedOutput = `<span class="decoded-highlight">${JSON.stringify(jsonOutput, null, 2)}</span>`;
+                  } catch (jsonError) {
+                    decodedOutput = `<span class="decoded-highlight">${decodedValue}</span>`;
+                  }
+                  outputHTML += decodedOutput;
+                  processingIndex += base64Candidate.length;
+                } catch (decodeError) {
+                  outputHTML += base64Candidate;
+                  processingIndex += base64Candidate.length;
+                }
+              } else {
+                outputHTML += base64Candidate;
+                processingIndex += base64Candidate.length;
+              }
+            }
+        }
+        return outputHTML;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const encodedInput = document.getElementById('encodedInput');
+      const decodeButton = document.getElementById('decodeButton');
+      const outputDiv = document.getElementById('output');
+      const nestedOutputDiv = document.getElementById('nested-output');
+
+      decodeButton.addEventListener('click', function() {
+        let inputText = encodedInput.value;
+        if (inputText) 
+        {
+            const firstLevelOutput = decodeAndHighlight(inputText);
+            outputDiv.innerHTML = firstLevelOutput;
+
+            let secondLevelInput = outputDiv.textContent;
+            const secondLevelOutput = decodeAndHighlight(secondLevelInput);
+             nestedOutputDiv.innerHTML = secondLevelOutput;
+        }
+        else 
+        {
+          outputDiv.textContent = "Please enter a string.";
+          nestedOutputDiv.textContent = "";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+    

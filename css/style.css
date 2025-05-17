@@ -407,6 +407,19 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: 2rem;
   margin-bottom: 3.5rem;
 }
+.footer-social-links a {
+  color: #888; /* Adjust link color as needed, or inherit from theme */
+  margin: 0 10px; /* Adds space around each icon */
+  font-size: 1.5em; /* Makes icons a bit bigger */
+  transition: color 0.3s ease;
+}
+.footer-social-links a:hover {
+  color: #bbb; /* Adjust hover color */
+}
+.footer-social-links {
+  text-align: center; /* Center the icons if they are not already */
+  margin-top: 10px; /* Add some space above the icons */
+}
 .post-list a {
   background-image: linear-gradient(#202020, #202020), linear-gradient(#d5d5d5, #d5d5d5);
   background-size: 100% 1px, 0% 1px;
