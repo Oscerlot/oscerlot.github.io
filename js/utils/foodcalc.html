@@ -5,62 +5,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food kJ Calculator</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        :root {
+            --primary-green: #4CAF50;
+            --light-green: #E8F5E9;
+            --dark-green: #2E7D32;
+            --white: #FFFFFF;
+            --light-gray: #f4f4f4;
+            --gray: #ccc;
+            --dark-gray: #555;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .ingredient-row {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+            margin: 0;
+            padding: 20px;
             display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .calculator-container {
+            background: var(--white);
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            width: 100%;
+            max-width: 700px; /* Increased max-width for better spacing */
+        }
+
+        h1 {
+            color: var(--dark-green);
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .ingredient-row {
+            display: grid;
+            /* Changed grid-template-columns for better flexibility */
+            grid-template-columns: 2fr 1.2fr 1.2fr auto;
+            gap: 15px;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--light-green);
         }
+
+        .ingredient-row:last-child {
+            border-bottom: none;
+        }
+
         .ingredient-row input {
-            margin-right: 10px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            padding: 12px;
+            border: 1px solid var(--gray);
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: 'Poppins', sans-serif;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            width: 100%; /* Ensure input takes full width of its grid cell */
+            box-sizing: border-box; /* Include padding and border in the element's total width */
         }
+
+        .ingredient-row input:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+        }
+
         .ingredient-result {
-            font-weight: bold;
+            font-weight: 600;
+            color: var(--primary-green);
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        #add-ingredient {
+            background-color: var(--light-green);
+            color: var(--dark-green);
+            border: 1px solid var(--dark-green);
+        }
+
+        #add-ingredient:hover {
+            background-color: var(--primary-green);
+            color: var(--white);
+        }
+
+        #calculate {
+            background-color: var(--primary-green);
+            color: white;
+            flex-grow: 1;
+        }
+
+        #calculate:hover {
+            background-color: var(--dark-green);
+            transform: translateY(-2px);
+        }
+
+        #total-result {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid var(--primary-green);
+            font-size: 1.4em;
+            font-weight: 600;
+            color: var(--dark-green);
+            text-align: right;
+        }
+
+        #total-kj {
+            display: inline-block;
             margin-left: 10px;
         }
-        #total-result {
-            margin-top: 20px;
-            font-size: 1.2em;
-            font-weight: bold;
+
+        @media (max-width: 600px) {
+            .ingredient-row {
+                grid-template-columns: 1fr; /* Stack fields vertically on small screens */
+            }
+
+            .ingredient-result {
+                text-align: left;
+                margin-top: 5px;
+                padding-left: 5px;
+            }
+            .calculator-container {
+                padding: 20px;
+            }
         }
-        button {
-            padding: 10px 15px;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-right: 10px;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
+
     </style>
 </head>
 <body>
 
-    <h1>Meal Kilojoule Calculator</h1>
+    <div class="calculator-container">
+        <h1>Meal Kilojoule Calculator</h1>
 
-    <div id="ingredients-container">
-        <div class="ingredient-row">
-            <input type="text" class="ingredient-name" placeholder="Ingredient Name">
-            <input type="number" class="weight" placeholder="Weight (g)">
-            <input type="number" class="kj-per-100g" placeholder="kJ per 100g">
-            <span class="ingredient-result"></span>
+        <div id="ingredients-container">
+            <div class="ingredient-row">
+                <input type="text" class="ingredient-name" placeholder="Ingredient Name">
+                <input type="number" class="weight" placeholder="Weight (g)" min="0">
+                <input type="number" class="kj-per-100g" placeholder="kJ per 100g" min="0">
+                <span class="ingredient-result"></span>
+            </div>
         </div>
-    </div>
 
-    <button id="add-ingredient">Add Ingredient</button>
-    <button id="calculate">Calculate</button>
+        <div class="button-container">
+            <button id="add-ingredient">Add Ingredient</button>
+            <button id="calculate">Calculate</button>
+        </div>
 
-    <div id="total-result">
-        Total Meal kJ: <span id="total-kj">0.00</span>
+        <div id="total-result">
+            Total Meal kJ: <span id="total-kj">0.00</span>
+        </div>
     </div>
 
     <script>
@@ -70,8 +188,8 @@
             newRow.className = 'ingredient-row';
             newRow.innerHTML = `
                 <input type="text" class="ingredient-name" placeholder="Ingredient Name">
-                <input type="number" class="weight" placeholder="Weight (g)">
-                <input type="number" class="kj-per-100g" placeholder="kJ per 100g">
+                <input type="number" class="weight" placeholder="Weight (g)" min="0">
+                <input type="number" class="kj-per-100g" placeholder="kJ per 100g" min="0">
                 <span class="ingredient-result"></span>
             `;
             container.appendChild(newRow);
@@ -102,5 +220,5 @@
         });
     </script>
 
-    </body>
+</body>
 </html>
