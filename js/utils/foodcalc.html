@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food kJ Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .ingredient-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .ingredient-row input {
+            margin-right: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .ingredient-result {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        #total-result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Meal Kilojoule Calculator</h1>
+
+    <div id="ingredients-container">
+        <div class="ingredient-row">
+            <input type="text" class="ingredient-name" placeholder="Ingredient Name">
+            <input type="number" class="weight" placeholder="Weight (g)">
+            <input type="number" class="kj-per-100g" placeholder="kJ per 100g">
+            <span class="ingredient-result"></span>
+        </div>
+    </div>
+
+    <button id="add-ingredient">Add Ingredient</button>
+    <button id="calculate">Calculate</button>
+
+    <div id="total-result">
+        Total Meal kJ: <span id="total-kj">0.00</span>
+    </div>
+
+    <script>
+        document.getElementById('add-ingredient').addEventListener('click', function() {
+            const container = document.getElementById('ingredients-container');
+            const newRow = document.createElement('div');
+            newRow.className = 'ingredient-row';
+            newRow.innerHTML = `
+                <input type="text" class="ingredient-name" placeholder="Ingredient Name">
+                <input type="number" class="weight" placeholder="Weight (g)">
+                <input type="number" class="kj-per-100g" placeholder="kJ per 100g">
+                <span class="ingredient-result"></span>
+            `;
+            container.appendChild(newRow);
+        });
+
+        document.getElementById('calculate').addEventListener('click', function() {
+            const rows = document.querySelectorAll('.ingredient-row');
+            let totalKj = 0;
+
+            rows.forEach(row => {
+                const weightInput = row.querySelector('.weight');
+                const kjPer100gInput = row.querySelector('.kj-per-100g');
+                const resultSpan = row.querySelector('.ingredient-result');
+
+                const weight = parseFloat(weightInput.value) || 0;
+                const kjPer100g = parseFloat(kjPer100gInput.value) || 0;
+
+                if (weight > 0 && kjPer100g > 0) {
+                    const ingredientKj = (weight / 100) * kjPer100g;
+                    resultSpan.textContent = `= ${ingredientKj.toFixed(2)} kJ`;
+                    totalKj += ingredientKj;
+                } else {
+                    resultSpan.textContent = '';
+                }
+            });
+
+            document.getElementById('total-kj').textContent = totalKj.toFixed(2);
+        });
+    </script>
+
+    </body>
+</html>

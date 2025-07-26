@@ -7,17 +7,15 @@
   margin-bottom: $margin-primary;
 }
 .footer-social-links a {
-  color: #888; /* Adjust link color as needed, or inherit from theme */
-  margin: 0 10px; /* Adds space around each icon */
-  font-size: 1.5em; /* Makes icons a bit bigger */
+  color: #888;
+  margin: 0 10px;
+  font-size: 1.5em;
   transition: color 0.3s ease;
 }
 .footer-social-links a:hover {
-  color: #bbb; /* Adjust hover color */
+  color: #bbb;
 }
-/* If your footer content is generally centered by the theme, this might not be needed */
-/* Otherwise, you might want to center the div itself */
 .footer-social-links {
-  text-align: center; /* Center the icons if they are not already */
-  margin-top: 10px; /* Add some space above the icons */
+  text-align: center;
+  margin-top: 10px;
 }
